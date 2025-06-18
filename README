@@ -1,0 +1,19 @@
+Python script to extract pharmacokinetics papers from PubMed searches
+and store table and freetext data about the model used in the study.
+
+The following variables are required to be set in the .env file:
+  ENTREZ_API_KEY=""
+  ENTREZ_EMAIL=""
+  AZURE_OPENAI_API_KEY=""
+  AZURE_OPENAI_ENDPOINT=""
+  AZURE_OPENAI_DEPLOYMENT=""
+  AZURE_OPENAI_API_VERSION=""
+
+This program makes use of the Entrez API to search PubMed, fetch abstracts, and link
+abstracts to the corresponding PMC article if it exists. It also utilizes Azure OpenAI
+to screen the tables and freetext of any returned articles for relevant model data.
+
+Written by Christopher Quinney, 2025
+
+
+
