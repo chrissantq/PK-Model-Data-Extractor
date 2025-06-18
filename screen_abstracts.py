@@ -84,6 +84,7 @@ class ScreenAbstracts:
       abstr.prob = prob_PK
       if prob_PK > threshold: # 96% seemed to be a good threshold
         abstr.isPK = True
+        print (f"Found abstract: {abstr}")
 
       # after prediction don't need text (takes of lots of memory)
       abstr.text = ""
@@ -99,6 +100,7 @@ class ScreenAbstracts:
       pmcid_num = (link_res[0].get("LinkSetDb") or [{}])[0].get("Link", [{}])[0].get("Id")
       if pmcid_num:
         abstr.pmcid = f"PMC{pmcid_num}"
+        print(f"Found PMC article (PMCID = {abstr.pmcid}) for abstract PMID = {abstr.pmid}")
 
       time.sleep(.15) # slow down request rate to limit to ~10/sec
 
@@ -185,7 +187,9 @@ class ScreenAbstracts:
       abstract_list.extend(abstract_chunk)
 
     # get pmcids
+    print()
     self.link_to_pmc(abstract_list)
+    print()
 
     # filter out articles with no pmcid
     abstract_list = [ab for ab in abstract_list if ab.pmcid != None]

@@ -1,21 +1,13 @@
 from openai import AzureOpenAI
 from dotenv import load_dotenv, dotenv_values
-import os, datetime, time
+import os, sys, datetime, time
 
 from screen_abstracts import ScreenAbstracts
 from get_tables import GetTables
 from freetext_parse import FetchModelInformation
+from tee import InTee, OutTee
 
 def main():
-
-  load_dotenv()
-
-  client = AzureOpenAI(
-    azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT"),
-    api_key = os.getenv("AZURE_OPENAI_API_KEY"),
-    api_version = os.getenv("AZURE_OPENAI_API_VERSION")
-  )
-  DEPLOY = os.environ["AZURE_OPENAI_DEPLOYMENT"]
 
   '''
     1) Screen pubmed for abstracts based on user search
@@ -29,9 +21,35 @@ def main():
         - contextualize the AI model for the paper
         - pull out data/info from freetext and tables
   '''
+
+  '''
+    0) Preliminary steps
+      - load .env file
+      - ready the AzureOpenAI client
+      - build the run file tree
+      - prepare the log file and configure to write to it
+  '''
+
+  load_dotenv()
+
+  client = AzureOpenAI(
+    azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT"),
+    api_key = os.getenv("AZURE_OPENAI_API_KEY"),
+    api_version = os.getenv("AZURE_OPENAI_API_VERSION")
+  )
+  DEPLOY = os.environ["AZURE_OPENAI_DEPLOYMENT"]
+
   dt = datetime.datetime.now()
   run_id = dt.strftime("%x") + "+" + dt.strftime("%X")
   run_id = "run_" + run_id.replace("/", "-")
+
+  save_dir = os.path.join("./run_outputs", run_id)
+  os.makedirs(save_dir, exist_ok=True)
+  logfile = os.path.join(save_dir, "log.out")
+
+  logfp = open(logfile, "w")
+  sys.stdout = OutTee(sys.__stdout__, logfp)
+  sys.stdin = InTee(sys.__stdin__, logfp)
 
   print("Run will be saved under:", run_id)
   print()
@@ -45,7 +63,6 @@ def main():
   print()
 
   print("Screening abstracts and fetching fulltexts...")
-  save_dir = "./run_outputs/" + run_id
   screener = ScreenAbstracts(
     search=pubmed_search,
     retmax=retmax,

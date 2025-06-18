@@ -7,4 +7,4 @@ class Abstract:
     self.prob = 0
 
   def __str__(self):
-    return f"<pmid: {self.pmid}, pmcid: {self.pmcid}, isPK: {self.isPK}, prob: {self.prob}>"
+    return f"<pmid: {self.pmid}, isPK: {self.isPK}, prob: {self.prob}>"
