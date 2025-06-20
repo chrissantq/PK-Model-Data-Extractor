@@ -13,6 +13,8 @@ This program makes use of the Entrez API to search PubMed, fetch abstracts, and 
 abstracts to the corresponding PMC article if it exists. It also utilizes Azure OpenAI
 to screen the tables and freetext of any returned articles for relevant model data.
 
+Install the required dependencies listed in "dependencies.txt" via pip.
+
 Written by Christopher Quinney, 2025
 
 
