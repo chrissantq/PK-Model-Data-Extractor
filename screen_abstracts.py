@@ -25,7 +25,7 @@ class ScreenAbstracts:
     
     if torch.cuda.is_available():
       total_mem = torch.cuda.get_device_properties(0).total_memory
-      if total_mem < 6 * 1024 ** 3: # if total gpu mem < 6 bg, do cpu
+      if total_mem < 6 * 1024 ** 3: # if total gpu mem < 6 gb, do cpu
         self.device = torch.device("cpu")
       else:
         self.device = torch.device("gpu")
