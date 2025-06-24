@@ -68,6 +68,7 @@ def main():
     retmax=retmax,
     threshold=thresh,
     batch_size=batch_size,
+    gpumax_bytes=10 * 1024 ** 3, # 10 GB threshold for memory usage before reloading
     save_to=save_dir
   )
   num_papers = screener.run()

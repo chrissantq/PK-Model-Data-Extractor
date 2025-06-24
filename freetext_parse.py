@@ -68,14 +68,27 @@ class FetchModelInformation:
         dtype=str
       )
 
-  def filter_tables(self, pmcid, last_slash):
+  def filter_tables(self, questions_list, pmcid, last_slash):
     xlname = pmcid + ".xlsx"
     xlpath = os.path.join(self.runpath[:last_slash-9], "tables", xlname)
+
+    if not os.path.isfile(xlpath):
+      return
 
     tables = pd.read_excel(xlpath, sheet_name=None)
 
     tablelist = []
-    instructions = "\nHere is a table from the paper. Extract only information answering the four primary questions. Return the relevent information with a column (titled Relevence) explaining how it is relevent. Return a pipe-delimited table where every cell is wrapped in double quotes. Do not include code fences or commentary. Do not return the first column."
+
+    questions = "\n".join(questions_list)
+    instructions = """
+      \nThis is a table from the paper. Pull out any information that has to do with the four primary questions.
+      Do not include any citations or references.Add a new column next to the extracted data called "Relevance"
+      and explain how the data is relevant to the PK model. Return a pipe-delimeted table where every cell is
+      wrapped in double quotes. Do not include code fences or commentary.Do not return the first column. As a reminder,
+      here are the four primary questions the information should relate to:
+    """
+    instructions += questions
+
     for name, frame in tables.items():
       tablepair = f"{name}:\n{frame.to_string(index=False)}"
       tablepair += instructions
@@ -170,7 +183,7 @@ class FetchModelInformation:
     self.prime_llm(tags, questions_list)
 
     # 2) give the llm the tables and extract only information about the models
-    self.filter_tables(pmcid, last_slash)
+    self.filter_tables(questions_list, pmcid, last_slash)
     print("  >tables filtered")
 
     # 3) pull information from freetext

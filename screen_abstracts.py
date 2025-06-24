@@ -2,8 +2,9 @@ from Bio import Entrez as ez
 from paper import Abstract
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from math import ceil
-import torch, time, io, os
+import torch, time, io, os, gc
 from urllib.error import HTTPError, URLError
+from http.client import IncompleteRead
 
 DEFAULT_SEARCH = "PK Model"
 DEFAULT_RETMAX = 25
@@ -17,7 +18,27 @@ class ScreenAbstracts:
     screening from user input to find PK articles
   '''
 
-  def __init__(self, search, retmax, threshold, batch_size, save_to=None):
+  def __init__(self, search, retmax, threshold, batch_size, gpumax_bytes, save_to=None, model_name="./pk_vs_not_final"):
+
+    # set up LLM
+    self.model_name = model_name
+    
+    if torch.cuda.is_available():
+      total_mem = torch.cuda.get_device_properties(0).total_memory
+      if total_mem < 6 * 1024 ** 3: # if total gpu mem < 6 bg, do cpu
+        self.device = torch.device("cpu")
+      else:
+        self.device = torch.device("gpu")
+    else:
+      self.device = torch.device("cpu")
+
+    self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+    self.model = AutoModelForSequenceClassification.from_pretrained(model_name).to(self.device)
+    self.model.eval()
+
+    self.gpumax_bytes = gpumax_bytes
+
+    # set values
     if search == "":
       self.search = DEFAULT_SEARCH
     else:
@@ -44,6 +65,25 @@ class ScreenAbstracts:
     else:
       self.save_to = save_to
 
+  # function to reload the model, mostly to reset memory usage
+  def reload_model(self):
+    del self.model
+    gc.collect()
+    torch.cuda.empty_cache()
+    self.model = AutoModelForSequenceClassification.from_pretrained(self.model_name)
+    self.model.eval()
+
+  # wrap fetch.read() to handle errors and retry on fail
+  def safe_read(self, fetch, max_retries=3):
+    for attempt in range(max_retries):
+      try:
+        return fetch.read()
+      except IncompleteRead as e:
+        print(f"[WARN] IncompleteRead on attempt {attempt+1}/{max_retries}, retrying...")
+        time.sleep(1 + attempt)
+    print("Entrez read failure")
+
+
   # helper function to chunk up longer abstracts
   def pred_chunks(self, text, tokenizer, model):
 
@@ -61,21 +101,19 @@ class ScreenAbstracts:
       return_tensors="pt"
     )
 
-    logits = model(
-      input_ids=tokenized.input_ids,
-      attention_mask=tokenized.attention_mask
-    ).logits
+    with torch.no_grad():
+      logits = model(
+        input_ids=tokenized.input_ids.to(self.device),
+        attention_mask=tokenized.attention_mask.to(self.device)
+      ).logits
 
     return logits.mean(dim=0, keepdim=True)
 
   # function to run prediction of each abstract
-  def predict(self, abstract_list, threshold):
-    model_name = "./pk_vs_not_final"
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModelForSequenceClassification.from_pretrained(model_name)
+  def predict(self, abstract_list, valid_pmids, threshold, tokenizer, model):
     # for each item in list, predict if PK
     for i, abstr in enumerate(abstract_list):
-      final_logits = self.pred_chunks(abstr.text, tokenizer, model)
+      final_logits = self.pred_chunks(abstr.text, tokenizer, model).detach().cpu()
       probs = torch.softmax(final_logits, dim=1)
       pred_class = torch.argmax(final_logits, dim=1)
 
@@ -85,24 +123,29 @@ class ScreenAbstracts:
       if prob_PK > threshold: # 96% seemed to be a good threshold
         abstr.isPK = True
         print (f"Found abstract: {abstr}")
+        valid_pmids.append(abstr.pmid)
 
-      # after prediction don't need text (takes of lots of memory)
-      abstr.text = ""
+      # after prediction delete abstract data and clean up
+      torch.cuda.empty_cache()
+      del final_logits, probs, abstr.text
 
-  def link_to_pmc(self, abstract_list):
-    for abstr in abstract_list:
+  def link_to_pmc(self, valid_pmids):
+    pmcids = []
+    for pmid in valid_pmids:
       linker = ez.elink(
         dbfrom="pubmed",
         db="pmc",
-        id=abstr.pmid
+        id=pmid
       )
       link_res = ez.read(linker)
       pmcid_num = (link_res[0].get("LinkSetDb") or [{}])[0].get("Link", [{}])[0].get("Id")
       if pmcid_num:
-        abstr.pmcid = f"PMC{pmcid_num}"
-        print(f"Found PMC article (PMCID = {abstr.pmcid}) for abstract PMID = {abstr.pmid}")
+        pmcid = f"PMC{pmcid_num}"
+        print(f"Found PMC article (PMCID = {pmcid}) for abstract PMID = {pmid}")
+        pmcids.append(pmcid)
 
-      time.sleep(.15) # slow down request rate to limit to ~10/sec
+      time.sleep(.25) # slow down request rate to limit to
+    return pmcids
 
   def search_pubmed(self, query, nresults):
     search = ez.esearch(
@@ -120,7 +163,7 @@ class ScreenAbstracts:
       rettype="abstract",
       retmode="text"
     )
-    abstracts = fetch.read()
+    abstracts = self.safe_read(fetch)
     fetch.close()
 
     abstract_list = abstracts.split("\n\n\n")
@@ -132,39 +175,41 @@ class ScreenAbstracts:
     return abstract_list
 
   # helper function to save each xml fulltext
-  def save_xml(self, abstr, xml_text, dirpath):
+  def save_xml(self, pmcid, xml_text, dirpath):
 
     os.makedirs(dirpath, exist_ok=True)
 
-    filename = abstr.pmcid + ".xml"
+    filename = pmcid + ".xml"
     filepath = os.path.join(dirpath, filename)
     with open(filepath, "wb") as file:
       file.write(xml_text)
 
-  def fetch_and_save_xmls(self, abstract_list):
+  def fetch_and_save_xmls(self, pmcids):
     dirpath = self.save_to + "/fulltexts"
     os.makedirs(dirpath, exist_ok=True)
-    for abstr in abstract_list:
+    for pmcid in pmcids:
       try:
         fetch = ez.efetch(
           db="pmc",
-          id=abstr.pmcid,
+          id=pmcid,
           rettype="full",
           retmode="xml"
         )
-        xml_text = fetch.read()
+        xml_text = self.safe_read(fetch)
         fetch.close()
 
-        print(f"saving {abstr.pmcid} to {dirpath}")
-        self.save_xml(abstr, xml_text, dirpath)
-        time.sleep(.15) # slow down requests
+        print(f"saving {pmcid} to {dirpath}")
+        self.save_xml(pmcid, xml_text, dirpath)
+        del xml_text, pmcid
+        gc.collect()
+        time.sleep(.25) # slow down requests
       except HTTPError as e:
         print(f"error fetching {abstr.pmcid}: {e.code} {e.reason}")
-        time.sleep(.15) # slow down requests
+        time.sleep(.25) # slow down requests
         continue
       except URLError as e:
         print(f"error fetching {abstr.pmcid}: {e.reason}")
-        time.sleep(.15) # slow down requests
+        time.sleep(.25) # slow down requests
         continue
     return len(os.listdir(dirpath))
 
@@ -172,29 +217,33 @@ class ScreenAbstracts:
     ez.email = os.getenv("ENTREZ_EMAIL")
     ez.api_key = os.getenv("ENTREZ_API_KEY")
 
+    print("Running on device:", self.device)
+
     # 1) search pubmed and get pmids
     pmids = self.search_pubmed(self.search, self.retmax)
 
     # limit fetch and predict to batches of BATCH_SIZE
     # to prevent memory running out
-    abstract_list = []
+    valid_pmids = []
     for start in range(0, len(pmids), self.batch_size):
+
+      # monitor gpu memory usage, if too high reload the model
+      if torch.cuda.memory_allocated() > self.gpumax_bytes:
+        self.reload_model()
+
       chunk = pmids[start:start+self.batch_size]
       abstract_chunk = self.fetch_abstracts(chunk)
-      self.predict(abstract_chunk, self.threshold)
-      # filter out non pk papers and add remaining to main list
-      abstract_chunk = [ab for ab in abstract_chunk if ab.isPK == True]
-      abstract_list.extend(abstract_chunk)
+      self.predict(abstract_chunk, valid_pmids, self.threshold, self.tokenizer, self.model)
+      del abstract_chunk[:]
+      del abstract_chunk
+      self.reload_model()
 
     # get pmcids
     print()
-    self.link_to_pmc(abstract_list)
+    pmcids = self.link_to_pmc(valid_pmids)
     print()
 
-    # filter out articles with no pmcid
-    abstract_list = [ab for ab in abstract_list if ab.pmcid != None]
-
     # search pmc for papers, save as xml file
-    return self.fetch_and_save_xmls(abstract_list)
+    return self.fetch_and_save_xmls(pmcids)
 
 
