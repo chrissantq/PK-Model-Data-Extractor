@@ -1,7 +1,7 @@
 from openai import AzureOpenAI
 import xmlparser as xp
 import pandas as pd
-import os, io, re, csv
+import os, io, re, csv, tiktoken
 
 
 class FetchModelInformation:
@@ -41,6 +41,7 @@ class FetchModelInformation:
       model=self.deployment,
       messages=[
         {"role": "system", "content": "You are an assistant that extracts information about the pharmacokinetics model used in a research paper."},
+        {"role": "system", "content": "Please ensure every cell is enclosed in double quotes, each row uses pipe delimiters, and every string is properly closed."},
         {"role": "user", "content": title},
         {"role": "user", "content": freetext},
         {"role": "user", "content": questions}
@@ -49,6 +50,11 @@ class FetchModelInformation:
 
   def clean_output(self, raw, pmcid):
     clean = re.sub(r"```(?:csv)?", "", raw, flags=re.I).strip()
+
+    if not clean or "|" not in clean:
+      print(f"[{pmcid}] Empty or invalid table")
+      return pd.DataFrame(columns=["Empty"])
+
     try:
       return pd.read_csv(
         io.StringIO(clean),
@@ -59,6 +65,10 @@ class FetchModelInformation:
       )
     except pd.errors.ParserError as e:
       print(f"ParserError in paper {pmcid}: {e}, retrying with python engine")
+    except Exception as e:
+      print(f"Unexpected error with C engine: {e}. Retrying with python engine")
+
+    try:
       return pd.read_csv(
         io.StringIO(clean),
         sep="|",
@@ -67,6 +77,12 @@ class FetchModelInformation:
         on_bad_lines="skip",
         dtype=str
       )
+    except pd.errors.EmptyDataError as e:
+      print(f"Python engine failed to parse: {e}")
+      return pd.DataFrame(columns=["Empty"])
+    except Exception as e:
+      print(f"Unexpected error with Python engine: {e}")
+      return pd.DataFrame(columns=["Empty"])
 
   def filter_tables(self, questions_list, pmcid, last_slash):
     xlname = pmcid + ".xlsx"
@@ -114,6 +130,24 @@ class FetchModelInformation:
       if not wrote_any:
         pd.DataFrame({"Message": [f"No parsable tables for {pmcid}"]}).to_excel(xl, sheet_name="EMPTY", index=False)
 
+  # helper function to split too long fulltexts up
+  def split_chunks(self, text_list, max_chunk_chars=30000):
+    chunks = []
+    cur = []
+    length = 0
+    for text in text_list:
+      if lenght + len(text) > max_chunk_chars:
+        chunks.append("\n".join(cur))
+        cur = []
+        length = 0
+      cur.append(text)
+      length += len(text)
+
+    if cur:
+      chunks.append("\n".join(cur))
+    return chunks
+
+
   # function to handle freetext data processing
   def process_freetext(self, questions_list, pmcid, last_slash):
     tags = ["p"]
@@ -142,13 +176,30 @@ class FetchModelInformation:
 
     # feed prompt to model
     text = "\n".join(fulltext)
-    response = self.llm_client.chat.completions.create(
-      model=self.deployment,
-      messages=[
-        {"role": "user", "content": text}
-      ]
-    )
-    out = response.choices[0].message.content
+
+    # ensure under maximum amount of tokens
+    enc = tiktoken.encoding_for_model(os.getenv("AZURE_OPENAI_DEPLOYMENT"))
+    ntokens = len(enc.encode(text))
+    if ntokens > 128000:
+      # too many tokens, split into chunks
+      chunks = split_chunks(fulltext)
+    else:
+      chunks = [text]
+
+    # for each chunk process and add to dataframe list, then concat them
+    dataframes = []
+    for chunk in chunks:
+      response = self.llm_client.chat.completions.create(
+        model=self.deployment,
+        messages=[
+          {"role": "user", "content": text}
+        ]
+      )
+      out = response.choices[0].message.content
+
+      df = self.clean_output(out, pmcid)
+      dataframes.append(df)
+    df = pd.concat(dataframes, axis=0)
 
     # get path of .xlsx file to write to
     xlname = pmcid + ".xlsx"
@@ -157,11 +208,9 @@ class FetchModelInformation:
     # write the returned table to a new sheet in the corresponding xlsx file
     if os.path.exists(xlpath):
       with pd.ExcelWriter(xlpath, engine="openpyxl", mode="a") as xl:
-        df = self.clean_output(out, pmcid)
         df.to_excel(xl, sheet_name="Freetext Data", index=False)
     else:
       with pd.ExcelWriter(xlpath, engine="openpyxl", mode="w") as xl:
-        df = self.clean_output(out, pmcid)
         df.to_excel(xl, sheet_name="Freetext Data", index=False)
 
   # call to run the entire process
