@@ -41,7 +41,7 @@ class FetchModelInformation:
       model=self.deployment,
       messages=[
         {"role": "system", "content": "You are an assistant that extracts information about the pharmacokinetics model used in a research paper."},
-        {"role": "system", "content": "Please ensure every cell is enclosed in double quotes, each row uses pipe delimiters, and every string is properly closed."},
+        {"role": "system", "content": "Ensure every cell is enclosed in double quotes, each row uses pipe delimiters, and every string is properly closed."},
         {"role": "user", "content": title},
         {"role": "user", "content": freetext},
         {"role": "user", "content": questions}
