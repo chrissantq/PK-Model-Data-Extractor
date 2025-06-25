@@ -192,7 +192,7 @@ class FetchModelInformation:
       response = self.llm_client.chat.completions.create(
         model=self.deployment,
         messages=[
-          {"role": "user", "content": text}
+          {"role": "user", "content": chunk}
         ]
       )
       out = response.choices[0].message.content
