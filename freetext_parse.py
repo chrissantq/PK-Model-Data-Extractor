@@ -136,7 +136,7 @@ class FetchModelInformation:
     cur = []
     length = 0
     for text in text_list:
-      if lenght + len(text) > max_chunk_chars:
+      if length + len(text) > max_chunk_chars:
         chunks.append("\n".join(cur))
         cur = []
         length = 0
@@ -182,7 +182,7 @@ class FetchModelInformation:
     ntokens = len(enc.encode(text))
     if ntokens > 128000:
       # too many tokens, split into chunks
-      chunks = split_chunks(fulltext)
+      chunks = self.split_chunks(fulltext)
     else:
       chunks = [text]
 
@@ -226,6 +226,8 @@ class FetchModelInformation:
     last_slash = self.runpath.rindex("/")
     last_dot = self.runpath.rindex(".")
     pmcid = self.runpath[last_slash+1:last_dot]
+
+    print("Paper:", pmcid)
 
     # 1) prime llm, get title and freetext from article to give context
     tags = ["article-meta/title-group", "p"]
