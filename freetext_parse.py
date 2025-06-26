@@ -131,12 +131,13 @@ class FetchModelInformation:
         pd.DataFrame({"Message": [f"No parsable tables for {pmcid}"]}).to_excel(xl, sheet_name="EMPTY", index=False)
 
   # helper function to split too long fulltexts up
-  def split_chunks(self, text_list, max_chunk_chars=30000):
+  def split_chunks(self, text_list, instructions, max_chunk_chars=30000):
     chunks = []
     cur = []
     length = 0
     for text in text_list:
       if length + len(text) > max_chunk_chars:
+        cur.append(instructions)
         chunks.append("\n".join(cur))
         cur = []
         length = 0
@@ -144,6 +145,7 @@ class FetchModelInformation:
       length += len(text)
 
     if cur:
+      cur.append(instructions)
       chunks.append("\n".join(cur))
     return chunks
 
@@ -172,17 +174,18 @@ class FetchModelInformation:
     fulltext = []
     for node in nodelist:
       fulltext.append(node.text)
-    fulltext.append(instructions)
+    fullprompt = fulltext
+    fullprompt.append(instructions)
 
     # feed prompt to model
-    text = "\n".join(fulltext)
+    text = "\n".join(fullprompt)
 
     # ensure under maximum amount of tokens
     enc = tiktoken.encoding_for_model(os.getenv("AZURE_OPENAI_DEPLOYMENT"))
     ntokens = len(enc.encode(text))
     if ntokens > 128000:
       # too many tokens, split into chunks
-      chunks = self.split_chunks(fulltext)
+      chunks = self.split_chunks(fulltext, instructions)
     else:
       chunks = [text]
 
