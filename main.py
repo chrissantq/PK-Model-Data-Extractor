@@ -37,7 +37,7 @@ def main():
     api_key = os.getenv("AZURE_OPENAI_API_KEY"),
     api_version = os.getenv("AZURE_OPENAI_API_VERSION")
   )
-  DEPLOY = os.environ["AZURE_OPENAI_DEPLOYMENT"]
+  DEPLOY = os.getenv("AZURE_OPENAI_DEPLOYMENT")
 
   dt = datetime.datetime.now()
   run_id = dt.strftime("%x") + "+" + dt.strftime("%X")
@@ -49,6 +49,7 @@ def main():
 
   logfp = open(logfile, "w")
   sys.stdout = OutTee(sys.__stdout__, logfp)
+  sys.stderr = OutTee(sys.__stderr__, logfp)
   sys.stdin = InTee(sys.__stdin__, logfp)
 
   print("Run will be saved under:", run_id)
