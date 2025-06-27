@@ -34,6 +34,7 @@ class FetchModelInformation:
         freetext_list.append(node.text)
     freetext = "\n".join(freetext_list)
 
+    questions_list.insert(0, "You will reference and/or answer these four primary questions regarding the paper in each future prompt:")
     questions = "\n".join(questions_list)
 
     # serve llm with the contextual information about the study
@@ -157,52 +158,59 @@ class FetchModelInformation:
     nodelist = paper.text_node_list
 
     # build the prompt
-    questions = "\n".join(questions_list)
-    instructions = """
-      Extract ONLY information from the paper freetext that is relevant to one of the four primary questions.
-      Return your answer in a pipe-delimited (|) CSV file. Do not include any extra commentary or code
-      fences. Use the following columns only: "Data" | "Value" | "Relevance". Don't just put each question as
-      a row, make each piece of data its own row. For the "relevance" column do not just restate one of the questions,
-      describe the data in context of the paper. Wrap each element indouble quotes. Here is a reminder of
-      the four primary questions:
-    """
-    instructions += questions
+    # questions = "\n".join(questions_list)
+    # loop through and ask each question individually, then concat the outputs
+    dfs = []
+    for i in range(len(questions_list)):
+      instructions = """
+        Extract ONLY information from the paper freetext that is relevant to one of the four primary questions.
+        Return your answer in a pipe-delimited (|) CSV file. Do not include any extra commentary or code
+        fences. Use the following columns only: "Data" | "Value" | "Relevance". Make each piece of data its own row. 
+        For the "relevance" column do not just restate the question, explain how it is relevant in the context of the paper. 
+        Here is the question:
+      """
+      instructions += questions_list[i]
 
-    # combine all the text nodes into a single fulltext
-    # better than feeding each individually as it gives the model more context
-    # otherwise it tries to pull something out from each node even if it is not relevant
-    fulltext = []
-    for node in nodelist:
-      fulltext.append(node.text)
-    fullprompt = fulltext
-    fullprompt.append(instructions)
+      # combine all the text nodes into a single fulltext
+      # better than feeding each individually as it gives the model more context
+      # otherwise it tries to pull something out from each node even if it is not relevant
+      fulltext = []
+      for node in nodelist:
+        fulltext.append(node.text)
+      fullprompt = fulltext
+      fullprompt.append(instructions)
 
-    # feed prompt to model
-    text = "\n".join(fullprompt)
+      # feed prompt to model
+      text = "\n".join(fullprompt)
 
-    # ensure under maximum amount of tokens
-    enc = tiktoken.encoding_for_model(os.getenv("AZURE_OPENAI_DEPLOYMENT"))
-    ntokens = len(enc.encode(text))
-    if ntokens > 128000:
-      # too many tokens, split into chunks
-      chunks = self.split_chunks(fulltext, instructions)
-    else:
-      chunks = [text]
+      # ensure under maximum amount of tokens
+      enc = tiktoken.encoding_for_model(os.getenv("AZURE_OPENAI_DEPLOYMENT"))
+      ntokens = len(enc.encode(text))
+      if ntokens > 128000:
+        # too many tokens, split into chunks
+        chunks = self.split_chunks(fulltext, instructions)
+      else:
+        chunks = [text]
 
-    # for each chunk process and add to dataframe list, then concat them
-    dataframes = []
-    for chunk in chunks:
-      response = self.llm_client.chat.completions.create(
-        model=self.deployment,
-        messages=[
-          {"role": "user", "content": chunk}
-        ]
-      )
-      out = response.choices[0].message.content
+      # for each chunk process and add to dataframe list, then concat them
+      dataframes = []
+      for chunk in chunks:
+        response = self.llm_client.chat.completions.create(
+          model=self.deployment,
+          messages=[
+            {"role": "user", "content": chunk}
+          ]
+        )
+        out = response.choices[0].message.content
 
-      df = self.clean_output(out, pmcid)
-      dataframes.append(df)
-    df = pd.concat(dataframes, axis=0)
+        df = self.clean_output(out, pmcid)
+        dataframes.append(df)
+      df = pd.concat(dataframes, axis=0)
+      df.columns = ["Data", "Value", "Relevance"] # make sure names are good
+      dfs.append(df)
+
+    # join together the outputs from each question
+    final_output = pd.concat(dfs, axis=0)
 
     # get path of .xlsx file to write to
     xlname = pmcid + ".xlsx"
@@ -211,18 +219,17 @@ class FetchModelInformation:
     # write the returned table to a new sheet in the corresponding xlsx file
     if os.path.exists(xlpath):
       with pd.ExcelWriter(xlpath, engine="openpyxl", mode="a") as xl:
-        df.to_excel(xl, sheet_name="Freetext Data", index=False)
+        final_output.to_excel(xl, sheet_name="Freetext Data", index=False)
     else:
       with pd.ExcelWriter(xlpath, engine="openpyxl", mode="w") as xl:
-        df.to_excel(xl, sheet_name="Freetext Data", index=False)
+        final_output.to_excel(xl, sheet_name="Freetext Data", index=False)
 
   # call to run the entire process
   def run(self):
 
     questions_list = [
-      "You will reference and/or answer these four primary questions regarding the paper in each future prompt:",
       "How was the PK study designed, such as patient sample size, blood/tissue sampling time points, and patient population?",
-      "What was the model, such as 1-compartment, 2-compartment, or physiologically based model?",
+      "What was the model, such as 1-compartment, 2-compartment, physiologically based model, or IVIVE?",
       "What are the parameters, and where were they estimated from?",
       "Are there any reported factors in influencing pharmacokinetics?"
     ]
