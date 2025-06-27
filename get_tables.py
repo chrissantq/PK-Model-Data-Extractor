@@ -26,7 +26,10 @@ class GetTables:
     # write to excel file
     with pd.ExcelWriter(excelpath, engine="openpyxl") as writer:
       for name, df in df_map.items():
-        df.to_excel(writer, sheet_name=name)
+        # flatten so it doesnt have to index for some reason idk
+        if isinstance(df.columns, pd.MultiIndex):
+          df.columns = ['_'.join(map(str, col)).strip() for col in df.columns]
+        df.to_excel(writer, sheet_name=name, index=False)
 
   def run(self):
 

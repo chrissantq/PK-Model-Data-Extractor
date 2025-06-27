@@ -18,7 +18,7 @@ class ScreenAbstracts:
     screening from user input to find PK articles
   '''
 
-  def __init__(self, search, retmax, threshold, batch_size, gpumax_bytes, save_to=None, model_name="./pk_vs_not_final"):
+  def __init__(self, search, retmax, threshold, batch_size, gpumax_bytes, save_to=None, model_name="./best_f1_model"):
 
     # set up LLM
     self.model_name = model_name

@@ -85,6 +85,9 @@ class FetchModelInformation:
       print(f"Unexpected error with Python engine: {e}")
       return pd.DataFrame(columns=["Empty"])
 
+  '''
+  Decided against filtering tables with AI, not worth the risk of missing data for what it gives
+  Also takes a lot longer and requires more calls to OpenAI ($$$)
   def filter_tables(self, questions_list, pmcid, last_slash):
     xlname = pmcid + ".xlsx"
     xlpath = os.path.join(self.runpath[:last_slash-9], "tables", xlname)
@@ -130,6 +133,7 @@ class FetchModelInformation:
 
       if not wrote_any:
         pd.DataFrame({"Message": [f"No parsable tables for {pmcid}"]}).to_excel(xl, sheet_name="EMPTY", index=False)
+  '''
 
   # helper function to split too long fulltexts up
   def split_chunks(self, text_list, instructions, max_chunk_chars=30000):
@@ -244,8 +248,8 @@ class FetchModelInformation:
     self.prime_llm(tags, questions_list)
 
     # 2) give the llm the tables and extract only information about the models
-    self.filter_tables(questions_list, pmcid, last_slash)
-    print("  >tables filtered")
+#    self.filter_tables(questions_list, pmcid, last_slash)
+#    print("  >tables filtered")
 
     # 3) pull information from freetext
     self.process_freetext(questions_list, pmcid, last_slash)
