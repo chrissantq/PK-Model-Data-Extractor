@@ -59,7 +59,6 @@ def main():
 
   pubmed_search = input("PubMed search: ")
   retmax = input("Number of PubMed results: ")
-  thresh = input("How sure must the LLM be that abstract is PK (in decimal percentage, i.e. 0.98 -> 98% sure): ")
   batch_size = input("Size of processing batches: ")
   print()
 
@@ -67,7 +66,6 @@ def main():
   screener = ScreenAbstracts(
     search=pubmed_search,
     retmax=retmax,
-    threshold=thresh,
     batch_size=batch_size,
     gpumax_bytes=10 * 1024 ** 3, # 10 GB threshold for memory usage before reloading
     save_to=save_dir

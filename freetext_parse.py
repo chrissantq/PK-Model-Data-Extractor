@@ -54,7 +54,7 @@ class FetchModelInformation:
 
     if not clean or "|" not in clean:
       print(f"[{pmcid}] Empty or invalid table")
-      return pd.DataFrame(columns=["Empty"])
+      return pd.DataFrame(columns=["Data", "Value", "Relevance"])
 
     try:
       return pd.read_csv(
@@ -80,11 +80,15 @@ class FetchModelInformation:
       )
     except pd.errors.EmptyDataError as e:
       print(f"Python engine failed to parse: {e}")
-      return pd.DataFrame(columns=["Empty"])
+      return pd.DataFrame(columns=["Data", "Value", "Relevance"])
     except Exception as e:
       print(f"Unexpected error with Python engine: {e}")
-      return pd.DataFrame(columns=["Empty"])
-
+      return pd.DataFrame(columns=["Data", "Value", "Relevance"])
+    else:
+      if df.shape[1] != 3:
+        print(f"[{pmcid}] Warning: parsed DataFrame has {df.shape[1]} columns instead of 3")
+        return pd.DataFrame(columns=["Data", "Value", "Relevance"])
+      return df
   '''
   Decided against filtering tables with AI, not worth the risk of missing data for what it gives
   Also takes a lot longer and requires more calls to OpenAI ($$$)

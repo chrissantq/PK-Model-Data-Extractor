@@ -8,7 +8,7 @@ from http.client import IncompleteRead
 
 DEFAULT_SEARCH = "PK Model"
 DEFAULT_RETMAX = 25
-DEFAULT_THRESHOLD = 0.96
+DEFAULT_THRESHOLD = 0.5
 DEFAULT_BATCH_SIZE = 25
 
 class ScreenAbstracts:
@@ -18,7 +18,7 @@ class ScreenAbstracts:
     screening from user input to find PK articles
   '''
 
-  def __init__(self, search, retmax, threshold, batch_size, gpumax_bytes, save_to=None, model_name="./best_f1_model"):
+  def __init__(self, search, retmax, batch_size, gpumax_bytes, threshold=DEFAULT_THRESHOLD, save_to=None, model_name="./best_f1_model"):
 
     # set up LLM
     self.model_name = model_name
@@ -49,10 +49,7 @@ class ScreenAbstracts:
     else:
       self.retmax = int(retmax)
 
-    if threshold == "":
-      self.threshold = DEFAULT_THRESHOLD
-    else:
-      self.threshold = float(threshold)
+    self.threshold = DEFAULT_THRESHOLD
 
     if batch_size == "":
       self.batch_size = DEFAULT_BATCH_SIZE
@@ -109,6 +106,12 @@ class ScreenAbstracts:
 
     return logits.mean(dim=0, keepdim=True)
 
+  # function to print screened outputs to text file, not relevant to overall functionality
+  def predictions(self, abstr, output="./screened_abstr_data.txt"):
+    with open(output, "a") as file:
+      file.write(str(abstr))
+      file.write("\n")
+
   # function to run prediction of each abstract
   def predict(self, abstract_list, valid_pmids, threshold, tokenizer, model):
     # for each item in list, predict if PK
@@ -120,6 +123,7 @@ class ScreenAbstracts:
       # 1 == is PK, 0 == not PK
       prob_PK = probs[0, 1].item()
       abstr.prob = prob_PK
+      # self.predictions(abstr)
       if prob_PK > threshold: # 96% seemed to be a good threshold
         abstr.isPK = True
         print (f"Found abstract: {abstr}")
