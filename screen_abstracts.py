@@ -136,19 +136,25 @@ class ScreenAbstracts:
   def link_to_pmc(self, valid_pmids):
     pmcids = []
     for pmid in valid_pmids:
-      linker = ez.elink(
-        dbfrom="pubmed",
-        db="pmc",
-        id=pmid
-      )
-      link_res = ez.read(linker)
-      pmcid_num = (link_res[0].get("LinkSetDb") or [{}])[0].get("Link", [{}])[0].get("Id")
-      if pmcid_num:
-        pmcid = f"PMC{pmcid_num}"
-        print(f"Found PMC article (PMCID = {pmcid}) for abstract PMID = {pmid}")
-        pmcids.append(pmcid)
+      try:
+        linker = ez.elink(
+          dbfrom="pubmed",
+          db="pmc",
+          id=pmid
+        )
+        link_res = ez.read(linker)
+        pmcid_num = (link_res[0].get("LinkSetDb") or [{}])[0].get("Link", [{}])[0].get("Id")
+        if pmcid_num:
+          pmcid = f"PMC{pmcid_num}"
+          print(f"Found PMC article (PMCID = {pmcid}) for abstract PMID = {pmid}")
+          pmcids.append(pmcid)
 
-      time.sleep(.25) # slow down request rate to limit to
+        time.sleep(.35) # slow down request rate to limit to
+      except Exception as e:
+        print(f"[WARN] error fetching PMC for PMID: {pmid}: {str(e)}")
+        time.sleep(.35)
+        continue
+
     return pmcids
 
   def search_pubmed(self, query, nresults):
@@ -193,10 +199,11 @@ class ScreenAbstracts:
     os.makedirs(dirpath, exist_ok=True)
     for pmcid in pmcids:
       try:
+        pmcid_num = pmcid.replace("PMC", "")
         fetch = ez.efetch(
           db="pmc",
-          id=pmcid,
-          rettype="full",
+          id=pmcid_num,
+          rettype="xml",
           retmode="xml"
         )
         xml_text = self.safe_read(fetch)
@@ -206,14 +213,18 @@ class ScreenAbstracts:
         self.save_xml(pmcid, xml_text, dirpath)
         del xml_text, pmcid
         gc.collect()
-        time.sleep(.25) # slow down requests
+        time.sleep(.35) # slow down requests
       except HTTPError as e:
-        print(f"error fetching {abstr.pmcid}: {e.code} {e.reason}")
-        time.sleep(.25) # slow down requests
+        print(f"error fetching {pmcid}: {e.code} {e.reason}")
+        time.sleep(.35) # slow down requests
         continue
       except URLError as e:
-        print(f"error fetching {abstr.pmcid}: {e.reason}")
-        time.sleep(.25) # slow down requests
+        print(f"error fetching {pmcid}: {e.reason}")
+        time.sleep(.35) # slow down requests
+        continue
+      except Exception as e:
+        print(f"error fetching {pmcid}: {str(e)}")
+        time.sleep(.35)
         continue
     return len(os.listdir(dirpath))
 

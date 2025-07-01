@@ -214,7 +214,12 @@ class FetchModelInformation:
         df = self.clean_output(out, pmcid)
         dataframes.append(df)
       df = pd.concat(dataframes, axis=0)
-      df.columns = ["Data", "Value", "Relevance"] # make sure names are good
+
+      try:
+        df.columns = ["Data", "Value", "Relevance"] # make sure names are good
+      except ValueError as e:
+        print(f"[WARN] error renaming freetext columns for {pmcid}: {e}")
+        print(df.head())
       dfs.append(df)
 
     # join together the outputs from each question
