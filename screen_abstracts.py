@@ -8,7 +8,7 @@ from http.client import IncompleteRead
 
 DEFAULT_SEARCH = "PK Model"
 DEFAULT_RETMAX = 25
-DEFAULT_THRESHOLD = 0.5
+DEFAULT_THRESHOLD = 0.55
 DEFAULT_BATCH_SIZE = 25
 
 class ScreenAbstracts:
