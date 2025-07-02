@@ -8,7 +8,7 @@ from http.client import IncompleteRead
 
 DEFAULT_SEARCH = "PK Model"
 DEFAULT_RETMAX = 25
-DEFAULT_THRESHOLD = 0.55
+DEFAULT_THRESHOLD = 0.65 # .55 to .65 is good range depending on if you want more false positives or false negatives
 DEFAULT_BATCH_SIZE = 25
 
 class ScreenAbstracts:
