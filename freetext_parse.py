@@ -243,7 +243,7 @@ class FetchModelInformation:
     questions_list = [
       "How was the PK study designed, such as patient sample size, blood/tissue sampling time points, and patient population?",
       "What was the model, such as 1-compartment, 2-compartment, physiologically based model, or IVIVE?",
-      "What are the parameters, and where were they estimated from?",
+      "What are the parameters and their values, and where were they estimated from?",
       "Are there any reported factors in influencing pharmacokinetics?"
     ]
     last_slash = self.runpath.rindex("/")
@@ -263,5 +263,7 @@ class FetchModelInformation:
     # 3) pull information from freetext
     self.process_freetext(questions_list, pmcid, last_slash)
     print("  >data extracted from freetext")
+
+
 
 

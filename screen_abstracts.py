@@ -2,14 +2,17 @@ from Bio import Entrez as ez
 from paper import Abstract
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from math import ceil
-import torch, time, io, os, gc
+import torch, time, io, os, gc, sys
 from urllib.error import HTTPError, URLError
 from http.client import IncompleteRead
+from datetime import datetime
 
 DEFAULT_SEARCH = "PK Model"
 DEFAULT_RETMAX = 25
 DEFAULT_THRESHOLD = 0.65 # .55 to .65 is good range depending on if you want more false positives or false negatives
 DEFAULT_BATCH_SIZE = 25
+DEFAULT_FROM_DATE = "1781/01/01" # date of earliest pubmed publication
+DEFAULT_TO_DATE = datetime.today().strftime("%Y/%m/%d") # today's date
 
 class ScreenAbstracts:
 
@@ -18,11 +21,11 @@ class ScreenAbstracts:
     screening from user input to find PK articles
   '''
 
-  def __init__(self, search, retmax, batch_size, gpumax_bytes, threshold=DEFAULT_THRESHOLD, save_to=None, model_name="./best_f1_model"):
+  def __init__(self, search, retmax, batch_size, gpumax_bytes, from_date, to_date, threshold=DEFAULT_THRESHOLD, save_to=None, model_name="./best_f1_model"):
 
     # set up LLM
     self.model_name = model_name
-    
+
     if torch.cuda.is_available():
       total_mem = torch.cuda.get_device_properties(0).total_memory
       if total_mem < 6 * 1024 ** 3: # if total gpu mem < 6 gb, do cpu
@@ -61,6 +64,44 @@ class ScreenAbstracts:
       return
     else:
       self.save_to = save_to
+
+    if from_date == "":
+      self.from_date = DEFAULT_FROM_DATE
+    else:
+      formats = ["%Y/%m/%d", "%Y/%m", "%Y"]
+      VALID = 0
+      for fmt in formats:
+        try:
+          datetime.strptime(from_date, fmt)
+          VALID = 1
+          break
+        except ValueError as e:
+          continue
+
+      if VALID == 0:
+        print(f"'From' date is in improper format: {from_date} does not match any '%Y/%m/%d', '%Y/%m', or '%Y' formats")
+        sys.exit(1)
+
+      self.from_date = from_date
+
+    if to_date == "":
+      self.to_date = DEFAULT_TO_DATE
+    else:
+      formats = ["%Y/%m/%d", "%Y/%m", "%Y"]
+      VALID = 0
+      for fmt in formats:
+        try:
+          datetime.strptime(to_date, fmt)
+          VALID = 1
+          break
+        except ValueError as e:
+          continue
+
+      if VALID == 0:
+        print(f"'To' date is in improper format: {to_date} does not match any '%Y/%m/%d', '%Y/%m', or '%Y' formats")
+        sys.exit(1)
+
+      self.to_date = to_date
 
   # function to reload the model, mostly to reset memory usage
   def reload_model(self):
@@ -106,12 +147,6 @@ class ScreenAbstracts:
 
     return logits.mean(dim=0, keepdim=True)
 
-  # function to print screened outputs to text file, not relevant to overall functionality
-  def predictions(self, abstr, output="./screened_abstr_data.txt"):
-    with open(output, "a") as file:
-      file.write(str(abstr))
-      file.write("\n")
-
   # function to run prediction of each abstract
   def predict(self, abstract_list, valid_pmids, threshold, tokenizer, model):
     # for each item in list, predict if PK
@@ -122,12 +157,11 @@ class ScreenAbstracts:
 
       # 1 == is PK, 0 == not PK
       prob_PK = probs[0, 1].item()
-      abstr.prob = prob_PK
-      # self.predictions(abstr)
-      if prob_PK > threshold: # 96% seemed to be a good threshold
+      abstr.prob = float(prob_PK)
+      if abstr.prob > threshold:
         abstr.isPK = True
-        print (f"Found abstract: {abstr}")
         valid_pmids.append(abstr.pmid)
+      print (f"{abstr}")
 
       # after prediction delete abstract data and clean up
       torch.cuda.empty_cache()
@@ -162,7 +196,10 @@ class ScreenAbstracts:
       db="pubmed",
       term=query,
       retmax=nresults,
-      retmode="xml"
+      retmode="xml",
+      mindate=self.from_date,
+      maxdate=self.to_date,
+      datetype="pdat" # publication date
     )
     return ez.read(search)["IdList"]
 

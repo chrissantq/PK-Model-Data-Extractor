@@ -1,6 +1,6 @@
 from openai import AzureOpenAI
 from dotenv import load_dotenv, dotenv_values
-import os, sys, datetime, time
+import os, sys, datetime, time, shutil
 
 from screen_abstracts import ScreenAbstracts
 from get_tables import GetTables
@@ -61,6 +61,10 @@ def main():
   retmax = input("Number of PubMed results: ")
   batch_size = input("Size of processing batches: ")
   print()
+  print("Date range -- enter in YYYY/MM/DD format, may also just enter YYYY, YYYY/MM, or just leave empty for defaults:")
+  from_date = input("From: ")
+  to_date = input("To: ")
+  print()
 
   print("Screening abstracts and fetching fulltexts...")
   screener = ScreenAbstracts(
@@ -68,7 +72,9 @@ def main():
     retmax=retmax,
     batch_size=batch_size,
     gpumax_bytes=10 * 1024 ** 3, # 10 GB threshold for memory usage before reloading
-    save_to=save_dir
+    save_to=save_dir,
+    from_date=from_date,
+    to_date=to_date
   )
   num_papers = screener.run()
   print(f"Retrieved {num_papers} papers from PMC")
@@ -93,8 +99,17 @@ def main():
     modeler.run()
     # break
   print(f"Progress: {num_papers}/{num_papers}")
-  print("Done!")
 
+  # 4) delete fulltexts
+  if os.path.exists(fulltextdir):
+    try:
+      shutil.rmtree(fulltextdir)
+    except OSError as e:
+      print(f"Err deleting fulltexts: {e}")
+  else:
+    print("Err: fulltext directory doesn't exist")
+
+print("Done!")
 
 if __name__ == "__main__":
   start = time.perf_counter()
