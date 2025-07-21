@@ -124,7 +124,15 @@ Xml * read_file(const char * subdir) {
       // get any tables from the text
       std::string filename = ent->d_name;
       std::string filepath = dirname + "/" + filename;
-      new_xml->tab_head = parse_text(filepath, new_xml);
+
+      try {
+        new_xml->tab_head = parse_text(filepath, new_xml);
+      } catch (const std::exception &e) {
+        std::cerr << "Skipping file due to XML parse err: " << filepath << "\n";
+        std::cerr << "Err: " << e.what() << "\n";
+        delete new_xml;
+        continue;
+      }
 
       // get the pmcid (file name)
       size_t pos = std::string(filename).find('.');
