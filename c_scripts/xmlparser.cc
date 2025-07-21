@@ -1,4 +1,5 @@
 #include <cstring>
+#include <iostream>
 #include <memory>
 #include <pugixml.hpp>
 #include <pybind11/pybind11.h>
@@ -73,25 +74,31 @@ std::unique_ptr<Paper> fetch_tags(std::string filepath, std::vector<std::string>
     paper->filename = filepath;
   }
 
-  // initiate pugi stuff
-  pugi::xml_document doc;
-  pugi::xml_parse_result res = doc.load_file(
-    filepath.c_str(),
-    pugi::parse_default,
-    pugi::encoding_utf8
-  );
-  if (!res) throw std::runtime_error(res.description());
+  try {
+    // initiate pugi stuff
+    pugi::xml_document doc;
+    pugi::xml_parse_result res = doc.load_file(
+      filepath.c_str(),
+      pugi::parse_default,
+      pugi::encoding_utf8
+    );
+    if (!res) throw std::runtime_error(res.description());
 
-  // loop through the tags
-  for (const auto& tag : tags) {
-    // add each tag to its own obj and put in paper
-    std::string path = "//" + tag;
-    for (auto& node : doc.select_nodes(path.c_str())) {
-      TextObj t;
-      t.tag = tag;
-      t.text = get_text(node.node());
-      paper->text_node_list.emplace_back(std::move(t));
+    // loop through the tags
+    for (const auto& tag : tags) {
+      // add each tag to its own obj and put in paper
+      std::string path = "//" + tag;
+      for (auto& node : doc.select_nodes(path.c_str())) {
+        TextObj t;
+        t.tag = tag;
+        t.text = get_text(node.node());
+        paper->text_node_list.emplace_back(std::move(t));
+      }
     }
+  } catch (const std::exception &e) {
+    std::cerr << "Skipping file due to XML parse err: " << filepath.c_str() << "\n";
+    std::cerr << "Err: " << e.what() << "\n";
+    return nullptr;
   }
   return paper;
 }

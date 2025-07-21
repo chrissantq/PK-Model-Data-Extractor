@@ -18,15 +18,18 @@ class FetchModelInformation:
     self.deployment = deployment
 
   # function to prime the llm for model information extraction
-  def prime_llm(self, tags, questions_list):
+  def prime_llm(self, tags):
 
     # get title and freetext from article
     paper = xp.fetch_tags(self.runpath, tags)
+    if paper is None:
+      print(f"[ERROR] Failed to parse XML file at {self.runpath} - skipping")
+      return -1
     xmlnodes = paper.text_node_list
 
     # build title + freetext to serve to AI model
     title = "The title of the paper is "
-    freetext_list = ["This is the freetext of the article, use it to familiarize yourself with the study:"]
+    freetext_list = ["This is the freetext of the article, you will answer questions about this article:"]
     for node in xmlnodes:
       if node.tag == "article-meta/title-group":
         title += node.text
@@ -34,22 +37,41 @@ class FetchModelInformation:
         freetext_list.append(node.text)
     freetext = "\n".join(freetext_list)
 
-    questions_list.insert(0, "You will reference and/or answer these four primary questions regarding the paper in each future prompt:")
-    questions = "\n".join(questions_list)
+    # remove disallowed special tokens
+    freetext = re.sub(r"<\|.*?\|>", "", freetext)
+
+    enc = tiktoken.encoding_for_model(self.deployment)
+    MAX_TOK = 100000
+
+    freetext_tokens = enc.encode(freetext)
+    if len(freetext_tokens) > MAX_TOK:
+      freetext_tokens = freetext_tokens[:MAX_TOK]
+      freetext = enc.decode(freetext_tokens)
 
     # serve llm with the contextual information about the study
-    response = self.llm_client.chat.completions.create(
-      model=self.deployment,
-      messages=[
-        {"role": "system", "content": "You are an assistant that extracts information about the pharmacokinetics model used in a research paper."},
-        {"role": "system", "content": "Ensure every cell is enclosed in double quotes, each row uses pipe delimiters, and every string is properly closed."},
-        {"role": "user", "content": title},
-        {"role": "user", "content": freetext},
-        {"role": "user", "content": questions}
-      ]
-    )
+    try:
+      response = self.llm_client.chat.completions.create(
+        model=self.deployment,
+        messages=[
+          {"role": "system", "content": "You are an assistant that extracts information about the pharmacokinetics model used in a research paper."},
+          {"role": "system", "content": "Ensure every cell is enclosed in double quotes, each row uses pipe delimiters, and every string is properly closed."},
+          {"role": "user", "content": title},
+          {"role": "user", "content": freetext},
+        ]
+      )
+    except Exception as e:
+      print(f"[ERROR] Error priming LLM")
+      print(f"[ERROR] Exception: {e}")
+      return -1
+
+    return 0
 
   def clean_output(self, raw, pmcid):
+
+    if not isinstance(raw, str):
+      print(f"[{pmcid}] clean_output received non-string input: {type(raw)}")
+      return pd.DataFrame(columns=["Data", "Value", "Relevance"])
+
     clean = re.sub(r"```(?:csv)?", "", raw, flags=re.I).strip()
 
     if not clean or "|" not in clean:
@@ -161,35 +183,29 @@ class FetchModelInformation:
 
   # function to handle freetext data processing
   def process_freetext(self, questions_list, pmcid, last_slash):
-    tags = ["p"]
-    paper = xp.fetch_tags(self.runpath, tags)
-    nodelist = paper.text_node_list
 
     # build the prompt
-    # questions = "\n".join(questions_list)
     # loop through and ask each question individually, then concat the outputs
     dfs = []
     for i in range(len(questions_list)):
+
       instructions = """
         Extract ONLY information from the paper freetext that is relevant to one of the four primary questions.
         Return your answer in a pipe-delimited (|) CSV file. Do not include any extra commentary or code
         fences. Use the following columns only: "Data" | "Value" | "Relevance". Make each piece of data its own row. 
-        For the "relevance" column do not just restate the question, explain how it is relevant in the context of the paper. 
+        For the "relevance" column do not just restate the question, explain how it is relevant in the context of the paper.
+        Get every piece of information regarding each question, be very detailed.
+
         Here is the question:
       """
+
       instructions += questions_list[i]
 
-      # combine all the text nodes into a single fulltext
-      # better than feeding each individually as it gives the model more context
-      # otherwise it tries to pull something out from each node even if it is not relevant
-      fulltext = []
-      for node in nodelist:
-        fulltext.append(node.text)
-      fullprompt = fulltext
-      fullprompt.append(instructions)
-
       # feed prompt to model
-      text = "\n".join(fullprompt)
+      text = instructions
+
+      # remove disallowed special tokens
+      text = re.sub(r"<\|.*?\|>", "", text)
 
       # ensure under maximum amount of tokens
       enc = tiktoken.encoding_for_model(os.getenv("AZURE_OPENAI_DEPLOYMENT"))
@@ -202,24 +218,35 @@ class FetchModelInformation:
 
       # for each chunk process and add to dataframe list, then concat them
       dataframes = []
+      err = None
       for chunk in chunks:
-        response = self.llm_client.chat.completions.create(
-          model=self.deployment,
-          messages=[
-            {"role": "user", "content": chunk}
-          ]
-        )
-        out = response.choices[0].message.content
+        try:
+          response = self.llm_client.chat.completions.create(
+            model=self.deployment,
+            messages=[
+              {"role": "user", "content": chunk}
+            ]
+          )
+          out = response.choices[0].message.content
+        except Exception as e:
+          print(f"[ERROR] Prompt failed")
+          print(f"[ERROR] Exception: {e}")
+          out = None
+          err = str(e)
 
-        df = self.clean_output(out, pmcid)
+        if out is None:
+          df = pd.DataFrame([["OpenAI error", err or "Unknown Error", questions_list[i]]], columns=["Data", "Value", "Relevance"])
+        else:
+          df = self.clean_output(out, pmcid)
+
         dataframes.append(df)
+
       df = pd.concat(dataframes, axis=0)
 
       try:
         df.columns = ["Data", "Value", "Relevance"] # make sure names are good
       except ValueError as e:
         print(f"[WARN] error renaming freetext columns for {pmcid}: {e}")
-        print(df.head())
       dfs.append(df)
 
     # join together the outputs from each question
@@ -236,6 +263,7 @@ class FetchModelInformation:
     else:
       with pd.ExcelWriter(xlpath, engine="openpyxl", mode="w") as xl:
         final_output.to_excel(xl, sheet_name="Freetext Data", index=False)
+    print("  >data extracted from freetext")
 
   # call to run the entire process
   def run(self):
@@ -254,7 +282,9 @@ class FetchModelInformation:
 
     # 1) prime llm, get title and freetext from article to give context
     tags = ["article-meta/title-group", "p"]
-    self.prime_llm(tags, questions_list)
+    code = self.prime_llm(tags)
+    if code == -1:
+      return
 
     # 2) give the llm the tables and extract only information about the models
 #    self.filter_tables(questions_list, pmcid, last_slash)
@@ -262,7 +292,6 @@ class FetchModelInformation:
 
     # 3) pull information from freetext
     self.process_freetext(questions_list, pmcid, last_slash)
-    print("  >data extracted from freetext")
 
 
 

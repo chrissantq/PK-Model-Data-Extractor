@@ -1,0 +1,834 @@
+<?xml version="1.0"  ?><!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd"><pmc-articleset><article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xml:lang="en" article-type="research-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Drug Des Devel Ther</journal-id><journal-id journal-id-type="iso-abbrev">Drug Des Devel Ther</journal-id><journal-id journal-id-type="pmc-domain-id">958</journal-id><journal-id journal-id-type="pmc-domain">dddt</journal-id><journal-id journal-id-type="publisher-id">dddt</journal-id><journal-title-group><journal-title>Drug Design, Development and Therapy</journal-title></journal-title-group><issn pub-type="epub">1177-8881</issn><publisher><publisher-name>Dove Press</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC12146887</article-id><article-id pub-id-type="pmcid-ver">PMC12146887.1</article-id><article-id pub-id-type="pmcaid">12146887</article-id><article-id pub-id-type="pmcaiid">12146887</article-id><article-id pub-id-type="pmid">40491527</article-id><article-id pub-id-type="doi">10.2147/DDDT.S522863</article-id><article-id pub-id-type="publisher-id">522863</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="heading"><subject>Original Research</subject></subj-group></article-categories><title-group><article-title>Population Pharmacokinetics and Pharmacodynamics with Enterohepatic Recirculation of Co-Medication of Rosuvastatin and Ezetimibe</article-title><alt-title alt-title-type="running-authors">An and Shin</alt-title><alt-title alt-title-type="running-title">An and Shin</alt-title></title-group><contrib-group><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0002-4148-8423</contrib-id><name name-style="western"><surname>An</surname><given-names initials="H">Hyungmi</given-names></name><xref rid="aff0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0002-4227-374X</contrib-id><name name-style="western"><surname>Shin</surname><given-names initials="D">Dongseong</given-names></name><xref rid="aff0002" ref-type="aff">
+<sup>2</sup>
+</xref><xref rid="an0001" ref-type="corresp"/></contrib><aff id="aff0001"><label>1</label><institution>Department of Statistics and Data Science, Korea National Open University</institution>, <addr-line>Seoul</addr-line>, <country>Korea</country></aff><aff id="aff0002"><label>2</label><institution>Department of Clinical Pharmacology and Therapeutics, Gil Medical Center, Gachon University College of Medicine</institution>, <addr-line>Incheon</addr-line>, <country>Korea</country></aff></contrib-group><author-notes><corresp id="an0001">Correspondence: Dongseong Shin, <institution>Department of Clinical Pharmacology and Therapeutics, Gachon University College of Medicine, Clinical Trials Center, Gachon University Gil Medical Center</institution>, <addr-line>21, Namdong-daero 774 beon-gil, Namdong-gu</addr-line>, <addr-line>Incheon</addr-line>, <addr-line>21565</addr-line>, <country>Korea</country>, <phone content-type="general">Tel +82-32-460-9459</phone>, <fax>Fax +82-32-460-9443</fax>, Email dsshin@gilhospital.com</corresp></author-notes><pub-date pub-type="epub"><day>04</day><month>6</month><year>2025</year></pub-date><pub-date pub-type="collection"><year>2025</year></pub-date><volume>19</volume><issue-id pub-id-type="pmc-issue-id">478870</issue-id><fpage>4777</fpage><lpage>4787</lpage><history><date date-type="received"><day>06</day><month>3</month><year>2025</year></date><date date-type="accepted"><day>28</day><month>5</month><year>2025</year></date></history><pub-history><event event-type="pmc-release"><date><day>04</day><month>06</month><year>2025</year></date></event><event event-type="pmc-live"><date><day>09</day><month>06</month><year>2025</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2025-06-10 09:25:15.120"><day>10</day><month>06</month><year>2025</year></date></event></pub-history><permissions><copyright-statement>&#169; 2025 An and Shin.</copyright-statement><copyright-year>2025</copyright-year><copyright-holder>An and Shin.</copyright-holder><license><ali:license_ref specific-use="textmining" content-type="ccbynclicense">https://creativecommons.org/licenses/by-nc/4.0/</ali:license_ref><license-p>This work is published and licensed by Dove Medical Press Limited. The full terms of this license are available at <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://www.dovepress.com/terms.php">https://www.dovepress.com/terms.php</ext-link> and incorporate the Creative Commons Attribution &#8211; Non Commercial (unported, v4.0) License (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by-nc/4.0/">http://creativecommons.org/licenses/by-nc/4.0/</ext-link>). By accessing the work you hereby accept the Terms. Non-commercial uses of the work are permitted without any further permission from Dove Medical Press Limited, provided the work is properly attributed. For permission for commercial use of this work, please see paragraphs 4.2 and 5 of our Terms (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://www.dovepress.com/terms.php">https://www.dovepress.com/terms.php</ext-link>).</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="dddt-19-4777.pdf"/><abstract><sec><title>Objective</title><p>Combination therapy with rosuvastatin and ezetimibe is generally administered to patients with high cardiovascular risk. The objective of this study was to develop a population pharmacokinetic/pharmacodynamic (PK/PD) model of the interaction between rosuvastatin and ezetimibe that incorporates enterohepatic recirculation (EHC).</p></sec><sec><title>Methods</title><p>Concentration&#8211;time data were obtained from a two-part, open-label, multiple-dose crossover, drug interaction study. In total, 50&#160;healthy male subjects received both monotherapy and co-therapy (Part A: rosuvastatin and co-therapy; Part B: ezetimibe and co-therapy). Rosuvastatin (20 mg) or ezetimibe (10 mg) were administered once daily for 7 days as monotherapy or co-therapy. Plasma concentrations were measured for PK analysis until 72&#160;h post-dose at steady state. The changes in low-density lipoprotein cholesterol (LDL-C) levels from baseline to steady state at 24&#160;h after the last administration were measured. A population PK/PD model incorporating EHC was developed using Monolix 2024R1. Covariate effects were explored, and the final model was evaluated through goodness-of-fit diagnostics and visual predictive checks. Model-based simulations were conducted to compare the LDL-C lowering effects of monotherapy and co-therapy.</p></sec><sec><title>Results</title><p>A population PK/PD model was established using a two-compartment model for rosuvastatin and a four-compartment model for ezetimibe incorporating EHC via intermittent gallbladder emptying. No significant PK interaction was observed. An indirect response PD model reflected the independent LDL-C lowering effects of both drugs. Simulations showed LDL-C reductions of &#8722;51.0% (rosuvastatin), &#8722;25.3% (ezetimibe), and &#8722;60.7% (co-therapy), supporting the additive efficacy of co-therapy. EHC increased the exposure of total ezetimibe with limited LDL-C lowering effects.</p></sec><sec><title>Conclusion</title><p>The overall PK interaction between rosuvastatin and total ezetimibe was not significant. The developed PK/PD model incorporating EHC successfully described the independent LDL-C lowering effects. These findings support the additive benefit of co-therapy of rosuvastatin and ezetimibe and may guide future research toward personalized lipid-lowering strategies.</p></sec></abstract><kwd-group kwd-group-type="author"><title>Keywords</title><kwd>pharmacokinetics</kwd><kwd>pharmacodynamics</kwd><kwd>modeling</kwd><kwd>rosuvastatin</kwd><kwd>ezetimibe</kwd></kwd-group><funding-group><award-group><funding-source><institution-wrap><institution>Gachon University</institution><institution-id institution-id-type="open-funder-registry">10.13039/501100002631</institution-id></institution-wrap></funding-source></award-group><funding-statement>This work was supported by the Gachon University research fund of 2023 (GCU- 202310260001) and 2024 (GCU-202410190001). The investigation was conducted at the Clinical Trials Center, Gachon University Gil Medical Center.</funding-statement></funding-group><counts><fig-count count="4"/><table-count count="2"/><ref-count count="20"/><page-count count="11"/></counts><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec sec-type="intro" id="s0001"><title>Introduction</title><p>Statin monotherapy is the primary pharmaceutical option for dyslipidemias.<xref rid="cit0001" ref-type="bibr">1</xref> Moreover, patients with high risk of coronary artery disease or high low-density lipoprotein cholesterol (LDL-C) levels require combination drug therapy including ezetimibe.<xref rid="cit0001" ref-type="bibr">1</xref> Rosuvastatin is a moderate- to high-intensity 3-hydroxy-3-methylglutaryl-coenzyme A (HMG-CoA) reductase inhibitor.<xref rid="cit0002" ref-type="bibr">2</xref> Rosuvastatin is metabolized by cytochrome P450 2C9 and 2C19 and excreted by the organic anion transporter protein 1B1.<xref rid="cit0002" ref-type="bibr">2</xref>,<xref rid="cit0003" ref-type="bibr">3</xref> Ezetimibe inhibits the intestinal absorption of dietary and biliary cholesterol by interacting with Niemann&#8211;Pick C1-like protein 1 (NPC1L1) at the brush border.<xref rid="cit0001" ref-type="bibr">1</xref> After oral administration, ezetimibe is biotransformed into an active metabolite, ezetimibe-glucuronide, by the UDP glycosyltransferases 1A1, 1A3, and 2B15 in the intestinal mucosa and liver.<xref rid="cit0003" ref-type="bibr">3</xref>,<xref rid="cit0004" ref-type="bibr">4</xref> Ezetimibe co-therapy can lead to an additional 20% reduction in LDL-C levels compared with statin monotherapy.<xref rid="cit0001" ref-type="bibr">1</xref>,<xref rid="cit0003" ref-type="bibr">3</xref></p><p>Ezetimibe shows multiple peaks in plasma concentration&#8211;time profiles, suggesting enterohepatic circulation (EHC).<xref rid="cit0005" ref-type="bibr">5</xref> EHC involves the transport of bile acids and xenobiotics from the liver to the bile, followed by biliary excretion and intestinal reabsorption.<xref rid="cit0006" ref-type="bibr">6</xref>,<xref rid="cit0007" ref-type="bibr">7</xref> Drug pharmacokinetics (PK) and pharmacodynamics (PD) are affected by biliary excretion and reabsorption during the EHC process, resulting in a prolonged elimination half-life and an increased area under the plasma concentration&#8211;time curve (AUC) with multiple peaks after specific time intervals.<xref rid="cit0007" ref-type="bibr">7</xref> EHC can be affected by several factors, including drug physicochemical properties, co-medication, use of bile acid sequestrants, genetic variations, species, sex, and diseased conditions.<xref rid="cit0007" ref-type="bibr">7</xref> However, the evaluation of EHC remains challenging owing to the lack of suitable models, the complexity of physiological processes, and ethical constraints.<xref rid="cit0007" ref-type="bibr">7</xref></p><p>In spite of the clinical relevance, few PK/PD modeling studies have mechanistically incorporated EHC to evaluate drug&#8211;drug interactions in combination therapies&#8212;particularly for rosuvastatin and ezetimibe. Existing models have showed the difficulty in representing the physiological dynamics of biliary recycling and are limited in simulating the additive or synergistic lipid-lowering effects of co-administered agents.<xref rid="cit0008" ref-type="bibr">8</xref> Moreover, most previous models have focused on single-agent profiles or employed simplified EHC assumptions, limiting their ability to accurately capture the interaction dynamics and delayed reabsorption processes relevant to combination therapy.<xref rid="cit0005" ref-type="bibr">5</xref>,<xref rid="cit0009" ref-type="bibr">9</xref></p><p>In a previous study, the co-administration of rosuvastatin with ezetimibe revealed bioequivalent PK interactions between rosuvastatin and total ezetimibe, with the exception of free ezetimibe, which showed additive effects in the reduction of LDL-C.<xref rid="cit0003" ref-type="bibr">3</xref> Based on these results, we developed a population PK/PD model of rosuvastatin and ezetimibe at steady state to mechanistically incorporate EHC via intermittent gallbladder emptying and account for the independent lipid-lowering actions of rosuvastatin and ezetimibe.<xref rid="cit0008" ref-type="bibr">8</xref></p><p>To our knowledge, in this study, a physiologically relevant EHC model was novelly embedded within a PK/PD framework for rosuvastatin&#8211;ezetimibe combination therapy, enabling the simulation of LDL-C responses with monotherapy and co-therapy. In light of the growing interest in individualized therapy, such mechanistic models may support future covariate-based approaches to optimizing lipid-lowering strategies.</p></sec><sec id="s0002"><title>Methods</title><sec id="s0002-s2001"><title>Study Population and Design</title><p>The concentration&#8211;time data used in this analysis were obtained from a two-part clinical trial involving an open-label, multiple-dose, two-treatment, two-period, two-sequence crossover study in each part.<xref rid="cit0003" ref-type="bibr">3</xref> The study was performed in accordance with the recommendations of the Korean Good Clinical Practice and the Declaration of Helsinki (<underline><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://clinicaltrials.gov/" ext-link-type="uri">https://clinicaltrials.gov/</ext-link></underline> registry number: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmc:clinical-trial" xlink:href="NCT02289430">NCT02289430</ext-link>). The institutional review board of Gachon University Gil Medical Center approved the study protocol and ensured informed consent (GCIRB2014-324). The drug interaction study consisted of two parts: part A involved the evaluation of the PKs of rosuvastatin, and part B the evaluation of the PKs of ezetimibe. In total, 56&#160;healthy male participants aged 19&#8211;45 years of age and within &#177; 20% of their ideal body weight (28 participants in each part) were eligible if they did not have clinically significant medical histories, physical examination findings, 12-lead electrocardiogram (ECG) readings or clinical laboratory testing results. Subjects who showed creatinine clearance under 80 mL/min by the Cockcroft-Gault equation were also excluded from this study. Enrolled subjects were randomly assigned to one of the two sequences. In part A, rosuvastatin 20 mg or a combination of rosuvastatin 20 mg and ezetimibe 10 mg was administered once daily for 7 days. In part B, ezetimibe 10 mg or a combination of rosuvastatin 20 mg and ezetimibe 10 mg was administered once daily for 7 days. A standard meal was provided at 4, 10, and 24&#160;h after the final dose during the hospitalization period. After a 14-day washout period, the subject received the other treatment and the same procedures were followed.</p><p>To evaluate the drug interactions in the steady state, rosuvastatin and ezetimibe were co-administered once daily for 7 days. Blood samples for PK evaluation in the steady state were obtained at 16 time points: prior to dosing (0&#160;h) and at 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 5, 6, 8, 12, 24, 48, and 72&#160;h after dosing on day 7 considering the longer mean half-life of total ezetimibe with approximately 20&#160;h. The LDL-C level for the therapeutic effect was measured before dosing (day 1) and 24&#160;h after the final dose in the perspective of clinical usefulness with once daily administration.</p></sec><sec id="s0002-s2002"><title>Population PK/PD Analyses</title><p>The population PK/PD model was developed using a nonlinear mixed effects modeling approach with Monolix 2024R1 software (Lixoft, Orsay, France). The stochastic approximation expectation maximization algorithm in Monolix was used throughout the model-building process. Concentrations below the lower limit of quantification (LLOQ) were observed in 8.38% of rosuvastatin samples and 1.25% of ezetimibe samples, all of which occurred after 48&#160;h after the final dosing in each period. Those data were regarded as missing and excluded from the analysis, where observations below the LLOQ are ignored in the likelihood.</p></sec><sec id="s0002-s2003"><title>Population PK Model for Rosuvastatin</title><p>Different structural and residual error models were explored during the model-building process, including one- and two-compartment models with additive, proportional, or combined residual error models. The random effects accounting for variability in rosuvastatin included parameters for interindividual variability and residual unexplained variability. All parameters were assumed to follow a log-normal distribution, and an exponential error model was used for interindividual variability.</p></sec><sec id="s0002-s2004"><title>Population PK Model for Ezetimibe</title><p>The concentration&#8211;time profiles of ezetimibe showed enterohepatic reabsorption with multiple peaks.<xref rid="cit0003" ref-type="bibr">3</xref> Different structural models, including one-, two-, and three-compartment models, were explored during the model-building steps using the EHC process. A two-compartment model with an additional gallbladder (GB) component provided the best fit to the data. GB emptying times were standardized based on meal times as defined in the protocol (4, 10, and 24&#160;h after the last drug administration on day 7) and the appearance of a secondary peak in the obtained concentration&#8211;time profiles. Interindividual variability and residual unexplained variability were described using an exponential model. A combined proportional and additive residual error model was used to describe random errors in the plasma concentrations. All PK parameters were assumed to be log-normal, and correlations between the random effects of the parameters were tested in the model.</p></sec><sec id="s0002-s2005"><title>PD Model for LDL-C</title><p>The final PK models for rosuvastatin and ezetimibe were combined with an indirect effects model to describe the LDL-C data. Rosuvastatin exerts lipid-lowering effects by inhibiting HMG-CoA reductase, whereas ezetimibe inhibits cholesterol uptake by binding to NPC1L1. Considering the decrease in plasma levels of LDL-C following these independent lipid-lowering mechanisms of rosuvastatin and ezetimibe, the variation in LDL-C levels over time is described as follows:<xref rid="cit0010" ref-type="bibr">10</xref>
+<disp-formula-group><disp-formula id="m0001"><label>(1)</label><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="DDDT-19-4777-e0001.jpg"/><tex-math id="Tex001">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$${{d\left({LDL{{\rm - C}}} \right)} \over {dt}} = {K_{in}} \times \left \{ {\left({1 - {{{C_{t,R}}} \over {I{C_{50,R}} + {C_{t,R}}}}} \right) \times \left({1 - {{{C_{t,E}}} \over {I{C_{50,E}} + {C_{t,E}}}}} \right)} \right\} - {K_{out}} \times \left({LDL{{\rm - }}C} \right)$$\end{document}</tex-math></alternatives></disp-formula></disp-formula-group></p><p>where <inline-formula id="ilm0001"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0002.jpg"/><tex-math id="Tex002">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${K_{in}}$\end{document}</tex-math></alternatives></inline-formula> and <inline-formula id="ilm0002"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0003.jpg"/><tex-math id="Tex003">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${K_{out}}$\end{document}</tex-math></alternatives></inline-formula> denote the LDL-C production and elimination rates, respectively. <inline-formula id="ilm0003"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0004.jpg"/><tex-math id="Tex004">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${C_{t,R}}$\end{document}</tex-math></alternatives></inline-formula> and <inline-formula id="ilm0004"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0005.jpg"/><tex-math id="Tex005">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${C_{t,E}}$\end{document}</tex-math></alternatives></inline-formula> are the PK model-predicted rosuvastatin and ezetimibe plasma concentrations at time t, respectively, and <inline-formula id="ilm0005"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0006.jpg"/><tex-math id="Tex006">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$I{C_{50,{\ }R}}$\end{document}</tex-math></alternatives></inline-formula> and <inline-formula id="ilm0006"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0007.jpg"/><tex-math id="Tex007">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$I{C_{50,{\ }E}}$\end{document}</tex-math></alternatives></inline-formula> are the respective rosuvastatin and ezetimibe concentrations that lead to 50% maximum inhibition of LDL-C production.</p><p>The model assumes <inline-formula id="ilm0007"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0008.jpg"/><tex-math id="Tex008">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${I_{max}} = 1$\end{document}</tex-math></alternatives></inline-formula> (full inhibitory effect), which was fixed rather than estimated, owing to the lack of observable saturation and to reduce model complexity under sparse PD sampling. This approach allowed for robust parameter estimation while maintaining mechanistic interpretability of the combined effects of the two drugs.</p></sec><sec id="s0002-s2006"><title>Covariate Analysis and Model Evaluation</title><p>Along with the base structural model selections, the effects of potential covariates were graphically explored and tested in both PK and PD models. These covariates included baseline characteristics, such as age and weight, and laboratory measurements, such as serum creatinine, albumin, alkaline phosphatase, alanine aminotransferase, aspartate aminotransferase, and gamma-glutamyl transferase. Continuous variables were centered on mean values. Covariates were initially tested using univariate analysis and then using a combination of stepwise forward addition and backward elimination. The final model selection was based on goodness-of-fit plots and precision of the parameter estimates, as well as numerical criteria, such as objective function value (&#8722;2 log-likelihood) change, Akaike information criteria, and Bayesian information criteria. The visual predictive check (VPC) involved overlaying the observed data with the median, 5th, and 95th percentile curves of the prediction using 1,000 simulated replicates.</p></sec><sec id="s0002-s2007"><title>Model Based Simulation</title><p>The LDL-C level changes from the baseline to the steady state 24&#160;h after the last administration of rosuvastatin (20 mg), ezetimibe (10 mg), or a combination of these two drugs were simulated and compared based on the final PK-PD model.</p></sec></sec><sec id="s0003"><title>Results</title><sec id="s0003-s2001"><title>Study Population and Baseline Characteristics</title><p>A total of 50 subjects (25 each in Parts A and B) were finally included in the population PK/PD analysis, providing 25, 25, and 50 concentration&#8211;time profiles for rosuvastatin, ezetimibe, and a combination of the two drugs, respectively. Demographic and biochemical parameters are presented in <xref rid="t0001" ref-type="table">Table 1</xref>. The mean plasma concentration&#8211;time profile plots of rosuvastatin and ezetimibe are displayed in <xref rid="f0001" ref-type="fig">Figure 1</xref>. Generally, the plasma concentration&#8211;time curves of ezetimibe exhibited two absorption peaks typically at 1&#8211;2&#160;h and around 5&#160;h post-dose, although the second peak was relatively less pronounced in the current study population.<xref rid="cit0003" ref-type="bibr">3</xref><table-wrap position="float" id="t0001" orientation="portrait"><label>Table 1</label><caption><p>Demographics and Baseline Characteristics of Study Population</p></caption><table frame="hsides" rules="groups"><thead><tr><th rowspan="1" colspan="1"/><th rowspan="1" colspan="1">Part A (N = 25)</th><th rowspan="1" colspan="1">Part B (N = 25)</th></tr></thead><tbody><tr><td rowspan="1" colspan="1">Age (years)</td><td rowspan="1" colspan="1">24 (19&#8211;33)</td><td rowspan="1" colspan="1">24 (19&#8211;37)</td></tr><tr><td rowspan="1" colspan="1">Weight (kg)</td><td rowspan="1" colspan="1">69.1 (55.0&#8211;88.0)</td><td rowspan="1" colspan="1">68.8 (44.8&#8211;84.0)</td></tr><tr><td rowspan="1" colspan="1">Height (cm)</td><td rowspan="1" colspan="1">173 (163&#8211;182)</td><td rowspan="1" colspan="1">174 (159&#8211;183)</td></tr><tr><td rowspan="1" colspan="1">Serum creatinine (mg/dL)</td><td rowspan="1" colspan="1">0.7 (0.6&#8211;0.9)</td><td rowspan="1" colspan="1">0.8 (0.6&#8211;1.0)</td></tr><tr><td rowspan="1" colspan="1">Albumin (g/dL)</td><td rowspan="1" colspan="1">4.5 (4.1&#8211;4.9)</td><td rowspan="1" colspan="1">4.5 (4.2&#8211;5.0)</td></tr><tr><td rowspan="1" colspan="1">ALP (U/L)</td><td rowspan="1" colspan="1">68 (39&#8211;93)</td><td rowspan="1" colspan="1">72 (48&#8211;105)</td></tr><tr><td rowspan="1" colspan="1">ALT (U/L)</td><td rowspan="1" colspan="1">17 (9&#8211;44)</td><td rowspan="1" colspan="1">19 (7&#8211;43)</td></tr><tr><td rowspan="1" colspan="1">AST (U/L)</td><td rowspan="1" colspan="1">18 (13&#8211;31)</td><td rowspan="1" colspan="1">19 (14&#8211;29)</td></tr><tr><td rowspan="1" colspan="1">&#947;-GT (U/L)</td><td rowspan="1" colspan="1">19 (10&#8211;47)</td><td rowspan="1" colspan="1">20 (8&#8211;61)</td></tr><tr><td rowspan="1" colspan="1">Total cholesterol (mg/dL)</td><td rowspan="1" colspan="1">145 (110&#8211;200)</td><td rowspan="1" colspan="1">162 (130&#8211;244)</td></tr><tr><td rowspan="1" colspan="1">LDL (mg/dL)</td><td rowspan="1" colspan="1">91 (43&#8211;137)</td><td rowspan="1" colspan="1">99 (53&#8211;175)</td></tr><tr><td rowspan="1" colspan="1">HDL (mg/dL)</td><td rowspan="1" colspan="1">48 (33&#8211;67)</td><td rowspan="1" colspan="1">49 (31&#8211;78)</td></tr></tbody></table><table-wrap-foot><fn id="tfn0001"><p><bold>Note</bold>: Values are presented as median (minimum &#8211; maximum).</p></fn><fn id="tfn0002"><p><bold>Abbreviations</bold>: ALP, alkaline phosphatase; ALT, alanine aminotransferase; AST, aspartate aminotransferase; &#947;-GT, gamma-glutamyltransferase; LDL, low-density lipoprotein cholesterol; HDL, high-density lipoprotein cholesterol.</p></fn></table-wrap-foot></table-wrap>
+<fig position="float" id="f0001" fig-type="figure" orientation="portrait"><label>Figure 1</label><caption><p>Mean and individual plasma concentration&#8211;time profiles of rosuvastatin and total ezetimibe at steady state after 7-day treatment administration. (<bold>a</bold>) Rosuvastatin profiles (<bold>b</bold>) Total ezetimibe profiles. Rosuvastatin (20 mg) and ezetimibe (10mg) monotherapy are presented in black and cotherapy of rosuvastatin and ezetimibe is presented in grey.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="print-only" position="float" orientation="portrait" xlink:href="DDDT-19-4777-g0001.jpg"/></fig></p></sec><sec id="s0003-s2002"><title>PK Analysis for Rosuvastatin</title><p>A two-compartment model with first-order absorption was used to describe the PK profile of rosuvastatin (<xref rid="f0002" ref-type="fig">Figure 2</xref>). The estimated PK parameters for the absorption rate (<inline-formula id="ilm0008"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0009.jpg"/><tex-math id="Tex009">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${k_{a,{\ }R}}$\end{document}</tex-math></alternatives></inline-formula>), clearance (<inline-formula id="ilm0009"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0010.jpg"/><tex-math id="Tex010">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$C{l_R}$\end{document}</tex-math></alternatives></inline-formula>), central volume of distribution (<inline-formula id="ilm0010"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0011.jpg"/><tex-math id="Tex011">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${V_{c,R}}$\end{document}</tex-math></alternatives></inline-formula>), peripheral volume of distribution (<inline-formula id="ilm0011"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0012.jpg"/><tex-math id="Tex012">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${V_{p,R}}$\end{document}</tex-math></alternatives></inline-formula>), and inter-compartmental clearance (<inline-formula id="ilm0012"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0013.jpg"/><tex-math id="Tex013">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${Q_R}$\end{document}</tex-math></alternatives></inline-formula>), along with their interindividual variability and percent relative standard error values (RSE%), are summarized in <xref rid="t0002" ref-type="table">Table 2</xref>. Between-subject variability for the estimated rosuvastatin PK parameters was moderate, whereas the model parameters were precisely estimated with a relatively low RSE%. A substantial correlation of random effects between <inline-formula id="ilm0013"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0014.jpg"/><tex-math id="Tex014">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${k_{a{\ },{\ }R}}$\end{document}</tex-math></alternatives></inline-formula> and <inline-formula id="ilm0014"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0015.jpg"/><tex-math id="Tex015">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$C{L_R}$\end{document}</tex-math></alternatives></inline-formula> was observed and was included in the final model, significantly improving the goodness-of-fit criteria. The residual variability was described using a combined error model consisting of the additive component <inline-formula id="ilm0015"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0016.jpg"/><tex-math id="Tex016">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$a$\end{document}</tex-math></alternatives></inline-formula> and the multiplicative coefficient <inline-formula id="ilm0016"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0017.jpg"/><tex-math id="Tex017">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$b$\end{document}</tex-math></alternatives></inline-formula>:
+<disp-formula-group><disp-formula id="m0002"><label>(2)</label><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="DDDT-19-4777-e0018.jpg"/><tex-math id="Tex018">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$$\matrix{ {{C_{ij}} = {f_{ij}} + \left({a + b\cdot {f_{ij}}} \right) \cdot {e_{ij}} , } \cr } $$\end{document}</tex-math></alternatives></disp-formula></disp-formula-group><fig position="float" id="f0002" fig-type="figure" orientation="portrait"><label>Figure 2</label><caption><p>The final pharmacokinetic/pharmacodynamic (PK/PD) model of rosuvastatin and ezetimibe. <inline-formula id="ilm0017"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0019.jpg"/><tex-math id="Tex019">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$C{l_R}$\end{document}</tex-math></alternatives></inline-formula> (<inline-formula id="ilm0018"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0020.jpg"/><tex-math id="Tex020">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$C{l_E}$\end{document}</tex-math></alternatives></inline-formula>) apparent rosuvastatin (total ezetimibe) clearance, <inline-formula id="ilm0019"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0021.jpg"/><tex-math id="Tex021">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${C_{t,R}}$\end{document}</tex-math></alternatives></inline-formula> (<inline-formula id="ilm0020"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0022.jpg"/><tex-math id="Tex022">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${C_{t,E}}$\end{document}</tex-math></alternatives></inline-formula>) rosuvastatin (total ezetimibe) plasma concentration predicted by the model, LDL-C low-density lipoprotein cholesterol, GB gallbladder, GI gastrointestinal, <inline-formula id="ilm0021"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0023.jpg"/><tex-math id="Tex023">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$I{C_{50,R}}$\end{document}</tex-math></alternatives></inline-formula> (<inline-formula id="ilm0022"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0024.jpg"/><tex-math id="Tex024">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$I{C_{50,E}}$\end{document}</tex-math></alternatives></inline-formula>) rosuvastatin (total ezetimibe) concentration that produced a 50% inhibition of LDL-C production, <inline-formula id="ilm0023"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0025.jpg"/><tex-math id="Tex025">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${k_{a,R}}$\end{document}</tex-math></alternatives></inline-formula> (<inline-formula id="ilm0024"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0026.jpg"/><tex-math id="Tex026">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${k_{a,E}}$\end{document}</tex-math></alternatives></inline-formula>) first-order absorption rate constant of rosuvastatin (total ezetimibe), <inline-formula id="ilm0025"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0027.jpg"/><tex-math id="Tex027">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${k_{b,E}}$\end{document}</tex-math></alternatives></inline-formula> first-order transfer rate constant from the central compartment to the GB compartment for total ezetimibe, <inline-formula id="ilm0026"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0028.jpg"/><tex-math id="Tex028">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${k_{e,E}}$\end{document}</tex-math></alternatives></inline-formula> switch function release rate constant from the GB compartment to the central compartment for total ezetimibe, <inline-formula id="ilm0027"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0029.jpg"/><tex-math id="Tex029">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${k_{in}}$\end{document}</tex-math></alternatives></inline-formula> production rate of LDL-C, <inline-formula id="ilm0028"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0030.jpg"/><tex-math id="Tex030">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${k_{out}}$\end{document}</tex-math></alternatives></inline-formula> elimination rate of LDL-C, <inline-formula id="ilm0029"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0031.jpg"/><tex-math id="Tex031">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${Q_R}$\end{document}</tex-math></alternatives></inline-formula> (<inline-formula id="ilm0030"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0032.jpg"/><tex-math id="Tex032">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${Q_E}$\end{document}</tex-math></alternatives></inline-formula>) apparent inter-compartment clearance of rosuvastatin (total ezetimibe), <inline-formula id="ilm0031"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0033.jpg"/><tex-math id="Tex033">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${V_{c,R}}$\end{document}</tex-math></alternatives></inline-formula> (<inline-formula id="ilm0032"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0034.jpg"/><tex-math id="Tex034">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${V_{c,E}}$\end{document}</tex-math></alternatives></inline-formula>) apparent central volume of distribution for rosuvastatin (total ezetimibe), <inline-formula id="ilm0033"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0035.jpg"/><tex-math id="Tex035">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${V_{p,R}}$\end{document}</tex-math></alternatives></inline-formula> (<inline-formula id="ilm0034"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0036.jpg"/><tex-math id="Tex036">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${V_{p,E}}$\end{document}</tex-math></alternatives></inline-formula>) apparent peripheral volume of distribution for rosuvastatin (total ezetimibe).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="print-only" position="float" orientation="portrait" xlink:href="DDDT-19-4777-g0002.jpg"/></fig><table-wrap position="float" id="t0002" orientation="portrait"><label>Table 2</label><caption><p>Parameter Estimates of the Final Pharmacokinetic/Pharmacodynamic Model</p></caption><table frame="hsides" rules="groups"><thead><tr><th colspan="3" rowspan="1">PK Model for Rosuvastatin</th><th colspan="3" rowspan="1">PK Model for Ezetimibe</th><th colspan="3" rowspan="1">PD Model for LDL</th></tr><tr><th rowspan="1" colspan="1">PK Parameter</th><th rowspan="1" colspan="1">Mean</th><th rowspan="1" colspan="1">(RSE %)</th><th rowspan="1" colspan="1">PK Parameter</th><th rowspan="1" colspan="1">Mean</th><th rowspan="1" colspan="1">(RSE %)</th><th rowspan="1" colspan="1">PD Parameter</th><th rowspan="1" colspan="1">Mean</th><th rowspan="1" colspan="1">(RSE %)</th></tr></thead><tbody><tr><td rowspan="1" colspan="1">k<sub>a,R</sub> (h<sup>&#8722;1</sup>)</td><td rowspan="1" colspan="1">0.21</td><td rowspan="1" colspan="1">9.3</td><td rowspan="1" colspan="1">k<sub>a,E</sub> (h<sup>&#8722;1</sup>)</td><td rowspan="1" colspan="1">0.64</td><td rowspan="1" colspan="1">6.5</td><td rowspan="1" colspan="1">Baseline LDL (mg/dL)</td><td rowspan="1" colspan="1">92.2</td><td rowspan="1" colspan="1">3.9</td></tr><tr><td rowspan="1" colspan="1">Cl<sub>R</sub> (L/h)</td><td rowspan="1" colspan="1">92.27</td><td rowspan="1" colspan="1">8.5</td><td rowspan="1" colspan="1">Cl<sub>E</sub> (L/h)</td><td rowspan="1" colspan="1">20.04</td><td rowspan="1" colspan="1">6.7</td><td rowspan="1" colspan="1">k<sub>in</sub> (mg/dL&#183;h)</td><td rowspan="1" colspan="1">1.9</td><td rowspan="1" colspan="1">22.2</td></tr><tr><td rowspan="1" colspan="1">V<sub>c,R</sub> (L)</td><td rowspan="1" colspan="1">222.23</td><td rowspan="1" colspan="1">13.0</td><td rowspan="1" colspan="1">V<sub>c,E</sub> (L)</td><td rowspan="1" colspan="1">31.98</td><td rowspan="1" colspan="1">9.8</td><td rowspan="1" colspan="1">IC<sub>50,R</sub> (ng/mL)</td><td rowspan="1" colspan="1">4.6</td><td rowspan="1" colspan="1">7.8</td></tr><tr><td rowspan="1" colspan="1">Q<sub>R</sub> (L/h)</td><td rowspan="1" colspan="1">24.16</td><td rowspan="1" colspan="1">12.9</td><td rowspan="1" colspan="1">Q<sub>E</sub> (L/h)</td><td rowspan="1" colspan="1">44.53</td><td rowspan="1" colspan="1">8.9</td><td rowspan="1" colspan="1">IC<sub>50,E</sub> (ng/mL)</td><td rowspan="1" colspan="1">36.9</td><td rowspan="1" colspan="1">11.8</td></tr><tr><td rowspan="1" colspan="1">V<sub>p,R</sub> (L)</td><td rowspan="1" colspan="1">650.71</td><td rowspan="1" colspan="1">24.1</td><td rowspan="1" colspan="1">V<sub>p,E</sub> (L)</td><td rowspan="1" colspan="1">363.06</td><td rowspan="1" colspan="1">9.5</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1">k<sub>b,E</sub> (h<sup>&#8722;1</sup>)</td><td rowspan="1" colspan="1">0.013</td><td rowspan="1" colspan="1">5.3</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1">k<sub>e,E</sub> (h<sup>&#8722;1</sup>)</td><td rowspan="1" colspan="1">1.33</td><td rowspan="1" colspan="1">Fix</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1">IIV</td><td rowspan="1" colspan="1">CV%</td><td rowspan="1" colspan="1">(RSE %)</td><td rowspan="1" colspan="1">IIV</td><td rowspan="1" colspan="1">CV%</td><td rowspan="1" colspan="1">(RSE %)</td><td rowspan="1" colspan="1">IIV</td><td rowspan="1" colspan="1">CV%</td><td rowspan="1" colspan="1">(RSE %)</td></tr><tr><td rowspan="1" colspan="1">&#969;<sub>ka,R</sub></td><td rowspan="1" colspan="1">29.21</td><td rowspan="1" colspan="1">22.3</td><td rowspan="1" colspan="1">&#969;<sub>ka,E</sub></td><td rowspan="1" colspan="1">29.27</td><td rowspan="1" colspan="1">17.5</td><td rowspan="1" colspan="1">&#969;<sub>baseline LDL</sub></td><td rowspan="1" colspan="1">26.8</td><td rowspan="1" colspan="1">10.8</td></tr><tr><td rowspan="1" colspan="1">&#969;<sub>CLR</sub></td><td rowspan="1" colspan="1">43.52</td><td rowspan="1" colspan="1">14.4</td><td rowspan="1" colspan="1">&#969;<sub>CLE</sub></td><td rowspan="1" colspan="1">33.87</td><td rowspan="1" colspan="1">14.6</td><td rowspan="1" colspan="1">&#969;<sub>kin</sub></td><td rowspan="1" colspan="1">45.2</td><td rowspan="1" colspan="1">48.8</td></tr><tr><td rowspan="1" colspan="1">&#969;<sub>Vc,R</sub></td><td rowspan="1" colspan="1">49.39</td><td rowspan="1" colspan="1">17.2</td><td rowspan="1" colspan="1">&#969;<sub>Vc,E</sub></td><td rowspan="1" colspan="1">43.62</td><td rowspan="1" colspan="1">18.4</td><td rowspan="1" colspan="1">&#969;<sub>IC50,R</sub></td><td rowspan="1" colspan="1">38.4</td><td rowspan="1" colspan="1">22.6</td></tr><tr><td rowspan="1" colspan="1">&#969;<sub>QR</sub></td><td rowspan="1" colspan="1">31.95</td><td rowspan="1" colspan="1">34.3</td><td rowspan="1" colspan="1">&#969;<sub>QE</sub></td><td rowspan="1" colspan="1">41.8</td><td rowspan="1" colspan="1">17.1</td><td rowspan="1" colspan="1">&#969;<sub>IC50,E</sub></td><td rowspan="1" colspan="1">29.6</td><td rowspan="1" colspan="1">59.4</td></tr><tr><td rowspan="1" colspan="1">&#969;<sub>Vc,R</sub></td><td rowspan="1" colspan="1">108.25</td><td rowspan="1" colspan="1">21.2</td><td rowspan="1" colspan="1">&#969;<sub>Vc,E</sub></td><td rowspan="1" colspan="1">46.13</td><td rowspan="1" colspan="1">16.1</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1">&#969;<sub>kb,E</sub></td><td rowspan="1" colspan="1">11.93</td><td rowspan="1" colspan="1">34.0</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1">Correlation</td><td rowspan="1" colspan="1">CV%</td><td rowspan="1" colspan="1">(RSE %)</td><td rowspan="1" colspan="1">Correlation</td><td rowspan="1" colspan="1">CV%</td><td rowspan="1" colspan="1">(RSE %)</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1">k<sub>a,R</sub> &#8211; Cl<sub>R</sub></td><td rowspan="1" colspan="1">&#8722;0.87</td><td rowspan="1" colspan="1">13.9</td><td rowspan="1" colspan="1">Cl<sub>E</sub> &#8211; Q<sub>E</sub></td><td rowspan="1" colspan="1">0.74</td><td rowspan="1" colspan="1">15.7</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1">Cl<sub>E</sub> &#8211; V<sub>p,E</sub></td><td rowspan="1" colspan="1">0.58</td><td rowspan="1" colspan="1">25.5</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1">Q<sub>E</sub> &#8211; V<sub>p,E</sub></td><td rowspan="1" colspan="1">0.74</td><td rowspan="1" colspan="1">17.2</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1">Residual error</td><td rowspan="1" colspan="1">Mean</td><td rowspan="1" colspan="1">(RSE %)</td><td rowspan="1" colspan="1">Residual error</td><td rowspan="1" colspan="1">Mean</td><td rowspan="1" colspan="1">(RSE %)</td><td rowspan="1" colspan="1">Residual error</td><td rowspan="1" colspan="1">Mean</td><td rowspan="1" colspan="1">(RSE %)</td></tr><tr><td rowspan="1" colspan="1">a<sub>R</sub></td><td rowspan="1" colspan="1">0.17</td><td rowspan="1" colspan="1">22.3</td><td rowspan="1" colspan="1">a<sub>E</sub></td><td rowspan="1" colspan="1">0.33</td><td rowspan="1" colspan="1">2.7</td><td rowspan="1" colspan="1">a<sub>LDL</sub></td><td rowspan="1" colspan="1">0.73</td><td rowspan="1" colspan="1">0.5</td></tr><tr><td rowspan="1" colspan="1">b<sub>R</sub></td><td rowspan="1" colspan="1">0.20</td><td rowspan="1" colspan="1">3.7</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1">b<sub>LDL</sub></td><td rowspan="1" colspan="1">0.12</td><td rowspan="1" colspan="1">0.03</td></tr></tbody></table><table-wrap-foot><fn id="tfn0003"><p><bold>Abbreviations</bold>: PK, pharmacokinetics; PD, pharmacodynamics; LDL, low-density lipoprotein cholesterol; RSE, relative standard errors; IIV, inter-individual variability; CV, coefficient of variation.</p></fn></table-wrap-foot></table-wrap>
+</p><p>where <inline-formula id="ilm0035"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0037.jpg"/><tex-math id="Tex037">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${C_{ij}}$\end{document}</tex-math></alternatives></inline-formula> and <inline-formula id="ilm0036"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0038.jpg"/><tex-math id="Tex038">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${f_{ij}}{\ }$\end{document}</tex-math></alternatives></inline-formula> represent the <inline-formula id="ilm0037"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0039.jpg"/><tex-math id="Tex039">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${j^{th}}$\end{document}</tex-math></alternatives></inline-formula> observed and model-predicted concentrations of rosuvastatin in the <inline-formula id="ilm0038"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0040.jpg"/><tex-math id="Tex040">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${i^{th}}$\end{document}</tex-math></alternatives></inline-formula> individual, respectively. The residual error term <inline-formula id="ilm0039"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0041.jpg"/><tex-math id="Tex041">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${e_{ij}}$\end{document}</tex-math></alternatives></inline-formula> is assumed to be standard and normally distributed with a mean of 0 and variance of 1. No covariate effect was significant for the estimated PK parameters, possibly because the volunteers were all young, healthy males. <underline><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.dovepress.com/article/supplementary_file/522863/Revised%20Supplementary%20Figures%201-3.pdf" ext-link-type="uri">Supplementary Figure 1</ext-link></underline> presents goodness-of-fit (GOF) plots for the final PK model of rosuvastatin, including observed vs predicted values (both individual and population), residuals vs predictions, residuals vs time, and normalized prediction distribution errors (NPDE) distributions. The residuals are symmetrically and randomly distributed across time and predicted values, indicating the absence of systematic bias and supporting the adequacy of model performance.</p></sec><sec id="s0003-s2003"><title>PK Analysis for Ezetimibe</title><p>A population PK model was developed to simulate the EHC of ezetimibe by incorporating an intermittent GB emptying process (<xref rid="f0002" ref-type="fig">Figure 2</xref>). The structure of this model included four compartments: central, peripheral, gastrointestinal (GI) track, and GB.<xref rid="cit0008" ref-type="bibr">8</xref> The central compartment was reversibly connected to the peripheral compartment. A hypothetical GB compartment was introduced to link the central and GI tract compartments and operate the EHC loop. Biliary secretion was modeled using a first-order process with a switch on/off function in order to mimic intermittent GB emptying after a meal. Assuming that all EHC processes after a meal were identical, the duration of bile release in each EHC cycle was set to 0.75 h.<xref rid="cit0008" ref-type="bibr">8</xref> The bile release rate constant <inline-formula id="ilm0040"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0042.jpg"/><tex-math id="Tex042">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$\left({{k_{e,{\ }E}}} \right)$\end{document}</tex-math></alternatives></inline-formula> was fixed as the inverse of duration, 1.33&#160;h - 1 = (0.75&#160;h) - 1. The set of ordinary differential equations for the final PK model of ezetimibe was defined as follows:
+<disp-formula-group><disp-formula id="m0003"><label>(3)</label><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="DDDT-19-4777-e0043.jpg"/><tex-math id="Tex043">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$$\matrix{ {{{d{A_{GI,E}}} \over {dt}} = - {k_{a,E}} \cdot {A_{GI,E}} + GBE \cdot {k_{e,E}} \cdot {A_{GB,E}} , } \cr } $$\end{document}</tex-math></alternatives></disp-formula></disp-formula-group>
+<disp-formula-group><disp-formula id="m0004"><label>(4)</label><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="DDDT-19-4777-e0044.jpg"/><tex-math id="Tex044">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$$\matrix{ {{{d{A_{c,E}}} \over {dt}} = {k_{a,E}} \cdot {A_{GI,E}} - \left({{k_{23,E}} + {k_{el,E}} + {k_{b,E}}} \right) \cdot {A_{c,E}} + {k_{32,E}} \cdot {A_{p,E}} , } \cr } $$\end{document}</tex-math></alternatives></disp-formula></disp-formula-group>
+<disp-formula-group><disp-formula id="m0005"><label>(5)</label><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="DDDT-19-4777-e0045.jpg"/><tex-math id="Tex045">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$$\matrix{ {{{d{A_{p,E}}} \over {dt}} = {k_{23,E}} \cdot {A_{c,E}} - {k_{32,E}} \cdot {A_{p,E}} , } \cr } $$\end{document}</tex-math></alternatives></disp-formula></disp-formula-group>
+<disp-formula-group><disp-formula id="m0006"><label>(6)</label><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="DDDT-19-4777-e0046.jpg"/><tex-math id="Tex046">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$$\matrix{ {{{d{A_{GB,E}}} \over {dt}} = {k_{b,E}} \cdot {A_{c,E}} - GBE \cdot {k_{e,E}} \cdot {A_{GB,E}} , } \cr } $$\end{document}</tex-math></alternatives></disp-formula></disp-formula-group>
+<disp-formula-group><disp-formula id="m0007"><label>(7)</label><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="DDDT-19-4777-e0047.jpg"/><tex-math id="Tex047">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$$\matrix{ {{k_{23,E}} = {{{Q_E}} \over {{V_{c,E}}}} , } \cr } $$\end{document}</tex-math></alternatives></disp-formula></disp-formula-group>
+<disp-formula-group><disp-formula id="m0008"><label>(8)</label><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="DDDT-19-4777-e0048.jpg"/><tex-math id="Tex048">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$$\matrix{ {{k_{32,E}} = {{{Q_E}} \over {{V_{p,E}}}} , } \cr } $$\end{document}</tex-math></alternatives></disp-formula></disp-formula-group>
+<disp-formula-group><disp-formula id="m0009"><label>(9)</label><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="DDDT-19-4777-e0049.jpg"/><tex-math id="Tex049">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$$\matrix{ {{k_{el,E}} = {{C{l_E}} \over {{V_{c,E}}}} ,} \cr } $$\end{document}</tex-math></alternatives></disp-formula></disp-formula-group></p><p>where <inline-formula id="ilm0041"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0050.jpg"/><tex-math id="Tex050">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${A_{n,E}}$\end{document}</tex-math></alternatives></inline-formula> represents the amount of ezetimibe in a specific compartment: (1) <italic toggle="yes">GI</italic> represents the gastrointestinal tract compartment, (2) <italic toggle="yes">c</italic> represents the central compartment, (3) <italic toggle="yes">p</italic> represents the peripheral compartment, and (4) <italic toggle="yes">GB</italic> represents the gallbladder compartment. The term <inline-formula id="ilm0042"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0051.jpg"/><tex-math id="Tex051">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${k_{ij,E}}$\end{document}</tex-math></alternatives></inline-formula> denotes the transfer rate constant between compartments <italic toggle="yes">i</italic> and <italic toggle="yes">j</italic>, which includes the absorption <inline-formula id="ilm0043"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0052.jpg"/><tex-math id="Tex052">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$\left({{k_{a,{\ }E}}} \right)$\end{document}</tex-math></alternatives></inline-formula>, elimination <inline-formula id="ilm0044"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0053.jpg"/><tex-math id="Tex053">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$\left({{k_{el,{\ }E}}} \right)$\end{document}</tex-math></alternatives></inline-formula>, and bile transfer <inline-formula id="ilm0045"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0054.jpg"/><tex-math id="Tex054">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$\left({{k_{b,{\ }E}}} \right)$\end{document}</tex-math></alternatives></inline-formula> rate constants. The term GBE is an indicator function with a value 0 or 1, where GBE = 1 when GB emptying occurs within a bile release duration of 0.75&#160;h after a meal; otherwise, GBE = 0. Three intermittent bile release periods (at 4, 10, and 24&#160;h post-dose) were considered according to mealtime. The duration of bile release was assumed to be 0.75&#160;h, which approximates the mean duration of GB emptying in healthy subjects. The residual variability was described using an additive error model with zero proportional error (b = 0) in <xref rid="m0002" ref-type="disp-formula">Equation 2</xref>.</p><p>PK parameters showed no significant covariates. The final model estimates, including the correlations of the random effects between <inline-formula id="ilm0046"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0055.jpg"/><tex-math id="Tex055">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${V_{p{\ },E}}$\end{document}</tex-math></alternatives></inline-formula> &#8211; <inline-formula id="ilm0047"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0056.jpg"/><tex-math id="Tex056">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$C{l_E}$\end{document}</tex-math></alternatives></inline-formula>, <inline-formula id="ilm0048"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0057.jpg"/><tex-math id="Tex057">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${V_{p{\ },E}}$\end{document}</tex-math></alternatives></inline-formula> &#8211; <inline-formula id="ilm0049"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0058.jpg"/><tex-math id="Tex058">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${Q_E}$\end{document}</tex-math></alternatives></inline-formula>, and <inline-formula id="ilm0050"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0059.jpg"/><tex-math id="Tex059">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${Q_E}$\end{document}</tex-math></alternatives></inline-formula> &#8211; <inline-formula id="ilm0051"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0060.jpg"/><tex-math id="Tex060">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$C{l_E}$\end{document}</tex-math></alternatives></inline-formula>, are summarized in <xref rid="t0002" ref-type="table">Table 2</xref>. <underline><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.dovepress.com/article/supplementary_file/522863/Revised%20Supplementary%20Figures%201-3.pdf" ext-link-type="uri">Supplementary Figure 2</ext-link></underline> presents the GOF plots for total ezetimibe, which show strong agreement between the predicted and observed concentrations. The residuals versus predictions and versus time plots exhibit random scatter without apparent trends, and both PWRES and IWRES, and NPDEs are centered around zero, suggesting robust model performance.</p></sec><sec id="s0003-s2004"><title>PK/PD Analysis for LDL-C</title><p>An indirect model with two independent drug mechanisms was used to describe changes in LDL-C levels (<xref rid="f0002" ref-type="fig">Figure 2</xref>). PK/PD modeling was performed sequentially, incorporating the results of the two PK models. The individual PK parameters of rosuvastatin and ezetimibe were set to their estimated values and used as constants in the PK/PD model to fit the PD data. The residual error for LDL-C levels was best described by the combined error model in <xref rid="m0002" ref-type="disp-formula">Equation (2</xref>).</p><p>Parameter estimates from the final full PK/PD model are presented in <xref rid="t0002" ref-type="table">Table 2</xref>. All parameters were estimated with good precision (relative standard error &lt;35%). Rosuvastatin and ezetimibe independently inhibited the production rate <inline-formula id="ilm0052"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0061.jpg"/><tex-math id="Tex061">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$({K_{in}})$\end{document}</tex-math></alternatives></inline-formula> of LDL-C without any drug&#8211;drug interactions. Due to the homogeneity of the study population, no significant covariates were identified, and the random effects showed no notable correlations. The goodness-of-fit plots in <underline><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.dovepress.com/article/supplementary_file/522863/Revised%20Supplementary%20Figures%201-3.pdf" ext-link-type="uri">Supplementary Figure 3</ext-link></underline> demonstrate linear agreement without bias, and both the WRES and NPDEs are centered around zero with homogenous spread, indicating a good fit. No time-dependent or prediction-dependent error patterns were observed, supporting the adequacy of the PD model. The VPC plots in <xref rid="f0003" ref-type="fig">Figure 3</xref> show that most of the observed concentrations were within the 5th and 95th percentiles of the simulated concentrations, suggesting that the final model was not unspecified.
+<fig position="float" id="f0003" fig-type="figure" orientation="portrait"><label>Figure 3</label><caption><p>Visual predictive check plots for the final pharmacokinetic-pharmacodynamic model for (<bold>a</bold>) Rosuvastatin, (<bold>b</bold>) Total ezetimibe, (<bold>c</bold>) Low-density lipoprotein cholesterol (LDL-C) under rosuvastatin monotherapy, (<bold>d</bold>) LDL-C under ezetimibe monotherapy, and (<bold>e</bold>) LDL-C under co-therapy with rosuvastatin and ezetimibe. Solid lines represent the 5th, 50th, and 95th percentiles of the observed data. Blue areas represent 95% confidence intervals for 5th and 95th percentiles of simulated data. Red areas represent 95% confidence intervals for median of simulated data. The time of drug administration at steady state (Day 7) was set to 0&#160;h.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="print-only" position="float" orientation="portrait" xlink:href="DDDT-19-4777-g0003.jpg"/></fig></p></sec><sec id="s0003-s2005"><title>Simulation Based on the PK/PD Model</title><p>Simulations were performed to compare the LDL-C-lowering effects of rosuvastatin or ezetimibe monotherapy and combined therapy based on the final PK/PD model. The mean percentage reduction in LDL-C levels measured 24&#160;h after dosing from baseline (pre-dose) was &#8722;51.0 &#177; 15.0% for rosuvastatin monotherapy, &#8722;25.3 &#177; 16.2% for ezetimibe monotherapy, and &#8722;60.7 &#177; 13.9% for combination therapy (<xref rid="f0004" ref-type="fig">Figure 4</xref>). All three cases showed statistically significant reductions; however, combination therapy resulted in a greater reduction than monotherapy (<xref rid="f0004" ref-type="fig">Figure 4</xref>).
+<fig position="float" id="f0004" fig-type="figure" orientation="portrait"><label>Figure 4</label><caption><p>Distribution of low-density lipoprotein cholesterol (LDL-C) levels at baseline (yellow) and 24&#160;hours after administration (blue) of rosuvastatin (20 mg), ezetimibe (10 mg), and their combinations at steady state, simulated in 1,000 individuals using the final pharmacokinetic/pharmacodynamic model. (<bold>a</bold>) % change of LDL-C (<bold>b</bold>) LDL-C level.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="print-only" position="float" orientation="portrait" xlink:href="DDDT-19-4777-g0004.jpg"/></fig></p></sec></sec><sec id="s0004"><title>Discussion</title><p>This study represents the first population PK/PD modeling analysis of the drug&#8211;drug interaction between rosuvastatin and ezetimibe at steady state, incorporating a mechanistic representation of EHC. Compared to previous studies where PK or PD endpoints were evaluated separately, our approach enables the simultaneous modeling of exposure&#8211;response relationships for both drugs using minimal model complexity. The integration of a physiologically meaningful EHC component and the indirect response model for LDL-C allows for the evaluation of additive pharmacodynamic effects under clinically relevant dosing regimens. This modeling strategy may provide a quantitative foundation for future investigations into individualized lipid-lowering therapy and can aid clinicians in evaluating the LDL-C response to combination therapy involving drugs undergoing enterohepatic recirculation.</p><p>After oral intake, foreign compounds entering the GI tract are absorbed into the portal vein by enterocytes and delivered to hepatocytes.<xref rid="cit0006" ref-type="bibr">6</xref> They are then secreted into the bile and reabsorbed across the intestinal lumen during EHC.<xref rid="cit0006" ref-type="bibr">6</xref> EHC involves biliary excretion, intestinal reabsorption with or without hepatic conjugation, intestinal deconjugation, and systemic circulation.<xref rid="cit0006" ref-type="bibr">6</xref>,<xref rid="cit0007" ref-type="bibr">7</xref> In general, compounds with molecular weight greater than 400 g/mol, polarity, and biotransformation, including conjugation, can undergo EHC.<xref rid="cit0006" ref-type="bibr">6</xref>,<xref rid="cit0007" ref-type="bibr">7</xref> Co-medication including bile-sequestrating agents, age, sex, genetic variations, disease conditions, and diurnal variations may affect biliary excretion during the EHC process, which may prolong the pharmacological effect.<xref rid="cit0007" ref-type="bibr">7</xref> The clinical significance of EHC, including its pharmacological and toxicological effects, is related to the extent of biliary excretion and efficiency of reabsorption.<xref rid="cit0007" ref-type="bibr">7</xref> In this study of a recommended combination therapy, a population PK/PD model was developed for rosuvastatin and ezetimibe with respect to drug-drug interactions via EHC.<xref rid="cit0003" ref-type="bibr">3</xref> After a meal, fatty acids and amino acids from the stomach stimulate the I-cells in the duodenum and jejunum to release cholecystokinin, which contract the GB and secrete bile into the biliary tree.<xref rid="cit0011" ref-type="bibr">11</xref> As a result, multiple peaks in the concentration&#8211;time plots related to GB emptying are observed around mealtime.<xref rid="cit0008" ref-type="bibr">8</xref> Since multiple peaks in concentration&#8211;time profiles of ezetimibe were more remarkable in the previous study, the effect of EHC on the PKs of ezetimibe was explored.<xref rid="cit0003" ref-type="bibr">3</xref></p><p>Ezetimibe is absorbed and metabolized in the intestinal wall, and ezetimibe and ezetimibe phenolic glucuronide are transported through the portal vein.<xref rid="cit0008" ref-type="bibr">8</xref> After further glucuronidation of ezetimibe in the liver and biliary secretion into the intestinal lumen, ezetimibe-glucuronide is hydrolyzed to the parent drug and reabsorbed into systemic circulation.<xref rid="cit0004" ref-type="bibr">4</xref>,<xref rid="cit0012" ref-type="bibr">12</xref>,<xref rid="cit0013" ref-type="bibr">13</xref> Total ezetimibe is the sum of unchanged ezetimibe and ezetimibe-glucuronide. Total ezetimibe is considered the primary endpoint in PK/PD modeling, because ezetimibe-glucuronide which accounts for 80&#8211;90% of the total ezetimibe in plasma, has a potent therapeutic effect similar to that of its parent compound.<xref rid="cit0004" ref-type="bibr">4</xref> This model consisted of four compartments including the GB for EHC, considering two pathways from GB; the one is to central compartment, including blood and liver and the other is to GI compartment.<xref rid="cit0008" ref-type="bibr">8</xref> Therein, the GI compartment-linked model provided a better description than the central compartment-linked model based on the goodness-of-fit plots. Considering the ezetimibe metabolism, physiological process, and pattern of the secondary EHC peak, drug transport with bile release to the intestinal lumen could contribute to this model.<xref rid="cit0014" ref-type="bibr">14</xref></p><p>Although ezetimibe exhibits distinct secondary peaks owing to enterohepatic recirculation, the second peak at approximately 5&#160;h was modest and not clearly observed in the present study. This may be attributed to low reabsorption dynamics in healthy subjects and the relatively smoothened average profile. In addition, the limited sensitivity of plasma sampling to detect subtle postprandial fluctuations could have contributed to this visual subtlety. Nevertheless, the structural PK model incorporating GB emptying adequately captured the EHC effect, even if the secondary peak was less visually prominent in the mean profile (<xref rid="f0001" ref-type="fig">Figure 1</xref>).</p><p>The overall PK parameters of rosuvastatin and ezetimibe between monotherapy and co-therapy were consistent in this study, and the effect of comedication on the PK parameters including <inline-formula id="ilm0053"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0062.jpg"/><tex-math id="Tex062">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${k_a}$\end{document}</tex-math></alternatives></inline-formula>, <inline-formula id="ilm0054"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0063.jpg"/><tex-math id="Tex063">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$CL$\end{document}</tex-math></alternatives></inline-formula> and <inline-formula id="ilm0055"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0064.jpg"/><tex-math id="Tex064">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$Q$\end{document}</tex-math></alternatives></inline-formula> was limited. Although a slightly increased AUC of total ezetimibe was observed in the NCA analysis, the current PK model showed that the PK interaction between rosuvastatin and ezetimibe at the steady state, including EHC, is not significant.<xref rid="cit0003" ref-type="bibr">3</xref></p><p>Applying the Bliss independence method would be appropriate given the independent therapeutic mechanisms of rosuvastatin and ezetimibe in lowering LDL-C.<xref rid="cit0003" ref-type="bibr">3</xref>,<xref rid="cit0010" ref-type="bibr">10</xref> Multicompartmental models for EHC could have issues, including increased complexity, parameter identifiability, and estimation difficulties, so minimal model complexity with assumed variables was required.<xref rid="cit0008" ref-type="bibr">8</xref>,<xref rid="cit0015" ref-type="bibr">15</xref> The basic model of indirect responses assumes that the value of I<sub>max</sub> is 1.<xref rid="cit0016" ref-type="bibr">16</xref> Hill coefficient, which represents the steepness of the concentration&#8211;response curve, is simply fixed at 1.<xref rid="cit0009" ref-type="bibr">9</xref> Although the mechanisms of cholesterol synthesis inhibition and LDL receptor upregulation have been reported, statins have decreased the LDL-C synthesis rate constant <inline-formula id="ilm0056"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0065.jpg"/><tex-math id="Tex065">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}$({K_{in}})$\end{document}</tex-math></alternatives></inline-formula> in previous PD models.<xref rid="cit0017" ref-type="bibr">17</xref>,<xref rid="cit0018" ref-type="bibr">18</xref> Considering the pharmacological effect of ezetimibe as an inhibitor of intestinal cholesterol uptake, its concentration was incorporated within <inline-formula id="ilm0057"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0066.jpg"/><tex-math id="Tex066">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${K_{in}}$\end{document}</tex-math></alternatives></inline-formula>. The final PD model adequately described the LDL-C changes and supported the additive effects of rosuvastatin and ezetimibe without drug interactions.<xref rid="cit0003" ref-type="bibr">3</xref>,<xref rid="cit0018" ref-type="bibr">18</xref>,<xref rid="cit0019" ref-type="bibr">19</xref></p><p>The recycled amount of ezetimibe was calculated using several methods to evaluate the effect of EHC. With 17% of the absorbed dose in the previous study, the AUC was estimated to increase by approximately 86% compared to the value in the absence of EHC.<xref rid="cit0005" ref-type="bibr">5</xref> When the drug fraction excreted into bile was indirectly explored using the ratio between <inline-formula id="ilm0058"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0067.jpg"/><tex-math id="Tex067">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${k_b}$\end{document}</tex-math></alternatives></inline-formula> and <inline-formula id="ilm0059"><alternatives><inline-graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDDT-19-4777-e0068.jpg"/><tex-math id="Tex068">\documentclass[12pt]{minimal}
+\usepackage{wasysym}
+\usepackage[substack]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage[mathscr]{eucal}
+\usepackage{mathrsfs}
+\DeclareFontFamily{T1}{linotext}{}
+\DeclareFontShape{T1}{linotext}{m}{n} {linotext }{}
+\DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+\DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext}
+\begin{document}${k_{el}}$\end{document}</tex-math></alternatives></inline-formula> (elimination rate), approximately 30% of the absorbed amount was recirculated.<xref rid="cit0008" ref-type="bibr">8</xref> In the current model, the effect of EHC on ezetimibe exposure was explored based on the AUC ratio.<xref rid="cit0013" ref-type="bibr">13</xref> The AUC ratio in the absence of EHC was estimated assuming that reabsorption was incorporated into the elimination process. In the present study, the AUC ratio was estimated to be 0.94, which significantly decreased in the absence of EHC. However, this difference did not significantly affect LDL-C level changes. The results of this modeling estimated that exposure to total ezetimibe was less affected by EHC compared to previous studies.<xref rid="cit0005" ref-type="bibr">5</xref>,<xref rid="cit0008" ref-type="bibr">8</xref>,<xref rid="cit0013" ref-type="bibr">13</xref> This phenomenon was possibly caused by the concentration&#8211;time profiles, where the second and third peaks were not prominently observed (<xref rid="f0001" ref-type="fig">Figure 1</xref>). In addition, total ezetimibe quantitatively insensitive to EHC and infrequent sampling during reabsorption in healthy subjects may have contributed to these results, which could be a limitation of this study.</p><p>The PK/PD profiles of the study drug, particularly rosuvastatin, possibly show variability according to ethnic variability including genetic polymorphism, co-medication, age, and gender.<xref rid="cit0020" ref-type="bibr">20</xref> These potential covariates were explored and found to be insignificant in our model. The absence of significant covariate effects may partly be due to the homogeneity of the study population. In particular, the dataset was derived from a clinical trial in healthy volunteers consisting exclusively of young adult males, thereby limiting the extrapolation of our findings to other populations such as females, older adults, or individuals with underlying disease. This demographic restriction may have affected the sensitivity of the model to detect covariate influences, as well as the observable impact of EHC on ezetimibe exposure.</p><p>Future studies, including individuals with comorbidities or genetic polymorphisms, could provide further insights into inter-individual variability in drug response. A broader demographic representation will also be essential to evaluating whether the current PK/PD relationships remain consistent across patient subgroups and to support individualized lipid-lowering strategies.</p></sec><sec id="s0005"><title>Conclusion</title><p>At the steady state, rosuvastatin and total ezetimibe showed no significant interaction in modeling analysis. The EHC PK process was well described by a four-compartment model with intermittent GB emptying and incorporated in the LDL-C synthesis process in a PD interaction model. This PK/PD model of co-medication led to a reasonable LDL-C-lowering effect, with adequate assumptions and minimal complexity. The PD model supported the independent lipid-lowering mechanisms of rosuvastatin and ezetimibe. The EHC process increased the exposure to total ezetimibe with a limited effect on LDL profiles.</p><p>The lack of significant covariate effects, possibly due to the homogeneous study population, may highlight the importance of considering EHC processes when evaluating drug interactions. Researchers should in future studies investigate the influence of covariates including various demographic factors, comorbidities or genetic polymorphisms on drug response, and explore the utility of mechanistic or physiologically based PK/PD models in guiding personalized treatment strategies.</p></sec></body><back><sec sec-type="data-availability" id="s0006"><title>Data Sharing Statement</title><p>The datasets generated during the current study are available from the corresponding author on reasonable request.</p></sec><sec id="s0007"><title>Author Contributions</title><p>All authors contributed significantly to the study, whether in the conception, study design, execution, acquisition of data, analysis and interpretation, or in all these areas; participated in drafting, revising or critically reviewing the article; gave final approval of the version to be published; have agreed on the journal for submission; and agree to be accountable for all aspects of the work.</p></sec><sec sec-type="COI-statement" id="s0008"><title>Disclosure</title><p>The authors have no conflicts of interest to disclose.</p></sec><ref-list><title>References</title><ref id="cit0001"><label>1.</label><mixed-citation publication-type="journal"><string-name name-style="western"><surname>Mach</surname><given-names>F</given-names></string-name>, <string-name name-style="western"><surname>Baigent</surname><given-names>C</given-names></string-name>, <string-name name-style="western"><surname>Catapano</surname><given-names>AL</given-names></string-name>, et al. <article-title>2019 ESC/EAS guidelines for the management of dyslipidaemias: lipid modification to reduce cardiovascular risk</article-title>. <source><italic toggle="yes">Eur Heart J</italic></source>. <year>2020</year>;<volume>41</volume>(<issue>1</issue>):<fpage>111</fpage>&#8211;<lpage>188</lpage>. doi:<pub-id pub-id-type="doi">10.1093/eurheartj/ehz455</pub-id><pub-id pub-id-type="pmid">31504418</pub-id></mixed-citation></ref><ref id="cit0002"><label>2.</label><mixed-citation publication-type="journal"><string-name name-style="western"><surname>Grundy</surname><given-names>SM</given-names></string-name>, <string-name name-style="western"><surname>Stone</surname><given-names>NJ</given-names></string-name>, <string-name name-style="western"><surname>Bailey</surname><given-names>AL</given-names></string-name>, et al. <article-title>2018 AHA/ACC/AACVPR/AAPA/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA guideline on the management of blood cholesterol: a report of the American College of Cardiology/American Heart Association task force on clinical practice guidelines</article-title>. <source><italic toggle="yes">Circulation</italic></source>. <year>2019</year>;<volume>139</volume>(<issue>25</issue>):<fpage>e1082</fpage>&#8211;<lpage>e1143</lpage>. doi:<pub-id pub-id-type="doi">10.1161/CIR.0000000000000625</pub-id><pub-id pub-id-type="pmid">30586774</pub-id><pub-id pub-id-type="pmcid">PMC7403606</pub-id></mixed-citation></ref><ref id="cit0003"><label>3.</label><mixed-citation publication-type="journal"><string-name name-style="western"><surname>Kim</surname><given-names>CH</given-names></string-name>, <string-name name-style="western"><surname>An</surname><given-names>H</given-names></string-name>, <string-name name-style="western"><surname>Kim</surname><given-names>SH</given-names></string-name>, <string-name name-style="western"><surname>Shin</surname><given-names>D</given-names></string-name>. <article-title>Pharmacokinetic and pharmacodynamic interaction between ezetimibe and rosuvastatin in healthy male subjects</article-title>. <source><italic toggle="yes">Drug Des Devel Ther</italic></source>. <year>2017</year>;<volume>11</volume>:<fpage>3461</fpage>&#8211;<lpage>3469</lpage>. doi:<pub-id pub-id-type="doi">10.2147/DDDT.S146863</pub-id><pub-id pub-id-type="pmcid">PMC5723108</pub-id><pub-id pub-id-type="pmid">29255347</pub-id></mixed-citation></ref><ref id="cit0004"><label>4.</label><mixed-citation publication-type="journal"><string-name name-style="western"><surname>Kosoglou</surname><given-names>T</given-names></string-name>, <string-name name-style="western"><surname>Statkevich</surname><given-names>P</given-names></string-name>, <string-name name-style="western"><surname>Johnson-Levonas</surname><given-names>AO</given-names></string-name>, <string-name name-style="western"><surname>Paolini</surname><given-names>JF</given-names></string-name>, <string-name name-style="western"><surname>Bergman</surname><given-names>AJ</given-names></string-name>, <string-name name-style="western"><surname>Alton</surname><given-names>KB</given-names></string-name>. <article-title>Ezetimibe: a review of its metabolism, pharmacokinetics and drug interactions</article-title>. <source><italic toggle="yes">Clin Pharmacokinet</italic></source>. <year>2005</year>;<volume>44</volume>(<issue>5</issue>):<fpage>467</fpage>&#8211;<lpage>494</lpage>. doi:<pub-id pub-id-type="doi">10.2165/00003088-200544050-00002</pub-id><pub-id pub-id-type="pmid">15871634</pub-id></mixed-citation></ref><ref id="cit0005"><label>5.</label><mixed-citation publication-type="journal"><string-name name-style="western"><surname>Ezzet</surname><given-names>F</given-names></string-name>, <string-name name-style="western"><surname>Krishna</surname><given-names>G</given-names></string-name>, <string-name name-style="western"><surname>Wexler</surname><given-names>DB</given-names></string-name>, <string-name name-style="western"><surname>Statkevich</surname><given-names>P</given-names></string-name>, <string-name name-style="western"><surname>Kosoglou</surname><given-names>T</given-names></string-name>, <string-name name-style="western"><surname>Batra</surname><given-names>VK</given-names></string-name>. <article-title>A population pharmacokinetic model that describes multiple peaks due to enterohepatic recirculation of ezetimibe</article-title>. <source><italic toggle="yes">Clin Ther</italic></source>. <year>2001</year>;<volume>23</volume>(<issue>6</issue>):<fpage>871</fpage>&#8211;<lpage>885</lpage>. doi:<pub-id pub-id-type="doi">10.1016/s0149-2918(01)80075-8</pub-id><pub-id pub-id-type="pmid">11440287</pub-id></mixed-citation></ref><ref id="cit0006"><label>6.</label><mixed-citation publication-type="journal"><string-name name-style="western"><surname>Roberts</surname><given-names>MS</given-names></string-name>, <string-name name-style="western"><surname>Magnusson</surname><given-names>BM</given-names></string-name>, <string-name name-style="western"><surname>Burczynski</surname><given-names>FJ</given-names></string-name>, <string-name name-style="western"><surname>Weiss</surname><given-names>M</given-names></string-name>. <article-title>Enterohepatic circulation: physiological, pharmacokinetic and clinical implications</article-title>. <source><italic toggle="yes">Clin Pharmacokinet</italic></source>. <year>2002</year>;<volume>41</volume>(<issue>10</issue>):<fpage>751</fpage>&#8211;<lpage>790</lpage>. doi:<pub-id pub-id-type="doi">10.2165/00003088-200241100-00005</pub-id><pub-id pub-id-type="pmid">12162761</pub-id></mixed-citation></ref><ref id="cit0007"><label>7.</label><mixed-citation publication-type="journal"><string-name name-style="western"><surname>Malik</surname><given-names>MY</given-names></string-name>, <string-name name-style="western"><surname>Jaiswal</surname><given-names>S</given-names></string-name>, <string-name name-style="western"><surname>Sharma</surname><given-names>A</given-names></string-name>, <string-name name-style="western"><surname>Shukla</surname><given-names>M</given-names></string-name>, <string-name name-style="western"><surname>Lal</surname><given-names>J</given-names></string-name>. <article-title>Role of enterohepatic recirculation in drug disposition: cooperation and complications</article-title>. <source><italic toggle="yes">Drug Metab Rev</italic></source>. <year>2016</year>;<volume>48</volume>(<issue>2</issue>):<fpage>281</fpage>&#8211;<lpage>327</lpage>. doi:<pub-id pub-id-type="doi">10.3109/03602532.2016.1157600</pub-id><pub-id pub-id-type="pmid">26987379</pub-id></mixed-citation></ref><ref id="cit0008"><label>8.</label><mixed-citation publication-type="journal"><string-name name-style="western"><surname>Soulele</surname><given-names>K</given-names></string-name>, <string-name name-style="western"><surname>Karalis</surname><given-names>V</given-names></string-name>. <article-title>On the population pharmacokinetics and the enterohepatic recirculation of total ezetimibe</article-title>. <source><italic toggle="yes">Xenobiotica</italic></source>. <year>2019</year>;<volume>49</volume>(<issue>4</issue>):<fpage>446</fpage>&#8211;<lpage>456</lpage>. doi:<pub-id pub-id-type="doi">10.1080/00498254.2018.1463117</pub-id><pub-id pub-id-type="pmid">29629619</pub-id></mixed-citation></ref><ref id="cit0009"><label>9.</label><mixed-citation publication-type="journal"><string-name name-style="western"><surname>Yang</surname><given-names>J</given-names></string-name>, <string-name name-style="western"><surname>Li</surname><given-names>LJ</given-names></string-name>, <string-name name-style="western"><surname>Wang</surname><given-names>K</given-names></string-name>, et al. <article-title>Race differences: modeling the pharmacodynamics of rosuvastatin in Western and Asian hypercholesterolemia patients</article-title>. <source><italic toggle="yes">Acta Pharmacol Sin</italic></source>. <year>2011</year>;<volume>32</volume>(<issue>1</issue>):<fpage>116</fpage>&#8211;<lpage>125</lpage>. doi:<pub-id pub-id-type="doi">10.1038/aps.2010.169</pub-id><pub-id pub-id-type="pmid">21151159</pub-id><pub-id pub-id-type="pmcid">PMC4003309</pub-id></mixed-citation></ref><ref id="cit0010"><label>10.</label><mixed-citation publication-type="journal"><string-name name-style="western"><surname>Niu</surname><given-names>J</given-names></string-name>, <string-name name-style="western"><surname>Straubinger</surname><given-names>RM</given-names></string-name>, <string-name name-style="western"><surname>Mager</surname><given-names>DE</given-names></string-name>. <article-title>Pharmacodynamic Drug-Drug Interactions</article-title>. <source><italic toggle="yes">Clin Pharmacol Ther</italic></source>. <year>2019</year>;<volume>105</volume>(<issue>6</issue>):<fpage>1395</fpage>&#8211;<lpage>1406</lpage>. doi:<pub-id pub-id-type="doi">10.1002/cpt.1434</pub-id><pub-id pub-id-type="pmid">30912119</pub-id><pub-id pub-id-type="pmcid">PMC6529235</pub-id></mixed-citation></ref><ref id="cit0011"><label>11.</label><mixed-citation publication-type="book"><string-name name-style="western"><surname>Jones</surname><given-names>MW</given-names></string-name>, <string-name name-style="western"><surname>Small</surname><given-names>K</given-names></string-name>, <string-name name-style="western"><surname>Kashyap</surname><given-names>S</given-names></string-name>, <string-name name-style="western"><surname>Deppen</surname><given-names>JG</given-names></string-name>. <part-title>Physiology, Gallbladder</part-title>. In: <source><italic toggle="yes">StatPearls</italic></source>. <publisher-loc>Treasure Island (FL)</publisher-loc>: <publisher-name>StatPearls Publishing</publisher-name>; <year>2024</year>.<pub-id pub-id-type="pmid">29494095</pub-id></mixed-citation></ref><ref id="cit0012"><label>12.</label><mixed-citation publication-type="journal"><string-name name-style="western"><surname>van Heek</surname><given-names>M</given-names></string-name>, <string-name name-style="western"><surname>Davis</surname><given-names>H</given-names></string-name>. <article-title>Pharmacology of ezetimibe</article-title>. <source><italic toggle="yes">Eur Heart J Suppl</italic></source>. <year>2002</year>;<volume>4</volume>(<issue>J</issue>):<fpage>J5</fpage>&#8211;<lpage>J8</lpage>. doi:<pub-id pub-id-type="doi">10.1016/S1520-765x(02)90076-3</pub-id></mixed-citation></ref><ref id="cit0013"><label>13.</label><mixed-citation publication-type="journal"><string-name name-style="western"><surname>Chen</surname><given-names>W</given-names></string-name>, <string-name name-style="western"><surname>Ruan</surname><given-names>Z</given-names></string-name>, <string-name name-style="western"><surname>Chen</surname><given-names>J</given-names></string-name>, et al. <article-title>Population pharmacokinetics and enterohepatic recirculation of hyzetimibe and its main metabolite in Chinese healthy subjects</article-title>. <source><italic toggle="yes">Br J Clin Pharmacol</italic></source>. <year>2022</year>;<volume>88</volume>(<issue>7</issue>):<fpage>3153</fpage>&#8211;<lpage>3161</lpage>. doi:<pub-id pub-id-type="doi">10.1111/bcp.15187</pub-id><pub-id pub-id-type="pmid">34931372</pub-id></mixed-citation></ref><ref id="cit0014"><label>14.</label><mixed-citation publication-type="journal"><string-name name-style="western"><surname>Tong</surname><given-names>X</given-names></string-name>, <string-name name-style="western"><surname>Zhou</surname><given-names>D</given-names></string-name>, <string-name name-style="western"><surname>Savage</surname><given-names>A</given-names></string-name>, et al. <article-title>Population pharmacokinetic modeling with enterohepatic circulation for AZD3241 in healthy subjects and patients with multiple system atrophy</article-title>. <source><italic toggle="yes">J Clin Pharmacol</italic></source>. <year>2018</year>;<volume>58</volume>(<issue>11</issue>):<fpage>1452</fpage>&#8211;<lpage>1460</lpage>. doi:<pub-id pub-id-type="doi">10.1002/jcph.1134</pub-id><pub-id pub-id-type="pmid">29873817</pub-id></mixed-citation></ref><ref id="cit0015"><label>15.</label><mixed-citation publication-type="journal"><string-name name-style="western"><surname>Soulele</surname><given-names>K</given-names></string-name>, <string-name name-style="western"><surname>Karalis</surname><given-names>V</given-names></string-name>. <article-title>Development of a joint population pharmacokinetic model of ezetimibe and its conjugated metabolite</article-title>. <source><italic toggle="yes">Eur J Pharm Sci</italic></source>. <year>2019</year>;<volume>128</volume>:<fpage>18</fpage>&#8211;<lpage>26</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.ejps.2018.11.018</pub-id><pub-id pub-id-type="pmid">30465817</pub-id></mixed-citation></ref><ref id="cit0016"><label>16.</label><mixed-citation publication-type="journal"><string-name name-style="western"><surname>Deschamps</surname><given-names>C</given-names></string-name>, <string-name name-style="western"><surname>Dubruc</surname><given-names>C</given-names></string-name>, <string-name name-style="western"><surname>Mentre</surname><given-names>F</given-names></string-name>, <string-name name-style="western"><surname>Rosenzweig</surname><given-names>P</given-names></string-name>. <article-title>Pharmacokinetic and pharmacodynamic modeling of mizolastine in healthy volunteers with an indirect response model</article-title>. <source><italic toggle="yes">Clin Pharmacol Ther</italic></source>. <year>2000</year>;<volume>68</volume>(<issue>6</issue>):<fpage>647</fpage>&#8211;<lpage>657</lpage>. doi:<pub-id pub-id-type="doi">10.1067/mcp.2000.112341</pub-id><pub-id pub-id-type="pmid">11180025</pub-id></mixed-citation></ref><ref id="cit0017"><label>17.</label><mixed-citation publication-type="journal"><string-name name-style="western"><surname>Jadhav</surname><given-names>SB</given-names></string-name>, <string-name name-style="western"><surname>Amore</surname><given-names>BM</given-names></string-name>, <string-name name-style="western"><surname>Bockbrader</surname><given-names>H</given-names></string-name>, et al. <article-title>Population pharmacokinetic and pharmacokinetic-pharmacodynamic modeling of bempedoic acid and low-density lipoprotein cholesterol in healthy subjects and patients with dyslipidemia</article-title>. <source><italic toggle="yes">J Pharmacokinet Pharmacodyn</italic></source>. <year>2023</year>;<volume>50</volume>(<issue>5</issue>):<fpage>351</fpage>&#8211;<lpage>364</lpage>. doi:<pub-id pub-id-type="doi">10.1007/s10928-023-09864-w</pub-id><pub-id pub-id-type="pmid">37243877</pub-id><pub-id pub-id-type="pmcid">PMC10460718</pub-id></mixed-citation></ref><ref id="cit0018"><label>18.</label><mixed-citation publication-type="journal"><string-name name-style="western"><surname>Kakara</surname><given-names>M</given-names></string-name>, <string-name name-style="western"><surname>Nomura</surname><given-names>H</given-names></string-name>, <string-name name-style="western"><surname>Fukae</surname><given-names>M</given-names></string-name>, et al. <article-title>Population pharmacodynamic analysis of LDL-cholesterol lowering effects by statins and co-medications based on electronic medical records</article-title>. <source><italic toggle="yes">Br J Clin Pharmacol</italic></source>. <year>2014</year>;<volume>78</volume>(<issue>4</issue>):<fpage>824</fpage>&#8211;<lpage>835</lpage>. doi:<pub-id pub-id-type="doi">10.1111/bcp.12405</pub-id><pub-id pub-id-type="pmid">24734885</pub-id><pub-id pub-id-type="pmcid">PMC4239976</pub-id></mixed-citation></ref><ref id="cit0019"><label>19.</label><mixed-citation publication-type="journal"><string-name name-style="western"><surname>Olsson</surname><given-names>AG</given-names></string-name>, <string-name name-style="western"><surname>Pears</surname><given-names>J</given-names></string-name>, <string-name name-style="western"><surname>McKellar</surname><given-names>J</given-names></string-name>, <string-name name-style="western"><surname>Mizan</surname><given-names>J</given-names></string-name>, <string-name name-style="western"><surname>Raza</surname><given-names>A</given-names></string-name>. <article-title>Effect of rosuvastatin on low-density lipoprotein cholesterol in patients with hypercholesterolemia</article-title>. <source><italic toggle="yes">Am J Cardiol</italic></source>. <year>2001</year>;<volume>88</volume>(<issue>5</issue>):<fpage>504</fpage>&#8211;<lpage>508</lpage>. doi:<pub-id pub-id-type="doi">10.1016/s0002-9149(01)01727-1</pub-id><pub-id pub-id-type="pmid">11524058</pub-id></mixed-citation></ref><ref id="cit0020"><label>20.</label><mixed-citation publication-type="journal"><string-name name-style="western"><surname>Karlson</surname><given-names>BW</given-names></string-name>, <string-name name-style="western"><surname>Palmer</surname><given-names>MK</given-names></string-name>, <string-name name-style="western"><surname>Nicholls</surname><given-names>SJ</given-names></string-name>, <string-name name-style="western"><surname>Barter</surname><given-names>PJ</given-names></string-name>, <string-name name-style="western"><surname>Lundman</surname><given-names>P</given-names></string-name>. <article-title>Effects of age, gender and statin dose on lipid levels: results from the VOYAGER meta-analysis database</article-title>. <source><italic toggle="yes">Atherosclerosis</italic></source>. <year>2017</year>;<volume>265</volume>:<fpage>54</fpage>&#8211;<lpage>59</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.atherosclerosis.2017.08.014</pub-id><pub-id pub-id-type="pmid">28863328</pub-id></mixed-citation></ref></ref-list></back></article></pmc-articleset>

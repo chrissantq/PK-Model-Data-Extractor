@@ -38,6 +38,7 @@ class GetTables:
 
     seen = set()
     read_path = os.path.join(self.rootpath, "fulltexts")
+    print(read_path)
     xml = tf.read_file(read_path)
     while xml and xml not in seen:
       pmcid = xml.pmcid

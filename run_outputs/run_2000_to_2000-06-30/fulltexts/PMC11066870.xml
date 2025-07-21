@@ -1,0 +1,955 @@
+<?xml version="1.0"  ?><!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd"><pmc-articleset><article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xml:lang="EN" article-type="research-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">J Agric Food Chem</journal-id><journal-id journal-id-type="iso-abbrev">J Agric Food Chem</journal-id><journal-id journal-id-type="pmc-domain-id">822</journal-id><journal-id journal-id-type="pmc-domain">acssd</journal-id><journal-id journal-id-type="publisher-id">jf</journal-id><journal-title-group><journal-title>Journal of Agricultural and Food Chemistry</journal-title></journal-title-group><issn pub-type="ppub">0021-8561</issn><issn pub-type="epub">1520-5118</issn><custom-meta-group><custom-meta><meta-name>pmc-is-collection-domain</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-collection-title</meta-name><meta-value>ACS AuthorChoice</meta-value></custom-meta></custom-meta-group></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC11066870</article-id><article-id pub-id-type="pmcid-ver">PMC11066870.1</article-id><article-id pub-id-type="pmcaid">11066870</article-id><article-id pub-id-type="pmcaiid">11066870</article-id><article-id pub-id-type="pmid">38629896</article-id><article-id pub-id-type="doi">10.1021/acs.jafc.3c06309</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group><subject>Article</subject></subj-group></article-categories><title-group><article-title>Analysis of Lemon
+Verbena Polyphenol Metabolome and
+Its Correlation with Oxidative Stress under Glucotoxic Conditions
+in Adipocyte</article-title></title-group><contrib-group><contrib contrib-type="author" id="ath1"><name name-style="western"><surname>Olivares-Vicente</surname><given-names initials="M">Maril&#243;</given-names></name><xref rid="aff1" ref-type="aff">&#8224;</xref></contrib><contrib contrib-type="author" id="ath2"><name name-style="western"><surname>S&#225;nchez-Marzo</surname><given-names initials="N">Noelia</given-names></name><xref rid="aff1" ref-type="aff">&#8224;</xref></contrib><contrib contrib-type="author" corresp="yes" id="ath3"><name name-style="western"><surname>Herranz-L&#243;pez</surname><given-names initials="M">Mar&#237;a</given-names></name><xref rid="cor1" ref-type="other">*</xref><xref rid="aff1" ref-type="aff">&#8224;</xref><xref rid="notes4" ref-type="notes">&#167;</xref></contrib><contrib contrib-type="author" id="ath4"><name name-style="western"><surname>Micol</surname><given-names initials="V">Vicente</given-names></name><xref rid="aff1" ref-type="aff">&#8224;</xref><xref rid="aff2" ref-type="aff">&#8225;</xref><xref rid="notes4" ref-type="notes">&#167;</xref></contrib><aff id="aff1"><label>&#8224;</label>Instituto
+de Investigaci&#243;n, Desarrollo e Innovaci&#243;n en Biotecnolog&#237;a
+Sanitaria de Elche, <institution>Universidad Miguel Hern&#225;ndez
+(UMH)</institution>, Elche 03202, <country>Spain</country></aff><aff id="aff2"><label>&#8225;</label>CIBER:
+CB12/03/30038, Fisiopatolog&#237;a de la Obesidad y la Nutrici&#243;n,
+CIBERobn, <institution>Instituto de Salud Carlos III
+(ISCIII)</institution>, Madrid 28029, <country>Spain</country></aff></contrib-group><author-notes><corresp id="cor1"><label>*</label>Email: <email>mherranz@umh.es</email>.</corresp></author-notes><pub-date pub-type="epub"><day>17</day><month>04</month><year>2024</year></pub-date><pub-date pub-type="collection"><day>01</day><month>05</month><year>2024</year></pub-date><volume>72</volume><issue>17</issue><issue-id pub-id-type="pmc-issue-id">461626</issue-id><fpage>9768</fpage><lpage>9781</lpage><history><date date-type="received"><day>17</day><month>11</month><year>2023</year></date><date date-type="accepted"><day>26</day><month>03</month><year>2024</year></date><date date-type="rev-recd"><day>21</day><month>03</month><year>2024</year></date></history><pub-history><event event-type="pmc-release"><date><day>03</day><month>05</month><year>2024</year></date></event><event event-type="pmc-live"><date><day>04</day><month>05</month><year>2024</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2024-05-04 10:25:29.990"><day>04</day><month>05</month><year>2024</year></date></event></pub-history><permissions><copyright-statement>&#169; 2024 The Authors. Published by American Chemical Society</copyright-statement><copyright-year>2024</copyright-year><copyright-holder>The Authors</copyright-holder><license><ali:license_ref specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>Permits the broadest form of re-use including for commercial purposes, provided that author attribution and integrity are maintained (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="jf3c06309.pdf"/><abstract><p content-type="toc-graphic"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="ab-tgr1" position="float" orientation="portrait" xlink:href="jf3c06309_0010.jpg"/></p><p>Lemon verbena has been shown to ameliorate obesity-related
+oxidative
+stress, but the intracellular final effectors underlying its antioxidant
+activity are still unknown. The purpose of this study was to correlate
+the antioxidant capacity of plasma metabolites of lemon verbena (verbascoside,
+isoverbascoside, hydroxytyrosol, caffeic acid, ferulic acid, homoprotocatechuic
+acid, and luteolin-7-diglucuronide) with their uptake and intracellular
+metabolism in hypertrophic adipocytes under glucotoxic conditions.
+To this end, intracellular ROS levels were measured, and the intracellular
+metabolites were identified and quantified by high-performance liquid
+chromatography with a diode array detector coupled to mass spectrometry
+(HPLC-DAD-MS). The results showed that the plasma metabolites of lemon
+verbena are absorbed by adipocytes and metabolized through phase II
+reactions and that the intracellular appearance of these metabolites
+correlates with the decrease in the level of glucotoxicity-induced
+oxidative stress. It is postulated that the biotransformation and
+accumulation of these metabolites in adipocytes contribute to the
+long-term antioxidant activity of the extract.</p></abstract><kwd-group><kwd>cellular uptake</kwd><kwd>lemon verbena metabolite</kwd><kwd>adipocyte</kwd><kwd>oxidative stress</kwd><kwd>glucotoxicity</kwd><kwd>cellular metabolism</kwd></kwd-group><funding-group><award-group><funding-source><institution-wrap><institution>European Commission</institution><institution-id institution-id-type="doi">10.13039/501100000780</institution-id></institution-wrap></funding-source><award-id>NA</award-id></award-group></funding-group><funding-group><award-group><funding-source><institution-wrap><institution>Programa de Ayudas para la Investigaci??n del Envejecimiento de la Fundaci??n ICAR, call 2023</institution><institution-id institution-id-type="doi">NA</institution-id></institution-wrap></funding-source><award-id>PLANTAGING</award-id></award-group></funding-group><funding-group><award-group><funding-source><institution-wrap><institution>Conselleria de Innovaci??n, Universidades, Ciencia y Sociedad Digital, Generalitat Valenciana</institution><institution-id institution-id-type="doi">10.13039/501100016386</institution-id></institution-wrap></funding-source><award-id>PROMETEO/2021/059</award-id></award-group></funding-group><funding-group><award-group><funding-source><institution-wrap><institution>Centro de Investigaci??n Biom??dica en Red-Fisiopatolog??a de la Obesidad y Nutrici??n</institution><institution-id institution-id-type="doi">10.13039/501100012514</institution-id></institution-wrap></funding-source><award-id>CB12/03/30038</award-id></award-group></funding-group><funding-group><award-group><funding-source><institution-wrap><institution>Ministerio de Ciencia e Innovaci??n</institution><institution-id institution-id-type="doi">10.13039/501100004837</institution-id></institution-wrap></funding-source><award-id>PID2021-125188OB-C32</award-id></award-group></funding-group><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>document-id-old-9</meta-name><meta-value>jf3c06309</meta-value></custom-meta><custom-meta><meta-name>document-id-new-14</meta-name><meta-value>jf3c06309</meta-value></custom-meta><custom-meta><meta-name>ccc-price</meta-name><meta-value/></custom-meta></custom-meta-group></article-meta></front><body><sec id="sec1"><label>1</label><title>Introduction</title><p>Oxidative stress, defined
+as an overproduction of reactive oxygen
+species (ROS) in cells and tissues relative to antioxidant defense,
+plays a pathogenic role in the development of several chronic inflammatory
+diseases associated with obesity, such as insulin resistance, type
+2 diabetes, and cardiovascular diseases.<sup><xref ref-type="bibr" rid="ref1">1</xref></sup> In this context, polyphenols from lemon verbena (<italic toggle="yes">Lippia citriodora</italic>), a digestive and anti-inflammatory
+plant used in folk medicine, have been associated with enough evidence
+to become an alternative way to alleviate the metabolic disturbances
+associated with obesity.<sup><xref ref-type="bibr" rid="ref2">2</xref>&#8722;<xref ref-type="bibr" rid="ref4">4</xref></sup> Furthermore, several exercise
+training trials have demonstrated the potential use of lemon verbena
+extract as a nutraceutical to protect against oxidative damage and
+muscular injury caused by intense physical activity.<sup><xref ref-type="bibr" rid="ref5">5</xref></sup></p><p>The leaves of lemon verbena are rich in phenylpropanoids,
+iridoid
+glycosides, and flavonoids,<sup><xref ref-type="bibr" rid="ref2">2</xref>,<xref ref-type="bibr" rid="ref6">6</xref></sup> and the bioactivity
+of this plant has primarily been attributed to its major component,
+namely verbascoside (also known as acteoside). In addition to its
+strong antioxidant power,<sup><xref ref-type="bibr" rid="ref7">7</xref></sup> this phenylpropanoid
+has been shown to exert anti-inflammatory and antilipogenic effects
+in hypertrophic adipocytes by upregulating the anti-inflammatory adipokine
+adiponectin and activating the energy sensor AMP-activated protein
+kinase.<sup><xref ref-type="bibr" rid="ref4">4</xref></sup> Despite this evidence, recent
+studies evaluating isolated fractions of lemon verbena extract obtained
+by semipreparative chromatography suggest that other compounds present
+in the extract, such as its isomer isoverbascoside or the flavonoid
+luteolin-7-diglucuronide, might also be potential contributors acting
+synergistically in the bioactivity of this plant.<sup><xref ref-type="bibr" rid="ref2">2</xref>,<xref ref-type="bibr" rid="ref8">8</xref></sup></p><p>Furthermore, when evaluating the therapeutic effects of polyphenols,
+their bioavailability and biotransformation events should be considered
+to identify the most likely final effectors.<sup><xref ref-type="bibr" rid="ref9">9</xref></sup> In this regard, a previous bioavailability study in rats shows that
+verbascoside and isoverbascoside are the primary plasma metabolites
+after the ingestion of lemon verbena, but other minor metabolites
+have also been detected, such as phenylpropanoid derivatives (i.e.,
+hydroxytyrosol, caffeic acid, ferulic acid, ferulic acid glucuronide,
+and homoprotocatechuic acid), as well as other phenolic compounds,
+iridoids, and flavone derivatives (i.e., luteolin-7-diglucuronide).<sup><xref ref-type="bibr" rid="ref3">3</xref></sup> Although the accumulation of some of these metabolites
+in target tissues, such as the brain, liver, and kidneys, has been
+reported,<sup><xref ref-type="bibr" rid="ref10">10</xref></sup> their distribution and the
+intracellular final effectors in adipose tissue are still unknown.</p><p>To address this gap in knowledge, the aim of this study was to
+establish the antioxidant capacity of seven plasma metabolites of
+lemon verbena (i.e., verbascoside, isoverbascoside, hydroxytyrosol,
+ferulic acid, caffeic acid, homoprotocatechuic acid, and luteolin-7-diglucuronide)
+in a cell model of hypertrophic adipocytes (molecular structures in <xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>). In addition to
+being the most abundant plasma metabolites identified after lemon
+verbena ingestion,<sup><xref ref-type="bibr" rid="ref3">3</xref></sup> verbascoside and isoverbascoside
+were selected for being potent antioxidant agents and modulating targets
+involved in energy expenditure and inflammation.<sup><xref ref-type="bibr" rid="ref2">2</xref>,<xref ref-type="bibr" rid="ref4">4</xref></sup> Hydroxytyrosol,
+ferulic acid, caffeic acid, and homoprotocatechuic acid were selected
+as minor plasma metabolites of lemon verbena<sup><xref ref-type="bibr" rid="ref3">3</xref></sup> but with strong antioxidant power.<sup><xref ref-type="bibr" rid="ref11">11</xref>&#8722;<xref ref-type="bibr" rid="ref13">13</xref></sup> Although little is known
+about their role in adipocytes,<sup><xref ref-type="bibr" rid="ref14">14</xref></sup> it is
+postulated that they might be relevant effectors of verbascoside and
+isoverbascoside since they are derived from the hydrolysis of these
+phenylpropanoids. Finally, luteolin-7-diglucuronide represents the
+only flavone derivative identified as a lemon verbena plasma metabolite
+that has been reported to modulate targets related to energy metabolism
+in adipocytes.<sup><xref ref-type="bibr" rid="ref3">3</xref>,<xref ref-type="bibr" rid="ref8">8</xref></sup></p><fig id="fig1" position="float" orientation="portrait"><label>Figure 1</label><caption><p>Molecular structure of seven plasma metabolites
+from lemon verbena:
+(a) verbascoside; (b) isoverbascoside; (c) hydroxytyrosol; (d) caffeic
+acid; (e) ferulic acid; (f) homoprotocatechuic acid; and (g) luteolin-7-diglucuronide.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="gr2" position="float" orientation="portrait" xlink:href="jf3c06309_0001.jpg"/></fig><p>Furthermore, the correlation of the decrease in
+intracellular ROS
+levels with the uptake and intracellular metabolism of these metabolites
+was addressed using high-performance liquid chromatography with a
+diode array detector coupled to electrospray ion trap mass spectrometry
+(HPLC-DAD-ESI-IT-MS). Using this experimental approach, we attempted
+to demonstrate that the plasma metabolites of lemon verbena are absorbed
+and metabolized by adipocytes through phase II reactions and that
+the intracellular appearance of these metabolites correlates with
+a decrease in glucotoxicity-associated oxidative stress in the cytoplasm.</p></sec><sec id="sec2"><label>2</label><title>Materials and Methods</title><sec id="sec2.1"><label>2.1</label><title>Chemicals and Reagents</title><p>Standard verbascoside,
+hydroxytyrosol, and ferulic acid compounds were acquired from Extrasynthese
+(Genay, France). Isoverbascoside and luteolin-7-diglucuronide were
+purchased from PhytoLab (Vestenbergsgreuth, Germany). Caffeic acid
+and homoprotocatechuic acid were obtained from Sigma-Aldrich (St.
+Louis, MO, USA). Ethanol was provided by PanReac AppliChem GmbH (ITW
+Reagents, Darmstadt, Germany). Methanol (HPLC-MS grade) and glacial
+acetic acid were acquired from Fisher Scientific (Thermo Fisher Scientific,
+Waltham, MA, USA) and Labkem (Labbox, Barcelona, Spain), respectively.
+The water used in the HPLC-DAD-ESI-IT-MS analysis was purified using
+a Milli-Q system from Millipore (Bedford, MA, USA). Dulbecco&#8217;s
+modified Eagle&#8217;s medium (DMEM) and a mixture of penicillin/streptomycin
+were acquired from Gibco (Thermo Fisher Scientific). Calf and fetal
+bovine sera were obtained from Fisher Scientific. 3-Isobutyl-1-methylxanthine
+(IBMX), dexamethasone, insulin, dimethyl sulfoxide (DMSO), and phosphate-buffered
+saline (PBS) were provided by Sigma-Aldrich.</p></sec><sec id="sec2.2"><label>2.2</label><title>Model of Hypertrophic 3T3-L1 Adipocytes</title><p>The 3T3-L1 preadipocyte cell line (ATCC CL-173) was propagated
+and maintained in DMEM supplemented with 10% bovine calf serum, 100
+U/mL penicillin, and 100 &#956;g/mL streptomycin under optimal conditions
+(37 &#176;C, 95% humidity, 5% CO<sub>2</sub>). Confluent preadipocytes
+were differentiated into adipocytes by incubating them in DMEM containing
+25 mM glucose and supplemented with 10% fetal bovine serum and adipogenic
+agents (0.5 mM IBMX, 1 &#956;M dexamethasone, and 10 &#956;g/mL
+insulin) for 48 h. Afterward, the cells were maintained in high glucose
+DMEM supplemented with 10% fetal bovine serum and 10 &#956;g/mL insulin
+for an additional 2 weeks. Under these glucotoxic conditions, nearly
+all cells become hypertrophic adipocytes with high intracellular levels
+of lipids and ROS, mainly as hydrogen peroxide (H<sub>2</sub>O<sub>2</sub>) content.<sup><xref ref-type="bibr" rid="ref15">15</xref>,<xref ref-type="bibr" rid="ref16">16</xref></sup> The oxidative status of this
+cell model was evaluated as described in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Supporting Information</ext-link>. Subsequently, the hypertrophic adipocytes were
+treated with the standard compounds at 25, 50, and 100 &#956;M for
+24 h or with 100 &#956;M for 3, 12, and 24 h for the correlation
+analysis. Previously, pure compounds were dissolved in DMSO or water,
+depending on their solubilities, and reconstituted in culture medium
+for sterilization. The amount of DMSO used for the cells did not exceed
+0.1%.</p></sec><sec id="sec2.3"><label>2.3</label><title>Quantification of ROS Generation by H<sub>2</sub>DCFDA Staining</title><p>After treating the hypertrophic adipocytes
+with lemon verbena metabolites, the intracellular ROS generation was
+analyzed by incubating the H<sub>2</sub>O<sub>2</sub>-sensitive fluorogenic
+dye 2&#8242;,7&#8242;-dichlorodihydrofluorescein diacetate (H<sub>2</sub>DCFDA, Sigma-Aldrich) at 40 &#956;M for 30 min at 37 &#176;C.
+Then, the cells were washed with PBS, and the fluorescence was measured
+at 495 nm excitation and 529 nm emission wavelengths using a cell
+imaging multimode microplate reader (Cytation 3, BioTek Instruments,
+Winooski, VT, USA). To dismiss any possible cytotoxic effect of the
+compounds, the Hoechst 33342 dye (Invitrogen, Thermo Fisher Scientific)
+was added at 4 &#956;M, and stained nuclei were counted by taking
+microphotographs with a DAPI imaging filter cube.</p></sec><sec id="sec2.4"><label>2.4</label><title>Determination of MDA by HPLC with Fluorescence
+Detection</title><p>Malondialdehyde (MDA) was measured as a marker
+of lipid peroxidation in hypertrophic adipocytes treated with lemon
+verbena metabolites at 100 &#956;M for 24 h.<sup><xref ref-type="bibr" rid="ref17">17</xref></sup> Briefly, the treated cells were washed and gathered with a scraper
+in PBS. Pooled cells were lysed by three cycles of freezing and thawing
+by sonication using an ice-cold bath sonicator and centrifuged at
+16,000<italic toggle="yes">g</italic> for 15 min at 4 &#176;C to collect the supernatant
+for MDA analysis. The protein concentration was analyzed by using
+the Pierce BCA Protein Assay Kit (Thermo Fisher Scientific). The supernatants
+were mixed with 0.05% butylhydroxytoluene (Sigma-Aldrich) in 99% ethanol
+to prevent oxidation reactions and 20% trichloroacetic acid (PanReac
+AppliChem GmbH) in 0.6 M HCl (VWR Chemicals, Radnor, Pennsylvania,
+USA) to precipitate protein. The mixtures were cooled on ice and centrifuged
+at 2,300<italic toggle="yes">g</italic> for 15 min at 4 &#176;C. Then, the supernatants
+were mixed with preheated 0.6% thiobarbituric acid (TBA, Sigma-Aldrich)
+and heated at 97 &#176;C for 30 min. After cooling, the samples were
+vigorously mixed with cooled <italic toggle="yes">n</italic>-butanol (Scharlab,
+Barcelona, Spain) and centrifuged at 18,000<italic toggle="yes">g</italic> for
+3 min at 4 &#176;C. The TBA-MDA complex contained in the upper phase
+was analyzed by HPLC using a Merck-Hitachi LaChrom system equipped
+with a model L-7485 fluorescence detector (Hitachi Instruments, Tokyo,
+Japan). The separation was carried out with a LiChrospher 100 RP-18
+column (5 &#956;m, 250 &#215; 4 mm) (Merck, Darmstadt, Germany) using
+50 mM potassium dihydrogen phosphate buffer (Merck) and methanol (60:40,
+v/v) as the mobile phase. The injection volume was 20 &#956;L and
+the flow rate was 0.6 mL/min at room temperature. The TBA-MDA complex
+was monitored by fluorescence detection, with excitation at 515 nm
+and emission at 553 nm. The MDA content of the cell lysates was calculated
+from a standard curve prepared using different concentrations of TBA-MDA
+complex.</p></sec><sec id="sec2.5"><label>2.5</label><title>Sample Preparation for Metabolite Detection</title><p>After 0, 3, 12, and 24 h of incubation with 100 &#956;M lemon
+verbena metabolites, the adipocytes were washed with PBS to remove
+the remaining compound from the extracellular side and gathered under
+cold ultrapure water. Pooled cells were lysed and centrifuged as mentioned
+above to collect supernatant and precipitate fractions as cytoplasmic
+and membrane fractions, respectively. The protein concentration in
+the cell lysates was analyzed using the Pierce BCA Protein Assay Kit.
+For HPLC analysis, the cytoplasmic and membrane fractions were subjected
+to protein precipitation using methanol:ethanol (50:50, v/v) at a
+proportion of 1:5 (sample&#8211;solvent), vortexed for 10 s, and
+centrifuged at 17,900<italic toggle="yes">g</italic> for 10 min at 4 &#176;C. Lastly,
+the supernatants were collected and evaporated under nitrogen gas,
+dissolved in 120 &#956;L of methanol:water (80:20, v/v), and stored
+at &#8722;80 &#176;C until analysis.</p></sec><sec id="sec2.6"><label>2.6</label><title>HPLC-DAD-ESI-IT-MS Instruments and Conditions</title><p>An Agilent LC 1100 series system (Agilent Technologies, Inc., Palo
+Alto, CA, USA) equipped with a pump, autosampler, column oven, and
+DAD was used for the HPLC analysis of the cytoplasmic and membrane
+fractions. Aqueous acetic acid (0.5%, v/v) as solvent A and methanol
+as solvent B composed the mobile phase to elute the samples from a
+Poroshell 120 SB-C18 column (2.7 &#956;m, 4.6 mm &#215; 150 mm),
+which was protected by an InfinityLab Poroshell 120 SB-C18 guard column
+(2.7 &#956;m, 4.6 mm &#215; 5 mm). The following multistep linear
+gradient was established: 0 min, 5% B; 5 min, 5% B; 10 min, 15% B;
+16 min, 17% B; 22 min, 20% B; 30 min, 30% B; 38 min, 33% B; 45 min,
+100% B; and 50 min, 5% B. The initial conditions were maintained for
+5 min to equilibrate the column for the next analysis, as indicated
+in the last step of the gradient. The flow rate was 0.5 mL/min, the
+injection volume was 10 &#956;L, and the column temperature was set
+at 25 &#176;C. The DAD monitored the spectrum range of 190&#8211;600
+nm, and chromatograms at 280 and 340 nm were directly obtained.</p><p>The chromatographic system was coupled to a Bruker Esquire 3000 plus
+IT mass spectrometer equipped with an ESI source (Bruker Daltonics
+GmbsH, Bremen, Germany). An MS/MS analysis was performed in negative
+ionization mode considering the <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> range of 50&#8211;1400. The values of the other parameters were
+set as follows: capillary voltage, 2340 nV; dry temperature, 360 &#176;C;
+dry gas flow, 9 L/min; nebulizing gas pressure, 45 psi; and fragmentation
+amplitude, 0.8 V. Data acquisition was performed with Data Analysis
+4.0 software (Bruker Daltonics GmbsH).</p></sec><sec id="sec2.7"><label>2.7</label><title>Identification and Quantification of Metabolites</title><p>The separation of the metabolites was achieved using reversed-phase
+HPLC. The identification was performed by interpreting the molecular
+mass and product ions obtained by the mass spectrometer, taking into
+consideration the information provided from the literature. All MS
+results were compared with MS analysis of untreated adipocyte samples
+(cellular control) and of the solvents used in sample preparation
+(blank, without cellular material). Quantification was performed by
+preparing calibration curves with the seven standard compounds. Stock
+solutions were prepared at 100 &#956;M in methanol:water (80:20,
+v/v) as the cellular samples, and six solutions at different concentrations
+were analyzed in triplicate for each standard. Peak areas were obtained
+from chromatograms at 340 nm for verbascoside, isoverbascoside, caffeic
+acid, ferulic acid, and luteolin-7-diglucuronide, whose linear regression
+ranged from 1.5625 to 100 &#956;M. For hydroxytyrosol and homoprotocatechuic
+acid, solutions from 3.125 to 100 &#956;M were plotted using chromatograms
+at 280 nm. The limit of detection (LOD) and limit of quantification
+(LOQ) for each compound were explored with the appropriate dilutions
+and estimated based on signal-to-noise ratios of less than 3 and 10,
+respectively. The LOD was designated when the metabolite was not observed
+in the DAD chromatograms, but traces were detected in the MS analysis.</p></sec><sec id="sec2.8"><label>2.8</label><title>Statistical Analysis</title><p>Statistical
+analyses were performed using GraphPad Prism ver. 7.04 (GraphPad Software,
+San Diego, CA, USA). The results are expressed as the mean &#177;
+standard deviation, unless otherwise indicated. Differences showing <italic toggle="yes">p</italic> &lt; 0.05 were considered statistically significant. One-way
+analysis of variance (ANOVA) and Tukey&#8217;s post hoc test for
+multiple comparisons were used to assess differences in antioxidant
+capacity tests. Additionally, the Pearson coefficient was employed
+to assess the correlation between the antioxidant activity of incubated
+compounds and the intracellular appearance of their metabolites. Cellular
+experiments for antioxidant capacity and chromatographic analysis
+were independently performed three times.</p></sec></sec><sec id="sec3"><label>3</label><title>Results and Discussion</title><sec id="sec3.1"><label>3.1</label><title>Antioxidant Effect of Lemon Verbena Metabolites
+in Hypertrophic 3T3-L1 Adipocytes</title><p>To evaluate the antioxidant
+effect of lemon verbena metabolites on glucotoxicity-induced hypertrophic
+3T3-L1 adipocytes, we first aimed to establish the potential contributors
+to oxidative stress in this cell model. Mature adipocytes with 10
+days of differentiation were induced with 25 mM glucose for an additional
+7 days to obtain hypertrophic adipocytes,<sup><xref ref-type="bibr" rid="ref15">15</xref></sup> and the generation of total ROS and superoxide anion (the main initial
+form of ROS in cells<sup><xref ref-type="bibr" rid="ref18">18</xref></sup>) was assessed using
+fluorescent probes. As expected, long-term incubation with high glucose
+significantly induced ROS production, but not through superoxide anion
+formation, whose levels significantly increased in both mature and
+hypertrophic adipocytes only after induction with pyocyanin, a toxin
+released by <italic toggle="yes">Pseudomonas aeruginosa</italic> that
+produces a superoxide anion and ROS in the host cell cytoplasm<sup><xref ref-type="bibr" rid="ref19">19</xref></sup> (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Figure S1</ext-link>). In accordance
+with this, H<sub>2</sub>O<sub>2</sub> has been proposed as the primary
+contributor of ROS in the presence of high glucose in other cell types.<sup><xref ref-type="bibr" rid="ref16">16</xref></sup> In addition, the excess of glucose has been
+shown to generate ROS in 3T3-L1 adipocytes mainly through nicotinamide
+adenine dinucleotide phosphate (NADPH) oxidase 4,<sup><xref ref-type="bibr" rid="ref20">20</xref></sup> the only isoform expressed in adipocytes that primarily
+produces H<sub>2</sub>O<sub>2</sub>.<sup><xref ref-type="bibr" rid="ref21">21</xref></sup></p><p>For the reason mentioned above, the effect of lemon verbena metabolites
+on glucotoxicity-induced ROS generation in hypertrophic adipocytes
+was conveniently assessed throughout this study by using the cell-permeable
+probe H<sub>2</sub>DCFDA, which is rapidly oxidized to the fluorescent
+2&#8242;,7&#8242;-dichlorofluorescein in the presence of ROS, predominantly
+H<sub>2</sub>O<sub>2</sub>. According to the cell count by Hoechst
+staining, none of the compounds showed a cytotoxic effect at the tested
+concentrations after incubation for 24 h (data not shown). All the
+compounds significantly reduced oxidative stress (<xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>A). Among them, hydroxytyrosol
+was the most potent metabolite, reducing ROS levels to approximately
+49% at the lowest concentration (25 &#956;M, <italic toggle="yes">p</italic> &lt;
+0. 001) and maintaining the inhibitory effect at higher concentrations.</p><fig id="fig2" position="float" orientation="portrait"><label>Figure 2</label><caption><p>Effect
+of seven plasma metabolites from lemon verbena on oxidative
+stress in hypertrophic 3T3-L1 adipocytes. A) Intracellular ROS levels
+measured by H<sub>2</sub>DCFDA staining. The metabolites were added
+at 25, 50, and 100 &#956;M for 24 h. * indicates significant differences
+between groups (<italic toggle="yes">p</italic> &lt; 0.001). B) MDA content expressed
+in nmol of MDA per mg of protein. The metabolites were added at 100
+&#956;M for 24 h. * indicates significant differences compared to
+untreated hypertrophic adipocytes (<italic toggle="yes">p</italic> &lt; 0.001).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="gr3" position="float" orientation="portrait" xlink:href="jf3c06309_0002.jpg"/></fig><p>All the other compounds were less effective than
+hydroxytyrosol
+at reducing oxidative stress and exhibited a similar dose&#8211;response
+behavior, reaching a significant ROS reduction from 25 &#956;M with
+verbascoside, ferulic acid, homoprotocatechuic acid, and luteolin-7-diglucuronide
+(16%, <italic toggle="yes">p</italic> &lt; 0.001; 18%, <italic toggle="yes">p</italic> &lt;
+0.001; 13%, <italic toggle="yes">p</italic> &lt; 0.01; and 13%, <italic toggle="yes">p</italic> &lt; 0.05, respectively), from 50 &#956;M with caffeic acid (12%, <italic toggle="yes">p</italic> &lt; 0.05), and from 100 &#956;M with isoverbascoside
+(13%, <italic toggle="yes">p</italic> &lt; 0.001). These results confirm that,
+in addition to verbascoside, other plasma metabolites from lemon verbena
+have antioxidant power and may contribute to the biological activity
+of the extract, as previously suggested.<sup><xref ref-type="bibr" rid="ref3">3</xref></sup></p><p>The overproduction of ROS in cells may damage macromolecules
+such
+as lipids, causing lipid peroxidation.<sup><xref ref-type="bibr" rid="ref22">22</xref></sup> To test whether the antioxidant power of lemon verbena metabolites
+prevents lipid peroxidation in hypertrophic adipocytes, the cells
+were treated with the concentration at which all metabolites significantly
+reduced ROS (100 &#956;M) and the content of MDA, the end product
+of this oxidative process,<sup><xref ref-type="bibr" rid="ref22">22</xref></sup> was measured.
+All metabolites except ferulic acid significantly reduced the content
+of this oxidative marker (<xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>B), suggesting that some polyphenols are effective
+antioxidants in lipophilic environments.<sup><xref ref-type="bibr" rid="ref7">7</xref></sup></p></sec><sec id="sec3.2"><label>3.2</label><title>Correlation between Antioxidant Effects and
+Uptake of Lemon Verbena Metabolites in Hypertrophic Adipocytes</title><p>To identify the intracellular metabolites responsible for the antioxidant
+capacity, we performed a comparative study between the intracellular
+ROS decrease and the uptake of lemon verbena metabolites by hypertrophic
+adipocytes. Notably, we employed a concentration of 100 &#956;M to
+aid in the identification of intracellular metabolites, considering
+it as the maximum nontoxic concentration at which the compounds demonstrated
+effectiveness. The analytical parameters for the seven compounds monitored
+by HPLC-DAD-ESI-IT-MS are summarized in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S1.</ext-link> The chromatograms of the detected intracellular metabolites
+are shown in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Figure S2</ext-link>, and the identification,
+retention time (RT), molecular mass, main MS/MS products, and quantification
+data for each peak are included in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Tables S2&#8211;S8</ext-link>. In addition, the spectra of identified metabolites are shown in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Figures S3&#8211;S9</ext-link>. In the case of verbascoside
+and isoverbascoside, metabolites were detected in both the membrane
+and cytoplasmic fractions (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S9</ext-link>).</p><sec id="sec3.2.1"><label>3.2.1</label><title>Verbascoside</title><p>Verbascoside is the
+primary phenylpropanoid glycoside present in lemon verbena and is
+structurally characterized by caffeoyl and hydroxytyrosol moieties
+bound to &#946;-glucopyranoside through ester and glycosidic links,
+respectively, with rhamnose in sequence (1&#8211;3) to the glucose
+molecule (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>a).
+When verbascoside was added at 100 &#956;M to hypertrophic adipocytes,
+the maximum intracellular concentration of this compound (peak 1, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 623) was reached after 3 h of incubation
+(0.765 &#177; 0.027 ng/&#956;g protein) and then declined dramatically
+at 12 h, maintaining a concentration of 0.182 &#177; 0.009 ng/&#956;g
+at the end of the assay (24 h) (<xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>A, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S2</ext-link>). Conversely,
+its isomer isoverbascoside (peak 2, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 623) appeared in the cytoplasm at 0.580 &#177; 0.035 ng/&#956;g
+after 3 h of incubation with verbascoside and progressively increased,
+reaching a maximum concentration at 24 h (0.850 &#177; 0.026 ng/&#956;g).</p><fig id="fig3" position="float" orientation="portrait"><label>Figure 3</label><caption><p>Cellular
+metabolism of verbascoside and its correlation with oxidative
+stress. A) Uptake and intracellular metabolism of verbascoside and
+its effect on ROS generation in hypertrophic 3T3-L1 adipocytes. Verbascoside
+was added at 100 &#956;M for 3, 12, and 24 h of treatment. Different
+letters indicate significant differences between groups (<italic toggle="yes">p</italic> &lt; 0.05). B) Scheme of the biotransformation pathways of verbascoside
+in the cytoplasm of a hypertrophic adipocyte.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="gr4" position="float" orientation="portrait" xlink:href="jf3c06309_0003.jpg"/></fig><p>In addition to isoverbascoside, four other intracellular
+metabolites
+derived from verbascoside were tentatively identified (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S2</ext-link>): three methylated metabolites from
+verbascoside and isoverbascoside, which were named methylated verbascoside,
+methylated isoverbascoside 1, and methylated isoverbascoside 2 (peaks
+3, 4, and 5, respectively, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 637),
+whose fragment ions at <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 193 confirmed
+the methyl position in the caffeoyl moiety,<sup><xref ref-type="bibr" rid="ref23">23</xref></sup> and a methylated isoverbascoside derivative (peak 6, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 720) tentatively proposed as methylated isoverbascoside
+diacetate. Although the fragmentation pattern of this metabolite has
+not yet been reported, monoacetylated products of verbascoside have
+been identified in rat urine and feces, and they are 42 Da heavier
+than the parent compound.<sup><xref ref-type="bibr" rid="ref23">23</xref></sup></p><p>Methylated
+verbascoside and methylated isoverbascoside 2 appeared
+in the cytoplasm at 0.326 &#177; 0.006 and 0.342 &#177; 0.011 ng/&#956;g,
+respectively, after 3 h of incubation with the standard and gradually
+decreased at the end of the experiment (<xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>A, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S2</ext-link>).
+Instead, methylated isoverbascoside 1 was detected below the LOQ at
+24 h, and methylated isoverbascoside diacetate, not found at 3 h,
+was remarkably present after 12 and 24 h (0.547 &#177; 0.038 and 0.721
+&#177; 0.058 ng/&#956;g, respectively). Regarding the antioxidant
+effect, the maximum decrease in intracellular ROS levels was observed
+after 3 and 12 h of incubation (57 and 55% ROS generation, respectively)
+and then the oxidative stress rose slightly at the end of the assay
+(67% ROS generation) (<xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>A).</p><p>These data indicate that verbascoside is rapidly
+absorbed in adipocytes.
+As previously suggested in the human intestinal Caco-2 cell model,<sup><xref ref-type="bibr" rid="ref24">24</xref></sup> verbascoside could cross the cell membrane through
+a passive diffusion mechanism but with active efflux probably mediated
+by transporters. However, the rapid decrease in the level of verbascoside
+in adipocytes may primarily be due to its high metabolism. The results
+show that verbascoside extensively isomerizes to isoverbascoside and
+that both undergo phase II reactions through the action of catechol-O-methyltransferases
+(COMTs) followed by acetyltransferases. It should be noted that methylation
+and acetylation increase the hydrophobicity of the metabolites, facilitating
+their diffusion through the cell membrane. However, the diacetylated
+product accumulated in the cytoplasm, suggesting that its excretion
+might depend on some efflux transporters (<xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>B). Consistent with our data, the isomerization,
+methylation, and acetylation of verbascoside have been observed in
+vivo,<sup><xref ref-type="bibr" rid="ref23">23</xref></sup> suggesting that biotransformation
+can occur efficiently in the liver.<sup><xref ref-type="bibr" rid="ref25">25</xref></sup> In
+this sense, our data indicate that other cell types, such as adipocytes,
+can also metabolize this phenylpropanoid.</p><p>Because verbascoside
+was rapidly eliminated in hypertrophic adipocytes,
+the exhibited antioxidant effect may be primarily attributed to its
+isomer, isoverbascoside, that accumulated in the cytoplasm. This is
+consistent with its demonstrated radical scavenger activity.<sup><xref ref-type="bibr" rid="ref2">2</xref></sup> The findings of the Pearson correlation analysis
+support this idea, where, despite revealing nonsignificant negative
+correlations between the reduction in ROS levels and intracellular
+metabolites (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S10</ext-link>), isoverbascoside
+had the correlation that most closely approached significance (<italic toggle="yes">p</italic> = 0.087). On the other hand, the diacetylated metabolite
+seems unlikely to contribute to this effect due to its late appearance.
+However, if this compound could exert any biological activity in adipocytes
+is unknown and deserves further attention.</p><p>It should be noted
+that verbascoside and its derivatives were significantly
+present in the membrane fractions (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S9</ext-link>), confirming the reported affinity and distribution of this phenylpropanoid
+in lipid membranes.<sup><xref ref-type="bibr" rid="ref26">26</xref></sup> In fact, verbascoside
+was the most effective preventing lipid peroxidation (<xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>B), and this effect has been
+related to its ability to interact with phospholipid membranes, acting
+as a radical scavenger in lipophilic environments.<sup><xref ref-type="bibr" rid="ref7">7</xref></sup></p></sec><sec id="sec3.2.2"><label>3.2.2</label><title>Isoverbascoside</title><p>Isoverbascoside
+is a structural isomer of verbascoside, in which the caffeoyl moiety
+is bound to &#946;-glucopyranoside through the hydroxyl group of
+C6 instead of C4 (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>b). Along with verbascoside, isoverbascoside is the primary
+plasma metabolite detected in rats after the ingestion of lemon verbena
+extract.<sup><xref ref-type="bibr" rid="ref3">3</xref></sup> When incubated at 100 &#956;M
+in hypertrophic adipocytes, this compound (peak 2, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 623) achieved its maximum intracellular concentration
+at 3 h (1.541 &#177; 0.021 ng/&#956;g) and then diminished slightly,
+reaching a concentration of 1.171 &#177; 0.076 ng/&#956;g at the
+end of the experiment (<xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>A, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S3</ext-link>).</p><fig id="fig4" position="float" orientation="portrait"><label>Figure 4</label><caption><p>Cellular metabolism of
+isoverbascoside and its correlation with
+oxidative stress. A) Uptake and intracellular metabolism of isoverbascoside
+and its effect on ROS generation in hypertrophic 3T3-L1 adipocytes.
+Isoverbascoside was added at 100 &#956;M for 3, 12, and 24 h of treatment.
+Different letters indicate significant differences between groups
+(<italic toggle="yes">p</italic> &lt; 0.05). B) Scheme of the biotransformation
+pathways of isoverbascoside in the cytoplasm of a hypertrophic adipocyte.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="gr5" position="float" orientation="portrait" xlink:href="jf3c06309_0004.jpg"/></fig><p>In addition, four other intracellular metabolites
+from isoverbascoside
+were tentatively identified in the cytoplasm of adipocytes: verbascoside
+(peak 1, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 623), methylated isoverbascoside
+1 (peak 3, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 637), methylated
+isoverbascoside 2 (peak 4, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 637)
+and methylated isoverbascoside diacetate (peak 5, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 720) (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S3</ext-link>). Methylated
+isoverbascoside 2 was detected at 0.900 &#177; 0.054 ng/&#956;g after
+3 h and gradually decreased throughout the assay, reaching 0.250 &#177;
+0.015 ng/&#956;g at 24 h (<xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>A, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S3</ext-link>). In addition,
+methylated isoverbascoside diacetate progressively appeared after
+12 and 24 h (0.625 &#177; 0.062 and 1.127 &#177; 0.075 ng/&#956;g,
+respectively). On the other hand, only traces of verbascoside were
+found, and methylated isoverbascoside 1 was detected below the LOQ.</p><p>Regarding the antioxidant effect, isoverbascoside achieved a maximum
+reduction in ROS levels after 3 and 12 h (53 and 54% ROS generation,
+respectively), increasing oxidative stress at the end of the experiment
+(69% ROS generation, <xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>A). According to the Pearson correlation analyses (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S10</ext-link>), the antioxidant behavior was strongly
+correlated to the uptake kinetics of isoverbascoside (<italic toggle="yes">p</italic> = 0.005), suggesting that this compound is the primary intracellular
+effector. As reported in hamster lung fibroblast cells,<sup><xref ref-type="bibr" rid="ref27">27</xref></sup> isoverbascoside could reduce oxidative stress
+in adipocytes by acting as a radical scavenger but also by modulating
+cellular antioxidant enzymes such as superoxide dismutase and catalase.
+Additionally, methylated isoverbascoside 2 showed a significant negative
+correlation between its intracellular appearance and ROS generation
+(<italic toggle="yes">p</italic> = 0.037), implying that this metabolite contributes
+to the antioxidant effect of isoverbascoside.</p><p>As also occurred
+after incubation with verbascoside, isoverbascoside
+is rapidly absorbed by adipocytes in a free form, probably by a passive
+diffusion mechanism, and it displays a high affinity for membranes
+(<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S9</ext-link>). Likewise, the biotransformation
+reactions (methylation and subsequent diacetylation) and the slow
+clearance of this metabolite in the cytoplasm of adipocytes were also
+confirmed (<xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>B). In contrast, isomerization to verbascoside was much less favorable
+than that in the inverse direction. This finding may be explained
+by the instability of verbascoside under elevated pH values,<sup><xref ref-type="bibr" rid="ref28">28</xref></sup> such as physiological conditions, which underlines
+the importance of the tissue environment on the structure and bioactivity
+of polyphenols.</p></sec><sec id="sec3.2.3"><label>3.2.3</label><title>Hydroxytyrosol</title><p>Hydroxytyrosol (4-[2-dihydroxyphenyl]ethanol)
+(<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>c) is the
+major phenolic component found in olive oil, either in the free form
+or as a part of the secoiridoid oleuropein, and it has been detected
+as a plasma metabolite of lemon verbena, probably derived from the
+hydrolysis of glycosidic bonds of verbascoside and isoverbascoside.<sup><xref ref-type="bibr" rid="ref3">3</xref></sup> When incubated at 100 &#956;M, hydroxytyrosol
+was not detected in the cytoplasm of adipocytes at any time, but three
+new metabolites derived from the parent compound were identified and
+quantified (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S4</ext-link>): two hydroxytyrosol
+glucuronides (peaks 1 and 2, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 329)<sup><xref ref-type="bibr" rid="ref29">29</xref></sup> and homovanillyl alcohol glucuronide
+(peak 3, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 343), whose fragment
+ion at <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 167 confirmed a methoxy
+position in the benzene ring of the phenol moiety (homovanillyl alcohol).<sup><xref ref-type="bibr" rid="ref29">29</xref></sup></p><p>First, the two hydroxytyrosol glucuronide
+isomers and homovanillyl alcohol glucuronide rapidly appeared in the
+cytoplasm at 3 h (0.742 &#177; 0.026, 1.967 &#177; 0.029, and 1.264
+&#177; 0.069 ng/&#956;g, respectively). However, both hydroxytyrosol
+glucuronides progressively disappeared throughout the experiment,
+while homovanillyl alcohol glucuronide accumulated, reaching a concentration
+of 2.754 &#177; 0.040 ng/&#956;g at 24 h (<xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref>A, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S4</ext-link>).
+Concurrently, oxidative stress diminished with incubation time, reaching
+its maximum reduction at the end of the experiment (46% ROS generation, <xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref>A). In concordance
+with this, the Pearson correlation coefficients confirmed a significant
+negative correlation between the latter metabolite and the reduction
+in ROS levels (<italic toggle="yes">p</italic> = 0.041) (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S10</ext-link>).</p><fig id="fig5" position="float" orientation="portrait"><label>Figure 5</label><caption><p>Cellular metabolism of hydroxytyrosol and its correlation
+with
+oxidative stress. A) Uptake and intracellular metabolism of hydroxytyrosol
+and its effect on ROS generation in hypertrophic 3T3-L1 adipocytes.
+Hydroxytyrosol was added at 100 &#956;M for 3, 12, and 24 h of treatment.
+Different letters indicate significant differences between groups
+(<italic toggle="yes">p</italic> &lt; 0.05). B) Scheme of the biotransformation
+pathways of hydroxytyrosol in the cytoplasm of a hypertrophic adipocyte.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="gr6" position="float" orientation="portrait" xlink:href="jf3c06309_0005.jpg"/></fig><p>Despite not detecting hydroxytyrosol in the cytoplasm
+of adipocytes,
+a previous study in Caco-2 cells demonstrated that this phenylethanoid
+crosses the cell membrane via passive diffusion.<sup><xref ref-type="bibr" rid="ref30">30</xref></sup> Since hydroxytyrosol uptake in adipocytes was not evaluated
+at incubation times of less than 3 h, we propose that this compound
+could rapidly diffuse in free form into the cells and be immediately
+conjugated by UDP-glucuronosyltransferases (UGTs) and O-methyltransferases.
+Furthermore, the absence of homovanillyl alcohol (methyl hydroxytyrosol)
+suggested that the parent compound is preferentially glucuronidated
+and subsequently methylated (<xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref>B). According to the above sequence of events, this
+metabolic pathway is also predominant in human hepatoma HepG2 cells
+after long incubation times.<sup><xref ref-type="bibr" rid="ref31">31</xref></sup> As reported
+with several flavonoids,<sup><xref ref-type="bibr" rid="ref32">32</xref></sup> this presence
+could occur because hydroxytyrosol induces UGT activity, favoring
+its own glucuronidation.</p><p>However, although methylation or glucuronidation
+could favor the
+excretion of metabolites, homovanillyl alcohol glucuronide accumulated
+in the cytoplasm of adipocytes. It has been reported that conjugated
+metabolites accumulate in certain tissues and form a metabolite pool
+for the release of active metabolites, which could explain this fact;<sup><xref ref-type="bibr" rid="ref33">33</xref></sup> but because no extracellular metabolites were
+assessed in this study, further research is needed to clarify the
+clearance of this metabolite.</p><p>Data on the in vitro antioxidant
+capacity of hydroxytyrosol metabolites
+compared to the parent compound are controversial,<sup><xref ref-type="bibr" rid="ref34">34</xref>,<xref ref-type="bibr" rid="ref35">35</xref></sup> probably due to the fact that these metabolites require prior deglucuronidation
+to cross the cell membrane and exert their effects, as suggested previously
+in rat aorta rings and human red blood cells.<sup><xref ref-type="bibr" rid="ref36">36</xref>,<xref ref-type="bibr" rid="ref37">37</xref></sup> Consistent with this property, hydroxytyrosol glucuronides have
+been shown to exert a comparable ability to that of the parent compound
+in protecting renal tubular epithelial cells against membrane oxidative
+damage, probably through direct antioxidant action.<sup><xref ref-type="bibr" rid="ref38">38</xref></sup></p><p>Notably, hydroxytyrosol, which is well-known as a
+potent radical
+scavenger, also induces the expression of glutathione-related antioxidant
+enzymes in HepG2 cells by enhancing the nuclear translocation of nuclear
+factor erythroid 2-related factor 2 (Nrf2) via phosphatidylinositol-3-kinase
+(PI3K)/protein kinase B (AKT) and extracellular signal-regulated kinase
+(ERK) pathways.<sup><xref ref-type="bibr" rid="ref11">11</xref></sup> According to this pathway,
+we propose that hydroxytyrosol may reverse oxidative stress in hypertrophic
+adipocytes through the same mechanism. However, whether glucuronide
+derivatives interact with intracellular targets once hydroxytyrosol
+is metabolized or, in contrast, whether hydroxytyrosol induces the
+cellular antioxidant defense system by interacting extracellularly
+with transmembrane receptors requires further research.</p></sec><sec id="sec3.2.4"><label>3.2.4</label><title>Caffeic Acid</title><p>Caffeic acid (3,4-dihydroxycinnamic
+acid) (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>d) is
+the most common hydroxycinnamic acid found in fruits, vegetables,
+cereals, and coffee, primarily as an ester with quinic acid (chlorogenic
+acid). Moreover, it represents a plasma metabolite of lemon verbena
+derived from the hydrolysis of glycosidic bonds of verbascoside and
+isoverbascoside.<sup><xref ref-type="bibr" rid="ref3">3</xref></sup> After incubation at 100
+&#956;M, caffeic acid (peak 4, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 179) was poorly absorbed by adipocytes, reaching a maximum concentration
+of 0.313 &#177; 0.006 ng/&#956;g at 3 h and decreasing throughout
+the experiment (0.175 &#177; 0.007 and 0.213 &#177; 0.015 ng/&#956;g
+after 12 and 24 h, respectively) (<xref rid="fig6" ref-type="fig">Figure <xref rid="fig6" ref-type="fig">6</xref></xref>A, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S5</ext-link>).
+Despite the low intracellular concentration, caffeic acid exhibited
+a strong antioxidant effect on adipocytes, reducing oxidative stress
+to 55% after 3 and 12 h of incubation and increasing it at the end
+of the assay (76% ROS generation) (<xref rid="fig6" ref-type="fig">Figure <xref rid="fig6" ref-type="fig">6</xref></xref>A).</p><fig id="fig6" position="float" orientation="portrait"><label>Figure 6</label><caption><p>Cellular metabolism of caffeic acid and its
+correlation with oxidative
+stress. A) Uptake of caffeic acid and its effect on ROS generation
+in hypertrophic 3T3-L1 adipocytes. Caffeic acid was added at 100 &#956;M
+for 3, 12, and 24 h of treatment. Different letters indicate significant
+differences between groups (<italic toggle="yes">p</italic> &lt; 0.05). B) Scheme
+of the biotransformation pathways of caffeic acid in the cytoplasm
+of a hypertrophic adipocyte.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="gr7" position="float" orientation="portrait" xlink:href="jf3c06309_0006.jpg"/></fig><p>In addition, three new intracellular metabolites
+were detected
+below the LOD or LOQ (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S5</ext-link>). They were
+identified as 3-methoxy caffeic acid 4-O-glucuronide (ferulic acid
+glucuronide, peak 1, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 369), caffeic
+acid glucuronide (peak 2, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 355),
+and 4-methoxy caffeic acid 3-O-glucuronide (isoferulic acid glucuronide,
+peak 3, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 369).<sup><xref ref-type="bibr" rid="ref39">39</xref></sup> The fragment ion at <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 193 in peaks 1 and 3 corresponded to monohydroxycinnamic acid bearing
+a methoxy substituent at position 3 or 4 on the phenyl ring (ferulic
+acid or isoferulic acid, respectively), and the fragment ion at <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 175 confirmed the glucuronidation at
+position 4 or 3. The longest RT of isoferulic acid compared to ferulic
+acid<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> allowed us to identify peaks 1 and
+3 as ferulic acid glucuronide and isoferulic acid glucuronide, respectively.</p><p>Among the seven lemon verbena metabolites assayed in this study,
+caffeic acid was the least absorbed by hypertrophic adipocytes. The
+poor absorption of caffeic acid is consistent with previous studies
+in Caco-2 and HepG2 cells.<sup><xref ref-type="bibr" rid="ref41">41</xref>,<xref ref-type="bibr" rid="ref42">42</xref></sup> In fact, this hydroxycinnamate
+is transported in enterocytes via paracellular diffusion and, to a
+lesser extent, by the monocarboxylic acid transporter (MCT).<sup><xref ref-type="bibr" rid="ref42">42</xref></sup> Previous studies have demonstrated that MCT1
+and MCT4 are expressed in mouse and human adipocyte cell lines and
+that their expression can be induced during differentiation or by
+hypoxia or cold exposure,<sup><xref ref-type="bibr" rid="ref43">43</xref>,<xref ref-type="bibr" rid="ref44">44</xref></sup> suggesting a low expression
+level in our in vitro model of hypertrophic cells that explains the
+poor absorption of caffeic acid. Nevertheless, this characteristic
+should be considered with caution and deserves further investigation.</p><p>Caffeic acid was found to be largely intact in the cytoplasm of
+adipocytes with only traces of glucuronide and methyl glucuronide
+derivatives. Furthermore, the absence of methylated caffeic acid (ferulic
+acid) indicated that glucuronidation occurred prior to methylation
+(<xref rid="fig6" ref-type="fig">Figure <xref rid="fig6" ref-type="fig">6</xref></xref>B), as observed
+with hydroxytyrosol (<xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref>B). Consistent with our results, caffeic acid accumulates
+little in the cytoplasm of HepG2 cells but exhibits a higher rate
+of metabolism,<sup><xref ref-type="bibr" rid="ref41">41</xref></sup> probably due to the higher
+activity and isoform diversity of phase II drug-metabolizing enzymes
+in hepatocytes.<sup><xref ref-type="bibr" rid="ref45">45</xref></sup> Moreover, caffeic acid
+has been shown to diminish oxidative stress-induced hepatotoxicity
+by enhancing the expression of detoxification enzymes such as heme
+oxygenase-1 and glutamate-cysteine ligase via the ERK/Nrf2 pathway.<sup><xref ref-type="bibr" rid="ref46">46</xref></sup> Despite the lack of statistical significance
+in the Pearson correlation analysis (<italic toggle="yes">p</italic> = 0.074) (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S10</ext-link>), the substantial accumulation of free
+caffeic acid in the cytoplasm suggests that this metabolite is the
+intracellular effector responsible for reducing ROS in hypertrophic
+adipocytes, probably acting as a direct radical scavenger<sup><xref ref-type="bibr" rid="ref12">12</xref></sup> but also modulating the ERK/Nrf2 pathway.</p></sec><sec id="sec3.2.5"><label>3.2.5</label><title>Ferulic Acid</title><p>Ferulic acid (4-hydroxy-3-methoxycinnamic
+acid) (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>e),
+along with caffeic acid, is an abundant hydroxycinnamic acid in foods
+and has been detected as a plasma metabolite of lemon verbena, probably
+from the 3-O-methylation of the caffeic acid moiety after the hydrolysis
+of glycosidic bonds of verbascoside and isoverbascoside.<sup><xref ref-type="bibr" rid="ref3">3</xref>,<xref ref-type="bibr" rid="ref47">47</xref></sup> When ferulic acid was added to adipocytes at 100 &#956;M, the maximum
+intracellular concentration of this compound (peak 3, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 193) was reached after 3 h of incubation (0.570
+&#177; 0.022 ng/&#956;g) and then slightly decreased, accumulating
+0.461 &#177; 0.010 ng/&#956;g at 24 h (<xref rid="fig7" ref-type="fig">Figure <xref rid="fig7" ref-type="fig">7</xref></xref>A, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S6</ext-link>).
+Moreover, the antioxidant behavior was correlated with the intracellular
+accumulation of ferulic acid, showing the lowest ROS levels at 3 and
+12 h (62 and 67% ROS generation, respectively) and increasing throughout
+the experiment (82% ROS generation at 24 h, <xref rid="fig7" ref-type="fig">Figure <xref rid="fig7" ref-type="fig">7</xref></xref>A).</p><fig id="fig7" position="float" orientation="portrait"><label>Figure 7</label><caption><p>Cellular metabolism of ferulic acid and its
+correlation with oxidative
+stress. A) Uptake of ferulic acid and its effect on ROS generation
+in hypertrophic 3T3-L1 adipocytes. Ferulic acid was added at 100 &#956;M
+for 3, 12, and 24 h of treatment. Different letters indicate significant
+differences between groups (<italic toggle="yes">p</italic> &lt; 0.05). B) Scheme
+of the biotransformation pathways of ferulic acid in the cytoplasm
+of a hypertrophic adipocyte.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="gr8" position="float" orientation="portrait" xlink:href="jf3c06309_0007.jpg"/></fig><p>In addition, two new metabolites below the LOD
+or LOQ were detected
+in the cytoplasm of adipocytes after incubation with ferulic acid
+(<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S6</ext-link>): unknown (peak 1, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 500) and ferulic acid glucuronide (peak 2, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 369). The moderate uptake and metabolism
+of ferulic acid are consistent with those reported in in vitro hepatic
+and colonic epithelium models,<sup><xref ref-type="bibr" rid="ref41">41</xref>,<xref ref-type="bibr" rid="ref48">48</xref></sup> in which glucuronidation
+was the primary metabolic transformation of this hydroxycinnamate.
+Our data also indicate that ferulic acid is more extensively absorbed
+than caffeic acid, as observed in HepG2 cells.<sup><xref ref-type="bibr" rid="ref41">41</xref></sup> Previously, MCT was reported to mediate the transepithelial
+transport of ferulic acid,<sup><xref ref-type="bibr" rid="ref49">49</xref></sup> as is the
+case for caffeic acid,<sup><xref ref-type="bibr" rid="ref42">42</xref></sup> but with a higher
+affinity due to the presence of the methoxy substituent.<sup><xref ref-type="bibr" rid="ref50">50</xref></sup> Likewise, another study has shown that ferulic
+acid is mostly transported by passive diffusion in the colonic epithelium,<sup><xref ref-type="bibr" rid="ref48">48</xref></sup> a mechanism that is facilitated by the higher
+hydrophobicity of this compound compared to caffeic acid (<xref rid="fig7" ref-type="fig">Figure <xref rid="fig7" ref-type="fig">7</xref></xref>B).</p><p>According
+to our data, free ferulic acid was the predominant form
+that accumulated in the cytoplasm of adipocytes, indicating that it
+acts as the intracellular effector responsible for decreasing glucotoxicity-induced
+oxidative stress. This observation is further supported by the Pearson
+correlation coefficient (<italic toggle="yes">p</italic> = 0.032) (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S10</ext-link>). As in the case of many polyphenols,
+the specific mechanism of the antioxidant effect of ferulic acid seems
+to be complex since it is able to scavenge free radicals, enhance
+antioxidant enzymes, and inhibit pro-oxidant enzymes.<sup><xref ref-type="bibr" rid="ref51">51</xref></sup> In this regard, ferulic acid suppressed ROS generation
+in rat vascular smooth muscle cells exposed to H<sub>2</sub>O<sub>2</sub> by increasing the activity of antioxidant enzymes (superoxide
+dismutase, catalase, and glutathione peroxidase) and inhibiting the
+expression and activity of NADPH oxidase.<sup><xref ref-type="bibr" rid="ref52">52</xref></sup></p></sec><sec id="sec3.2.6"><label>3.2.6</label><title>Homoprotocatechuic Acid</title><p>Homoprotocatechuic
+acid (3,4-dihydroxyphenylacetic acid, DOPAC) (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>f) is a neuronal metabolite of dopamine but
+is also produced through the metabolism of certain phenolic acids
+and flavonoids in the gastrointestinal tract. It has been identified
+in rat plasma after lemon verbena ingestion,<sup><xref ref-type="bibr" rid="ref3">3</xref></sup> probably through the biotransformation of caffeic acid or hydroxytyrosol.<sup><xref ref-type="bibr" rid="ref53">53</xref>,<xref ref-type="bibr" rid="ref54">54</xref></sup> When added at 100 &#956;M to hypertrophic adipocytes, homoprotocatechuic
+acid (peak 1, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 167)<sup><xref ref-type="bibr" rid="ref55">55</xref></sup> was detected intracellularly at 0.288 &#177;
+0.039 ng/&#956;g after 3 h of incubation; it reached its maximum
+concentration (0.342 &#177; 0.015 ng/&#956;g) at 12 h and decreased
+to a final concentration of 0.187 &#177; 0.006 ng/&#956;g at the
+end of the assay (<xref rid="fig8" ref-type="fig">Figure <xref rid="fig8" ref-type="fig">8</xref></xref>A, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S7</ext-link>). Concurrently, intracellular
+ROS levels decreased strongly at 3 and 12 h (59% and 66% ROS generation,
+respectively), restoring with the clearance of homoprotocatechuic
+acid at 24 h (82% ROS generation, <xref rid="fig8" ref-type="fig">Figure <xref rid="fig8" ref-type="fig">8</xref></xref>A).</p><fig id="fig8" position="float" orientation="portrait"><label>Figure 8</label><caption><p>Cellular metabolism of homoprotocatechuic acid
+and its correlation
+with oxidative stress. A) Uptake and intracellular metabolism of homoprotocatechuic
+acid and its effect on ROS generation in hypertrophic 3T3-L1 adipocytes.
+Homoprotocatechuic acid was added at 100 &#956;M for 3, 12, and 24
+h of treatment. Different letters indicate significant differences
+between groups (<italic toggle="yes">p</italic> &lt; 0.05). B) Scheme of the biotransformation
+pathways of homoprotocatechuic acid in the cytoplasm of a hypertrophic
+adipocyte.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="gr9" position="float" orientation="portrait" xlink:href="jf3c06309_0008.jpg"/></fig><p>In addition, a new intracellular metabolite tentatively
+identified
+as homoveratric acid (3,4-dimethoxyphenylacetic acid, peak 2, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 195)<sup><xref ref-type="bibr" rid="ref56">56</xref></sup> appeared
+after incubation with homoprotocatechuic acid, reaching a concentration
+of 0.095 &#177; 0.005 ng/&#956;g at 24 h (<xref rid="fig8" ref-type="fig">Figure <xref rid="fig8" ref-type="fig">8</xref></xref>A, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S7</ext-link>).
+These data indicate that homoprotocatechuic acid is poorly absorbed
+and accumulated in adipocytes, similar to caffeic acid (<xref rid="fig6" ref-type="fig">Figure <xref rid="fig6" ref-type="fig">6</xref></xref>A). To our knowledge, this
+is the first time that the cellular uptake of homoprotocatechuic acid
+has been explored, but the structural similarity to that of caffeic
+acid suggests that its influx transport could require the involvement
+of some transporters.<sup><xref ref-type="bibr" rid="ref50">50</xref></sup> Once in the cytoplasm,
+homoprotocatechuic acid was slowly metabolized to homoveratric acid,
+suggesting that methylation is the primary clearance pathway for this
+phenolic acid in adipocytes (<xref rid="fig8" ref-type="fig">Figure <xref rid="fig8" ref-type="fig">8</xref></xref>B).</p><p>In addition, the decrease in ROS generation
+might be exclusively
+attributed to homoprotocatechuic acid since the ROS levels increased
+with the clearance of this compound, as evidenced by the Pearson correlation
+coefficient (<italic toggle="yes">p</italic> = 0.028) (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S10</ext-link>). In this context, other authors have shown that homoprotocatechuic
+acid is a catabolite from quercetin glycosides that acts as a free
+radical scavenger but also as an indirect antioxidant by inducing
+phase II detoxification gene expression, such as glutathione <italic toggle="yes">S</italic>-transferase.<sup><xref ref-type="bibr" rid="ref13">13</xref></sup> Moreover, the
+presence of homoveratric acid in adipocytes did not contribute to
+the antioxidant activity. It is proposed that the methylation of both
+free 3- and 4-hydroxyl groups eliminates the chemical antioxidant
+capacity of the parent compound, consistent with a previous study
+in which 3,4-dimethoxycaffeic acid (caffeic acid without its hydroxyl
+groups) exhibited very little antioxidant capacity compared to caffeic
+acid or ferulic acid (monomethylated caffeic acid).<sup><xref ref-type="bibr" rid="ref57">57</xref></sup></p></sec><sec id="sec3.2.7"><label>3.2.7</label><title>Luteolin-7-diglucuronide</title><p>Luteolin-7-diglucuronide
+(luteolin-7-O-[&#946;-glucuronosyl(1&#8594;2)-&#946;-glucuronide])
+(<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>g) is present
+in lemon verbena extract and represents one of the primary flavone
+derivatives detected in rat plasma after the ingestion of the extract,
+which may appear through the absorption of the intact compound in
+the gut or after its hydrolysis to luteolin and subsequent conjugation
+to diglucuronide during its passage through the enterocytes.<sup><xref ref-type="bibr" rid="ref3">3</xref></sup> When incubated at 100 &#956;M in hypertrophic
+adipocytes, luteolin-7-diglucuronide (peak 1, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 637)<sup><xref ref-type="bibr" rid="ref58">58</xref></sup> appeared rapidly in
+the cytoplasm, reaching a concentration of 1.350 &#177; 0.038 ng/&#956;g
+after 3 h that was maintained until the end of the assay (<xref rid="fig9" ref-type="fig">Figure <xref rid="fig9" ref-type="fig">9</xref></xref>A, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S8</ext-link>).</p><fig id="fig9" position="float" orientation="portrait"><label>Figure 9</label><caption><p>Cellular metabolism of luteolin-7-diglucuronide and its
+correlation
+with oxidative stress. A) Uptake and intracellular metabolism of luteolin-7-diglucuronide
+and its effect on ROS generation in hypertrophic 3T3-L1 adipocytes.
+Luteolin-7-diglucuronide was added at 100 &#956;M for 3, 12, and
+24 h of treatment. Different letters indicate significant differences
+between groups (<italic toggle="yes">p</italic> &lt; 0.05). B) Scheme of the biotransformation
+pathways of luteolin-7-diglucuronide in the cytoplasm of a hypertrophic
+adipocyte.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="gr10" position="float" orientation="portrait" xlink:href="jf3c06309_0009.jpg"/></fig><p>Furthermore, three new intracellular metabolites
+were tentatively
+identified after incubating with the standard (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S8</ext-link>): two isomers of methylated luteolin-7-diglucuronide
+(peaks 2 and 3, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 651), whose
+fragment ions at <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 299 may correspond
+to chrysoeriol (3&#8242;-O-methyl luteolin) or diosmetin (4&#8242;-O-methyl
+luteolin),<sup><xref ref-type="bibr" rid="ref59">59</xref></sup> and luteolin-7-glucuronide
+(peak 4, <italic toggle="yes">m</italic>/<italic toggle="yes">z</italic> 461).<sup><xref ref-type="bibr" rid="ref60">60</xref></sup> After 3 h, the two methylated isomers appeared in the cytoplasm
+at 0.292 &#177; 0.004 and 0.283 &#177; 0.021 ng/&#956;g and luteolin-7-glucuronide
+was detected at 0.188 + 0.012 ng/&#956;g. As with the parent compound,
+the concentrations of the new metabolites were constant throughout
+the experiment (<xref rid="fig9" ref-type="fig">Figure <xref rid="fig9" ref-type="fig">9</xref></xref>A,<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S8</ext-link>). Regarding the antioxidant
+effect, the maximum decrease in intracellular ROS levels was observed
+after 3 and 12 h (58 and 62% ROS generation, respectively), and then
+oxidative stress increased slightly at the end of the assay (75% ROS
+generation) (<xref rid="fig9" ref-type="fig">Figure <xref rid="fig9" ref-type="fig">9</xref></xref>A).</p><p>Due to the high polarity of glucuronide conjugates, the
+rapid intracellular
+appearance of luteolin-7-diglucuronide suggests the existence of a
+transporter that mediates the entry of this compound into the cell.
+In this regard, several transporters for flavonoids have been previously
+described.<sup><xref ref-type="bibr" rid="ref61">61</xref></sup> In particular, two members
+of the organic anion transporting polypeptide (OATP) family (i.e.,
+OATP1B1 and 1B3) have been shown to actively take up luteolin-3&#8242;-glucuronide
+in liver cells.<sup><xref ref-type="bibr" rid="ref62">62</xref></sup> Additionally, the transport
+of other flavonoid glucuronides, such as quercetin-3-glucuronide and
+quercetin-7-glucuronide, has been proposed to occur through an unidentified
+transporter similar to OATP2.<sup><xref ref-type="bibr" rid="ref63">63</xref></sup> However,
+flavonoid transporters have not yet been discovered in adipocytes.</p><p>Although the biotransformation of luteolin-7-diglucuronide is unknown,
+its aglycone luteolin has been shown to undergo extensive metabolism
+in vivo. Luteolin monoglucuronides and methylated luteolin glucuronides
+have been found in rat plasma after the administration of luteolin.<sup><xref ref-type="bibr" rid="ref64">64</xref></sup> Our data show that luteolin-7-diglucuronide
+is also subject to the action of COMTs in adipocytes, yielding chrysoeriol-7-diglucuronide
+and diosmetin-7-diglucuronide. In addition, the formation of luteolin
+monoglucuronide suggests the presence of &#946;-glucuronidase activity
+in these cells (<xref rid="fig9" ref-type="fig">Figure <xref rid="fig9" ref-type="fig">9</xref></xref>B). This enzymatic activity was also observed in hypertrophic 3T3-L1
+adipocytes after incubation with quercetin-3-glucuronide<sup><xref ref-type="bibr" rid="ref65">65</xref></sup> and seemed to be enhanced under certain conditions
+of cell damage, as occurs in inflammation.<sup><xref ref-type="bibr" rid="ref66">66</xref></sup></p><p>Furthermore, no clearance of luteolin metabolites was observed
+during the incubation time of this experiment, suggesting an inhibition
+of efflux transporters. Some flavonoids can act as the potent inhibitors
+of efflux transporters, such as breast cancer resistance protein (BCRP).<sup><xref ref-type="bibr" rid="ref67">67</xref></sup> Indeed, BCRP inhibition has been shown to reduce
+the excretion of luteolin monoglucuronides, favoring the formation
+of diglucuronide in HeLa cells overexpressing UGT1A9.<sup><xref ref-type="bibr" rid="ref68">68</xref></sup> However, further research should be conducted to clarify
+the specific mechanism underlying the cellular excretion of luteolin
+glucuronides.</p><p>Based on the Pearson correlation coefficients
+(<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">Table S10</ext-link>), the intracellular concentrations
+of luteolin-7-diglucuronide
+and its methylated isomers (1 and 2) exhibited a negative correlation
+with ROS levels (<italic toggle="yes">p</italic> = 0.042, <italic toggle="yes">p</italic> =
+0.037 and <italic toggle="yes">p</italic> = 0.043, respectively). Considering that
+luteolin-7-diglucuronide was the predominant intracellular metabolite
+in hypertrophic adipocytes, it is proposed to be the primary responsible
+for the decrease in ROS generation, with a modest contribution from
+its methylated metabolites. The in vitro antioxidant capacity of this
+flavonoid diglucuronide has been previously reported,<sup><xref ref-type="bibr" rid="ref2">2</xref>,<xref ref-type="bibr" rid="ref69">69</xref></sup> but little is known about its pharmacological activity in vivo.
+Other authors have shown cardioprotective effects in mice,<sup><xref ref-type="bibr" rid="ref70">70</xref></sup> proposing that the prevention of isoproterenol-induced
+myocardial injury and fibrosis is due, in part, to the reduction of
+ROS generation by inhibiting the expression of NADPH oxidase subunits
+in the heart. Considering this, luteolin-7-diglucuronide emerges as
+a potential protective agent against oxidative-stress-associated metabolic
+disorders.</p><p>The overall results indicate that phenolic metabolites
+from lemon
+verbena are rapidly absorbed in free form by hypertrophic 3T3-L1 adipocytes
+and undergo phase II and, to a lesser extent, phase I reactions probably
+through the action of methyltransferase, UGT, acetylase, and &#946;-glucuronidase
+enzymes. In particular, verbascoside, isoverbascoside, hydroxytyrosol,
+and luteolin-7-diglucuronide are absorbed more extensively than phenolic
+acids, which probably favors their higher intracellular metabolism.
+In addition, glucuronide conjugations seem to be predominant on phenylethanoids
+and phenolic acids, while polyphenols with more complex structures
+are preferentially methylated. Accordingly, these metabolites, either
+in free form or as conjugated metabolites, are intracellular effectors
+that decrease glucotoxicity-induced oxidative stress. We propose that
+isoverbascoside, homovanillyl alcohol glucuronide, caffeic acid, ferulic
+acid, homoprotocatechuic acid, and luteolin-7-diglucuronide are the
+final effectors that exert these antioxidant effects, probably as
+radical scavengers or interacting with antioxidant enzymes in hypertrophic
+adipocytes. It should be noted that the antioxidant effect exhibited
+by the seven metabolites evaluated was maintained, even after 24 h.
+Although the concentrations of the major metabolites found in plasma
+of rats after the ingestion of lemon verbena extract are within the
+nanomolar range,<sup><xref ref-type="bibr" rid="ref3">3</xref></sup> it is postulated that
+the slow clearance of these metabolites in cells might favor their
+intracellular accumulation and, consequently, their long-term antioxidant
+effects in tissues. This is particularly relevant for the formulation
+of dietary supplements, as they are intended for daily consumption
+to ensure effectiveness.</p><p>In conclusion, these data provide evidence
+of how the bioactivity
+of polyphenols depends on their uptake, metabolism, and accumulation
+in target cells. In particular, these results offer a better understanding
+of their potential molecular mechanisms and, consequently, of the
+therapeutic effect of lemon verbena in ameliorating obesity-induced
+oxidative stress.</p></sec></sec></sec></body><back><notes id="notes1" notes-type="si"><title>Supporting Information Available</title><p>The Supporting Information is
+available free of charge at <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/10.1021/acs.jafc.3c06309?goto=supporting-info">https://pubs.acs.org/doi/10.1021/acs.jafc.3c06309</ext-link>.<list id="silist1" list-type="simple"><list-item><p>Supplementary materials and methods; effect of glucotoxicity
+on oxidative stress in hypertrophic 3T3-L1 adipocytes (Figure S1);
+linear regression data, LOD, and LOQ of the standard compounds monitored
+by DAD (Table S1); representative chromatograms of the intracellular
+metabolites detected by HPLC-DAD-ESI-IT-MS in hypertrophic adipocytes
+(Figure S2); quantification of intracellular metabolites characterized
+by HPLC-DAD-ESI-IT-MS in negative mode after incubation with verbascoside,
+isoverbascoside, hydroxytyrosol, caffeic acid, ferulic acid, homoprotocatechuic
+acid, and luteolin-7-diglucuronide in hypertrophic 3T3-L1 adipocytes
+(Tables S2&#8211;S8, respectively); MS spectra of intracellular metabolites
+described in Tables S2&#8211;S8 (Figures S3&#8211;S9, respectively);
+concentration of intracellular metabolites in the membrane fractions
+after incubation with verbascoside or isoverbascoside in hypertrophic
+3T3-L1 adipocytes (Table S9). Pearson correlation coefficients between
+the ROS levels exhibited in hypertrophic 3T3-L1 adipocytes after incubation
+with the seven lemon verbena compounds and the concentration of their
+intracellular metabolites over time (Table S10) (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jafc.3c06309/suppl_file/jf3c06309_si_001.pdf">PDF</ext-link>)</p></list-item></list></p></notes><sec sec-type="supplementary-material"><title>Supplementary Material</title><supplementary-material content-type="local-data" id="sifile1" position="float" orientation="portrait"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="jf3c06309_si_001.pdf" position="float" orientation="portrait"><caption><p>jf3c06309_si_001.pdf</p></caption></media></supplementary-material></sec><notes notes-type="" id="notes4"><title>Author Contributions</title><p><sup>&#167;</sup> M.H.-L. and V.M. share co-senior authorship. M.O.-V.,
+M.H.-L.,
+and V.M. contributed to conceptualization; M.O.-V., N.S.-M., and M.H.-L.
+contributed to methodology; M.O.-V. and N.S.-M. contributed to software;
+M.O.-V. and N.S.-M. contributed to validation; M.O.-V. and N.S.-M.
+contributed to formal analysis; M.O.-V. and N.S.-M. contributed to
+investigation; V.M. contributed to resources; M.O.-V. and N.S.-M.
+contributed to data curation; M.O.-V. contributed to writing&#8212;original
+draft preparation; N.S.-M., M.H.-L., and V.M. contributed to writing&#8212;review
+and editing; M.O.-V. and M.H.-L. contributed to visualization; M.H.-L.
+and V.M. contributed to supervision; M.H.-L. and V.M. contributed
+to project administration; M.H.-L. and V.M contributed to funding
+acquisition. All the authors have read and agreed to the published
+version of the manuscript.</p></notes><notes notes-type="funding-statement" id="notes3"><p>This research
+was funded by the Spanish Ministry of Economy and
+Competitiveness (PID2021&#8211;125188OB-C32), Generalitat Valenciana
+(PROMETEO/2021/059), and CIBER (CB12/03/30038, Fisiopatologia de la
+Obesidad y la Nutricion, CIBERobn, Instituto de Salud Carlos III).
+M.H.-L. has also been supported by the Requalification of the Spanish
+University System for 2021/2023 grant (Next Generation). PLANTAGING
+Project of the &#8220;Programa de Ayudas para la Investigaci&#243;n
+del Envejecimiento de la Fundaci&#243;n ICAR, call 2023&#8221;.</p></notes><notes notes-type="COI-statement" id="notes2"><p>The authors
+declare no competing financial interest.</p></notes><ack><title>Acknowledgments</title><p>We thank NUTRAFUR, SL for providing us with the
+raw materials.</p></ack><glossary id="dl1"><def-list><title>Abbreviations:</title><def-item><term>BCRP</term><def><p>breast
+cancer resistance protein</p></def></def-item><def-item><term>COMT</term><def><p>catechol-O-methyltransferase</p></def></def-item><def-item><term>DMEM</term><def><p>Dulbecco&#8217;s modified Eagle&#8217;s
+medium</p></def></def-item><def-item><term>DMSO</term><def><p>dimethyl
+sulfoxide</p></def></def-item><def-item><term>H<sub>2</sub>DCFDA</term><def><p>2&#8242;,7&#8242;-dichlorodihydrofluorescein
+diacetate</p></def></def-item><def-item><term>H<sub>2</sub>O<sub>2</sub></term><def><p>hydrogen
+peroxide</p></def></def-item><def-item><term>HPLC-DAD-ESI-IT-MS</term><def><p>high-performance
+liquid chromatography with a diode array detector coupled to electrospray
+ion trap mass spectrometry</p></def></def-item><def-item><term>IBMX</term><def><p>3-isobutyl-1-methylxanthine</p></def></def-item><def-item><term>LOD</term><def><p>limit of detection</p></def></def-item><def-item><term>LOQ</term><def><p>limit of quantification</p></def></def-item><def-item><term>MCT</term><def><p>monocarboxylic acid transporter</p></def></def-item><def-item><term>MDA</term><def><p>malondialdehyde</p></def></def-item><def-item><term>NADPH</term><def><p>nicotinamide
+adenine dinucleotide
+phosphate</p></def></def-item><def-item><term>Nrf2</term><def><p>nuclear
+factor erythroid 2-related
+factor 2</p></def></def-item><def-item><term>OATP</term><def><p>organic
+anion transporting polypeptide</p></def></def-item><def-item><term>PBS,</term><def><p>phosphate-buffered saline</p></def></def-item><def-item><term>ROS</term><def><p>reactive oxygen species</p></def></def-item><def-item><term>RT</term><def><p>retention time</p></def></def-item><def-item><term>TBA</term><def><p>thiobarbituric acid</p></def></def-item><def-item><term>UGT</term><def><p>UDP-glucuronosyltransferases</p></def></def-item></def-list></glossary><ref-list><title>References</title><ref id="ref1"><mixed-citation publication-type="journal" id="cit1"><name name-style="western"><surname>Hussain</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Tan</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Yin</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Blachier</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Tossou</surname><given-names>M. C.</given-names></name>; <name name-style="western"><surname>Rahu</surname><given-names>N.</given-names></name><article-title>Oxidative
+Stress and Inflammation: What Polyphenols Can Do for Us?</article-title>. <source>Oxid. Med. Cell. Longevity</source><year>2016</year>, <volume>2016</volume>, <fpage>7432797</fpage><pub-id pub-id-type="doi">10.1155/2016/7432797</pub-id>.<pub-id pub-id-type="pmcid">PMC5055983</pub-id><pub-id pub-id-type="pmid">27738491</pub-id></mixed-citation></ref><ref id="ref2"><mixed-citation publication-type="journal" id="cit2"><name name-style="western"><surname>Sanchez-Marzo</surname><given-names>N.</given-names></name>; <name name-style="western"><surname>Lozano-Sanchez</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Cadiz-Gurrea</surname><given-names>M. L.</given-names></name>; <name name-style="western"><surname>Herranz-Lopez</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Micol</surname><given-names>V.</given-names></name>; <name name-style="western"><surname>Segura-Carretero</surname><given-names>A.</given-names></name><article-title>Relationships
+Between Chemical Structure
+and Antioxidant Activity of Isolated Phytocompounds from Lemon Verbena</article-title>. <source>Antioxidants</source><year>2019</year>, <volume>8</volume>, <fpage>324</fpage><pub-id pub-id-type="doi">10.3390/antiox8080324</pub-id>.<pub-id pub-id-type="pmid">31434276</pub-id><pub-id pub-id-type="pmcid">PMC6719922</pub-id></mixed-citation></ref><ref id="ref3"><mixed-citation publication-type="journal" id="cit3"><name name-style="western"><surname>Quirantes-Pine</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Herranz-Lopez</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Funes</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Borras-Linares</surname><given-names>I.</given-names></name>; <name name-style="western"><surname>Micol</surname><given-names>V.</given-names></name>; <name name-style="western"><surname>Segura-Carretero</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Fernandez-Gutierrez</surname><given-names>A.</given-names></name><article-title>Phenylpropanoids
+and their metabolites are the major compounds responsible for blood-cell
+protection against oxidative stress after administration of Lippia
+citriodora in rats</article-title>. <source>Phytomedicine</source><year>2013</year>, <volume>20</volume> (<issue>12</issue>), <fpage>1112</fpage>&#8211;<lpage>1118</lpage>. <pub-id pub-id-type="doi">10.1016/j.phymed.2013.05.007</pub-id>.<pub-id pub-id-type="pmid">23827667</pub-id></mixed-citation></ref><ref id="ref4"><mixed-citation publication-type="journal" id="cit4"><name name-style="western"><surname>Herranz-Lopez</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Barrajon-Catalan</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Segura-Carretero</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Menendez</surname><given-names>J. A.</given-names></name>; <name name-style="western"><surname>Joven</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Micol</surname><given-names>V.</given-names></name><article-title>Lemon verbena (Lippia citriodora) polyphenols alleviate obesity-related
+disturbances in hypertrophic adipocytes through AMPK-dependent mechanisms</article-title>. <source>Phytomedicine</source><year>2015</year>, <volume>22</volume> (<issue>6</issue>), <fpage>605</fpage>&#8211;<lpage>614</lpage>. <pub-id pub-id-type="doi">10.1016/j.phymed.2015.03.015</pub-id>.<pub-id pub-id-type="pmid">26055125</pub-id></mixed-citation></ref><ref id="ref5"><mixed-citation publication-type="journal" id="cit5"><name name-style="western"><surname>Carrera-Quintanar</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Funes</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Herranz-Lopez</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Martinez-Peinado</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Pascual-Garcia</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Sempere</surname><given-names>J. M.</given-names></name>; <name name-style="western"><surname>Boix-Castejon</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Cordova</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Pons</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Micol</surname><given-names>V.</given-names></name>; <name name-style="western"><surname>Roche</surname><given-names>E.</given-names></name><article-title>Antioxidant
+Supplementation Modulates Neutrophil Inflammatory Response to Exercise-Induced
+Stress</article-title>. <source>Antioxidants</source><year>2020</year>, <volume>9</volume> (<issue>12</issue>), <fpage>1242</fpage><pub-id pub-id-type="doi">10.3390/antiox9121242</pub-id>.<pub-id pub-id-type="pmid">33297363</pub-id><pub-id pub-id-type="pmcid">PMC7762299</pub-id></mixed-citation></ref><ref id="ref6"><mixed-citation publication-type="journal" id="cit6"><name name-style="western"><surname>C&#225;diz-Gurrea</surname><given-names>M. D. L. L.</given-names></name>; <name name-style="western"><surname>Olivares-Vicente</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Herranz-L&#243;pez</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Rom&#225;n-Arr&#225;ez</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Fern&#225;ndez-Arroyo</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Micol</surname><given-names>V.</given-names></name>; <name name-style="western"><surname>Segura-Carretero</surname><given-names>A.</given-names></name><article-title>Bioassay-guided purification of Lippia
+citriodora polyphenols with AMPK modulatory activity</article-title>. <source>J. Funct. Foods</source><year>2018</year>, <volume>46</volume>, <fpage>514</fpage>&#8211;<lpage>520</lpage>. <pub-id pub-id-type="doi">10.1016/j.jff.2018.05.026</pub-id>.</mixed-citation></ref><ref id="ref7"><mixed-citation publication-type="journal" id="cit7"><name name-style="western"><surname>Funes</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Fern&#225;ndez-Arroyo</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Laporta</surname><given-names>O.</given-names></name>; <name name-style="western"><surname>Pons</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Roche</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Segura-Carretero</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Fern&#225;ndez-Guti&#233;rrez</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Micol</surname><given-names>V.</given-names></name><article-title>Correlation between
+plasma antioxidant capacity and verbascoside
+levels in rats after oral administration of lemon verbena extract</article-title>. <source>Food Chem.</source><year>2009</year>, <volume>117</volume> (<issue>4</issue>), <fpage>589</fpage>&#8211;<lpage>598</lpage>. <pub-id pub-id-type="doi">10.1016/j.foodchem.2009.04.059</pub-id>.</mixed-citation></ref><ref id="ref8"><mixed-citation publication-type="journal" id="cit8"><name name-style="western"><surname>Olivares-Vicente</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Sanchez-Marzo</surname><given-names>N.</given-names></name>; <name name-style="western"><surname>Encinar</surname><given-names>J. A.</given-names></name>; <name name-style="western"><surname>de la Luz Cadiz-Gurrea</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Lozano-Sanchez</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Segura-Carretero</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Arraez-Roman</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Riva</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Barrajon-Catalan</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Herranz-Lopez</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Micol</surname><given-names>V.</given-names></name><article-title>The Potential Synergistic Modulation
+of AMPK by Lippia citriodora
+Compounds as a Target in Metabolic Disorders</article-title>. <source>Nutrients</source><year>2019</year>, <volume>11</volume> (<issue>12</issue>), <fpage>2961</fpage><pub-id pub-id-type="doi">10.3390/nu11122961</pub-id>.<pub-id pub-id-type="pmid">31817196</pub-id><pub-id pub-id-type="pmcid">PMC6950112</pub-id></mixed-citation></ref><ref id="ref9"><mixed-citation publication-type="journal" id="cit9"><name name-style="western"><surname>Olivares-Vicente</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Barrajon-Catalan</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Herranz-Lopez</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Segura-Carretero</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Joven</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Encinar</surname><given-names>J. A.</given-names></name>; <name name-style="western"><surname>Micol</surname><given-names>V.</given-names></name><article-title>Plant-Derived Polyphenols
+in Human Health: Biological Activity, Metabolites and Putative Molecular
+Targets</article-title>. <source>Curr. Drug Metab.</source><year>2018</year>, <volume>19</volume> (<issue>4</issue>), <fpage>351</fpage>&#8211;<lpage>369</lpage>. <pub-id pub-id-type="doi">10.2174/1389200219666180220095236</pub-id>.<pub-id pub-id-type="pmid">29468962</pub-id></mixed-citation></ref><ref id="ref10"><mixed-citation publication-type="journal" id="cit10"><name name-style="western"><surname>L&#243;pez
+de las Hazas</surname><given-names>M. C.</given-names></name>; <name name-style="western"><surname>Pi&#241;ol</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Maci&#224;</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Romero</surname><given-names>M. P.</given-names></name>; <name name-style="western"><surname>Pedret</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Sol&#224;</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Rubi&#243;</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Motilva</surname><given-names>M. J.</given-names></name><article-title>Differential absorption and metabolism
+of hydroxytyrosol and its precursors oleuropein and secoiridoids</article-title>. <source>J. Funct. Foods</source><year>2016</year>, <volume>22</volume>, <fpage>52</fpage>&#8211;<lpage>63</lpage>. <pub-id pub-id-type="doi">10.1016/j.jff.2016.01.030</pub-id>.</mixed-citation></ref><ref id="ref11"><mixed-citation publication-type="journal" id="cit11"><name name-style="western"><surname>Martin</surname><given-names>M. A.</given-names></name>; <name name-style="western"><surname>Ramos</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Granado-Serrano</surname><given-names>A. B.</given-names></name>; <name name-style="western"><surname>Rodriguez-Ramiro</surname><given-names>I.</given-names></name>; <name name-style="western"><surname>Trujillo</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Bravo</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Goya</surname><given-names>L.</given-names></name><article-title>Hydroxytyrosol
+induces
+antioxidant/detoxificant enzymes and Nrf2 translocation via extracellular
+regulated kinases and phosphatidylinositol-3-kinase/protein kinase
+B pathways in HepG2 cells</article-title>. <source>Mol. Nutr. Food Res.</source><year>2010</year>, <volume>54</volume> (<issue>7</issue>), <fpage>956</fpage>&#8211;<lpage>966</lpage>. <pub-id pub-id-type="doi">10.1002/mnfr.200900159</pub-id>.<pub-id pub-id-type="pmid">20166143</pub-id></mixed-citation></ref><ref id="ref12"><mixed-citation publication-type="journal" id="cit12"><name name-style="western"><surname>G&#252;l&#231;in</surname><given-names>I.</given-names></name><article-title>Antioxidant
+activity of caffeic acid (3,4-dihydroxycinnamic acid)</article-title>. <source>Toxicology</source><year>2006</year>, <volume>217</volume> (<issue>2</issue>), <fpage>213</fpage>&#8211;<lpage>220</lpage>. <pub-id pub-id-type="doi">10.1016/j.tox.2005.09.011</pub-id>.<pub-id pub-id-type="pmid">16243424</pub-id></mixed-citation></ref><ref id="ref13"><mixed-citation publication-type="journal" id="cit13"><name name-style="western"><surname>Tang</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Nakashima</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Saiki</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Myoi</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Abe</surname><given-names>N.</given-names></name>; <name name-style="western"><surname>Kuwazuru</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Zhu</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Ashida</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Murata</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Nakamura</surname><given-names>Y.</given-names></name><article-title>3,4-Dihydroxyphenylacetic acid is a predominant biologically-active
+catabolite of quercetin glycosides</article-title>. <source>Food Res.
+Int.</source><year>2016</year>, <volume>89</volume>, <fpage>716</fpage>&#8211;<lpage>723</lpage>. <pub-id pub-id-type="doi">10.1016/j.foodres.2016.09.034</pub-id>.<pub-id pub-id-type="pmid">28460970</pub-id></mixed-citation></ref><ref id="ref14"><mixed-citation publication-type="journal" id="cit14"><name name-style="western"><surname>Kuppusamy</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Ilavenil</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Hwang</surname><given-names>I. H.</given-names></name>; <name name-style="western"><surname>Kim</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Choi</surname><given-names>K. C.</given-names></name><article-title>Ferulic
+Acid Stimulates Adipocyte-Specific Secretory Proteins to Regulate
+Adipose Homeostasis in 3T3-L1 Adipocytes</article-title>. <source>Molecules</source><year>2021</year>, <volume>26</volume> (<issue>7</issue>), <fpage>7</fpage><pub-id pub-id-type="doi">10.3390/molecules26071984</pub-id>.<pub-id pub-id-type="pmcid">PMC8037266</pub-id><pub-id pub-id-type="pmid">33915783</pub-id></mixed-citation></ref><ref id="ref15"><mixed-citation publication-type="journal" id="cit15"><name name-style="western"><surname>Herranz-Lopez</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Olivares-Vicente</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Rodriguez Gallego</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Encinar</surname><given-names>J. A.</given-names></name>; <name name-style="western"><surname>Perez-Sanchez</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Ruiz-Torres</surname><given-names>V.</given-names></name>; <name name-style="western"><surname>Joven</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Roche</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Micol</surname><given-names>V.</given-names></name><article-title>Quercetin
+metabolites from Hibiscus sabdariffa contribute to alleviate glucolipotoxicity-induced
+metabolic stress in vitro</article-title>. <source>Food Chem. Toxicol.</source><year>2020</year>, <volume>144</volume>, <fpage>111606</fpage><pub-id pub-id-type="doi">10.1016/j.fct.2020.111606</pub-id>.<pub-id pub-id-type="pmid">32738368</pub-id></mixed-citation></ref><ref id="ref16"><mixed-citation publication-type="journal" id="cit16"><name name-style="western"><surname>Peir&#243;</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Lafuente</surname><given-names>N.</given-names></name>; <name name-style="western"><surname>Matesanz</surname><given-names>N.</given-names></name>; <name name-style="western"><surname>Cercas</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Llergo</surname><given-names>J. L.</given-names></name>; <name name-style="western"><surname>Vallejo</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Rodr&#237;guez-
+Ma&#241;Ma&#241;As</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>S&#225;nchez-Ferrer</surname><given-names>C. F.</given-names></name><article-title>High glucose
+induces cell death of
+cultured human aortic smooth muscle cells through the formation of
+hydrogen peroxide</article-title>. <source>Br. J. Pharmacol.</source><year>2001</year>, <volume>133</volume> (<issue>7</issue>), <fpage>967</fpage>&#8211;<lpage>974</lpage>. <pub-id pub-id-type="doi">10.1038/sj.bjp.0704184</pub-id>.<pub-id pub-id-type="pmid">11487505</pub-id><pub-id pub-id-type="pmcid">PMC1572888</pub-id></mixed-citation></ref><ref id="ref17"><mixed-citation publication-type="journal" id="cit17"><name name-style="western"><surname>Tsikas</surname><given-names>D.</given-names></name><article-title>Assessment
+of lipid peroxidation by measuring malondialdehyde (MDA) and relatives
+in biological samples: Analytical and biological challenges</article-title>. <source>Anal. Biochem.</source><year>2017</year>, <volume>524</volume>, <fpage>13</fpage>&#8211;<lpage>30</lpage>. <pub-id pub-id-type="doi">10.1016/j.ab.2016.10.021</pub-id>.<pub-id pub-id-type="pmid">27789233</pub-id></mixed-citation></ref><ref id="ref18"><mixed-citation publication-type="journal" id="cit18"><name name-style="western"><surname>Andres</surname><given-names>C. M. C.</given-names></name>; <name name-style="western"><surname>Perez de la Lastra</surname><given-names>J.
+M.</given-names></name>; <name name-style="western"><surname>Andres Juan</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Plou</surname><given-names>F. J.</given-names></name>; <name name-style="western"><surname>Perez-Lebena</surname><given-names>E.</given-names></name><article-title>Superoxide Anion Chemistry&#8212;Its
+Role at the Core of the Innate Immunity</article-title>. <source>Int.
+J. Mol. Sci.</source><year>2023</year>, <volume>24</volume> (<issue>3</issue>), <fpage>1841</fpage><pub-id pub-id-type="doi">10.3390/ijms24031841</pub-id>.<pub-id pub-id-type="pmid">36768162</pub-id><pub-id pub-id-type="pmcid">PMC9916283</pub-id></mixed-citation></ref><ref id="ref19"><mixed-citation publication-type="journal" id="cit19"><name name-style="western"><surname>Manago</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Becker</surname><given-names>K. A.</given-names></name>; <name name-style="western"><surname>Carpinteiro</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Wilker</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Soddemann</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Seitz</surname><given-names>A. P.</given-names></name>; <name name-style="western"><surname>Edwards</surname><given-names>M. J.</given-names></name>; <name name-style="western"><surname>Grassme</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Szabo</surname><given-names>I.</given-names></name>; <name name-style="western"><surname>Gulbins</surname><given-names>E.</given-names></name><article-title>Pseudomonas aeruginosa
+pyocyanin induces neutrophil
+death via mitochondrial reactive oxygen species and mitochondrial
+acid sphingomyelinase</article-title>. <source>Antioxid. Redox Signaling</source><year>2015</year>, <volume>22</volume> (<issue>13</issue>), <fpage>1097</fpage>&#8211;<lpage>1110</lpage>. <pub-id pub-id-type="doi">10.1089/ars.2014.5979</pub-id>.<pub-id pub-id-type="pmcid">PMC4403017</pub-id><pub-id pub-id-type="pmid">25686490</pub-id></mixed-citation></ref><ref id="ref20"><mixed-citation publication-type="journal" id="cit20"><name name-style="western"><surname>Han</surname><given-names>C. Y.</given-names></name>; <name name-style="western"><surname>Umemoto</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Omer</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Den Hartigh</surname><given-names>L. J.</given-names></name>; <name name-style="western"><surname>Chiba</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>LeBoeuf</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Buller</surname><given-names>C. L.</given-names></name>; <name name-style="western"><surname>Sweet</surname><given-names>I. R.</given-names></name>; <name name-style="western"><surname>Pennathur</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Abel</surname><given-names>E. D.</given-names></name>; <name name-style="western"><surname>Chait</surname><given-names>A.</given-names></name><article-title>NADPH oxidase-derived
+reactive oxygen species increases expression of monocyte chemotactic
+factor genes in cultured adipocytes</article-title>. <source>J. Biol.
+Chem.</source><year>2012</year>, <volume>287</volume> (<issue>13</issue>), <fpage>10379</fpage>&#8211;<lpage>10393</lpage>. <pub-id pub-id-type="doi">10.1074/jbc.M111.304998</pub-id>.<pub-id pub-id-type="pmid">22287546</pub-id><pub-id pub-id-type="pmcid">PMC3322984</pub-id></mixed-citation></ref><ref id="ref21"><mixed-citation publication-type="journal" id="cit21"><name name-style="western"><surname>Vermot</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Petit-Hartlein</surname><given-names>I.</given-names></name>; <name name-style="western"><surname>Smith</surname><given-names>S. M. E.</given-names></name>; <name name-style="western"><surname>Fieschi</surname><given-names>F.</given-names></name><article-title>NADPH Oxidases (NOX):
+An Overview from Discovery, Molecular Mechanisms to Physiology and
+Pathology</article-title>. <source>Antioxidants</source><year>2021</year>, <volume>10</volume> (<issue>6</issue>), <fpage>890</fpage><pub-id pub-id-type="doi">10.3390/antiox10060890</pub-id>.<pub-id pub-id-type="pmid">34205998</pub-id><pub-id pub-id-type="pmcid">PMC8228183</pub-id></mixed-citation></ref><ref id="ref22"><mixed-citation publication-type="journal" id="cit22"><name name-style="western"><surname>Ayala</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Munoz</surname><given-names>M. F.</given-names></name>; <name name-style="western"><surname>Arguelles</surname><given-names>S.</given-names></name><article-title>Lipid peroxidation: production, metabolism,
+and signaling mechanisms of malondialdehyde and 4-hydroxy-2-nonenal</article-title>. <source>Oxid. Med. Cell. Longevity</source><year>2014</year>, <volume>2014</volume>, <fpage>360438</fpage><pub-id pub-id-type="doi">10.1155/2014/360438</pub-id>.<pub-id pub-id-type="pmcid">PMC4066722</pub-id><pub-id pub-id-type="pmid">24999379</pub-id></mixed-citation></ref><ref id="ref23"><mixed-citation publication-type="journal" id="cit23"><name name-style="western"><surname>Su</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Li</surname><given-names>W.</given-names></name>; <name name-style="western"><surname>Xu</surname><given-names>Q.</given-names></name>; <name name-style="western"><surname>Liu</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Song</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Feng</surname><given-names>Y.</given-names></name><article-title>New metabolites
+of acteoside identified by ultra-performance liquid chromatography/quadrupole-time-of-flight
+MS(E) in rat plasma, urine, and feces</article-title>. <source>Fitoterapia</source><year>2016</year>, <volume>112</volume>, <fpage>45</fpage>&#8211;<lpage>55</lpage>. <pub-id pub-id-type="doi">10.1016/j.fitote.2016.05.004</pub-id>.<pub-id pub-id-type="pmid">27223850</pub-id></mixed-citation></ref><ref id="ref24"><mixed-citation publication-type="journal" id="cit24"><name name-style="western"><surname>Zhou</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Huang</surname><given-names>W.</given-names></name>; <name name-style="western"><surname>Li</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Zhong</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Lu</surname><given-names>B.</given-names></name><article-title>Bioaccessibility and
+Absorption Mechanism of Phenylethanoid Glycosides
+Using Simulated Digestion/Caco-2 Intestinal Cell Models</article-title>. <source>J. Agric. Food Chem.</source><year>2018</year>, <volume>66</volume> (<issue>18</issue>), <fpage>4630</fpage>&#8211;<lpage>4637</lpage>. <pub-id pub-id-type="doi">10.1021/acs.jafc.8b01307</pub-id>.<pub-id pub-id-type="pmid">29687721</pub-id></mixed-citation></ref><ref id="ref25"><mixed-citation publication-type="journal" id="cit25"><name name-style="western"><surname>Reid</surname><given-names>A. M.</given-names></name>; <name name-style="western"><surname>Juvonen</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Huuskonen</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Lehtonen</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Pasanen</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Lall</surname><given-names>N.</given-names></name><article-title>In Vitro Human Metabolism
+and Inhibition Potency of Verbascoside
+for CYP Enzymes</article-title>. <source>Molecules</source><year>2019</year>, <volume>24</volume> (<issue>11</issue>), <fpage>2191</fpage><pub-id pub-id-type="doi">10.3390/molecules24112191</pub-id>.<pub-id pub-id-type="pmid">31212689</pub-id><pub-id pub-id-type="pmcid">PMC6600574</pub-id></mixed-citation></ref><ref id="ref26"><mixed-citation publication-type="journal" id="cit26"><name name-style="western"><surname>Funes</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Laporta</surname><given-names>O.</given-names></name>; <name name-style="western"><surname>Cerdan-Calero</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Micol</surname><given-names>V.</given-names></name><article-title>Effects of verbascoside,
+a phenylpropanoid glycoside from lemon verbena, on phospholipid model
+membranes</article-title>. <source>Chem. Phys. Lipids</source><year>2010</year>, <volume>163</volume> (<issue>2</issue>), <fpage>190</fpage>&#8211;<lpage>199</lpage>. <pub-id pub-id-type="doi">10.1016/j.chemphyslip.2009.11.004</pub-id>.<pub-id pub-id-type="pmid">19925782</pub-id></mixed-citation></ref><ref id="ref27"><mixed-citation publication-type="journal" id="cit27"><name name-style="western"><surname>Chae</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Kim</surname><given-names>J. S.</given-names></name>; <name name-style="western"><surname>Kang</surname><given-names>K. A.</given-names></name>; <name name-style="western"><surname>Bu</surname><given-names>H. D.</given-names></name>; <name name-style="western"><surname>Lee</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Seo</surname><given-names>Y. R.</given-names></name>; <name name-style="western"><surname>Hyun</surname><given-names>J. W.</given-names></name>; <name name-style="western"><surname>Kang</surname><given-names>S. S.</given-names></name><article-title>Antioxidant activity
+of isoacteoside from Clerodendron trichotomum</article-title>. <source>J. Toxicol. Environ. Health, Part A</source><year>2005</year>, <volume>68</volume> (<issue>5</issue>), <fpage>389</fpage>&#8211;<lpage>400</lpage>. <pub-id pub-id-type="doi">10.1080/15287390590900750</pub-id>.<pub-id pub-id-type="pmid">15799629</pub-id></mixed-citation></ref><ref id="ref28"><mixed-citation publication-type="journal" id="cit28"><name name-style="western"><surname>D&#8217;Imperio</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Cardinali</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>D&#8217;Antuono</surname><given-names>I.</given-names></name>; <name name-style="western"><surname>Linsalata</surname><given-names>V.</given-names></name>; <name name-style="western"><surname>Minervini</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Redan</surname><given-names>B. W.</given-names></name>; <name name-style="western"><surname>Ferruzzi</surname><given-names>M. G.</given-names></name><article-title>Stability-activity
+of verbascoside, a known antioxidant compound, at different pH conditions</article-title>. <source>Food Res. Int.</source><year>2014</year>, <volume>66</volume>, <fpage>373</fpage>&#8211;<lpage>378</lpage>. <pub-id pub-id-type="doi">10.1016/j.foodres.2014.09.037</pub-id>.</mixed-citation></ref><ref id="ref29"><mixed-citation publication-type="journal" id="cit29"><name name-style="western"><surname>Rubi&#243;</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Farr&#224;s</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>de La Torre</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Maci&#224;</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Romero</surname><given-names>M.-P.</given-names></name>; <name name-style="western"><surname>Valls</surname><given-names>R. M.</given-names></name>; <name name-style="western"><surname>Sol&#224;</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Farr&#233;</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Fit&#243;</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Motilva</surname><given-names>M.-J.</given-names></name><article-title>Metabolite profiling
+of olive oil and thyme phenols after a sustained intake of two phenol-enriched
+olive oils by humans: Identification of compliance markers</article-title>. <source>Food Res. Int.</source><year>2014</year>, <volume>65</volume>, <fpage>59</fpage>&#8211;<lpage>68</lpage>. <pub-id pub-id-type="doi">10.1016/j.foodres.2014.05.009</pub-id>.</mixed-citation></ref><ref id="ref30"><mixed-citation publication-type="journal" id="cit30"><name name-style="western"><surname>Manna</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Galletti</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Maisto</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Cucciolla</surname><given-names>V.</given-names></name>; <name name-style="western"><surname>D&#8217;Angelo</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Zappia</surname><given-names>V.</given-names></name><article-title>Transport mechanism and metabolism
+of olive oil hydroxytyrosol in Caco-2 cells</article-title>. <source>FEBS Lett.</source><year>2000</year>, <volume>470</volume> (<issue>3</issue>), <fpage>341</fpage>&#8211;<lpage>344</lpage>. <pub-id pub-id-type="doi">10.1016/S0014-5793(00)01350-8</pub-id>.<pub-id pub-id-type="pmid">10745093</pub-id></mixed-citation></ref><ref id="ref31"><mixed-citation publication-type="journal" id="cit31"><name name-style="western"><surname>Mateos</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Goya</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Bravo</surname><given-names>L.</given-names></name><article-title>Metabolism of the olive
+oil phenols
+hydroxytyrosol, tyrosol, and hydroxytyrosyl acetate by human hepatoma
+HepG2 cells</article-title>. <source>J. Agric. Food Chem.</source><year>2005</year>, <volume>53</volume> (<issue>26</issue>), <fpage>9897</fpage>&#8211;<lpage>9905</lpage>. <pub-id pub-id-type="doi">10.1021/jf051721q</pub-id>.<pub-id pub-id-type="pmid">16366672</pub-id></mixed-citation></ref><ref id="ref32"><mixed-citation publication-type="journal" id="cit32"><name name-style="western"><surname>Walle</surname><given-names>U. K.</given-names></name>; <name name-style="western"><surname>Walle</surname><given-names>T.</given-names></name><article-title>Induction of human
+UDP-glucuronosyltransferase UGT1A1 by flavonoids-structural
+requirements</article-title>. <source>Drug Metab. Dispos.</source><year>2002</year>, <volume>30</volume> (<issue>5</issue>), <fpage>564</fpage>&#8211;<lpage>569</lpage>. <pub-id pub-id-type="doi">10.1124/dmd.30.5.564</pub-id>.<pub-id pub-id-type="pmid">11950788</pub-id></mixed-citation></ref><ref id="ref33"><mixed-citation publication-type="journal" id="cit33"><name name-style="western"><surname>Stevens</surname><given-names>J. F.</given-names></name>; <name name-style="western"><surname>Revel</surname><given-names>J. S.</given-names></name>; <name name-style="western"><surname>Maier</surname><given-names>C. S.</given-names></name><article-title>Mitochondria-Centric
+Review of Polyphenol
+Bioactivity in Cancer Models</article-title>. <source>Antioxid. Redox
+Signaling</source><year>2018</year>, <volume>29</volume> (<issue>16</issue>), <fpage>1589</fpage>&#8211;<lpage>1611</lpage>. <pub-id pub-id-type="doi">10.1089/ars.2017.7404</pub-id>.<pub-id pub-id-type="pmcid">PMC6207154</pub-id><pub-id pub-id-type="pmid">29084444</pub-id></mixed-citation></ref><ref id="ref34"><mixed-citation publication-type="journal" id="cit34"><name name-style="western"><surname>Tuck</surname><given-names>K. L.</given-names></name>; <name name-style="western"><surname>Hayball</surname><given-names>P. J.</given-names></name>; <name name-style="western"><surname>Stupans</surname><given-names>I.</given-names></name><article-title>Structural characterization of the
+metabolites of hydroxytyrosol, the principal phenolic component in
+olive oil, in rats</article-title>. <source>J. Agric. Food Chem.</source><year>2002</year>, <volume>50</volume> (<issue>8</issue>), <fpage>2404</fpage>&#8211;<lpage>2409</lpage>. <pub-id pub-id-type="doi">10.1021/jf011264n</pub-id>.<pub-id pub-id-type="pmid">11929304</pub-id></mixed-citation></ref><ref id="ref35"><mixed-citation publication-type="journal" id="cit35"><name name-style="western"><surname>Khymenets</surname><given-names>O.</given-names></name>; <name name-style="western"><surname>Fito</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Tourino</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Munoz-Aguayo</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Pujadas</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Torres</surname><given-names>J. L.</given-names></name>; <name name-style="western"><surname>Joglar</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Farre</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Covas</surname><given-names>M. I.</given-names></name>; <name name-style="western"><surname>de la
+Torre</surname><given-names>R.</given-names></name><article-title>Antioxidant activities of hydroxytyrosol
+main metabolites do not contribute to beneficial health effects after
+olive oil ingestion</article-title>. <source>Drug Metab. Dispos.</source><year>2010</year>, <volume>38</volume> (<issue>9</issue>), <fpage>1417</fpage>&#8211;<lpage>1421</lpage>. <pub-id pub-id-type="doi">10.1124/dmd.110.032821</pub-id>.<pub-id pub-id-type="pmid">20516254</pub-id></mixed-citation></ref><ref id="ref36"><mixed-citation publication-type="journal" id="cit36"><name name-style="western"><surname>Peyrol</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Meyer</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Obert</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Dangles</surname><given-names>O.</given-names></name>; <name name-style="western"><surname>Pechere</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Amiot</surname><given-names>M. J.</given-names></name>; <name name-style="western"><surname>Riva</surname><given-names>C.</given-names></name><article-title>Involvement of bilitranslocase and
+beta-glucuronidase in the vascular protection by hydroxytyrosol and
+its glucuronide metabolites in oxidative stress conditions</article-title>. <source>J. Nutr. Biochem.</source><year>2018</year>, <volume>51</volume>, <fpage>8</fpage>&#8211;<lpage>15</lpage>. <pub-id pub-id-type="doi">10.1016/j.jnutbio.2017.09.009</pub-id>.<pub-id pub-id-type="pmid">29078076</pub-id></mixed-citation></ref><ref id="ref37"><mixed-citation publication-type="journal" id="cit37"><name name-style="western"><surname>Paiva-Martins</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Silva</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Almeida</surname><given-names>V.</given-names></name>; <name name-style="western"><surname>Carvalheira</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Serra</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Rodrigues-Borges</surname><given-names>J. E.</given-names></name>; <name name-style="western"><surname>Fernandes</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Belo</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Santos-Silva</surname><given-names>A.</given-names></name><article-title>Protective activity of hydroxytyrosol
+metabolites on erythrocyte oxidative-induced hemolysis</article-title>. <source>J. Agric. Food Chem.</source><year>2013</year>, <volume>61</volume> (<issue>27</issue>), <fpage>6636</fpage>&#8211;<lpage>6642</lpage>. <pub-id pub-id-type="doi">10.1021/jf4016202</pub-id>.<pub-id pub-id-type="pmid">23777263</pub-id></mixed-citation></ref><ref id="ref38"><mixed-citation publication-type="journal" id="cit38"><name name-style="western"><surname>Deiana</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Incani</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Rosa</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Atzeri</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Loru</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Cabboi</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Paola Melis</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Lucas</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Morales</surname><given-names>J. C.</given-names></name>; <name name-style="western"><surname>Assunta Dessi</surname><given-names>M.</given-names></name><article-title>Hydroxytyrosol
+glucuronides protect renal tubular epithelial
+cells against H<sub>2</sub>O<sub>2</sub> induced oxidative damage</article-title>. <source>Chem.-Biol. Interact.</source><year>2011</year>, <volume>193</volume> (<issue>3</issue>), <fpage>232</fpage>&#8211;<lpage>239</lpage>. <pub-id pub-id-type="doi">10.1016/j.cbi.2011.07.002</pub-id>.<pub-id pub-id-type="pmid">21798251</pub-id></mixed-citation></ref><ref id="ref39"><mixed-citation publication-type="journal" id="cit39"><name name-style="western"><surname>Agullo</surname><given-names>V.</given-names></name>; <name name-style="western"><surname>Villano</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Garcia-Viguera</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Dominguez-Perles</surname><given-names>R.</given-names></name><article-title>Anthocyanin
+Metabolites in Human Urine after the Intake of New Functional Beverages</article-title>. <source>Molecules</source><year>2020</year>, <volume>25</volume> (<issue>2</issue>), <fpage>371</fpage><pub-id pub-id-type="doi">10.3390/molecules25020371</pub-id>.<pub-id pub-id-type="pmid">31963236</pub-id><pub-id pub-id-type="pmcid">PMC7024541</pub-id></mixed-citation></ref><ref id="ref40"><mixed-citation publication-type="journal" id="cit40"><name name-style="western"><surname>Baj</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Kukula-Koch</surname><given-names>W.</given-names></name>; <name name-style="western"><surname>&#346;wi&#261;tek</surname><given-names>&#321;.</given-names></name>; <name name-style="western"><surname>Zieli&#324;ska-Pisklak</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Adamska-Szewczyk</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Szymczyk</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Rajtar</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Polz-Dacewicz</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Skalicka-Wo&#378;niak</surname><given-names>K.</given-names></name><article-title>Chemical profile, antioxidant activity
+and cytotoxic effect of extract from leaves of Erythrochiton brasiliensis
+Nees &amp; Mart. from different regions of Europe</article-title>. <source>Open Chem.</source><year>2017</year>, <volume>15</volume> (<issue>1</issue>), <fpage>380</fpage>&#8211;<lpage>388</lpage>. <pub-id pub-id-type="doi">10.1515/chem-2017-0042</pub-id>.</mixed-citation></ref><ref id="ref41"><mixed-citation publication-type="journal" id="cit41"><name name-style="western"><surname>Mateos</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Goya</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Bravo</surname><given-names>L.</given-names></name><article-title>Uptake and metabolism of hydroxycinnamic
+acids (chlorogenic, caffeic, and ferulic acids) by HepG2 cells as
+a model of the human liver</article-title>. <source>J. Agric. Food Chem.</source><year>2006</year>, <volume>54</volume> (<issue>23</issue>), <fpage>8724</fpage>&#8211;<lpage>8732</lpage>. <pub-id pub-id-type="doi">10.1021/jf061664g</pub-id>.<pub-id pub-id-type="pmid">17090113</pub-id></mixed-citation></ref><ref id="ref42"><mixed-citation publication-type="journal" id="cit42"><name name-style="western"><surname>Konishi</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Kobayashi</surname><given-names>S.</given-names></name><article-title>Transepithelial
+transport of chlorogenic acid, caffeic
+acid, and their colonic metabolites in intestinal caco-2 cell monolayers</article-title>. <source>J. Agric. Food Chem.</source><year>2004</year>, <volume>52</volume> (<issue>9</issue>), <fpage>2518</fpage>&#8211;<lpage>2526</lpage>. <pub-id pub-id-type="doi">10.1021/jf035407c</pub-id>.<pub-id pub-id-type="pmid">15113150</pub-id></mixed-citation></ref><ref id="ref43"><mixed-citation publication-type="journal" id="cit43"><name name-style="western"><surname>Petersen</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Nielsen</surname><given-names>M. D.</given-names></name>; <name name-style="western"><surname>Andersen</surname><given-names>E. S.</given-names></name>; <name name-style="western"><surname>Basse</surname><given-names>A. L.</given-names></name>; <name name-style="western"><surname>Isidor</surname><given-names>M. S.</given-names></name>; <name name-style="western"><surname>Markussen</surname><given-names>L. K.</given-names></name>; <name name-style="western"><surname>Viuff</surname><given-names>B. M.</given-names></name>; <name name-style="western"><surname>Lambert</surname><given-names>I. H.</given-names></name>; <name name-style="western"><surname>Hansen</surname><given-names>J. B.</given-names></name>; <name name-style="western"><surname>Pedersen</surname><given-names>S. F.</given-names></name><article-title>MCT1 and
+MCT4 Expression and Lactate Flux Activity
+Increase During White and Brown Adipogenesis and Impact Adipocyte
+Metabolism</article-title>. <source>Sci. Rep.</source><year>2017</year>, <volume>7</volume> (<issue>1</issue>), <fpage>13101</fpage><pub-id pub-id-type="doi">10.1038/s41598-017-13298-z</pub-id>.<pub-id pub-id-type="pmid">29026134</pub-id><pub-id pub-id-type="pmcid">PMC5638914</pub-id></mixed-citation></ref><ref id="ref44"><mixed-citation publication-type="journal" id="cit44"><name name-style="western"><surname>Perez
+de Heredia</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Wood</surname><given-names>I. S.</given-names></name>; <name name-style="western"><surname>Trayhurn</surname><given-names>P.</given-names></name><article-title>Hypoxia stimulates
+lactate release and modulates monocarboxylate transporter (MCT1, MCT2,
+and MCT4) expression in human adipocytes</article-title>. <source>Pfluegers
+Arch.</source><year>2010</year>, <volume>459</volume> (<issue>3</issue>), <fpage>509</fpage>&#8211;<lpage>518</lpage>. <pub-id pub-id-type="doi">10.1007/s00424-009-0750-3</pub-id>.<pub-id pub-id-type="pmid">19876643</pub-id></mixed-citation></ref><ref id="ref45"><mixed-citation publication-type="journal" id="cit45"><name name-style="western"><surname>Rowland</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Miners</surname><given-names>J. O.</given-names></name>; <name name-style="western"><surname>Mackenzie</surname><given-names>P. I.</given-names></name><article-title>The UDP-glucuronosyltransferases:
+Their role in drug metabolism and detoxification</article-title>. <source>Int. J. Biochem. Cell Biol.</source><year>2013</year>, <volume>45</volume> (<issue>6</issue>), <fpage>1121</fpage>&#8211;<lpage>1132</lpage>. <pub-id pub-id-type="doi">10.1016/j.biocel.2013.02.019</pub-id>.<pub-id pub-id-type="pmid">23500526</pub-id></mixed-citation></ref><ref id="ref46"><mixed-citation publication-type="journal" id="cit46"><name name-style="western"><surname>Yang</surname><given-names>S.-Y.</given-names></name>; <name name-style="western"><surname>Pyo</surname><given-names>M. C.</given-names></name>; <name name-style="western"><surname>Nam</surname><given-names>M.-H.</given-names></name>; <name name-style="western"><surname>Lee</surname><given-names>K.-W.</given-names></name><article-title>ERK/Nrf2 pathway
+activation by caffeic acid in HepG2 cells alleviates its hepatocellular
+damage caused by t-butylhydroperoxide-induced oxidative stress</article-title>. <source>BMC Complementary Altern. Med.</source><year>2019</year>, <volume>19</volume> (<issue>1</issue>), <fpage>139</fpage><pub-id pub-id-type="doi">10.1186/s12906-019-2551-3</pub-id>.<pub-id pub-id-type="pmcid">PMC6585055</pub-id><pub-id pub-id-type="pmid">31221142</pub-id></mixed-citation></ref><ref id="ref47"><mixed-citation publication-type="journal" id="cit47"><name name-style="western"><surname>Felgines</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Fraisse</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Besson</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Vasson</surname><given-names>M. P.</given-names></name>; <name name-style="western"><surname>Texier</surname><given-names>O.</given-names></name><article-title>Bioavailability
+of lemon verbena (Aloysia triphylla) polyphenols in rats: Impact of
+colonic inflammation</article-title>. <source>Br. J. Nutr.</source><year>2014</year>, <volume>111</volume> (<issue>10</issue>), <fpage>1773</fpage>&#8211;<lpage>1781</lpage>. <pub-id pub-id-type="doi">10.1017/S0007114514000026</pub-id>.<pub-id pub-id-type="pmid">24513110</pub-id></mixed-citation></ref><ref id="ref48"><mixed-citation publication-type="journal" id="cit48"><name name-style="western"><surname>Poquet</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Clifford</surname><given-names>M. N.</given-names></name>; <name name-style="western"><surname>Williamson</surname><given-names>G.</given-names></name><article-title>Transport and metabolism of ferulic
+acid through the colonic epithelium</article-title>. <source>Drug Metab.
+Dispos.</source><year>2008</year>, <volume>36</volume> (<issue>1</issue>), <fpage>190</fpage>&#8211;<lpage>197</lpage>. <pub-id pub-id-type="doi">10.1124/dmd.107.017558</pub-id>.<pub-id pub-id-type="pmid">17954526</pub-id></mixed-citation></ref><ref id="ref49"><mixed-citation publication-type="journal" id="cit49"><name name-style="western"><surname>Konishi</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Shimizu</surname><given-names>M.</given-names></name><article-title>Transepithelial transport of ferulic acid by monocarboxylic
+acid transporter in Caco-2 cell monolayers</article-title>. <source>Biosci., Biotechnol., Biochem.</source><year>2003</year>, <volume>67</volume> (<issue>4</issue>), <fpage>856</fpage>&#8211;<lpage>862</lpage>. <pub-id pub-id-type="doi">10.1271/bbb.67.856</pub-id>.<pub-id pub-id-type="pmid">12784628</pub-id></mixed-citation></ref><ref id="ref50"><mixed-citation publication-type="journal" id="cit50"><name name-style="western"><surname>Konishi</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Kubo</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Shimizu</surname><given-names>M.</given-names></name><article-title>Structural
+Effects of Phenolic Acids
+on the Transepithelial Transport of Fluorescein in Caco-2 Cell Monolayers</article-title>. <source>Biosci., Biotechnol., Biochem.</source><year>2003</year>, <volume>67</volume> (<issue>9</issue>), <fpage>2014</fpage>&#8211;<lpage>2017</lpage>. <pub-id pub-id-type="doi">10.1271/bbb.67.2014</pub-id>.<pub-id pub-id-type="pmid">14519994</pub-id></mixed-citation></ref><ref id="ref51"><mixed-citation publication-type="journal" id="cit51"><name name-style="western"><surname>Zdunska</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Dana</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Kolodziejczak</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Rotsztejn</surname><given-names>H.</given-names></name><article-title>Antioxidant
+Properties of Ferulic Acid and Its Possible Application</article-title>. <source>Skin Pharmacol. Physiol.</source><year>2018</year>, <volume>31</volume> (<issue>6</issue>), <fpage>332</fpage>&#8211;<lpage>336</lpage>. <pub-id pub-id-type="doi">10.1159/000491755</pub-id>.<pub-id pub-id-type="pmid">30235459</pub-id></mixed-citation></ref><ref id="ref52"><mixed-citation publication-type="journal" id="cit52"><name name-style="western"><surname>Cao</surname><given-names>Y. J.</given-names></name>; <name name-style="western"><surname>Zhang</surname><given-names>Y. M.</given-names></name>; <name name-style="western"><surname>Qi</surname><given-names>J. P.</given-names></name>; <name name-style="western"><surname>Liu</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Zhang</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>He</surname><given-names>L. C.</given-names></name><article-title>Ferulic acid inhibits H<sub>2</sub>O<sub>2</sub>-induced oxidative
+stress and inflammation in rat vascular smooth muscle cells via inhibition
+of the NADPH oxidase and NF-kappaB pathway</article-title>. <source>Int. Immunopharmacol.</source><year>2015</year>, <volume>28</volume> (<issue>2</issue>), <fpage>1018</fpage>&#8211;<lpage>1025</lpage>. <pub-id pub-id-type="doi">10.1016/j.intimp.2015.07.037</pub-id>.<pub-id pub-id-type="pmid">26330101</pub-id></mixed-citation></ref><ref id="ref53"><mixed-citation publication-type="journal" id="cit53"><name name-style="western"><surname>Dominguez-Perles</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Aunon</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Ferreres</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Gil-Izquierdo</surname><given-names>A.</given-names></name><article-title>Gender differences
+in plasma and urine metabolites from Sprague-Dawley rats after oral
+administration of normal and high doses of hydroxytyrosol, hydroxytyrosol
+acetate, and DOPAC</article-title>. <source>Eur. J. Nutr.</source><year>2017</year>, <volume>56</volume> (<issue>1</issue>), <fpage>215</fpage>&#8211;<lpage>224</lpage>. <pub-id pub-id-type="doi">10.1007/s00394-015-1071-2</pub-id>.<pub-id pub-id-type="pmid">26463517</pub-id></mixed-citation></ref><ref id="ref54"><mixed-citation publication-type="journal" id="cit54"><name name-style="western"><surname>Gonthier</surname><given-names>M. P.</given-names></name>; <name name-style="western"><surname>Verny</surname><given-names>M. A.</given-names></name>; <name name-style="western"><surname>Besson</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Remesy</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Scalbert</surname><given-names>A.</given-names></name><article-title>Chlorogenic
+acid bioavailability largely depends on its metabolism by the gut
+microflora in rats</article-title>. <source>J. Nutr.</source><year>2003</year>, <volume>133</volume> (<issue>6</issue>), <fpage>1853</fpage>&#8211;<lpage>1859</lpage>. <pub-id pub-id-type="doi">10.1093/jn/133.6.1853</pub-id>.<pub-id pub-id-type="pmid">12771329</pub-id></mixed-citation></ref><ref id="ref55"><mixed-citation publication-type="journal" id="cit55"><name name-style="western"><surname>Wu</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Pittman Iii</surname><given-names>H. E.</given-names></name>; <name name-style="western"><surname>Hager</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Hager</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Howard</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Prior</surname><given-names>R. L.</given-names></name><article-title>Phenolic
+acids in black raspberry and in the gastrointestinal
+tract of pigs following ingestion of black raspberry</article-title>. <source>Mol. Nutr. Food Res.</source><year>2009</year>, <volume>53</volume>, <fpage>S76</fpage>&#8211;<lpage>S84</lpage>. <pub-id pub-id-type="doi">10.1002/mnfr.200800231</pub-id>.<pub-id pub-id-type="pmid">19199287</pub-id></mixed-citation></ref><ref id="ref56"><mixed-citation publication-type="journal" id="cit56"><name name-style="western"><surname>Jia</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Xiao</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Yang</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Chen</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Jiang</surname><given-names>W.</given-names></name>; <name name-style="western"><surname>Zheng</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Zhao</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Zang</surname><given-names>W.</given-names></name>; <name name-style="western"><surname>Zheng</surname><given-names>X.</given-names></name><article-title>The anti-atherosclerotic
+effect of tanshinol borneol ester using
+fecal metabolomics based on liquid chromatography-mass spectrometry</article-title>. <source>Analyst</source><year>2016</year>, <volume>141</volume> (<issue>3</issue>), <fpage>1112</fpage>&#8211;<lpage>1120</lpage>. <pub-id pub-id-type="doi">10.1039/C5AN01970B</pub-id>.<pub-id pub-id-type="pmid">26689835</pub-id></mixed-citation></ref><ref id="ref57"><mixed-citation publication-type="journal" id="cit57"><name name-style="western"><surname>Deng</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Zhang</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Cooney</surname><given-names>J. M.</given-names></name>; <name name-style="western"><surname>Skinner</surname><given-names>M. A.</given-names></name>; <name name-style="western"><surname>Adaim</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Jensen</surname><given-names>D. J.</given-names></name>; <name name-style="western"><surname>Stevenson</surname><given-names>D. E.</given-names></name><article-title>Methylated
+polyphenols are poor &#8243;chemical&#8243;
+antioxidants but can still effectively protect cells from hydrogen
+peroxide-induced cytotoxicity</article-title>. <source>FEBS Lett.</source><year>2006</year>, <volume>580</volume> (<issue>22</issue>), <fpage>5247</fpage>&#8211;<lpage>5250</lpage>. <pub-id pub-id-type="doi">10.1016/j.febslet.2006.08.051</pub-id>.<pub-id pub-id-type="pmid">16962587</pub-id></mixed-citation></ref><ref id="ref58"><mixed-citation publication-type="journal" id="cit58"><name name-style="western"><surname>Shi</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Wu</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Chen</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Liu</surname><given-names>W.</given-names></name>; <name name-style="western"><surname>Feng</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Xie</surname><given-names>N.</given-names></name><article-title>Comparative
+analysis of three Callicarpa herbs using high performance liquid chromatography
+with diode array detector and electrospray ionization-trap mass spectrometry
+method</article-title>. <source>J. Pharm. Biomed. Anal.</source><year>2013</year>, <volume>75</volume>, <fpage>239</fpage>&#8211;<lpage>247</lpage>. <pub-id pub-id-type="doi">10.1016/j.jpba.2012.11.038</pub-id>.<pub-id pub-id-type="pmid">23277156</pub-id></mixed-citation></ref><ref id="ref59"><mixed-citation publication-type="journal" id="cit59"><name name-style="western"><surname>Shi</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Pan</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Lu</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Ding</surname><given-names>L.</given-names></name><article-title>An HPLC-MS/MS method for the simultaneous
+determination of luteolin and its major metabolites in rat plasma
+and its application to a pharmacokinetic study</article-title>. <source>J. Sep. Sci.</source><year>2018</year>, <volume>41</volume> (<issue>20</issue>), <fpage>3830</fpage>&#8211;<lpage>3839</lpage>. <pub-id pub-id-type="doi">10.1002/jssc.201800585</pub-id>.<pub-id pub-id-type="pmid">30101558</pub-id></mixed-citation></ref><ref id="ref60"><mixed-citation publication-type="journal" id="cit60"><name name-style="western"><surname>Yin</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Han</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Tang</surname><given-names>Z.</given-names></name>; <name name-style="western"><surname>Liu</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Zhao</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Chen</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Bi</surname><given-names>K.</given-names></name><article-title>UFLC&#8211;MS/MS method for simultaneous determination of luteolin-7-O-gentiobioside,
+luteolin-7-O-&#946;-d-glucoside and luteolin-7-O-&#946;-d-glucuronide
+in beagle dog plasma and its application to a pharmacokinetic study
+after administration of traditional Chinese medicinal preparation:
+Kudiezi injection</article-title>. <source>J. Pharm. Biomed. Anal.</source><year>2013</year>, <volume>72</volume>, <fpage>127</fpage>&#8211;<lpage>133</lpage>. <pub-id pub-id-type="doi">10.1016/j.jpba.2012.09.028</pub-id>.<pub-id pub-id-type="pmid">23146236</pub-id></mixed-citation></ref><ref id="ref61"><mixed-citation publication-type="journal" id="cit61"><name name-style="western"><surname>Passamonti</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Terdoslavich</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Franca</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Vanzo</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Tramer</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Braidot</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Petrussa</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Vianello</surname><given-names>A.</given-names></name><article-title>Bioavailability of
+flavonoids: A review of their membrane transport and the function
+of bilitranslocase in animal and plant organisms</article-title>. <source>Curr. Drug Metab.</source><year>2009</year>, <volume>10</volume> (<issue>4</issue>), <fpage>369</fpage>&#8211;<lpage>394</lpage>. <pub-id pub-id-type="doi">10.2174/138920009788498950</pub-id>.<pub-id pub-id-type="pmid">19519345</pub-id></mixed-citation></ref><ref id="ref62"><mixed-citation publication-type="journal" id="cit62"><name name-style="western"><surname>Zhi</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Yuan</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Zhang</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Jiang</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Zhang</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Ruan</surname><given-names>J.</given-names></name><article-title>Importance of OATP1B1 and 1B3 in
+the Liver Uptake of Luteolin and Its Consequent Glucuronidation Metabolites</article-title>. <source>J. Agric. Food Chem.</source><year>2020</year>, <volume>68</volume> (<issue>7</issue>), <fpage>2063</fpage>&#8211;<lpage>2070</lpage>. <pub-id pub-id-type="doi">10.1021/acs.jafc.9b06954</pub-id>.<pub-id pub-id-type="pmid">32009392</pub-id></mixed-citation></ref><ref id="ref63"><mixed-citation publication-type="journal" id="cit63"><name name-style="western"><surname>O&#8217;Leary</surname><given-names>K. A.</given-names></name>; <name name-style="western"><surname>Day</surname><given-names>A. J.</given-names></name>; <name name-style="western"><surname>Needs</surname><given-names>P. W.</given-names></name>; <name name-style="western"><surname>Mellon</surname><given-names>F. A.</given-names></name>; <name name-style="western"><surname>O&#8217;Brien</surname><given-names>N. M.</given-names></name>; <name name-style="western"><surname>Williamson</surname><given-names>G.</given-names></name><article-title>Metabolism
+of quercetin-7- and quercetin-3-glucuronides
+by an in vitro hepatic model: the role of human beta-glucuronidase,
+sulfotransferase, catechol-O-methyltransferase and multi-resistant
+protein 2 (MRP2) in flavonoid metabolism</article-title>. <source>Biochem.
+Pharmacol.</source><year>2003</year>, <volume>65</volume> (<issue>3</issue>), <fpage>479</fpage>&#8211;<lpage>491</lpage>. <pub-id pub-id-type="doi">10.1016/S0006-2952(02)01510-1</pub-id>.<pub-id pub-id-type="pmid">12527341</pub-id></mixed-citation></ref><ref id="ref64"><mixed-citation publication-type="journal" id="cit64"><name name-style="western"><surname>Wang</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Chen</surname><given-names>Q.</given-names></name>; <name name-style="western"><surname>Zhu</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Li</surname><given-names>Q.</given-names></name>; <name name-style="western"><surname>Zeng</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Lu</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Hu</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Liu</surname><given-names>Z.</given-names></name><article-title>Metabolic Disposition
+of Luteolin Is Mediated by the Interplay of UDP-Glucuronosyltransferases
+and Catechol-O-Methyltransferases in Rats</article-title>. <source>Drug
+Metab. Dispos.</source><year>2017</year>, <volume>45</volume> (<issue>3</issue>), <fpage>306</fpage>&#8211;<lpage>315</lpage>. <pub-id pub-id-type="doi">10.1124/dmd.116.073619</pub-id>.<pub-id pub-id-type="pmid">28031430</pub-id><pub-id pub-id-type="pmcid">PMC6041822</pub-id></mixed-citation></ref><ref id="ref65"><mixed-citation publication-type="journal" id="cit65"><name name-style="western"><surname>Herranz-Lopez</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Borras-Linares</surname><given-names>I.</given-names></name>; <name name-style="western"><surname>Olivares-Vicente</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Galvez</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Segura-Carretero</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Micol</surname><given-names>V.</given-names></name><article-title>Correlation between the cellular metabolism of quercetin and its
+glucuronide metabolite and oxidative stress in hypertrophied 3T3-L1
+adipocytes</article-title>. <source>Phytomedicine</source><year>2017</year>, <volume>25</volume>, <fpage>25</fpage>&#8211;<lpage>28</lpage>. <pub-id pub-id-type="doi">10.1016/j.phymed.2016.12.008</pub-id>.<pub-id pub-id-type="pmid">28190467</pub-id></mixed-citation></ref><ref id="ref66"><mixed-citation publication-type="journal" id="cit66"><name name-style="western"><surname>Shimoi</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Saka</surname><given-names>N.</given-names></name>; <name name-style="western"><surname>Nozawa</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Sato</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Amano</surname><given-names>I.</given-names></name>; <name name-style="western"><surname>Nakayama</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Kinae</surname><given-names>N.</given-names></name><article-title>Deglucuronidation
+of a flavonoid,
+luteolin monoglucuronide, during inflammation</article-title>. <source>Drug Metab. Dispos.</source><year>2001</year>, <volume>29</volume> (<issue>12</issue>), <fpage>1521</fpage>&#8211;<lpage>1524</lpage>.<pub-id pub-id-type="pmid">11717168</pub-id></mixed-citation></ref><ref id="ref67"><mixed-citation publication-type="journal" id="cit67"><name name-style="western"><surname>Pick</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Muller</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Mayer</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Haenisch</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Pajeva</surname><given-names>I. K.</given-names></name>; <name name-style="western"><surname>Weigt</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Bonisch</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Muller</surname><given-names>C. E.</given-names></name>; <name name-style="western"><surname>Wiese</surname><given-names>M.</given-names></name><article-title>Structure-activity
+relationships of flavonoids as inhibitors of breast cancer resistance
+protein (BCRP)</article-title>. <source>Bioorg. Med. Chem.</source><year>2011</year>, <volume>19</volume> (<issue>6</issue>), <fpage>2090</fpage>&#8211;<lpage>2102</lpage>. <pub-id pub-id-type="doi">10.1016/j.bmc.2010.12.043</pub-id>.<pub-id pub-id-type="pmid">21354800</pub-id></mixed-citation></ref><ref id="ref68"><mixed-citation publication-type="journal" id="cit68"><name name-style="western"><surname>Tang</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Li</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Chen</surname><given-names>W. Y.</given-names></name>; <name name-style="western"><surname>Zeng</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Dong</surname><given-names>L. N.</given-names></name>; <name name-style="western"><surname>Peng</surname><given-names>X. J.</given-names></name>; <name name-style="western"><surname>Jiang</surname><given-names>W.</given-names></name>; <name name-style="western"><surname>Hu</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Liu</surname><given-names>Z. Q.</given-names></name><article-title>Breast cancer resistance
+protein-mediated efflux of luteolin glucuronides in HeLa cells overexpressing
+UDP-glucuronosyltransferase 1A9</article-title>. <source>Pharm. Res.</source><year>2014</year>, <volume>31</volume> (<issue>4</issue>), <fpage>847</fpage>&#8211;<lpage>860</lpage>. <pub-id pub-id-type="doi">10.1007/s11095-013-1207-0</pub-id>.<pub-id pub-id-type="pmid">24092055</pub-id></mixed-citation></ref><ref id="ref69"><mixed-citation publication-type="journal" id="cit69"><name name-style="western"><surname>Hennebelle</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Sahpaz</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Gressier</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Joseph</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Bailleul</surname><given-names>F.</given-names></name><article-title>Antioxidant
+and neurosedative properties of polyphenols and iridoids from Lippia
+alba</article-title>. <source>Phytother. Res.</source><year>2008</year>, <volume>22</volume> (<issue>2</issue>), <fpage>256</fpage>&#8211;<lpage>258</lpage>. <pub-id pub-id-type="doi">10.1002/ptr.2266</pub-id>.<pub-id pub-id-type="pmid">17705148</pub-id></mixed-citation></ref><ref id="ref70"><mixed-citation publication-type="journal" id="cit70"><name name-style="western"><surname>Ning</surname><given-names>B. B.</given-names></name>; <name name-style="western"><surname>Zhang</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Wu</surname><given-names>D. D.</given-names></name>; <name name-style="western"><surname>Cui</surname><given-names>J. G.</given-names></name>; <name name-style="western"><surname>Liu</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>P. W.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>W. J.</given-names></name>; <name name-style="western"><surname>Zhu</surname><given-names>W. L.</given-names></name>; <name name-style="western"><surname>Chen</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Zhang</surname><given-names>T.</given-names></name><article-title>Luteolin-7-diglucuronide
+attenuates isoproterenol-induced myocardial
+injury and fibrosis in mice</article-title>. <source>Acta Pharmacol.
+Sin.</source><year>2017</year>, <volume>38</volume> (<issue>3</issue>), <fpage>331</fpage>&#8211;<lpage>341</lpage>. <pub-id pub-id-type="doi">10.1038/aps.2016.142</pub-id>.<pub-id pub-id-type="pmid">28112175</pub-id><pub-id pub-id-type="pmcid">PMC5342667</pub-id></mixed-citation></ref></ref-list></back></article></pmc-articleset>

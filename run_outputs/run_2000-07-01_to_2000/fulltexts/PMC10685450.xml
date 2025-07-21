@@ -1,0 +1,860 @@
+<?xml version="1.0"  ?><!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd"><pmc-articleset><article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xml:lang="EN" article-type="research-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">J Chem Inf Model</journal-id><journal-id journal-id-type="iso-abbrev">J Chem Inf Model</journal-id><journal-id journal-id-type="pmc-domain-id">822</journal-id><journal-id journal-id-type="pmc-domain">acssd</journal-id><journal-id journal-id-type="publisher-id">ci</journal-id><journal-title-group><journal-title>Journal of Chemical Information and Modeling</journal-title></journal-title-group><issn pub-type="ppub">1549-9596</issn><issn pub-type="epub">1549-960X</issn><custom-meta-group><custom-meta><meta-name>pmc-is-collection-domain</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-collection-title</meta-name><meta-value>ACS AuthorChoice</meta-value></custom-meta></custom-meta-group></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC10685450</article-id><article-id pub-id-type="pmcid-ver">PMC10685450.1</article-id><article-id pub-id-type="pmcaid">10685450</article-id><article-id pub-id-type="pmcaiid">10685450</article-id><article-id pub-id-type="pmid">37956246</article-id><article-id pub-id-type="doi">10.1021/acs.jcim.3c01288</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group><subject>Article</subject></subj-group></article-categories><title-group><article-title>Novel Models for
+Accurate Estimation of Air&#8211;Blood
+Partitioning: Applications to Individual Compounds and Complex Mixtures
+of Neutral Organic Compounds</article-title></title-group><contrib-group><contrib contrib-type="author" id="ath1"><name name-style="western"><surname>Aakash</surname><given-names initials="A">Ahmad</given-names></name><xref rid="aff1" ref-type="aff">&#8224;</xref></contrib><contrib contrib-type="author" id="ath2"><name name-style="western"><surname>Kulsoom</surname><given-names initials="R">Ramsha</given-names></name><xref rid="aff1" ref-type="aff">&#8224;</xref></contrib><contrib contrib-type="author" id="ath3"><name name-style="western"><surname>Khan</surname><given-names initials="S">Saba</given-names></name><xref rid="aff1" ref-type="aff">&#8224;</xref></contrib><contrib contrib-type="author" id="ath4"><name name-style="western"><surname>Siddiqui</surname><given-names initials="MS">Musab Saeed</given-names></name><xref rid="aff1" ref-type="aff">&#8224;</xref></contrib><contrib contrib-type="author" corresp="yes" id="ath5"><contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0002-0188-0404</contrib-id><name name-style="western"><surname>Nabi</surname><given-names initials="D">Deedar</given-names></name><xref rid="cor1" ref-type="other">*</xref><xref rid="aff1" ref-type="aff">&#8224;</xref><xref rid="aff2" ref-type="aff">&#8225;</xref></contrib><aff id="aff1"><label>&#8224;</label>Institute
+of Environmental Science and Engineering (IESE), School of Civil and
+Environmental Engineering (SCEE), <institution>National
+University of Sciences and Technology (NUST)</institution>, H-12, 48000 Islamabad, <country>Pakistan</country></aff><aff id="aff2"><label>&#8225;</label><institution>GEOMAR
+Helmholtz Center for Ocean Research</institution>, Wischhofstrasse 1-3, 24148 Kiel, <country>Germany</country></aff></contrib-group><author-notes><corresp id="cor1"><label>*</label>Email: <email>dnabi@geomar.de</email>.</corresp></author-notes><pub-date pub-type="epub"><day>13</day><month>11</month><year>2023</year></pub-date><pub-date pub-type="collection"><day>27</day><month>11</month><year>2023</year></pub-date><volume>63</volume><issue>22</issue><issue-id pub-id-type="pmc-issue-id">449947</issue-id><fpage>7056</fpage><lpage>7066</lpage><history><date date-type="received"><day>18</day><month>08</month><year>2023</year></date><date date-type="accepted"><day>25</day><month>10</month><year>2023</year></date><date date-type="rev-recd"><day>23</day><month>10</month><year>2023</year></date></history><pub-history><event event-type="pmc-release"><date><day>29</day><month>11</month><year>2023</year></date></event><event event-type="pmc-live"><date><day>30</day><month>11</month><year>2023</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2024-01-28 04:25:19.250"><day>28</day><month>01</month><year>2024</year></date></event></pub-history><permissions><copyright-statement>&#169; 2023 The Authors. Published by American Chemical Society</copyright-statement><copyright-year>2023</copyright-year><copyright-holder>The Authors</copyright-holder><license><ali:license_ref specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>Permits the broadest form of re-use including for commercial purposes, provided that author attribution and integrity are maintained (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="ci3c01288.pdf"/><abstract><p content-type="toc-graphic"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="ab-d33e168" position="float" orientation="portrait" xlink:href="ci3c01288_0003.jpg"/></p><p>The air-blood partition coefficient (<italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub>) is extensively employed in human
+health risk assessment
+for chemical exposure. However, current <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> estimation approaches either require an extensive
+number of parameters or lack precision. In this study, we present
+two novel and parsimonious models to accurately estimate <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values for individual neutral organic
+compounds, as well as their complex mixtures. The first model, termed
+the GC&#215;GC model, was developed based on the retention times of
+nonpolar chemical analytes on comprehensive two-dimensional gas chromatography
+(GC&#215;GC). This model is unique in its ability to estimate the <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values for complex mixtures
+of nonpolar organic chemicals. The GC&#215;GC model successfully accounted
+for the <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> variance
+(<italic toggle="yes">R</italic><sup>2</sup> = 0.97) and demonstrated strong prediction
+power (RMSE = 0.31 log unit) for an independent set of nonpolar chemical
+analytes. Overall, the GC&#215;GC model can be used to estimate <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values for complex mixtures
+of neutral organic compounds. The second model, termed the partition
+model (PM), is based on two types of partition coefficients: octanol
+to water (<italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub>) and air
+to water (<italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub>). The PM
+was able to effectively account for the variability in <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> data (<italic toggle="yes">n</italic> = 344), yielding
+an <italic toggle="yes">R</italic><sup>2</sup> value of 0.93 and root-mean-square
+error (RMSE) of 0.34 log unit. The predictive power and explanatory
+performance of the PM were found to be comparable to those of the
+parameter-intensive Abraham solvation models (ASMs). Additionally,
+the PM can be integrated into the software EPI Suite, which is widely
+used in chemical risk assessment for initial screening. The PM provides
+quick and reliable estimation of <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> compared to ASMs, while the GC&#215;GC model is uniquely suited
+for estimating <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values
+for complex mixtures of neutral organic compounds. In summary, our
+study introduces two novel and parsimonious models for the accurate
+estimation of <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values
+for both individual compounds and complex mixtures.</p></abstract><funding-group><award-group><funding-source><institution-wrap><institution>GEOMAR Helmholtz-Zentrum f&#195;&#188;r Ozeanforschung Kiel</institution><institution-id institution-id-type="doi">10.13039/501100003153</institution-id></institution-wrap></funding-source><award-id>NA</award-id></award-group></funding-group><funding-group><award-group><funding-source><institution-wrap><institution>School of Civil and Environmental Engineering</institution><institution-id institution-id-type="doi">NA</institution-id></institution-wrap></funding-source><award-id>NA</award-id></award-group></funding-group><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>document-id-old-9</meta-name><meta-value>ci3c01288</meta-value></custom-meta><custom-meta><meta-name>document-id-new-14</meta-name><meta-value>ci3c01288</meta-value></custom-meta><custom-meta><meta-name>ccc-price</meta-name><meta-value/></custom-meta></custom-meta-group></article-meta></front><body><sec id="sec1"><label>1</label><title>Introduction</title><p>The air-to-blood partition
+coefficient (<italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub>) is
+a biochemical parameter that governs
+the fate, behavior, and movement of volatile organic chemicals (VOCs)
+across various species in the animal kingdom. Specifically, <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> plays a pivotal role in
+determining pulmonic gas exchange patterns. Alongside cardiac output
+and ventilatory flow, it regulates the inhalation of exogenous vapors
+(such as environmental contaminants or volatile anesthetic agents)
+and the elimination of endogenous chemicals through exhalation.<sup><xref ref-type="bibr" rid="ref1">1</xref></sup> Following inhalation, VOCs are conveyed to various
+organs within the body through the circulatory system. The transportation
+of these chemicals to different organs is contingent upon their capacity
+to partition from air to blood, as well as their ability to partition
+from blood to the respective body organs.<sup><xref ref-type="bibr" rid="ref2">2</xref></sup> Consequently, <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> is
+widely used in chemical health risk assessment and the evaluation
+of the toxic potential of chemicals in humans and other animal species.<sup><xref ref-type="bibr" rid="ref3">3</xref></sup></p><p>Considering the importance and wide applications
+of <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> it is mandatory
+to accurately determine
+its values. <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> determination
+encompasses a range of methods including experimental techniques (in
+vivo and in vitro) and predictive models. In vivo methods<sup><xref ref-type="bibr" rid="ref4">4</xref>&#8722;<xref ref-type="bibr" rid="ref8">8</xref></sup> directly measure a chemical&#8217;s concentration in the air and
+blood of living organisms. They provide highly accurate data and are
+commonly used in research and medical settings, offering advantages
+over in vitro or computational approaches.<sup><xref ref-type="bibr" rid="ref9">9</xref>,<xref ref-type="bibr" rid="ref10">10</xref></sup> However,
+in vivo methods involving live animal testing are often restricted
+or regulated due to ethical concerns regarding animal welfare.<sup><xref ref-type="bibr" rid="ref11">11</xref></sup> Various regulatory bodies and authorities, such
+as World Organization for Animal Health (WOAH), REACH (Registration,
+Evaluation, Authorization, and Restriction of Chemicals), PETA (People
+for the Ethical Treatment of Animals), and Organization for Economic
+Co-operation and Development (OECD) impose limitations on these methods
+to promote the use of alternative approaches that minimize animal
+testing.<sup><xref ref-type="bibr" rid="ref12">12</xref>,<xref ref-type="bibr" rid="ref13">13</xref></sup> Additionally, it is worth noting that approximately
+90% of chemical drugs that undergo testing in animals fail to demonstrate
+efficacy during human clinical trials.<sup><xref ref-type="bibr" rid="ref14">14</xref>,<xref ref-type="bibr" rid="ref15">15</xref></sup> Therefore,
+scientists and researchers are actively improving in vitro assays
+and advanced prediction models as ethical alternatives, providing
+reliable data while reducing the reliance on live animal testing.</p><p>In vitro methods for determining air to blood partition coefficients
+include artificial membrane models,<sup><xref ref-type="bibr" rid="ref16">16</xref></sup> liquid&#8211;liquid
+extraction,<sup><xref ref-type="bibr" rid="ref17">17</xref></sup> Parallel Artificial Membrane
+Permeability Assay (PAMPA),<sup><xref ref-type="bibr" rid="ref18">18</xref></sup> cell culture
+models,<sup><xref ref-type="bibr" rid="ref19">19</xref>,<xref ref-type="bibr" rid="ref20">20</xref></sup> and Selected Ion Flow Tube Mass Spectrometry
+(SIFT-MS).<sup><xref ref-type="bibr" rid="ref21">21</xref>,<xref ref-type="bibr" rid="ref22">22</xref></sup> Additionally, chromatographic
+techniques, like gas chromatography (GC) and liquid chromatography
+(LC),<sup><xref ref-type="bibr" rid="ref23">23</xref></sup> can also be used, with two-dimensional
+gas chromatography (GC&#215;GC) being a powerful tool, offering enhanced
+resolution for volatile compound analysis and their complex mixtures.<sup><xref ref-type="bibr" rid="ref24">24</xref>,<xref ref-type="bibr" rid="ref25">25</xref></sup> Despite avoiding live animal testing and reducing ethical concerns,
+in vitro testing has drawbacks like being costly, laborious, and complex.<sup><xref ref-type="bibr" rid="ref26">26</xref>,<xref ref-type="bibr" rid="ref27">27</xref></sup></p><p>Hence, regulatory bodies recommend the development of prediction
+models as viable alternatives to avoid extensive experimentation.<sup><xref ref-type="bibr" rid="ref28">28</xref>,<xref ref-type="bibr" rid="ref29">29</xref></sup> These models include Poly Parameter Linear Free Energy relationships
+(PP-LFERs)<sup><xref ref-type="bibr" rid="ref2">2</xref>,<xref ref-type="bibr" rid="ref30">30</xref>&#8722;<xref ref-type="bibr" rid="ref32">32</xref></sup> Quantitative Structure&#8211;Activity
+Relationship (QSAR) Models,<sup><xref ref-type="bibr" rid="ref33">33</xref>,<xref ref-type="bibr" rid="ref34">34</xref></sup> Artificial Neural Network
+(ANN) Models,<sup><xref ref-type="bibr" rid="ref35">35</xref></sup> Random Forest (RF) Models,<sup><xref ref-type="bibr" rid="ref36">36</xref></sup> Genetic Algorithm (GA) Models,<sup><xref ref-type="bibr" rid="ref35">35</xref></sup> and hybrid approaches which are combination of two or more
+methods.<sup><xref ref-type="bibr" rid="ref37">37</xref></sup> However, each model has inherent
+limitations. PP-LFERs may necessitate extensive experimental data
+for parametrization and may lack accuracy in predicting complex chemical
+interactions. ANN models are prone to overfitting and may lack interpretability.<sup><xref ref-type="bibr" rid="ref38">38</xref></sup> RF Models exhibit constraints in handling nonlinear
+relationships and might be sensitive to data noise.<sup><xref ref-type="bibr" rid="ref39">39</xref></sup> GA Models, though effective, are computationally intensive
+and may converge to local optima, requiring parameter optimization.<sup><xref ref-type="bibr" rid="ref35">35</xref></sup> Recognizing these limitations is essential in
+selecting appropriate models and leveraging their strengths to enhance
+the accuracy of predictions for air-blood partition coefficients.</p><p>By considering all of these limitations of previous methods, in
+this research, we introduce two novel models that surpass the limitations
+of previous methods and deliver enhanced accuracy, applicability,
+and simplicity in predicting <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values.</p><p>The first type of our model for predicting <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values utilizes solute parameters <italic toggle="yes">u</italic><sub>1</sub> and <italic toggle="yes">u</italic><sub>2</sub> from a
+GC&#215;GC chromatogram, based on our previous study.<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> In the study conducted by Nabi et al.,<sup><xref ref-type="bibr" rid="ref41">41</xref></sup> favorable predictions of many environmental partitioning
+properties (log <italic toggle="yes">K</italic>) for nonpolar complex organic compounds
+were achieved using Linear Free Energy Relationships (LFERs) based
+on two solute parameters, <italic toggle="yes">u</italic><sub>1</sub> and <italic toggle="yes">u</italic><sub>2</sub>. These parameters were extracted from the
+first- and second-dimension retention times of the analytes on a GC&#215;GC
+chromatogram. The calibration of the GC&#215;GC model (<xref rid="eq1" ref-type="disp-formula">eq <xref rid="eq1" ref-type="disp-formula">1</xref></xref>) was performed theoretically by
+using a set of 79 nonpolar model chemicals for 32 properties, followed
+by experimental validation by using a set of 52 nonpolar chemicals
+analyzed on the GC&#215;GC instrument.<disp-formula id="eq1"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" orientation="portrait" xlink:href="ci3c01288_m001.jpg"/><label>1</label></disp-formula>Here &#955;<sub>1</sub>,&#955;<sub>2</sub>, and &#955;<sub>3</sub> are partitioning system-specific parameters.
+The GC&#215;GC model, demonstrated as a powerful tool in previous
+studies<sup><xref ref-type="bibr" rid="ref24">24</xref>,<xref ref-type="bibr" rid="ref26">26</xref>,<xref ref-type="bibr" rid="ref27">27</xref>,<xref ref-type="bibr" rid="ref40">40</xref>&#8722;<xref ref-type="bibr" rid="ref43">43</xref></sup> enables direct estimation of properties for detected
+nonpolar compounds in environmental mixtures. Nevertheless, to date,
+this approach remains unexplored for mapping <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values onto GC&#215;GC chromatograms, presenting
+a significant opportunity for further investigation and advancement.
+Therefore, we created and tested a similar GC&#215;GC model (<xref rid="eq2" ref-type="disp-formula">eq <xref rid="eq2" ref-type="disp-formula">2</xref></xref>) for the prediction of <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values.<disp-formula id="eq2"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" orientation="portrait" xlink:href="ci3c01288_m002.jpg"/><label>2</label></disp-formula></p><p>The GC&#215;GC model we created holds
+significant potential as
+a powerful tool for accurately predicting <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values, particularly when applied directly to nonpolar
+compounds detected within environmental mixtures.</p><p>Our second
+model is Two Parameters Linear Free Energy Relationship
+(2P-LFER) which is based upon the air-to-water partition coefficients(<italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub>), and octanol-to-water partition
+coefficients(<italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub>), providing
+an alternative to the parameter-intensive Abraham Solvation Models
+(ASMs) which are referred to as PP-LFERs. ASMs are extensively developed
+and widely employed physicochemical descriptors-based models. These
+models have been utilized over the past few decades as reliable and
+robust gold standards for the prediction of various biochemical properties,
+including air-to-blood partition coefficients<sup><xref ref-type="bibr" rid="ref2">2</xref>,<xref ref-type="bibr" rid="ref32">32</xref></sup> sensory
+irritation thresholds,<sup><xref ref-type="bibr" rid="ref27">27</xref>,<xref ref-type="bibr" rid="ref44">44</xref>&#8722;<xref ref-type="bibr" rid="ref48">48</xref></sup> blood-to-organs partition coefficients,<sup><xref ref-type="bibr" rid="ref49">49</xref>&#8722;<xref ref-type="bibr" rid="ref51">51</xref></sup> skin permeability coefficients,<sup><xref ref-type="bibr" rid="ref26">26</xref>,<xref ref-type="bibr" rid="ref52">52</xref></sup> and nonspecific
+lethal concentrations.<sup><xref ref-type="bibr" rid="ref53">53</xref></sup> Additionally,
+ASMs have demonstrated their efficacy as gold standards in predicting
+environmental properties such as standard enthalpies, solubilities,
+and interchangeable partition coefficients between air, water, soil,
+and organic matter.<sup><xref ref-type="bibr" rid="ref54">54</xref>,<xref ref-type="bibr" rid="ref55">55</xref></sup><italic toggle="yes">E, S, A, B, L,</italic> and <italic toggle="yes">V</italic> are commonly referred to as Abraham Solute
+Descriptors (ASDs). These descriptors provide insights into intermolecular
+interactions. Specifically, (<italic toggle="yes">E</italic>) indicates polarizability,
+(<italic toggle="yes">S</italic>) represents a combination of polarizability and
+polarity, (<italic toggle="yes">A</italic>) signifies hydrogen bond acidity, (<italic toggle="yes">B</italic>) denotes hydrogen bond basicity, (<italic toggle="yes">V</italic>)
+characterizes the energy required for cavity formation during solvation,
+and (<italic toggle="yes">L</italic>) represents the gas to hexadecane partition
+coefficient, which is indicative of dispersion interactions.<sup><xref ref-type="bibr" rid="ref56">56</xref></sup> ASMs have previously been employed for the prediction
+of log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values for
+a diverse range of chemicals in humans and select animal species.<sup><xref ref-type="bibr" rid="ref2">2</xref>,<xref ref-type="bibr" rid="ref32">32</xref></sup> However, ASMs have a limitation in that they lack ASDs, with available
+descriptors currently limited to approximately 8000 chemicals. Although
+the ASD database is gradually expanding, the pace of growth is relatively
+slow compared to the vast number of registered industrial chemicals,
+which exceeds 65 million. Taking into account the aforementioned limitations
+of ASMs we developed the 2P-LFERs based on <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub> and <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> (<xref rid="eq3" ref-type="disp-formula">eq <xref rid="eq3" ref-type="disp-formula">3</xref></xref>). Additionally,
+we aim to investigate any variations in log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values between human and other mammalian
+species, such as rat, dog, mouse, rabbit, and pig, for which experimental
+log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values are available.<disp-formula id="eq3"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" orientation="portrait" xlink:href="ci3c01288_m003.jpg"/><label>3</label></disp-formula></p><p>Here, <italic toggle="yes">a</italic>, <italic toggle="yes">b</italic>, and <italic toggle="yes">c</italic> are system constants resulting from regression
+analysis of log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub>,
+log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub>, and log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub>.</p></sec><sec id="sec2"><label>2</label><title>Methodology</title><sec id="sec2.1"><label>2.1</label><title>Data Acquisition, Curation, and Transformation</title><p>The calibration and evaluation of the GC&#215;GC model were conducted
+using data obtained from a prior study.<sup><xref ref-type="bibr" rid="ref41">41</xref></sup> The calibration set comprised 79 nonpolar chemicals, encompassing
+various families and functional groups of nonpolar organic compounds
+(<xref rid="notes-2" ref-type="notes">Supporting Information</xref>, File 1, Table
+S1). The solute descriptors <italic toggle="yes">u</italic><sub>1</sub> and <italic toggle="yes">u</italic><sub>2</sub> for the 79 chemicals in the training set were
+derived by transforming the gas-stationary phase partition coefficients
+corresponding to the first- and second-dimension stationary phases
+of the GC&#215;GC system. The values of the gas-stationary phase partition
+coefficients for these 79 chemicals were determined using the ASM
+equations published for the respective stationary phases.<sup><xref ref-type="bibr" rid="ref27">27</xref>,<xref ref-type="bibr" rid="ref57">57</xref></sup> Subsequently, the calculated descriptors <italic toggle="yes">u</italic><sub>1</sub> and <italic toggle="yes">u</italic><sub>2</sub> were employed as independent
+variables, while log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> served as the dependent variable, to train the GC&#215;GC model
+for predicting log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values. In the subsequent step, a separate data set comprising 52
+entirely independent nonpolar chemicals was utilized as a test set
+to validate the newly developed GC&#215;GC model (<xref rid="notes-2" ref-type="notes">Supporting Information</xref>, File 1, Table S2). For the independent
+test set, the retention times of nonpolar analytes in the first and
+second dimensions of the GC&#215;GC system were converted into solute
+parameters, <italic toggle="yes">u</italic><sub>1</sub> and <italic toggle="yes">u</italic><sub>2</sub>.<sup><xref ref-type="bibr" rid="ref40">40</xref>,<xref ref-type="bibr" rid="ref41">41</xref></sup> Subsequently, the predicted log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values for these 52 analytes
+were compared with both the available experimental values and the
+ASM predicted values to validate the GC&#215;GC model. (<xref rid="notes-2" ref-type="notes">Supporting Information</xref>, File 1, Table S2).</p><p>Due to the unavailability of experimental log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values for a significant number of chemicals
+in both the GC&#215;GC training set and validation set, estimated
+values from ASMs were utilized in those instances. This approach allowed
+for the development of the GC&#215;GC model for log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> prediction in cases where experimental
+data were absent (<xref rid="notes-2" ref-type="notes">Supporting Information</xref>, File 1, Table S2 and Table S3). Unlike ASMs, the GC&#215;GC models
+have the advantage of being applicable to mixtures of nonpolar chemicals.
+Users can now estimate the log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> value of a chemical within a complex mixture of nonpolar organic
+compounds by simply providing the <italic toggle="yes">u</italic><sub>1</sub> and <italic toggle="yes">u</italic><sub>2</sub> values. These values can be easily measured
+using the GC&#215;GC instrument and our MATLAB code.<sup><xref ref-type="bibr" rid="ref58">58</xref></sup> We have given a step-by-step guideline for the user&#8217;s
+facilitation to explain the complete procedure for the prediction
+of log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values by
+using our GC&#215;GC model (<xref rid="notes-2" ref-type="notes">Supporting Information</xref>, File 2, Section S1). The GC&#215;GC model training set and test
+set comprise a diverse range of nonpolar chemicals representing various
+chemical families. These families include <italic toggle="yes">n</italic>-alkanes,
+cycloalkanes, halogenated alkanes, benzene, linear alkylbenzenes,
+cycloalkenes, halogenated alkenes, halogenated benzenes, polycyclic
+aromatic hydrocarbons (PAHs), polybrominated diphenyl ethers (PBDEs),
+polychlorinated biphenyls (PCBs), polychlorinated naphthalenes (PCNs),
+and organochlorine pesticides. The inclusion of these different chemical
+families ensures a comprehensive representation of nonpolar compounds
+in the GC&#215;GC model training and test sets.<sup><xref ref-type="bibr" rid="ref27">27</xref>,<xref ref-type="bibr" rid="ref41">41</xref></sup></p><p>In our pursuit to develop <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> and <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub> based
+2P-LFERs, we compiled a data set of log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values from the literature<sup><xref ref-type="bibr" rid="ref2">2</xref>,<xref ref-type="bibr" rid="ref31">31</xref>,<xref ref-type="bibr" rid="ref32">32</xref></sup> for various species: human (<italic toggle="yes">n</italic> = 157), rat (<italic toggle="yes">n</italic> = 134), dog (<italic toggle="yes">n</italic> =
+15), pig (<italic toggle="yes">n</italic> = 5), mouse (<italic toggle="yes">n</italic> = 16),
+and rabbit (<italic toggle="yes">n</italic> = 17). This data set comprises 344
+log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values, which
+represent interspecies variations and include multiple entries for
+certain chemicals. The chemical classes covered in the data set are
+aliphatic hydrocarbons, cyclic hydrocarbons, simple and halogenated
+ethers, benzene derivatives, ethers, ketones, alcohols, and carbonic
+acid esters<sup><xref ref-type="bibr" rid="ref2">2</xref>,<xref ref-type="bibr" rid="ref31">31</xref>,<xref ref-type="bibr" rid="ref32">32</xref></sup> (<xref rid="notes-2" ref-type="notes">Supporting Information</xref>, File 1, Table
+S4).</p><p>The Chemical Abstracts Service (CAS) numbers and Simplified
+Molecular
+Input Line Entry System (SMILES) codes for these chemicals were extracted
+from PubChem. Abraham solute descriptors (ASDs) were obtained from
+the UFZ LSER database,<sup><xref ref-type="bibr" rid="ref59">59</xref></sup> which is openly
+accessible. The log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub> and log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> values,
+both experimental and estimated, were obtained using the HenryWin
+v3.20 and KOWWIN v1.69 modules of the EPI Suite v 4.11, an open-source
+software. Experimental log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> values were available for a total of 284 out of 344 data points,
+while the remaining 60 data points had their log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> values estimated using the ASM equations.<sup><xref ref-type="bibr" rid="ref54">54</xref>,<xref ref-type="bibr" rid="ref60">60</xref></sup></p><p>In terms of log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub>, experimental values were available for 280 chemicals, and
+for the
+remaining 64 chemicals, predictions were made using ASM equations
+based on relevant literature.<sup><xref ref-type="bibr" rid="ref54">54</xref>,<xref ref-type="bibr" rid="ref61">61</xref></sup></p><p>Our statistical
+analysis revealed that the ASM equations provided
+more accurate estimates for log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> (RMSE = 0.175) compared to KOWWIN v1.69 (RMSE = 0.291), as
+well as for log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub> (RMSE
+= 0.162) compared to estimates from HenryWin v3.20. Therefore, we
+decided to use the ASM predicted values due to their superior accuracy,
+as determined by the analysis. For further details, see the <xref rid="notes-2" ref-type="notes">Supporting Information</xref>, File 1, Table S5 and
+S6.</p><p>We recalibrated the Abraham solvation models (<xref rid="notes-2" ref-type="notes">Supporting Information</xref>, File 2, Section S2) to
+enhance their
+predictive capabilities for log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values. We observed a few discrepancies between certain values
+of Abraham Solvation Descriptors (ASDs) and their corresponding values
+reported in the most recent online database &#8220;LSER database
+for comptox users (2017)&#8221; available on the UFZ LSER database
+Web site. Consequently, we determined that the ASDs in question required
+upgrading to align with the latest reported values.<sup><xref ref-type="bibr" rid="ref62">62</xref></sup> Also, we found that the values of some ASDs taken from
+the literature<sup><xref ref-type="bibr" rid="ref2">2</xref>,<xref ref-type="bibr" rid="ref32">32</xref></sup> were not even present in any
+of the previously published data sets available on the UFZ-LSER database
+(<xref rid="notes-2" ref-type="notes">Supporting Information</xref>, File 1, Table
+S9). To rectify this issue, we employed the most recent version of
+the database, &#8220;LSER database for comptox users (2017)&#8221;,
+as a reference to correct these values (<xref rid="notes-2" ref-type="notes">Supporting
+Information</xref>, File 1, Table S10).</p></sec></sec><sec id="sec3"><label>3</label><title>Statistical Analysis</title><p>The statistical
+analyses including Multiple Linear Regression (MLR),
+Principal Component Analysis (PCA), Pearson correlation, and cross-validation
+tests were executed using RStudio (version 1.4.1106).<sup><xref ref-type="bibr" rid="ref63">63</xref></sup> To obtain the significant and optimal number of descriptors,
+we employed the stepwise MLR algorithm. This analysis was guided by
+various criteria, including the Variance Inflation Factor (VIF), Student&#8217;s <italic toggle="yes">t</italic> test, and Akaike Information Criteria (AIC). Additionally,
+we utilized Principal Component Analysis (PCA) to inspect the number
+of independent dimensions of chemical information in both the test
+and training data sets. The contribution of each variable in the principal
+components (PCs) was determined by conducting PCA on all of the variables.
+To explore the relationship between variables, we performed a Pearson
+correlation analysis. To assess the robustness of the models, we employed
+several cross-validation techniques including the bootstrap method
+(<italic toggle="yes">n</italic> = 1000), leave-one-out, K-fold cross-validation,
+Repeated K-fold cross-validation, and leave-one-out approaches. These
+techniques were utilized to ensure the reliability and generalizability
+of the models.</p><p>Furthermore, we conducted external validation
+by splitting the
+data set into a test set and a training set, maintaining a 20:80 ratio
+between the two subsets. This process allowed us to evaluate the performance
+of the models on independent data and assess their predictive capabilities.
+We used MATLAB Software<sup><xref ref-type="bibr" rid="ref64">64</xref></sup> to overlay the
+contours of log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values
+onto GC&#215;GC chromatograms by doing modification in a previous
+code.<sup><xref ref-type="bibr" rid="ref27">27</xref>,<xref ref-type="bibr" rid="ref58">58</xref></sup></p></sec><sec id="sec4"><label>4</label><title>Results and Discussion</title><sec id="sec4.1"><label>4.1</label><title>Comprehensive Two-Dimensional Gas Chromatography
+(GC&#215;GC) based model for the prediction of log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values</title><p>Our developed GC&#215;GC
+model (<xref rid="eq4" ref-type="disp-formula">eq <xref rid="eq4" ref-type="disp-formula">4</xref></xref>) successfully
+captures the variations in log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values for nonpolar compounds. The calibration data set consisted
+of 79 nonpolar chemicals. This data set comprised a combination of
+experimental values (<italic toggle="yes">n</italic> = 21) and log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values predicted by Abraham Solvation
+Model (ASM) (<italic toggle="yes">n</italic> = 58).<sup><xref ref-type="bibr" rid="ref32">32</xref></sup> Additionally, for chemicals that had multiple experimental log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values available, we calculated
+the average value to ensure consistency and reduce potential variability
+(<xref rid="notes-2" ref-type="notes">Supporting Information</xref>, File 1, Table
+S 3).<disp-formula id="eq4"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" orientation="portrait" xlink:href="ci3c01288_m004.jpg"/><label>4</label></disp-formula><italic toggle="yes">n</italic> = 79, RMSE = 0.313, <italic toggle="yes">R</italic><sup>2</sup> = 0.970, Adj. <italic toggle="yes">R</italic><sup>2</sup> = 0.969, and <italic toggle="yes">F</italic> = 1215.</p><p>Analyzing the fitting
+coefficients and their associated standard errors enclosed in parentheses
+for both <italic toggle="yes">u</italic><sub>1</sub> and <italic toggle="yes">u</italic><sub>2</sub> in <xref rid="eq4" ref-type="disp-formula">eq <xref rid="eq4" ref-type="disp-formula">4</xref></xref>, it
+becomes evident that both the first and second dimensions of GC&#215;GC
+play significant roles in elucidating the variability in air-blood
+partitioning for a representative set of nonpolar chemicals. Notably,
+the contribution of the second-dimensional stationary phase surpasses
+that of the first-dimensional phase by more than an order of magnitude
+in explaining the variation in log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> data. It may be deduced that a model based on the
+retention parameter of conventional one-dimensional gas chromatography
+would yield significantly lower accuracy when compared to the GC&#215;GC
+model.</p><p>To establish the robustness and applicability of our
+GC&#215;GC
+model (<xref rid="eq4" ref-type="disp-formula">eq <xref rid="eq4" ref-type="disp-formula">4</xref></xref>), we conducted
+both cross-validation and external validation tests. The results obtained
+from cross-validation, such as <italic toggle="yes">R</italic><sup>2</sup> values
+ranging from 0.962 to 0.980 and RMSE values ranging from 0.309 to
+0.322, were highly consistent with the goodness-of-fit statistics
+of <xref rid="eq4" ref-type="disp-formula">eq <xref rid="eq4" ref-type="disp-formula">4</xref></xref> (<xref rid="notes-2" ref-type="notes">Supporting Information</xref>, File 1, Table S7). This
+indicates the robustness of our model and its ability to accurately
+predict log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values.</p><p>To further validate our model, we utilized an independent data
+set consisting of 52 analytes representing diverse families of nonpolar
+organic compounds (<xref rid="notes-2" ref-type="notes">Supporting Information</xref>, File 1, Table S2). Using <xref rid="eq4" ref-type="disp-formula">eq <xref rid="eq4" ref-type="disp-formula">4</xref></xref>, we estimated the log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values for these analytes. The results were compared with
+the predictions obtained from the ASM. We found a strong agreement
+between the log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values
+predicted by our GC&#215;GC model and the ASM predictions, as evidenced
+by an RMSE value of 0.47 for the same data set of 52 nonpolar analytes.
+Overall, the cross-validation and external validation tests provide
+strong evidence of the reliability and accuracy of our GC&#215;GC
+model in predicting log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values for nonpolar organic compounds.</p><p>In our study,
+we employed the relationship described in <xref rid="eq4" ref-type="disp-formula">eq <xref rid="eq4" ref-type="disp-formula">4</xref></xref> to map the log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values by projecting the
+measured values of <italic toggle="yes">u</italic><sub>1</sub> and <italic toggle="yes">u</italic><sub>2</sub> onto a GC&#215;GC chromatogram. This mapping was carried
+out for both the analyte test set, consisting of a mixture of nonpolar
+standards, and a mixture of short-chain chlorinated paraffins (SCCPs),
+which were previously analyzed.<sup><xref ref-type="bibr" rid="ref41">41</xref></sup> It is
+important to note that SCCPs are a complex mixture comprising approximately
+7820 structurally distinct congeners.<sup><xref ref-type="bibr" rid="ref65">65</xref></sup></p><p>By projecting the measured <italic toggle="yes">u</italic><sub>1</sub> and <italic toggle="yes">u</italic><sub>2</sub> values onto the GC&#215;GC chromatograms,
+we were able to assign log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values to each discrete analyte detected within the nonpolar
+mixtures, such as the analyte test set used in our study (<italic toggle="yes">n</italic> = 52). This enabled us to identify and mark specific analytes
+as &#8220;chemicals of concern&#8221; based on their respective
+log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values within
+the complex mixtures of nonpolar organic compounds (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>b).</p><fig id="fig1" position="float" orientation="portrait"><label>Figure 1</label><caption><p>Mapping air to blood
+partition coefficients of nonpolar analytes
+onto a GC&#215;GC chromatogram retention space. (a) represents the
+GC&#215;GC chromatogram of a technical mixture of the short-chain
+chlorinated paraffins and (b) shows the GC&#215;GC chromatogram of
+a mixture of injected standards, which were analyzed in a previous
+study.<sup><xref ref-type="bibr" rid="ref41">41</xref></sup> (c) Shows the contours of air
+to blood partitioning values of analytes in log units overlaid onto
+GC&#215;GC chromatogram. In panel b, C26, C13, PBDE 3, PCB 101, and
+PCD respectively denote <italic toggle="yes">n-</italic>hexacosane, <italic toggle="yes">n</italic>-tridecane, 4-bromodiphenyl ether, 2,2&#8242;,4,5,5&#8242;-pentachlorobiphenyl,
+and 1,2,5,6,9-pentachlorodecane. (c) Pink triangles represent the
+52 analytes of GC&#215;GC model test set.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="gr1" position="float" orientation="portrait" xlink:href="ci3c01288_0001.jpg"/></fig><p>The GC&#215;GC instrument possesses the capability
+of resolving
+complex mixtures into subgroups or ordered bands of congeners (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>a). Our approach
+allows us to determine the relative trends of log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values within these ordered bands,
+providing valuable insights into the partitioning behavior of congeners
+within the mixture.</p><p>It is worth noting that the concept of additive
+interactions of
+chemicals from air to blood has been supported by numerous previous
+studies,<sup><xref ref-type="bibr" rid="ref66">66</xref>&#8722;<xref ref-type="bibr" rid="ref69">69</xref></sup> at least as an initial approximation, for estimating <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values of nonreactive chemical mixtures.
+Therefore, by utilizing the approach discussed in our study, it becomes
+possible to estimate the cumulative air-blood partitioning potential
+of a mixture of nonpolar organic chemicals.</p><p>Overall, our approach
+provides a valuable tool for evaluating the
+log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values of individual
+analytes within complex mixtures, identifying chemicals of concern
+and estimating the cumulative air&#8211;blood partitioning potential
+of nonpolar organic chemical mixtures.</p><sec id="sec4.1.1"><label>4.1.1</label><title>Exploring Column Combinations for Enhanced
+Applicability of the GC&#215;GC Model</title><p>The GC&#215;GC column
+combination used in this study consisted of a nonpolar stationary
+phase in the first dimension, such as pure polydimethylsiloxane (e.g.,
+DB-1), and a midpolar stationary phase in the second dimension, such
+as 50% diphenylsiloxane (e.g., Rtx-50). This column combination has
+been widely employed due to its effectiveness in achieving optimal
+structural separation of nonpolar organic chemical mixtures, including
+compounds such as polychlorinated alkanes (PCAs), polychlorinated
+biphenyls (PCBs), hydrocarbons, and polybrominated diphenyl ethers
+(PBDEs).<sup><xref ref-type="bibr" rid="ref27">27</xref>,<xref ref-type="bibr" rid="ref70">70</xref>,<xref ref-type="bibr" rid="ref71">71</xref></sup> This column
+combination captures the important intermolecular interaction descriptors&#8212;i.e., <italic toggle="yes">S</italic>, <italic toggle="yes">E</italic>, <italic toggle="yes">L</italic>, <italic toggle="yes">V</italic>&#8212;needed to describe the 99% partitioning variation of nonpolar
+chemicals.<sup><xref ref-type="bibr" rid="ref57">57</xref>,<xref ref-type="bibr" rid="ref71">71</xref></sup></p><p>To investigate if there
+are commercially available stationary phases that exhibit larger magnitudes
+of system coefficients (<italic toggle="yes">s</italic>, <italic toggle="yes">e</italic>, <italic toggle="yes">l</italic>, and <italic toggle="yes">v</italic>) and are therefore more suitable
+and accurate in sensing <italic toggle="yes">S</italic>, <italic toggle="yes">E</italic>, <italic toggle="yes">L</italic>, and <italic toggle="yes">V</italic> properties of nonpolar compounds,
+we conducted a thought experiment. We considered different options
+for the second dimension column by examining the Abraham solvation
+system constants available for extensively used commercial stationary
+phases, such as poly(ethylene glycol) (e.g., HP-INNOwax), bis(cyanopropylsiloxane)-<italic toggle="yes">co</italic>-methylsilarylene (e.g., HP-88), and 50% diphenylsiloxane
+(e.g., Rtx-50).<sup><xref ref-type="bibr" rid="ref72">72</xref></sup> Our analysis revealed
+that the magnitudes of the <italic toggle="yes">l</italic> and <italic toggle="yes">e</italic> coefficients for stationary phases such as HP-88 and HP-INNOwax
+were comparable to those of Rtx-50, while the magnitudes of the <italic toggle="yes">s</italic> and <italic toggle="yes">a</italic> coefficients for those phases were
+higher than those reported for the Rtx-50 column.</p><p>To further
+assess the impact of different column combinations on
+the estimation of log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values, we trained the GC&#215;GC model equation using the calculated
+retention factors of a calibration set of chemicals (<italic toggle="yes">n</italic> = 79) on six column combinations, including DB-1&#215;HP-88, DB-1&#215;HP-INNOwax,
+DB-1&#215;Rtx-50, HP-5&#215;HP-INNOwax, HP-5&#215;Rtx-50, and HP-5&#215;HP-88.
+The results of our analysis demonstrated that there were no significant
+changes in the statistics when switching the column combination, apart
+from the one used in our study (<xref rid="notes-2" ref-type="notes">Supporting Information</xref>, File 1, Table S8). Furthermore, it is worth noting that bis(cyanopropylsiloxane)-<italic toggle="yes">co</italic>-methylsilarylene and poly(ethylene glycol) stationary
+phases exhibit thermal instability beyond 250 and 260 &#176;C, respectively.
+As a result, poly(methylphenylsiloxane), which has a maximum temperature
+limit of 350 &#176;C, is preferred for eluting high boilers and is
+a suitable alternative to these phases.</p><p>In order to broaden
+the applicability domain of the GC&#215;GC
+model, which is currently limited to nonpolar chemicals, we explored
+the inclusion of polar analytes by considering alternative column
+combinations. We examined a total of 103 stationary columns ranging
+from conventional phases to ionic liquid phases. The determination
+of retention factors for the chemicals in the ASM training data set
+of log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> was performed
+using the system coefficients described in literature.<sup><xref ref-type="bibr" rid="ref57">57</xref>,<xref ref-type="bibr" rid="ref73">73</xref></sup></p><p>After evaluating the performance of various column combinations,
+we identified (1-propyl-1-methylpiperidinium bis(trifluoromethylsulfonyl)
+imide and 1,9-di(3-[2-hydroxyethyl]limidazolium)
+nonane bis(trifluoromethylsulfony)imide) as
+the most suitable column combination for accurately predicting log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values for both polar and
+nonpolar analytes.</p><p>These column combinations, incorporating
+ionic liquid phases, demonstrate
+the potential to expand the GC&#215;GC model&#8217;s applicability
+to include a broader range of analytes encompassing both polar and
+nonpolar compounds.</p></sec></sec><sec id="sec4.2"><label>4.2</label><title>Formulation of Partition Models</title><sec id="sec4.2.1"><label>4.2.1</label><title>Theoretical Rationalization of Partition
+Model</title><p>Our hypothesis revolves around the idea that the two-dimensional
+partition coefficients (PM), which are based on log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> and log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub>, bear a strong resemblance to the five-dimensional
+ASM in their capacity to capture the variations in log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values across a diverse set of organic
+compounds. To put this hypothesis to the test, our initial approach
+involved an exploration of the information content embedded in the
+six ASDs, namely, <italic toggle="yes">E</italic>, <italic toggle="yes">S</italic>, <italic toggle="yes">A</italic>, <italic toggle="yes">B</italic>, <italic toggle="yes">L</italic>, and <italic toggle="yes">V</italic>&#8212;within the ASM framework&#8212;and how this aligns with
+the information content encoded in the PM descriptors log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> and log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub>, particularly concerning their association
+with log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub>.</p><p>For
+the above, we conducted PCA on a 344 &#215; 6 matrix ([<italic toggle="yes">E</italic>, <italic toggle="yes">S</italic>, <italic toggle="yes">A</italic>, <italic toggle="yes">B</italic>, <italic toggle="yes">L</italic>, <italic toggle="yes">V</italic>]) comprising the ASDs of the calibration
+set of log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub>. The results
+from PCA revealed that out of the six dimensions considered here,
+the first two dimensions corresponded to 66.8% of the total information
+(as illustrated in <xref rid="fig2" ref-type="fig">Figure. <xref rid="fig2" ref-type="fig">2</xref></xref>a). Specifically, we discovered that the first dimension in
+the PCA analysis was primarily influenced by the linear combination
+of <italic toggle="yes">E</italic>, <italic toggle="yes">V</italic>, and <italic toggle="yes">L</italic>,
+accounting for approximately 40.4% of the information. Additionally,
+the contributions of the <italic toggle="yes">A</italic> and <italic toggle="yes">B</italic> descriptors were relatively minor in this dimension. On the other
+hand, the second dimension was predominantly shaped by the <italic toggle="yes">S</italic>, <italic toggle="yes">A</italic>, and <italic toggle="yes">B</italic> descriptors,
+with smaller contributions from other ASDs, encompassing approximately
+25.4% of the information (<xref rid="fig2" ref-type="fig">Figure. <xref rid="fig2" ref-type="fig">2</xref></xref>b).</p><fig id="fig2" position="float" orientation="portrait"><label>Figure 2</label><caption><p>represents the dimensionality analysis for the Partition
+Model
+(PM) training set. The top panels illustrate the results of Principal
+Component Analysis (PCA) performed on a 344 &#215; 6 matrix, [<italic toggle="yes">E</italic>, <italic toggle="yes">S</italic>, <italic toggle="yes">A</italic>, <italic toggle="yes">B</italic>, <italic toggle="yes">L</italic>, <italic toggle="yes">V</italic>]. (a) Scree plot of eigenvalues
+is shown, which indicates the amount of variation captured by each
+principal component. (b) The correlation circle visually represents
+the quality of representation and the relationships among the variables
+in the first two dimensions. The angles between the arrow lines indicate
+the correlation between the ASDs. The length of the arrows corresponds
+to the quality of the representation of each descriptor. Panel c displays
+the distribution of the quality of representation across nine dimensions
+obtained through PCA of a 344 &#215; 9 matrix, [<italic toggle="yes">E</italic>, <italic toggle="yes">S</italic>, <italic toggle="yes">A</italic>, <italic toggle="yes">B</italic>, <italic toggle="yes">L</italic>, <italic toggle="yes">V</italic>, log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub>, log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub>, and log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub>].
+The sizes of the circles and the intensity of the colors are proportional
+to the quality of representation of each parameter. (d) Panel represents
+the correlation matrix obtained from a Pearson correlation analysis
+performed on a 344 &#215; 9 matrix, [<italic toggle="yes">E</italic>, <italic toggle="yes">S</italic>, <italic toggle="yes">A</italic>, <italic toggle="yes">B</italic>, <italic toggle="yes">L</italic>, <italic toggle="yes">V</italic>, log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub>,
+log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub>, and log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub>]. The values of <italic toggle="yes">r</italic> (correlation coefficient) indicate the magnitude of the
+correlation between the variables.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="gr2" position="float" orientation="portrait" xlink:href="ci3c01288_0002.jpg"/></fig><p>Next, we included log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub>, log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub>, and
+log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> in the above
+PCA test to investigate their correspondence to the ASDs. This resulted
+in a 344 &#215; 9 matrix, [<italic toggle="yes">E</italic>, <italic toggle="yes">S</italic>, <italic toggle="yes">A</italic>, <italic toggle="yes">B</italic>, <italic toggle="yes">L</italic>, <italic toggle="yes">V</italic>, log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub>, log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub>, log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub>]. PCA indicated that among these nine dimensions,
+the first two dimensions explained 77% of the data set. The three
+partition coefficients, log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub>, log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub>, and
+log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub>, were primarily
+associated with the first two dimensions (<xref rid="fig2" ref-type="fig">Figure. <xref rid="fig2" ref-type="fig">2</xref></xref>c). Furthermore, a Pearson correlation analysis
+of all descriptors (<italic toggle="yes">E</italic>, <italic toggle="yes">S</italic>, <italic toggle="yes">A</italic>, <italic toggle="yes">B</italic>, <italic toggle="yes">L</italic>, <italic toggle="yes">V</italic>, log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub>, log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub>, and log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub>) indicated that log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub> and log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> exhibited moderate to strong correlations with
+ASDs and log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> (<xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>d).</p><p>Based on
+these findings, we concluded that log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub> and log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> are suitable descriptors that can serve as potential
+alternatives to ASDs. They can effectively explain the variability
+in log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> data and accurately
+predict the log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values
+of VOCs within the scope of this study.</p><p>Beyond the statistical
+evidence presented above, the following
+empirical considerations also influenced the selection of log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub> and log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> as key parameters in this study. Blood
+is a complex mixture composed of diverse macromolecules, including
+lipids, proteins, carbohydrates, and nucleic acids.<sup><xref ref-type="bibr" rid="ref74">74</xref>,<xref ref-type="bibr" rid="ref75">75</xref></sup> Octanol has been frequently employed as a surrogate for these macromolecules,
+primarily because of the moderate to strong correlation between log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> and the partition coefficients
+of these macromolecules.<sup><xref ref-type="bibr" rid="ref76">76</xref>,<xref ref-type="bibr" rid="ref77">77</xref></sup> Although the literature
+has proposed various one-parameter linear free energy relationships,
+their accuracy across diverse chemical families frequently does not
+match the performance of ASMs.<sup><xref ref-type="bibr" rid="ref78">78</xref>,<xref ref-type="bibr" rid="ref79">79</xref></sup> This suggests that
+a single parameter such as log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> may be inadequate to capture the partitioning variability
+for these macromolecules. The rationale for adopting log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> in the PM stems from the similarity
+between the octanol&#8211;water partitioning system and the cellular
+composition of blood. Similarly, the selection of log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub> is influenced by its relevancy to
+the blood plasma composition, which is approximately 50% water. This
+resemblance facilitates a more accurate estimation of the partitioning
+behavior of VOCs, mirroring the transition of VOCs from air to water
+and, consequently, from air to blood.</p></sec><sec id="sec4.2.2"><label>4.2.2</label><title>Formulation and Validation of Partition
+Model for Prediction of log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub></title><p>The PM is based on the linear combination of log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub> and log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> explained variation in the log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> data successfully (<italic toggle="yes">n</italic> = 344, <italic toggle="yes">R</italic><sup>2</sup> = 0.927, Adjusted <italic toggle="yes">R</italic><sup>2</sup> = 0.927, RMSE = 0.351, <italic toggle="yes">F</italic> =
+2177). Additionally, we employed indicator variables to formulate
+a model equation (<xref rid="eq5" ref-type="disp-formula">eq <xref rid="eq5" ref-type="disp-formula">5</xref></xref>) that encompasses species other than humans.<disp-formula id="eq5"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" orientation="portrait" xlink:href="ci3c01288_m005.jpg"/><label>5</label></disp-formula><italic toggle="yes">n</italic> = 344, RMSE = 0.338, <italic toggle="yes">R</italic><sup>2</sup> = 0.934, Adj. <italic toggle="yes">R</italic><sup>2</sup> = 0.932, and <italic toggle="yes">F</italic>= 947.</p><p>The indicator variables
+for <italic toggle="yes">I</italic><sub><italic toggle="yes">dog</italic></sub> and <italic toggle="yes">I</italic><sub><italic toggle="yes">rabbit</italic></sub> were found to have insignificant
+coefficients with <italic toggle="yes">P</italic> &gt; 0.05 and large standard
+errors.
+As a result, these indicator variables were excluded from the formulation
+of the eq (<xref rid="eq6" ref-type="disp-formula">eq <xref rid="eq6" ref-type="disp-formula">6</xref></xref>).<disp-formula id="eq6"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" orientation="portrait" xlink:href="ci3c01288_m006.jpg"/><label>6</label></disp-formula><italic toggle="yes">n</italic> = 344, RMSE = 0.338, <italic toggle="yes">R</italic><sup>2</sup> = 0.933, Adj. <italic toggle="yes">R</italic><sup>2</sup> = 0.932, and <italic toggle="yes">F</italic> = 946.</p><p><xref rid="eq6" ref-type="disp-formula">Equation <xref rid="eq6" ref-type="disp-formula">6</xref></xref> was formulated
+without including any insignificant indicator variables, making it
+preferable over <xref rid="eq5" ref-type="disp-formula">eq <xref rid="eq5" ref-type="disp-formula">5</xref></xref>.
+To assess the internal robustness of our model (<xref rid="eq6" ref-type="disp-formula">eq <xref rid="eq6" ref-type="disp-formula">6</xref></xref>), we conducted four types of cross-validation
+tests: the leave-one-out approach, bootstrap method, K-fold cross-validation,
+and repeated K-fold cross-validation. The results of these tests are
+shown in <xref rid="notes-2" ref-type="notes">Supporting Information</xref>, File 1,
+Table S11, indicate strong internal validation statistics (<italic toggle="yes">R</italic><sup>2</sup> = 0.930&#8211;0.936 and RMSE = 0.337&#8211;0.342),
+which closely match the regression statistics of <xref rid="eq6" ref-type="disp-formula">eq <xref rid="eq6" ref-type="disp-formula">6</xref></xref>.</p><p>For external validation, we randomly
+divided the data into a training
+set (<italic toggle="yes">n</italic> = 275) and a test set (<italic toggle="yes">n</italic> =
+69), maintaining a proportion of 80:20. From the training set, we
+derived <xref rid="eq7" ref-type="disp-formula">eq <xref rid="eq7" ref-type="disp-formula">7</xref></xref> using 275
+chemicals.<disp-formula id="eq7"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" orientation="portrait" xlink:href="ci3c01288_m007.jpg"/><label>7</label></disp-formula><italic toggle="yes">N</italic> = 275, RMSE = 0.337, <italic toggle="yes">R</italic><sup>2</sup> = 0.933, Adj. <italic toggle="yes">R</italic><sup>2</sup> = 0.932, and <italic toggle="yes">F</italic> = 748</p><p><italic toggle="yes">n</italic><sub><italic toggle="yes">external</italic></sub> = 69, <italic toggle="yes">R</italic><sup>2</sup><sub><italic toggle="yes">external</italic></sub> = 0.946,
+and RMSE<sub><italic toggle="yes">external</italic></sub> = 0.361.</p><p>The regression
+statistics and fitting coefficients of both <xref rid="eq6" ref-type="disp-formula">eq <xref rid="eq6" ref-type="disp-formula">6</xref></xref> and <xref rid="eq7" ref-type="disp-formula">eq <xref rid="eq7" ref-type="disp-formula">7</xref></xref> demonstrate statistical similarity, indicating
+that our partition model is robust against variations in the data.
+Furthermore, the calculated values of RMSE<italic toggle="yes"><sub>external</sub></italic> and <italic toggle="yes">R</italic><sup>2</sup><italic toggle="yes"><sub>external</sub></italic>, obtained from comparing the predicted log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values for the test set (<italic toggle="yes">n</italic><sub><italic toggle="yes">external</italic></sub> = 69) using <xref rid="eq7" ref-type="disp-formula">eq <xref rid="eq7" ref-type="disp-formula">7</xref></xref> with the corresponding experimental
+values, provide evidence that the partition model is reliable and
+robust for predicting interspecies (human, rat, mouse, and pig) log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values for additional neutral
+organic chemicals.</p><p>In our final analysis, we examined the influence
+of filling missing
+values with ASM-predicted log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> and log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub> values
+on the performance of the PM. The PM trained on the extended data
+set (<italic toggle="yes">n</italic> = 344) (<xref rid="eq5" ref-type="disp-formula">eq <xref rid="eq5" ref-type="disp-formula">5</xref></xref>), which included both experimental and ASM-estimated
+values for log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> and
+log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub> showed slightly
+improved performance (<italic toggle="yes">R</italic><sup>2</sup> = 0.934, RMSE
+= 0.338, <italic toggle="yes">F</italic>-statistic = 946.93). In contrast, the
+model trained solely on experimental data (<italic toggle="yes">n</italic> = 239)
+for log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> and log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub> yielded an <italic toggle="yes">R</italic><sup>2</sup> = 0.911, RMSE = 0.364, and <italic toggle="yes">F</italic>-statistic
+= 479.42. However, the differences in regression coefficients and
+their associated standard errors between these two cases of fittings
+are not significantly different, as illustrated in <xref rid="notes-2" ref-type="notes">Figures S1 and Tables S1 and S2</xref>. Given that the extended data
+set (<italic toggle="yes">n</italic> = 344) provides a more extensive range for
+Abraham solute descriptors, log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub>, log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub>, and
+log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> as depicted in <xref rid="notes-2" ref-type="notes">Figure S2</xref>, the PM derived from this larger data
+set (<xref rid="eq5" ref-type="disp-formula">eq <xref rid="eq5" ref-type="disp-formula">5</xref></xref>) is recommended.</p><p>According to <xref rid="eq6" ref-type="disp-formula">eq <xref rid="eq6" ref-type="disp-formula">6</xref></xref>,
+the log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values for
+mice and rats were found to be statistically higher than those for
+humans by 0.29 and 0.16 log units, respectively. Similarly, the negative
+offsets observed for the pig data set indicate that the log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values for pig are lower
+than those for humans by 0.33 log units. Consequently, our analysis
+reveals that larger animals demonstrate a lower tendency for chemical
+absorption into the bloodstream compared to smaller animals. This
+observation could be attributed to the faster respiration or breathing
+rate in smaller species, as the diffusion of volatile organic compounds
+(VOCs) occurs from areas of high concentration to areas of low concentration.
+Thus, an increase in pulmonary blood flow rate and respiratory rate
+enhances systemic absorption.<sup><xref ref-type="bibr" rid="ref74">74</xref></sup></p><p>We
+successfully demonstrated and validated the suitability and
+practicality of our proposed partition model for predicting log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values across various species.
+The statistical analysis further confirms that our model can yield
+results comparable to those obtained from parameter-intensive ASMs
+(<xref rid="notes-2" ref-type="notes">Supporting Information</xref>, File 1, Table
+S12). This supports the reliability and effectiveness of our approach
+in predicting log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values for different species.</p></sec><sec id="sec4.2.3"><label>4.2.3</label><title>Scientific and Theoretical Premise of Partition
+Models</title><p>The transfer of a solute from air to blood phase is
+directed by various intermolecular forces such as Debye dipole-induced
+dipole forces (represented by <italic toggle="yes">E</italic> descriptor), London
+dispersion forces (represented partially by the <italic toggle="yes">V, L,</italic> and <italic toggle="yes">E</italic> descriptors), Keesom dipole&#8211;dipole
+forces (encoded in the <italic toggle="yes">S</italic> descriptor), and hydrogen
+bonding forces (represented by <italic toggle="yes">A</italic> and <italic toggle="yes">B</italic> descriptors).<sup><xref ref-type="bibr" rid="ref80">80</xref></sup> The dimensionality analyses,
+including Pearson correlation and principal component analyses, provide
+valuable insights into the role of different factors in the partitioning
+process. Based on these analyses, it is evident that log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> effectively captures certain interactions
+such as Debye dipole-induced dipole forces, London dispersion forces,
+and cavitation energy of solvation. These interactions are relevant
+for understanding the transfer of solutes between water and macromolecules
+such as proteins and lipid phases of the blood.</p><p>However, log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> alone does not sufficiently
+account for Keesom dipole&#8211;dipole forces and hydrogen bonding
+interactions. This is supported by the moderate correlations observed
+between log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> and the
+descriptors <italic toggle="yes">S</italic> (<italic toggle="yes">r</italic> = &#8722;0.24),
+A (<italic toggle="yes">r</italic> = &#8722;0.37), and <italic toggle="yes">B</italic> (<italic toggle="yes">r</italic> = &#8722;0.53), which are associated with these specific
+intermolecular interactions.</p><p>On the other hand, the air&#8211;water
+partition system exhibits
+a strong responsiveness to Keesom dipole&#8211;dipole forces and
+hydrogen bonding interactions. This is evident from the significant
+correlations observed between log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub> and the descriptors <italic toggle="yes">S</italic> (<italic toggle="yes">r</italic> = &#8722;0.73), <italic toggle="yes">A</italic> (<italic toggle="yes">r</italic> = &#8722;0.56),
+and <italic toggle="yes">B</italic> (<italic toggle="yes">r</italic> = &#8722;0.85), as shown
+in <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>d. These
+intermolecular interactions play a crucial role in describing the
+polar interactions of chemicals transferring from the air phase to
+the blood phase, as is evident by the strong correlations between
+log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> and ASDs (<xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>d).</p><p>Overall,
+these findings highlight that an understanding of the
+partitioning process can be achieved by considering a linear combination
+of both air&#8211;water and octanol&#8211;water partition coefficients,
+as they collectively account for the intermolecular interactions involved
+in the transfer of chemicals between air and blood.</p></sec><sec id="sec4.2.4"><label>4.2.4</label><title>Feasibility of Integrating PM into EPI Suite</title><p>Estimation Programs Interface Suite (EPI Suite) is a Windows-based
+program containing multiple modules used for the prediction of physical/chemical
+properties of several compounds and their fate estimation. It is a
+widely used screening tool, especially for chemicals that lack experimental
+data.</p><p>In our study, we explored the feasibility of integrating
+a new module into the EPI Suite for predicting log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values across different species. To
+achieve this, we utilized the predicted log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub> and log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> values obtained from EPI Suite modules, namely,
+Henrywin v3.21 and KOWWIN v1.69, and incorporated them into the partition
+model (PM). We then compared the log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values estimated by PM using this approach with
+the corresponding experimental values reported in the literature.<sup><xref ref-type="bibr" rid="ref2">2</xref></sup> The statistical assessment revealed satisfactory
+results with a root-mean-square error (RMSE) of 0.57. These findings
+support the integration of the partition model into EPI Suite, as
+it enables users to obtain reasonably accurate estimations of log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values through the air-blood
+partition coefficients estimation module.</p><p>We assessed the performance
+of EPI Suite integrated PM for chemicals
+with strong hydrogen bonding interactions. Within the PM training
+data sets, we compared experimental values against predictions from
+EPI Suite and ASM for a subset comprising chemical families like ketones,
+alcohols, esters, and ethers. For log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> values, both EPI Suite and ASM predictions closely
+matched experimental data (<italic toggle="yes">n</italic> = 52), with RMSEs of
+0.17 and 0.16 log units, respectively. However, the EPI Suite predictions
+of log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub> exhibited
+an RMSE of 0.46 log units when compared to 56 available experimental
+observations. The ASM predictions for the same data set resulted in
+an RMSE of 0.23 log units. This higher estimation error of the EPI
+Suite predicted log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub> may lead to inflated residuals (predicted versus observed) of log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> for these chemical families. <xref rid="notes-2" ref-type="notes">Table S12</xref> highlights such cases where PM exhibits
+greater residuals than ASM, for chemicals known for strong hydrogen
+bonding. Users should be aware of this limitation when using PM with
+EPI Suite data.</p><p>In summary, our study demonstrates the successful
+integration of
+the partition model into the EPI Suite, allowing users to reliably
+estimate log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values
+using the air-blood partition coefficients estimation module.</p></sec></sec></sec><sec id="sec5"><label>5</label><title>Domain of Applicability for GC&#215;GC Model
+and PM</title><p>The predictions of the PM, and GC&#215;GC models are
+more reliable
+for simple and small molecules than for complex chemicals with multiple
+functional groups and/or high hydrophobicity values (log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> &gt; 6), extremely low volatility,
+or
+very low aqueous solubility. These complex chemicals may exhibit significant
+uncertainties in the input data, such as log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> and log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub> for PM, and <italic toggle="yes">u</italic><sub>1</sub> and <italic toggle="yes">u</italic><sub>2</sub> for GC&#215;GC model. Nevertheless, most of
+the predicted values by PM were within 1 log unit of the experimental
+values, except for a few deviations. In the case of PM, decane, nonane,
+2,3-dimethylbutane, 2-methoxyethanol, tetrafluoromethane, and dodecane
+showed deviations from the anticipated regular trend (<xref rid="notes-2" ref-type="notes">Supporting Information</xref>, File 1, Table S13). The
+uncertainty could be attributed to the experimentally measured values
+of log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub>, as the experimental
+values of nonane and 2,3-dimethylbutane significantly differed from
+their back-calculated values obtained from the ASM and PM equations.
+The experimental value of nonane also diverged from the experimental
+log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values of other
+linear alkanes. Similarly, the experimental value of 2,3-dimethylbutane
+(0.780) did not agree with the back-calculated values and differed
+significantly from the experimental value of 2,2-dimethylbutane (&#8722;0.590),
+which was in good agreement with the back-calculated values from the
+model equations. Although these two chemicals differ by only one carbon
+atom in the methyl group, the difference in their experimental values
+suggests a possible error in the experimental value of nonane. Additionally,
+decane and dodecane exhibited much higher experimental log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> values (6.10 and 5.01, respectively),
+indicating their hydrophobic nature. For the other outliers, it is
+possible that their published descriptors (log <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub> and log <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub>) may involve significant errors, considering that
+their experimental log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values align closely with those of other chemicals within the same
+functional groups. However, the predicted values of log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> by PM deviate from this trend.</p><p>The GC&#215;GC model, utilizing the present column combination
+of polydimethylsiloxane (e.g., DB-1) in the first dimension and 50%
+diphenylsiloxane (e.g., Rtx-50) in the second dimension, is suitable
+only for nonpolar analytes. Furthermore, chemicals that exhibit significant
+localized hydrogen bonding interactions may demonstrate larger deviations
+from the experimental values. The GC&#215;GC model predictions for
+both the calibration set and a completely independent test set of
+analytes align well with the experimental and ASM calculated values,
+except for heptachlor (<xref rid="notes-2" ref-type="notes">Supporting Information</xref>, File 1, Table S2, and Table S3).</p></sec><sec id="sec6"><label>6</label><title>Outlook and Limitations</title><p>The GC&#215;GC
+column combination utilized in this study, consisting
+of pure poly(dimethylsiloxane) (e.g., DB-1) in the first dimension
+and 50% diphenylsiloxane (e.g., Rtx-50) in the second dimension, was
+specifically calibrated for nonpolar chemicals. However, in <xref rid="sec4.1.1" ref-type="other">Section <xref rid="sec4.1.1" ref-type="other">4.1.1</xref></xref>, we have
+proposed alternative column combinations that can be employed for
+polar chemicals, enabling the development of GC&#215;GC models for
+the estimation of log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values in such cases. Furthermore, due to limited data availability
+for individual species, a single model was created by averaging all
+of the accessible experimental log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values for each chemical. Given the availability
+of experimental data for each species, it would be possible to develop
+separate GC&#215;GC models for all species in the future, utilizing
+the same approach described in this study.</p><p>The PM developed
+in this study and the published ASM are designed
+to predict the behavior of only neutral compounds only. These models
+do not apply to ionic species as the air-to-blood partitioning mechanisms
+for charged species differ significantly. However, it is worth considering
+the inclusion of descriptors such as p<italic toggle="yes">K</italic><sub><italic toggle="yes">a</italic></sub> (acid ionization constant) in future models, as
+this could expand their applicability to include ionic species.<sup><xref ref-type="bibr" rid="ref27">27</xref></sup></p><p>Furthermore, the use of ASDs in previous
+correlation equations
+for ASMs limits the estimation of log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values to a restricted number of compounds, as
+experimental ASD values are available for only around 8000 chemicals.
+In order to account for interspecies variability in air-to-blood partitioning
+correlations, we incorporated indicator variables into the PMs (<xref rid="eq5" ref-type="disp-formula">eq <xref rid="eq5" ref-type="disp-formula">5</xref></xref> and <xref rid="eq6" ref-type="disp-formula">eq <xref rid="eq6" ref-type="disp-formula">6</xref></xref>). However, due to limited available experimental
+data for log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values,
+separate model equations could not be developed for most species.
+Only human and rat data sets provided a sufficient amount of data
+to develop separate robust and reliable model equations. Therefore,
+we opted to incorporate available data for different species into
+a single model equation using the indicator variables.</p><p>In conclusion,
+the parsimonious PM offer accurate predictions of
+log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values comparable
+to the more parameter-intensive ASMs by employing the commonly available
+partition coefficients, namely <italic toggle="yes">K</italic><sub><italic toggle="yes">aw</italic></sub> and <italic toggle="yes">K</italic><sub><italic toggle="yes">ow</italic></sub>. These
+two parameters not only serve as descriptors in the PM equations but
+also provide theoretical and mechanistic insights by capturing the
+necessary intermolecular interactions, as detailed in <xref rid="sec4.2.3" ref-type="other">Section <xref rid="sec4.2.3" ref-type="other">4.2.3</xref></xref>. One advantage
+of PMs is their capability to predict log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values for chemicals where ASDs are unavailable.
+The use of indicator variables in PMs facilitates the examination
+of interspecies variability in air-to-blood data and enables the comparison
+of predicted values among different species. Another notable feature
+of PMs is their compatibility with integration into the EPISuite software
+as a separate module, ensuring reliable estimation of log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values.</p><p>The GC&#215;GC
+model is distinctive in its ability to predict log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values for complex mixtures
+of neutral nonpolar chemicals. To the best of our knowledge, no previous
+approach based on physicochemical parameters existed for predicting
+the log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values of
+chemical mixtures. Therefore, our models address certain limitations
+of previous approaches and present two innovative methodologies for
+predicting the air-to-blood partitioning of individual chemicals and
+their complex mixtures.</p></sec></body><back><notes notes-type="data-availability" id="notes-1"><title>Data Availability Statement</title><p>Data, including
+all molecular structures and their properties, is available in a machine-readable
+format as Supporting Information. The GC&#215;GC MATLAB code is available
+on request from the authors.</p></notes><notes id="notes-2" notes-type="si"><title>Supporting Information Available</title><p>The Supporting Information
+is available free of charge at <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/10.1021/acs.jcim.3c01288?goto=supporting-info">https://pubs.acs.org/doi/10.1021/acs.jcim.3c01288</ext-link>.<list id="silist" list-type="simple"><list-item><p>File S1: Tables of a calibration set of nonpolar chemicals,
+validation and training sets for GC&#215;GC model development, experimental
+and predicted partition coefficients, cross-validation tests, column
+combination analysis results, unmatched and updated descriptor values,
+and comparisons of ASMs and PMs predicted log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values against experimental values(<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jcim.3c01288/suppl_file/ci3c01288_si_001.xlsx">XLSX</ext-link>)</p></list-item><list-item><p>File S2: Guidance
+on predicting log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> values through the GC&#215;GC model
+and insights from the analysis and enhancement of ASMs for log <italic toggle="yes">K</italic><sub><italic toggle="yes">ab</italic></sub> prediction (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/suppl/10.1021/acs.jcim.3c01288/suppl_file/ci3c01288_si_002.pdf">PDF</ext-link>)</p></list-item></list></p></notes><sec sec-type="supplementary-material"><title>Supplementary Material</title><supplementary-material content-type="local-data" id="sifile1" position="float" orientation="portrait"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ci3c01288_si_001.xlsx" position="float" orientation="portrait"><caption><p>ci3c01288_si_001.xlsx</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="sifile2" position="float" orientation="portrait"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ci3c01288_si_002.pdf" position="float" orientation="portrait"><caption><p>ci3c01288_si_002.pdf</p></caption></media></supplementary-material></sec><notes notes-type="" id="notes-3"><title>Author Contributions</title><p>Ahmad Akash
+played a leading role in methodology, investigation, software, visualization,
+formal analysis, data curation, validation, and writing&#8212;original
+draft. Ramsha Kulsoom, Saba Khan, and Musab Saeed Siddiqui shared
+equal roles in investigation, software, visualization, formal analysis,
+data curation, and writing&#8212;review and editing. Deedar Nabi
+provided supervision, conceptualization, resources, funding acquisition,
+and contributed to writing&#8212;review and editing.</p></notes><notes notes-type="COI-statement" id="NOTES-d14e2517-autogenerated"><p>The authors declare no
+competing financial interest.</p></notes><ack><title>Acknowledgments</title><p>This study is based
+on the Final Year Project (FYP) intended
+to provide research exposure to undergraduate students. The authors
+acknowledge the support and resources provided by the School of Civil
+and Environmental Engineering (SCEE) for this FYP study. The authors
+also acknowledge the support of GEOMAR for the completion of the manuscript.</p></ack><ref-list><title>References</title><ref id="ref1"><mixed-citation publication-type="journal" id="cit1"><name name-style="western"><surname>Mochalski</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>King</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Kupferthaler</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Unterkofler</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Hinterhuber</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Amann</surname><given-names>A.</given-names></name><article-title>Human Blood and Plasma Partition
+Coefficients for C4-C8 n-Alkanes, Isoalkanes, and 1-Alkenes</article-title>. <source>Int. J. Toxicol.</source><year>2012</year>, <volume>31</volume>, <fpage>267</fpage>&#8211;<lpage>275</lpage>. <pub-id pub-id-type="doi">10.1177/1091581812442689</pub-id>.<pub-id pub-id-type="pmid">22674932</pub-id></mixed-citation></ref><ref id="ref2"><mixed-citation publication-type="journal" id="cit2"><name name-style="western"><surname>Sprunger</surname><given-names>L. M.</given-names></name>; <name name-style="western"><surname>Gibbs</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Acree</surname><given-names>W. E.</given-names></name>; <name name-style="western"><surname>Abraham</surname><given-names>M. H.</given-names></name><article-title>Correlation
+of Human
+and Animal Air-to-Blood Partition Coefficients with a Single Linear
+Free Energy Relationship Model</article-title>. <source>QSAR Comb. Sci.</source><year>2008</year>, <volume>27</volume>, <fpage>1130</fpage>&#8211;<lpage>1139</lpage>. <pub-id pub-id-type="doi">10.1002/qsar.200860078</pub-id>.</mixed-citation></ref><ref id="ref3"><mixed-citation publication-type="journal" id="cit3"><name name-style="western"><surname>Cao</surname><given-names>Z.</given-names></name>; <name name-style="western"><surname>Chen</surname><given-names>Q.</given-names></name>; <name name-style="western"><surname>Zhu</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Chen</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>N.</given-names></name>; <name name-style="western"><surname>Zou</surname><given-names>W.</given-names></name>; <name name-style="western"><surname>Zhang</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Zhu</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Li</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Mai</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Luo</surname><given-names>X.</given-names></name><article-title>Halogenated Organic
+Pollutant Residuals in Human Bared and Clothing-Covered
+Skin Areas: Source Differentiation and Comprehensive Health Risk Assessment</article-title>. <source>Environ. Sci. Technol.</source><year>2019</year>, <volume>53</volume>, <fpage>14700</fpage><pub-id pub-id-type="doi">10.1021/acs.est.9b04757</pub-id>.<pub-id pub-id-type="pmid">31633338</pub-id></mixed-citation></ref><ref id="ref4"><mixed-citation publication-type="journal" id="cit4"><name name-style="western"><surname>Andersen</surname><given-names>M. E.</given-names></name>; <name name-style="western"><surname>Gargas</surname><given-names>M. L.</given-names></name>; <name name-style="western"><surname>Ramsey</surname><given-names>J. C.</given-names></name><article-title>Inhalation Pharmacokinetics: Evaluating
+Systemic Extraction, Total in Vivo Metabolism, and the Time Course
+of Enzyme Induction for Inhaled Styrene in Rats Based on Arterial
+Blood:Inhaled Air Concentration Ratios</article-title>. <source>Toxicol.
+Appl. Pharmacol.</source><year>1984</year>, <volume>73</volume>, <fpage>176</fpage>&#8211;<lpage>187</lpage>. <pub-id pub-id-type="doi">10.1016/0041-008X(84)90065-6</pub-id>.<pub-id pub-id-type="pmid">6710514</pub-id></mixed-citation></ref><ref id="ref5"><mixed-citation publication-type="journal" id="cit5"><name name-style="western"><surname>Andersen</surname><given-names>M. E.</given-names></name>; <name name-style="western"><surname>Gargas</surname><given-names>M. L.</given-names></name>; <name name-style="western"><surname>Jones</surname><given-names>R. A.</given-names></name>; <name name-style="western"><surname>Jenkins</surname><given-names>L. J.</given-names></name><article-title>Determination
+of
+the Kinetic Constants for Metabolism of Inhaled Toxicants in Vivo
+Using Gas Uptake Measurements</article-title>. <source>Toxicol. Appl.
+Pharmacol.</source><year>1980</year>, <volume>54</volume>, <fpage>100</fpage>&#8211;<lpage>116</lpage>. <pub-id pub-id-type="doi">10.1016/0041-008X(80)90011-3</pub-id>.<pub-id pub-id-type="pmid">7394779</pub-id></mixed-citation></ref><ref id="ref6"><mixed-citation publication-type="journal" id="cit6"><name name-style="western"><surname>Pleil</surname><given-names>J. D.</given-names></name>; <name name-style="western"><surname>Fisher</surname><given-names>J. W.</given-names></name>; <name name-style="western"><surname>Lindstrom</surname><given-names>A. B.</given-names></name><article-title>Trichloroethene Levels in Human Blood
+and Exhaled Breath from Controlled Inhalation Exposure</article-title>. <source>Environ. Health Perspect.</source><year>1998</year>, <volume>106</volume>, <fpage>573</fpage>&#8211;<lpage>580</lpage>. <pub-id pub-id-type="doi">10.1289/ehp.98106573</pub-id>.<pub-id pub-id-type="pmid">9721257</pub-id><pub-id pub-id-type="pmcid">PMC1533168</pub-id></mixed-citation></ref><ref id="ref7"><mixed-citation publication-type="journal" id="cit7"><name name-style="western"><surname>Johanson</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Filser</surname><given-names>J. G.</given-names></name><article-title>Experimental Data
+from Closed Chamber Gas Uptake Studies
+in Rodents Suggest Lower Uptake Rate of Chemical than Calculated from
+Literature Values on Alveolar Ventilation</article-title>. <source>Arch.
+Toxicol.</source><year>1992</year>, <volume>66</volume>, <fpage>291</fpage>&#8211;<lpage>295</lpage>. <pub-id pub-id-type="doi">10.1007/BF02307176</pub-id>.<pub-id pub-id-type="pmid">1514929</pub-id></mixed-citation></ref><ref id="ref8"><mixed-citation publication-type="journal" id="cit8"><name name-style="western"><surname>Kedderis</surname><given-names>G.
+L.</given-names></name>; <name name-style="western"><surname>Carfagna</surname><given-names>M. A.</given-names></name>; <name name-style="western"><surname>Held</surname><given-names>S. D.</given-names></name>; <name name-style="western"><surname>Batra</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Murphy</surname><given-names>J. E.</given-names></name>; <name name-style="western"><surname>Gargas</surname><given-names>M. L.</given-names></name><article-title>Kinetic
+Analysis of Furan Biotransformation by F-344
+Rats in Vivo and in Vitro</article-title>. <source>Toxicol. Appl. Pharmacol.</source><year>1993</year>, <volume>123</volume>, <fpage>274</fpage>&#8211;<lpage>282</lpage>. <pub-id pub-id-type="doi">10.1006/taap.1993.1246</pub-id>.<pub-id pub-id-type="pmid">8248934</pub-id></mixed-citation></ref><ref id="ref9"><mixed-citation publication-type="journal" id="cit9"><name name-style="western"><surname>Saeidnia</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Manayi</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Abdollahi</surname><given-names>M.</given-names></name><article-title>From in Vitro
+Experiments to in Vivo
+and Clinical Studies; Pros and Cons</article-title>. <source>Curr. Drug
+Discovery Technol.</source><year>2016</year>, <volume>12</volume>, <fpage>218</fpage>&#8211;<lpage>224</lpage>. <pub-id pub-id-type="doi">10.2174/1570163813666160114093140</pub-id>.<pub-id pub-id-type="pmid">26778084</pub-id></mixed-citation></ref><ref id="ref10"><mixed-citation publication-type="journal" id="cit10"><name name-style="western"><surname>Fischer</surname><given-names>H. C.</given-names></name>; <name name-style="western"><surname>Chan</surname><given-names>W. C.</given-names></name><article-title>Nanotoxicity: The
+Growing Need for in Vivo Study</article-title>. <source>Curr. Opin.
+Biotechnol.</source><year>2007</year>, <volume>18</volume>, <fpage>565</fpage>&#8211;<lpage>571</lpage>. <pub-id pub-id-type="doi">10.1016/j.copbio.2007.11.008</pub-id>.<pub-id pub-id-type="pmid">18160274</pub-id></mixed-citation></ref><ref id="ref11"><mixed-citation publication-type="journal" id="cit11"><name name-style="western"><surname>Huang</surname><given-names>H.-J.</given-names></name>; <name name-style="western"><surname>Lee</surname><given-names>Y.-H.</given-names></name>; <name name-style="western"><surname>Hsu</surname><given-names>Y.-H.</given-names></name>; <name name-style="western"><surname>Liao</surname><given-names>C.-T.</given-names></name>; <name name-style="western"><surname>Lin</surname><given-names>Y.-F.</given-names></name>; <name name-style="western"><surname>Chiu</surname><given-names>H.-W.</given-names></name><article-title>Current Strategies in Assessment of Nanotoxicity: Alternatives
+to In Vivo Animal Testing</article-title>. <source>Int. J. Mol. Sci.</source><year>2021</year>, <volume>22</volume>, <fpage>4216</fpage><pub-id pub-id-type="doi">10.3390/ijms22084216</pub-id>.<pub-id pub-id-type="pmid">33921715</pub-id><pub-id pub-id-type="pmcid">PMC8073679</pub-id></mixed-citation></ref><ref id="ref12"><mixed-citation publication-type="journal" id="cit12"><name name-style="western"><surname>Budke</surname><given-names>C. M.</given-names></name><article-title>WHO/OIE
+Manual on Echinococcosis in Humans and Animals: A Public Health Problem
+of Global Concern</article-title>. <source>Vet. Parasitol.</source><year>2002</year>, <volume>104</volume>, <fpage>357</fpage><pub-id pub-id-type="doi">10.1016/S0304-4017(01)00631-8</pub-id>.</mixed-citation></ref><ref id="ref13"><mixed-citation publication-type="journal" id="cit13"><name name-style="western"><surname>Rovida</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Busquet</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Leist</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Hartung</surname><given-names>T.</given-names></name><article-title>REACH Out-Numbered!
+The Future of REACH and Animal Numbers</article-title>. <source>ALTEX-Alternatives
+to Anim. Exp.</source><year>2023</year>, <volume>40</volume>, <fpage>367</fpage>&#8211;<lpage>388</lpage>. <pub-id pub-id-type="doi">10.14573/altex.2307121</pub-id>.<pub-id pub-id-type="pmid">37470349</pub-id></mixed-citation></ref><ref id="ref14"><mixed-citation publication-type="journal" id="cit14"><name name-style="western"><surname>Lewis</surname><given-names>D. I.</given-names></name><article-title>Animal
+Experimentation: Implementation and Application of the 3Rs</article-title>. <source>Emerg. Top. Life Sci.</source><year>2019</year>, <volume>3</volume>, <fpage>675</fpage>&#8211;<lpage>679</lpage>. <pub-id pub-id-type="doi">10.1042/ETLS20190061</pub-id>.<pub-id pub-id-type="pmid">32915219</pub-id></mixed-citation></ref><ref id="ref15"><mixed-citation publication-type="book" id="cit15"><source>Animal Experimentation: Working Towards a Paradigm Change</source>; <year>2019</year>; <pub-id pub-id-type="doi">10.1163/9789004391192</pub-id>.</mixed-citation></ref><ref id="ref16"><mixed-citation publication-type="journal" id="cit16"><name name-style="western"><surname>L&#225;zaro</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>R&#224;fols</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Abraham</surname><given-names>M. H.</given-names></name>; <name name-style="western"><surname>Ros&#233;s</surname><given-names>M.</given-names></name><article-title>Chromatographic
+Estimation of Drug Disposition Properties by Means of Immobilized
+Artificial Membranes (IAM) and C18 Columns</article-title>. <source>J. Med. Chem.</source><year>2006</year>, <volume>49</volume>, <fpage>4861</fpage>&#8211;<lpage>4870</lpage>. <pub-id pub-id-type="doi">10.1021/jm0602108</pub-id>.<pub-id pub-id-type="pmid">16884298</pub-id></mixed-citation></ref><ref id="ref17"><mixed-citation publication-type="journal" id="cit17"><name name-style="western"><surname>Jones</surname><given-names>A. W.</given-names></name><article-title>Determination
+of Liquid/Air Partition Coefficients for Dilute Solutions of Ethanol
+in Water, Whole Blood, and Plasma</article-title>. <source>J. Anal.
+Toxicol.</source><year>1983</year>, <volume>7</volume>, <fpage>193</fpage>&#8211;<lpage>197</lpage>. <pub-id pub-id-type="doi">10.1093/jat/7.4.193</pub-id>.<pub-id pub-id-type="pmid">6101261</pub-id></mixed-citation></ref><ref id="ref18"><mixed-citation publication-type="journal" id="cit18"><name name-style="western"><surname>He</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Zhiti</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Barba-Bon</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Hennig</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Nau</surname><given-names>W. M.</given-names></name><article-title>Real-Time
+Parallel Artificial Membrane Permeability Assay Based on Supramolecular
+Fluorescent Artificial Receptors</article-title>. <source>Front. Chem.</source><year>2020</year>, <volume>8</volume>, <fpage>597927</fpage><pub-id pub-id-type="doi">10.3389/fchem.2020.597927</pub-id>.<pub-id pub-id-type="pmid">33330387</pub-id><pub-id pub-id-type="pmcid">PMC7673371</pub-id></mixed-citation></ref><ref id="ref19"><mixed-citation publication-type="journal" id="cit19"><name name-style="western"><surname>Dimitrijevic</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Fabian</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Nicol</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Funk-Weyer</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Landsiedel</surname><given-names>R.</given-names></name><article-title>Toward Realistic Dosimetry in Vitro:
+Determining Effective
+Concentrations of Test Substances in Cell Culture and Their Prediction
+by an in Silico Mass Balance Model</article-title>. <source>Chem. Res.
+Toxicol.</source><year>2022</year>, <volume>35</volume>, <fpage>1962</fpage>&#8211;<lpage>1973</lpage>. <pub-id pub-id-type="doi">10.1021/acs.chemrestox.2c00128</pub-id>.<pub-id pub-id-type="pmid">36264934</pub-id><pub-id pub-id-type="pmcid">PMC9682521</pub-id></mixed-citation></ref><ref id="ref20"><mixed-citation publication-type="journal" id="cit20"><name name-style="western"><surname>Fisher</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Sim&#233;on</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Jamei</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Gardner</surname><given-names>I.</given-names></name>; <name name-style="western"><surname>Bois</surname><given-names>Y. F.</given-names></name><article-title>VIVD: Virtual
+in Vitro Distribution Model for the Mechanistic Prediction of Intracellular
+Concentrations of Chemicals in in Vitro Toxicity Assays</article-title>. <source>Toxicol. Vitr.</source><year>2019</year>, <volume>58</volume>, <fpage>42</fpage>&#8211;<lpage>50</lpage>. <pub-id pub-id-type="doi">10.1016/j.tiv.2018.12.017</pub-id>.<pub-id pub-id-type="pmid">30599189</pub-id></mixed-citation></ref><ref id="ref21"><mixed-citation publication-type="journal" id="cit21"><name name-style="western"><surname>&#352;pan&#283;l</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Smith</surname><given-names>D.</given-names></name><article-title>Quantification of Volatile Metabolites
+in Exhaled Breath by Selected
+Ion Flow Tube Mass Spectrometry, SIFT-MS</article-title>. <source>Clin.
+Mass Spectrom.</source><year>2020</year>, <volume>16</volume>, <fpage>18</fpage>&#8211;<lpage>24</lpage>. <pub-id pub-id-type="doi">10.1016/j.clinms.2020.02.001</pub-id>.<pub-id pub-id-type="pmid">34820516</pub-id><pub-id pub-id-type="pmcid">PMC8601014</pub-id></mixed-citation></ref><ref id="ref22"><mixed-citation publication-type="journal" id="cit22"><name name-style="western"><surname>Smith</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>&#352;pan&#283;l</surname><given-names>P.</given-names></name><article-title>Selected Ion Flow Tube
+Mass Spectrometry (SIFT-MS)
+for on-Line Trace Gas Analysis</article-title>. <source>Mass Spectrom.
+Rev.</source><year>2005</year>, <volume>24</volume>, <fpage>661</fpage>&#8211;<lpage>700</lpage>. <pub-id pub-id-type="doi">10.1002/mas.20033</pub-id>.<pub-id pub-id-type="pmid">15495143</pub-id></mixed-citation></ref><ref id="ref23"><mixed-citation publication-type="journal" id="cit23"><name name-style="western"><surname>Raynie</surname><given-names>D.
+E.</given-names></name><article-title>Practical
+Understanding of Partition Coefficients</article-title>. <source>LC-GC
+North Am.</source><year>2023</year>, <volume>41</volume>, <fpage>95</fpage><pub-id pub-id-type="doi">10.56530/lcgc.na.tc2970o5</pub-id>.</mixed-citation></ref><ref id="ref24"><mixed-citation publication-type="journal" id="cit24"><name name-style="western"><surname>Zushi</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Yamatori</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Nagata</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Nabi</surname><given-names>D.</given-names></name><article-title>Comprehensive Two-Dimensional
+Gas-Chromatography-Based Property Estimation to Assess the Fate and
+Behavior of Complex Mixtures: A Case Study of Vehicle Engine Oil</article-title>. <source>Sci. Total Environ.</source><year>2019</year>, <volume>669</volume>, <fpage>739</fpage>&#8211;<lpage>745</lpage>. <pub-id pub-id-type="doi">10.1016/j.scitotenv.2019.03.157</pub-id>.<pub-id pub-id-type="pmid">30893629</pub-id></mixed-citation></ref><ref id="ref25"><mixed-citation publication-type="journal" id="cit25"><name name-style="western"><surname>Libardoni</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Stevens</surname><given-names>P. T.</given-names></name>; <name name-style="western"><surname>Waite</surname><given-names>J. H.</given-names></name>; <name name-style="western"><surname>Sacks</surname><given-names>R.</given-names></name><article-title>Analysis of Human Breath
+Samples with a Multi-Bed Sorption Trap and Comprehensive Two-Dimensional
+Gas Chromatography (GC&#215;GC)</article-title>. <source>J. Chromatogr.
+B Anal. Technol. Biomed. Life Sci.</source><year>2006</year>, <volume>842</volume>, <fpage>13</fpage>&#8211;<lpage>21</lpage>. <pub-id pub-id-type="doi">10.1016/j.jchromb.2006.05.008</pub-id>.<pub-id pub-id-type="pmid">16765110</pub-id></mixed-citation></ref><ref id="ref26"><mixed-citation publication-type="journal" id="cit26"><name name-style="western"><surname>Naseem</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Zushi</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Nabi</surname><given-names>D.</given-names></name><article-title>Development
+and Evaluation of Two-Parameter
+Linear Free Energy Models for the Prediction of Human Skin Permeability
+Coefficient of Neutral Organic Chemicals</article-title>. <source>J.
+Cheminform.</source><year>2021</year>, <volume>13</volume>, <fpage>25</fpage><pub-id pub-id-type="doi">10.1186/s13321-021-00503-5</pub-id>.<pub-id pub-id-type="pmid">33741067</pub-id><pub-id pub-id-type="pmcid">PMC7980659</pub-id></mixed-citation></ref><ref id="ref27"><mixed-citation publication-type="journal" id="cit27"><name name-style="western"><surname>Aakash</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Nabi</surname><given-names>D.</given-names></name><article-title>Reliable Prediction
+of Sensory Irritation Threshold Values of Organic
+Compounds Using New Models Based on Linear Free Energy Relationships
+and GC&#215;GC Retention Parameters</article-title>. <source>Chemosphere</source><year>2023</year>, <volume>313</volume>, <fpage>137339</fpage><pub-id pub-id-type="doi">10.1016/j.chemosphere.2022.137339</pub-id>.<pub-id pub-id-type="pmid">36423720</pub-id></mixed-citation></ref><ref id="ref28"><mixed-citation publication-type="book" id="cit28"><person-group><collab>OECD</collab></person-group>. <article-title>Guidance Document
+on the Characterisation, Validation and Reporting of Physiologically
+Based Kinetic (PBK) Models for Regulatory Purposes</article-title>. <source>OECD Series on Testing and Assessment</source>; <year>2021</year>; No. <volume>331</volume>.</mixed-citation></ref><ref id="ref29"><mixed-citation publication-type="journal" id="cit29"><name name-style="western"><surname>Gupta</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Basant</surname><given-names>N.</given-names></name>; <name name-style="western"><surname>Singh</surname><given-names>K. P.</given-names></name><article-title>Estimating Sensory Irritation Potency
+of Volatile Organic Chemicals Using QSARs Based on Decision Tree Methods
+for Regulatory Purpose</article-title>. <source>Ecotoxicology</source><year>2015</year>, <volume>24</volume>, <fpage>873</fpage>&#8211;<lpage>886</lpage>. <pub-id pub-id-type="doi">10.1007/s10646-015-1431-y</pub-id>.<pub-id pub-id-type="pmid">25707485</pub-id></mixed-citation></ref><ref id="ref30"><mixed-citation publication-type="journal" id="cit30"><name name-style="western"><surname>Basak</surname><given-names>S. C.</given-names></name>; <name name-style="western"><surname>Mills</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>El-Masri</surname><given-names>H. A.</given-names></name>; <name name-style="western"><surname>Mumtaz</surname><given-names>M. M.</given-names></name>; <name name-style="western"><surname>Hawkins</surname><given-names>D. M.</given-names></name><article-title>Predicting
+Blood:Air Partition Coefficients Using Theoretical Molecular Descriptors</article-title>. <source>Environ. Toxicol. Pharmacol.</source><year>2004</year>, <volume>16</volume>, <fpage>45</fpage>&#8211;<lpage>55</lpage>. <pub-id pub-id-type="doi">10.1016/j.etap.2003.09.002</pub-id>.<pub-id pub-id-type="pmid">21782693</pub-id></mixed-citation></ref><ref id="ref31"><mixed-citation publication-type="journal" id="cit31"><name name-style="western"><surname>Buist</surname><given-names>H. E.</given-names></name>; <name name-style="western"><surname>Wit-Bos</surname><given-names>L. de</given-names></name>; <name name-style="western"><surname>Bouwman</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Vaes</surname><given-names>W. H. J.</given-names></name><article-title>Predicting
+Blood:Air
+Partition Coefficients Using Basic Physicochemical Properties</article-title>. <source>Regul. Toxicol. Pharmacol.</source><year>2012</year>, <volume>62</volume>, <fpage>23</fpage>&#8211;<lpage>28</lpage>. <pub-id pub-id-type="doi">10.1016/j.yrtph.2011.11.019</pub-id>.<pub-id pub-id-type="pmid">22178169</pub-id></mixed-citation></ref><ref id="ref32"><mixed-citation publication-type="journal" id="cit32"><name name-style="western"><surname>Abraham</surname><given-names>M. H.</given-names></name>; <name name-style="western"><surname>Ibrahim</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Acree</surname><given-names>W. E.</given-names></name><article-title>Air to Blood Distribution
+of Volatile
+Organic Compounds: A Linear Free Energy Analysis</article-title>. <source>Chem. Res. Toxicol.</source><year>2005</year>, <volume>18</volume>, <fpage>904</fpage>&#8211;<lpage>911</lpage>. <pub-id pub-id-type="doi">10.1021/tx050066d</pub-id>.<pub-id pub-id-type="pmid">15892585</pub-id></mixed-citation></ref><ref id="ref33"><mixed-citation publication-type="journal" id="cit33"><name name-style="western"><surname>Katritzky</surname><given-names>A. R.</given-names></name>; <name name-style="western"><surname>Kuanar</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Fara</surname><given-names>D. C.</given-names></name>; <name name-style="western"><surname>Karelson</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Acree</surname><given-names>W. E.</given-names></name>; <name name-style="western"><surname>Solov&#8217;ev</surname><given-names>V. P.</given-names></name>; <name name-style="western"><surname>Varnek</surname><given-names>A.</given-names></name><article-title>QSAR Modeling of Blood:Air and Tissue:Air
+Partition Coefficients Using Theoretical Descriptors</article-title>. <source>Bioorg. Med. Chem.</source><year>2005</year>, <volume>13</volume>, <fpage>6450</fpage>&#8211;<lpage>6463</lpage>. <pub-id pub-id-type="doi">10.1016/j.bmc.2005.06.066</pub-id>.<pub-id pub-id-type="pmid">16202613</pub-id></mixed-citation></ref><ref id="ref34"><mixed-citation publication-type="journal" id="cit34"><name name-style="western"><surname>Basak</surname><given-names>S. C.</given-names></name>; <name name-style="western"><surname>Mills</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Hawkins</surname><given-names>D. M.</given-names></name>; <name name-style="western"><surname>El-Masri</surname><given-names>H. A.</given-names></name><article-title>Prediction
+of Human
+Blood: Air Partition Coefficient: A Comparison of Structure-Based
+and Property-Based Methods</article-title>. <source>Risk Anal.</source><year>2003</year>, <volume>23</volume>, <fpage>1173</fpage>&#8211;<lpage>1184</lpage>. <pub-id pub-id-type="doi">10.1111/j.0272-4332.2003.00390.x</pub-id>.<pub-id pub-id-type="pmid">14641892</pub-id></mixed-citation></ref><ref id="ref35"><mixed-citation publication-type="journal" id="cit35"><name name-style="western"><surname>Konoz</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Golmohammadi</surname><given-names>H.</given-names></name><article-title>Prediction
+of Air-to-Blood Partition Coefficients of
+Volatile Organic Compounds Using Genetic Algorithm and Artificial
+Neural Network</article-title>. <source>Anal. Chim. Acta</source><year>2008</year>, <volume>619</volume>, <fpage>157</fpage>&#8211;<lpage>164</lpage>. <pub-id pub-id-type="doi">10.1016/j.aca.2008.04.065</pub-id>.<pub-id pub-id-type="pmid">18558108</pub-id></mixed-citation></ref><ref id="ref36"><mixed-citation publication-type="journal" id="cit36"><name name-style="western"><surname>Kramer</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Mochalski</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Unterkofler</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Agapiou</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Ruzsanyi</surname><given-names>V.</given-names></name>; <name name-style="western"><surname>Liedl</surname><given-names>K. R.</given-names></name><article-title>Prediction
+of Blood:Air and Fat:Air Partition Coefficients
+of Volatile Organic Compounds for the Interpretation of Data in Breath
+Gas Analysis</article-title>. <source>J. Breath Res.</source><year>2016</year>, <volume>10</volume>, <fpage>017103</fpage><pub-id pub-id-type="doi">10.1088/1752-7155/10/1/017103</pub-id>.<pub-id pub-id-type="pmid">26815030</pub-id><pub-id pub-id-type="pmcid">PMC4957668</pub-id></mixed-citation></ref><ref id="ref37"><mixed-citation publication-type="journal" id="cit37"><name name-style="western"><surname>Sterner</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Goodyear</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Robinson</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Mattie</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Allen Burton</surname><given-names>G.</given-names></name><article-title>Analysis of
+Algorithms Predicting Blood:Air and Tissue:Blood Partition Coefficients
+from Solvent Partition Coefficients for Prevalent Components of JP-8
+Jet Fuel</article-title>. <source>J. Toxicol. Environ. Heal. - Part
+A Curr. Issues</source><year>2006</year>, <volume>69</volume>, <fpage>1441</fpage>&#8211;<lpage>1479</lpage>. <pub-id pub-id-type="doi">10.1080/15287390500364416</pub-id>.<pub-id pub-id-type="pmid">16766479</pub-id></mixed-citation></ref><ref id="ref38"><mixed-citation publication-type="journal" id="cit38"><name name-style="western"><surname>Aertsen</surname><given-names>W.</given-names></name>; <name name-style="western"><surname>Kint</surname><given-names>V.</given-names></name>; <name name-style="western"><surname>van Orshoven</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>&#214;zkan</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Muys</surname><given-names>B.</given-names></name><article-title>Comparison and Ranking of Different
+Modelling Techniques for Prediction
+of Site Index in Mediterranean Mountain Forests</article-title>. <source>Ecol. Modell.</source><year>2010</year>, <volume>221</volume>, <fpage>1119</fpage>&#8211;<lpage>1130</lpage>. <pub-id pub-id-type="doi">10.1016/j.ecolmodel.2010.01.007</pub-id>.</mixed-citation></ref><ref id="ref39"><mixed-citation publication-type="journal" id="cit39"><name name-style="western"><surname>Qi</surname><given-names>Y.</given-names></name><article-title>Random Forest
+for Bioinformatics</article-title>. <source>Ensemble Mach. Learn.</source><year>2012</year>, <fpage>307</fpage>&#8211;<lpage>323</lpage>. <pub-id pub-id-type="doi">10.1007/978-1-4419-9326-7_11</pub-id>.</mixed-citation></ref><ref id="ref40"><mixed-citation publication-type="journal" id="cit40"><name name-style="western"><surname>Nabi</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Arey</surname><given-names>J. S.</given-names></name><article-title>Predicting Partitioning
+and Diffusion Properties of
+Nonpolar Chemicals in Biotic Media and Passive Sampler Phases by GC&#215;GC</article-title>. <source>Environ. Sci. Technol.</source><year>2017</year>, <volume>51</volume>, <fpage>3001</fpage>&#8211;<lpage>3011</lpage>. <pub-id pub-id-type="doi">10.1021/acs.est.6b05071</pub-id>.<pub-id pub-id-type="pmid">28195714</pub-id></mixed-citation></ref><ref id="ref41"><mixed-citation publication-type="journal" id="cit41"><name name-style="western"><surname>Nabi</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Gros</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Dimitriou-Christidis</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Arey</surname><given-names>J. S.</given-names></name><article-title>Mapping
+Environmental Partitioning Properties of Nonpolar Complex Mixtures
+by Use of GC&#215;GC</article-title>. <source>Environ. Sci. Technol.</source><year>2014</year>, <volume>48</volume>, <fpage>6814</fpage>&#8211;<lpage>6826</lpage>. <pub-id pub-id-type="doi">10.1021/es501674p</pub-id>.<pub-id pub-id-type="pmid">24901063</pub-id></mixed-citation></ref><ref id="ref42"><mixed-citation publication-type="journal" id="cit42"><name name-style="western"><surname>Zushi</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Hanari</surname><given-names>N.</given-names></name>; <name name-style="western"><surname>Nabi</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Lin</surname><given-names>B. Le.</given-names></name><article-title>Mixture Touch:
+A Web Platform for the Evaluation of Complex Chemical Mixtures</article-title>. <source>ACS Omega</source><year>2020</year>, <volume>5</volume>, <fpage>8121</fpage>&#8211;<lpage>8126</lpage>. <pub-id pub-id-type="doi">10.1021/acsomega.0c00340</pub-id>.<pub-id pub-id-type="pmid">32309721</pub-id><pub-id pub-id-type="pmcid">PMC7161061</pub-id></mixed-citation></ref><ref id="ref43"><mixed-citation publication-type="journal" id="cit43"><name name-style="western"><surname>Song</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Gong</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Guo</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Lv</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Wan</surname><given-names>Z.</given-names></name>; <name name-style="western"><surname>Yu</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Tang</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Li</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Tan</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Zhu</surname><given-names>W.</given-names></name>; <name name-style="western"><surname>Shen</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Lu</surname><given-names>S.</given-names></name><article-title>Investigation
+of Partition Coefficients
+and Fingerprints of Atmospheric Gas- and Particle-Phase Intermediate
+Volatility and Semi-Volatile Organic Compounds Using Pixel-Based Approaches</article-title>. <source>J. Chromatogr. A</source><year>2022</year>, <volume>1665</volume>, <elocation-id>462808</elocation-id><pub-id pub-id-type="doi">10.1016/j.chroma.2022.462808</pub-id>.<pub-id pub-id-type="pmid">35032735</pub-id></mixed-citation></ref><ref id="ref44"><mixed-citation publication-type="journal" id="cit44"><name name-style="western"><surname>Abraham</surname><given-names>M. H.</given-names></name>; <name name-style="western"><surname>S&#225;nchez-Moreno</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Gil-Lostes</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Acree</surname><given-names>W. E.</given-names></name>; <name name-style="western"><surname>Enrique Cometto-Mu&#241;iz</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Cain</surname><given-names>W. S.</given-names></name><article-title>The Biological and Toxicological Activity of Gases
+and Vapors</article-title>. <source>Toxicol. Vitr.</source><year>2010</year>, <volume>24</volume>, <fpage>357</fpage>&#8211;<lpage>362</lpage>. <pub-id pub-id-type="doi">10.1016/j.tiv.2009.11.009</pub-id>.<pub-id pub-id-type="pmcid">PMC2935277</pub-id><pub-id pub-id-type="pmid">19913608</pub-id></mixed-citation></ref><ref id="ref45"><mixed-citation publication-type="journal" id="cit45"><name name-style="western"><surname>Abraham</surname><given-names>M. H.</given-names></name>; <name name-style="western"><surname>Andonian-Haftvan</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Cometto-Mu&#241;iz</surname><given-names>J. E.</given-names></name>; <name name-style="western"><surname>Cain</surname><given-names>W. S.</given-names></name><article-title>An Analysis
+of Nasal Irritation Thresholds Using a New Solvation Equation</article-title>. <source>Fundam. Appl. Toxicol.</source><year>1996</year>, <volume>31</volume>, <fpage>71</fpage>&#8211;<lpage>76</lpage>. <pub-id pub-id-type="doi">10.1006/faat.1996.0077</pub-id>.<pub-id pub-id-type="pmid">8998955</pub-id></mixed-citation></ref><ref id="ref46"><mixed-citation publication-type="journal" id="cit46"><name name-style="western"><surname>Abraham</surname><given-names>M. H.</given-names></name>; <name name-style="western"><surname>Kumarsingh</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Cometto-Muniz</surname><given-names>J. E.</given-names></name>; <name name-style="western"><surname>Cain</surname><given-names>W. S.</given-names></name><article-title>An Algorithm for
+Nasal Pungency Thresholds in Man</article-title>. <source>Arch. Toxicol.</source><year>1998</year>, <volume>72</volume>, <fpage>227</fpage>&#8211;<lpage>232</lpage>. <pub-id pub-id-type="doi">10.1007/s002040050493</pub-id>.<pub-id pub-id-type="pmid">9587018</pub-id></mixed-citation></ref><ref id="ref47"><mixed-citation publication-type="journal" id="cit47"><name name-style="western"><surname>Abraham</surname><given-names>M. H.</given-names></name>; <name name-style="western"><surname>Gola</surname><given-names>J. M. R.</given-names></name>; <name name-style="western"><surname>Cometto-Mu&#241;iz</surname><given-names>J. E.</given-names></name>; <name name-style="western"><surname>Cain</surname><given-names>W. S.</given-names></name><article-title>The Correlation
+and Prediction of VOC Thresholds for Nasal Pungency, Eye Irritation
+and Odour in Humans</article-title>. <source>Indoor Built Environ.</source><year>2001</year>, <volume>10</volume>, <fpage>252</fpage>&#8211;<lpage>257</lpage>. <pub-id pub-id-type="doi">10.1177/1420326X0101000320</pub-id>.</mixed-citation></ref><ref id="ref48"><mixed-citation publication-type="journal" id="cit48"><name name-style="western"><surname>Abraham</surname><given-names>M. H.</given-names></name>; <name name-style="western"><surname>S&#225;nchez-Moreno</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Cometto-Mu&#241;iz</surname><given-names>J. E.</given-names></name>; <name name-style="western"><surname>Cain</surname><given-names>W. S.</given-names></name><article-title>A Quantitative Structure-Activity
+Analysis on the Relative
+Sensitivity of the Olfactory and the Nasal Trigeminal Chemosensory
+Systems</article-title>. <source>Chem. Senses</source><year>2007</year>, <volume>32</volume>, <fpage>711</fpage>&#8211;<lpage>719</lpage>. <pub-id pub-id-type="doi">10.1093/chemse/bjm038</pub-id>.<pub-id pub-id-type="pmid">17573355</pub-id></mixed-citation></ref><ref id="ref49"><mixed-citation publication-type="journal" id="cit49"><name name-style="western"><surname>Abraham</surname><given-names>M. H.</given-names></name>; <name name-style="western"><surname>Ibrahim</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Acree</surname><given-names>W. E.</given-names></name><article-title>Air to
+Brain, Blood to Brain and
+Plasma to Brain Distribution of Volatile Organic Compounds: Linear
+Free Energy Analyses</article-title>. <source>Eur. J. Med. Chem.</source><year>2006</year>, <volume>41</volume>, <fpage>494</fpage>&#8211;<lpage>502</lpage>. <pub-id pub-id-type="doi">10.1016/j.ejmech.2006.01.004</pub-id>.<pub-id pub-id-type="pmid">16516353</pub-id></mixed-citation></ref><ref id="ref50"><mixed-citation publication-type="journal" id="cit50"><name name-style="western"><surname>Abraham</surname><given-names>M. H.</given-names></name>; <name name-style="western"><surname>Ibrahim</surname><given-names>A.</given-names></name><article-title>Air to Fat and Blood
+to Fat Distribution of Volatile
+Organic Compounds and Drugs: Linear Free Energy Analyses</article-title>. <source>Eur. J. Med. Chem.</source><year>2006</year>, <volume>41</volume>, <fpage>1430</fpage>&#8211;<lpage>1438</lpage>. <pub-id pub-id-type="doi">10.1016/j.ejmech.2006.07.012</pub-id>.<pub-id pub-id-type="pmid">16996652</pub-id></mixed-citation></ref><ref id="ref51"><mixed-citation publication-type="journal" id="cit51"><name name-style="western"><surname>Abraham</surname><given-names>M. H.</given-names></name>; <name name-style="western"><surname>Ibrahim</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Acree</surname><given-names>W. E.</given-names></name><article-title>Air to Liver Partition
+Coefficients
+for Volatile Organic Compounds and Blood to Liver Partition Coefficients
+for Volatile Organic Compounds and Drugs</article-title>. <source>Eur.
+J. Med. Chem.</source><year>2007</year>, <volume>42</volume>, <fpage>743</fpage>&#8211;<lpage>751</lpage>. <pub-id pub-id-type="doi">10.1016/j.ejmech.2006.12.011</pub-id>.<pub-id pub-id-type="pmid">17292513</pub-id></mixed-citation></ref><ref id="ref52"><mixed-citation publication-type="journal" id="cit52"><name name-style="western"><surname>Zhang</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Abraham</surname><given-names>M. H.</given-names></name>; <name name-style="western"><surname>Liu</surname><given-names>X.</given-names></name><article-title>An Equation for the Prediction of
+Human Skin Permeability of Neutral Molecules, Ions and Ionic Species</article-title>. <source>Int. J. Pharm.</source><year>2017</year>, <volume>521</volume>, <fpage>259</fpage>&#8211;<lpage>266</lpage>. <pub-id pub-id-type="doi">10.1016/j.ijpharm.2017.02.059</pub-id>.<pub-id pub-id-type="pmid">28235622</pub-id></mixed-citation></ref><ref id="ref53"><mixed-citation publication-type="journal" id="cit53"><name name-style="western"><surname>Hoover</surname><given-names>K. R.</given-names></name>; <name name-style="western"><surname>Acree</surname><given-names>W. E.</given-names></name>; <name name-style="western"><surname>Abraham</surname><given-names>M. H.</given-names></name><article-title>Chemical Toxicity
+Correlations for
+Several Fish Species Based on the Abraham Solvation Parameter Model</article-title>. <source>Chem. Res. Toxicol.</source><year>2005</year>, <volume>18</volume>, <fpage>1497</fpage>&#8211;<lpage>1505</lpage>. <pub-id pub-id-type="doi">10.1021/tx050164z</pub-id>.<pub-id pub-id-type="pmid">16167843</pub-id></mixed-citation></ref><ref id="ref54"><mixed-citation publication-type="journal" id="cit54"><name name-style="western"><surname>Poole</surname><given-names>C. F.</given-names></name>; <name name-style="western"><surname>Ariyasena</surname><given-names>T. C.</given-names></name>; <name name-style="western"><surname>Lenca</surname><given-names>N.</given-names></name><article-title>Estimation of the Environmental Properties
+of Compounds from Chromatographic Measurements and the Solvation Parameter
+Model</article-title>. <source>Journal of Chromatography A.</source><year>2013</year>, <volume>1317</volume>, <fpage>85</fpage>&#8211;<lpage>104</lpage>. <pub-id pub-id-type="doi">10.1016/j.chroma.2013.05.045</pub-id>.<pub-id pub-id-type="pmid">23768535</pub-id></mixed-citation></ref><ref id="ref55"><mixed-citation publication-type="thesis" id="cit55"><person-group person-group-type="allauthors"><name name-style="western"><surname>Mintz</surname><given-names>C.</given-names></name></person-group><source>Predicting Chemical and
+Biochemical Properties Using the Abraham General Solvation Model</source>. <year>2009</year>.</mixed-citation></ref><ref id="ref56"><mixed-citation publication-type="journal" id="cit56"><name name-style="western"><surname>Khawar</surname><given-names>M.
+I.</given-names></name>; <name name-style="western"><surname>Nabi</surname><given-names>D.</given-names></name><article-title>Relook on
+the Linear Free Energy Relationships Describing the Partitioning
+Behavior of Diverse Chemicals for Polyethylene Water Passive Samplers</article-title>. <source>ACS Omega</source><year>2021</year>, <volume>6</volume>, <fpage>5221</fpage><pub-id pub-id-type="doi">10.1021/acsomega.0c05179</pub-id>.<pub-id pub-id-type="pmid">33681563</pub-id><pub-id pub-id-type="pmcid">PMC7931192</pub-id></mixed-citation></ref><ref id="ref57"><mixed-citation publication-type="journal" id="cit57"><name name-style="western"><surname>Abraham</surname><given-names>M. H.</given-names></name>; <name name-style="western"><surname>Poole</surname><given-names>C. F.</given-names></name>; <name name-style="western"><surname>Poole</surname><given-names>S. K.</given-names></name><article-title>Classification
+of Stationary Phases
+and Other Materials by Gas Chromatography</article-title>. <source>J.
+Chromatogr. A</source><year>1999</year>, <volume>842</volume>, <fpage>79</fpage>&#8211;<lpage>114</lpage>. <pub-id pub-id-type="doi">10.1016/S0021-9673(98)00930-3</pub-id>.</mixed-citation></ref><ref id="ref58"><mixed-citation publication-type="undeclared" id="cit58"><person-group person-group-type="allauthors"><name name-style="western"><surname>Arey</surname><given-names>J. S.</given-names></name>; <name name-style="western"><surname>Nabi</surname><given-names>D.</given-names></name></person-group> GCxGC Property Estimation Algorithm. <year>2014</year>. <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://github.com/jsarey/GCxGC-property-estimation">https://github.com/jsarey/GCxGC-property-estimation</uri>.</mixed-citation></ref><ref id="ref59"><mixed-citation publication-type="database" id="cit59"><person-group person-group-type="allauthors"><name name-style="western"><surname>Ulrich</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Brown</surname><given-names>T.
+N.</given-names></name>; <name name-style="western"><surname>Watanabe</surname><given-names>N.</given-names></name>; <name name-style="western"><surname>Bronner</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Abraham</surname><given-names>M. H.</given-names></name>; <name name-style="western"><surname>Goss</surname><given-names>K.-U.</given-names></name>, <name name-style="western"><surname>N</surname><given-names>E.</given-names></name></person-group><source>UFZ-LSER Database</source> v 3.2; <publisher-name>Helmholtz Zentrum f&#252;r Umweltforschung</publisher-name>: - <publisher-loc>Leipzig, Germany</publisher-loc>, <year>2017</year>.</mixed-citation></ref><ref id="ref60"><mixed-citation publication-type="journal" id="cit60"><name name-style="western"><surname>Zhao</surname><given-names>Y. H.</given-names></name>; <name name-style="western"><surname>Abraham</surname><given-names>M. H.</given-names></name><article-title>Octanol/Water Partition of Ionic Species, Including
+544 Cations</article-title>. <source>J. Org. Chem.</source><year>2005</year>, <volume>70</volume>, <fpage>2633</fpage>&#8211;<lpage>2640</lpage>. <pub-id pub-id-type="doi">10.1021/jo048078b</pub-id>.<pub-id pub-id-type="pmid">15787554</pub-id></mixed-citation></ref><ref id="ref61"><mixed-citation publication-type="journal" id="cit61"><name name-style="western"><surname>Goss</surname><given-names>K. U.</given-names></name><article-title>Predicting
+the Equilibrium Partitioning of Organic Compounds Using Just One Linear
+Solvation Energy Relationship (LSER)</article-title>. <source>Fluid
+Phase Equilib.</source><year>2005</year>, <volume>233</volume>, <fpage>19</fpage>&#8211;<lpage>22</lpage>. <pub-id pub-id-type="doi">10.1016/j.fluid.2005.04.006</pub-id>.</mixed-citation></ref><ref id="ref62"><mixed-citation publication-type="database" id="cit62"><person-group person-group-type="allauthors"><name name-style="western"><surname>Endo</surname><given-names>S.</given-names></name>, <name name-style="western"><surname>Watanabe</surname><given-names>N.</given-names></name>, <name name-style="western"><surname>Ulrich</surname><given-names>N.</given-names></name>, <name name-style="western"><surname>Bronner</surname><given-names>G.</given-names></name>, <name name-style="western"><surname>G</surname><given-names>K.-U.</given-names></name></person-group><source>LSER Database</source>; <uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.ufz.de/lserd">http://www.ufz.de/lserd</uri>. Accessed
+03 October 2021.</mixed-citation></ref><ref id="ref63"><mixed-citation publication-type="book" id="cit63"><person-group><collab>Team, R. D.
+C.</collab></person-group><source>R: A Language
+and Environment for Statistical Computing.</source>; <publisher-name>R Foundation for Statistical Computing</publisher-name>: <year>2009</year>.</mixed-citation></ref><ref id="ref64"><mixed-citation publication-type="book" id="cit64"><person-group><collab>T. MathWorks</collab></person-group><source>MATLAB (R2020b)</source>; <publisher-name>MathWorks Inc.</publisher-name>: <year>2020</year>.</mixed-citation></ref><ref id="ref65"><mixed-citation publication-type="journal" id="cit65"><name name-style="western"><surname>Tomy</surname><given-names>G. T.</given-names></name>; <name name-style="western"><surname>Fisk</surname><given-names>A. T.</given-names></name>; <name name-style="western"><surname>Westmore</surname><given-names>J. B.</given-names></name>; <name name-style="western"><surname>Muir</surname><given-names>D. C.</given-names></name><article-title>Environmental Chemistry
+and Toxicology of Polychlorinated N-Alkanes</article-title>. <source>Rev. Environ. Contam. Toxicol.</source><year>1998</year>, <volume>158</volume>, <fpage>53</fpage>&#8211;<lpage>128</lpage>. <pub-id pub-id-type="doi">10.1007/978-1-4612-1708-4_2</pub-id>.<pub-id pub-id-type="pmid">9751033</pub-id></mixed-citation></ref><ref id="ref66"><mixed-citation publication-type="journal" id="cit66"><name name-style="western"><surname>B&#233;liveau</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Charest-Tardif</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Krishnan</surname><given-names>K.</given-names></name><article-title>Blood:Air Partition
+Coefficients
+of Individual and Mixtures of Trihalomethanes</article-title>. <source>Chemosphere</source><year>2001</year>, <volume>44</volume>, <fpage>377</fpage>&#8211;<lpage>381</lpage>. <pub-id pub-id-type="doi">10.1016/S0045-6535(00)00203-4</pub-id>.<pub-id pub-id-type="pmid">11459142</pub-id></mixed-citation></ref><ref id="ref67"><mixed-citation publication-type="journal" id="cit67"><name name-style="western"><surname>Krishnan</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Clewell</surname><given-names>H. J.</given-names></name>; <name name-style="western"><surname>Andersen</surname><given-names>M. E.</given-names></name><article-title>Physiologically Based Pharmacokinetic
+Analyses of Simple Mixtures</article-title>. <source>Environ. Health
+Perspect.</source><year>1994</year>, <volume>102</volume>, <fpage>151</fpage>&#8211;<lpage>155</lpage>. <pub-id pub-id-type="doi">10.1289/ehp.94102s9151</pub-id>.<pub-id pub-id-type="pmcid">PMC1566777</pub-id><pub-id pub-id-type="pmid">7698076</pub-id></mixed-citation></ref><ref id="ref68"><mixed-citation publication-type="journal" id="cit68"><name name-style="western"><surname>Price</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Krishnan</surname><given-names>K.</given-names></name><article-title>An Integrated QSAR-PBPK Modelling Approach for Predicting
+the Inhalation Toxicokinetics of Mixtures of Volatile Organic Chemicals
+in the Rat</article-title>. <source>SAR QSAR Environ. Res.</source><year>2011</year>, <volume>22</volume>, <fpage>107</fpage>&#8211;<lpage>128</lpage>. <pub-id pub-id-type="doi">10.1080/1062936X.2010.548350</pub-id>.<pub-id pub-id-type="pmid">21391144</pub-id></mixed-citation></ref><ref id="ref69"><mixed-citation publication-type="journal" id="cit69"><name name-style="western"><surname>Haddad</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Charest-Tardif</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Krishnan</surname><given-names>K.</given-names></name><article-title>Physiologically Based Modeling of
+the Maximal Effect of Metabolic Interactions on the Kinetics of Components
+of Complex Chemical Mixtures</article-title>. <source>J. Toxicol. Environ.
+Heal. - Part A</source><year>2000</year>, <volume>61</volume>, <fpage>209</fpage>&#8211;<lpage>223</lpage>. <pub-id pub-id-type="doi">10.1080/00984100050131350</pub-id>.<pub-id pub-id-type="pmid">11036509</pub-id></mixed-citation></ref><ref id="ref70"><mixed-citation publication-type="journal" id="cit70"><name name-style="western"><surname>Koryt&#225;r</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Leonards</surname><given-names>P. E. G.</given-names></name>; <name name-style="western"><surname>De Boer</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Brinkman</surname><given-names>U. A. T.</given-names></name><article-title>Group
+Separation
+of Organohalogenated Compounds by Means of Comprehensive Two-Dimensional
+Gas Chromatography</article-title>. <source>Journal of Chromatography
+A</source><year>2005</year>, <volume>1086</volume>, <fpage>29</fpage>&#8211;<lpage>44</lpage>. <pub-id pub-id-type="doi">10.1016/j.chroma.2005.05.087</pub-id>.<pub-id pub-id-type="pmid">16130654</pub-id></mixed-citation></ref><ref id="ref71"><mixed-citation publication-type="journal" id="cit71"><name name-style="western"><surname>Arey</surname><given-names>J. S.</given-names></name>; <name name-style="western"><surname>Nelson</surname><given-names>R. K.</given-names></name>; <name name-style="western"><surname>Xu</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Reddy</surname><given-names>C. M.</given-names></name><article-title>Using Comprehensive
+Two-Dimensional Gas Chromatography Retention Indices to Estimate Environmental
+Partitioning Properties for a Complete Set of Diesel Fuel Hydrocarbons</article-title>. <source>Anal. Chem.</source><year>2005</year>, <volume>77</volume>, <fpage>7172</fpage>&#8211;<lpage>7182</lpage>. <pub-id pub-id-type="doi">10.1021/ac051051n</pub-id>.<pub-id pub-id-type="pmid">16285663</pub-id></mixed-citation></ref><ref id="ref72"><mixed-citation publication-type="journal" id="cit72"><name name-style="western"><surname>Poole</surname><given-names>C. F.</given-names></name>; <name name-style="western"><surname>Poole</surname><given-names>S. K.</given-names></name><article-title>Separation Characteristics of Wall-Coated Open-Tubular
+Columns for Gas Chromatography</article-title>. <source>Journal of Chromatography
+A</source><year>2008</year>, <volume>1184</volume>, <fpage>254</fpage>&#8211;<lpage>280</lpage>. <pub-id pub-id-type="doi">10.1016/j.chroma.2007.07.028</pub-id>.<pub-id pub-id-type="pmid">17678934</pub-id></mixed-citation></ref><ref id="ref73"><mixed-citation publication-type="journal" id="cit73"><name name-style="western"><surname>Poole</surname><given-names>C. F.</given-names></name>; <name name-style="western"><surname>Lenca</surname><given-names>N.</given-names></name><article-title>Gas Chromatography on Wall-Coated Open-Tubular Columns with Ionic
+Liquid Stationary Phases</article-title>. <source>J. Chromatogr. A</source><year>2014</year>, <volume>1357</volume>, <fpage>87</fpage>&#8211;<lpage>109</lpage>. <pub-id pub-id-type="doi">10.1016/j.chroma.2014.03.029</pub-id>.<pub-id pub-id-type="pmid">24690306</pub-id></mixed-citation></ref><ref id="ref74"><mixed-citation publication-type="journal" id="cit74"><article-title>Systemic
+Exposures to Volatile Organic Compounds and Factors Influencing Susceptibility
+to Their Effects</article-title>. <source>Contam. Water Supplies Camp
+Lejeune Assess. Potential Heal. Eff.</source><year>2009</year>, <fpage>67</fpage>&#8211;<lpage>69</lpage>.</mixed-citation></ref><ref id="ref75"><mixed-citation publication-type="journal" id="cit75"><name name-style="western"><surname>Quehenberger</surname><given-names>O.</given-names></name>; <name name-style="western"><surname>Dennis</surname><given-names>E. A.</given-names></name><article-title>The Human Plasma Lipidome</article-title>. <source>N.
+Engl. J. Med.</source><year>2011</year>, <volume>365</volume>, <fpage>1812</fpage>&#8211;<lpage>1823</lpage>. <pub-id pub-id-type="doi">10.1056/NEJMra1104901</pub-id>.<pub-id pub-id-type="pmid">22070478</pub-id><pub-id pub-id-type="pmcid">PMC3412394</pub-id></mixed-citation></ref><ref id="ref76"><mixed-citation publication-type="journal" id="cit76"><name name-style="western"><surname>Schwarzenbach</surname><given-names>R. P.</given-names></name>; <name name-style="western"><surname>Gschwend</surname><given-names>P. M.</given-names></name>; <name name-style="western"><surname>Imboden</surname><given-names>D. M.</given-names></name><source>Environmental Organic Chemistry</source><year>2002</year>, <pub-id pub-id-type="doi">10.1002/0471649643</pub-id>.</mixed-citation></ref><ref id="ref77"><mixed-citation publication-type="journal" id="cit77"><name name-style="western"><surname>Endo</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Brown</surname><given-names>T. N.</given-names></name>; <name name-style="western"><surname>Goss</surname><given-names>K. U.</given-names></name><article-title>General
+Model for Estimating Partition
+Coefficients to Organisms and Their Tissues Using the Biological Compositions
+and Polyparameter Linear Free Energy Relationships</article-title>. <source>Environ. Sci. Technol.</source><year>2013</year>, <volume>47</volume>, <fpage>6630</fpage>&#8211;<lpage>6639</lpage>. <pub-id pub-id-type="doi">10.1021/es401772m</pub-id>.<pub-id pub-id-type="pmid">23672211</pub-id></mixed-citation></ref><ref id="ref78"><mixed-citation publication-type="journal" id="cit78"><name name-style="western"><surname>Escher</surname><given-names>B. I.</given-names></name>; <name name-style="western"><surname>Schwarzenbach</surname><given-names>R. P.</given-names></name>; <name name-style="western"><surname>Westall</surname><given-names>J. C.</given-names></name><article-title>Evaluation of Liposome - Water Partitioning
+of Organic Acids Bases. 2. Comparison of Experimental Determination
+Methods</article-title>. <source>Environ. Sci. Technol.</source><year>2000</year>, <volume>34</volume>, <fpage>3962</fpage>&#8211;<lpage>3968</lpage>. <pub-id pub-id-type="doi">10.1021/es0010711</pub-id>.</mixed-citation></ref><ref id="ref79"><mixed-citation publication-type="journal" id="cit79"><name name-style="western"><surname>Endo</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Bauerfeind</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Goss</surname><given-names>K. U.</given-names></name><article-title>Partitioning of Neutral Organic Compounds
+to Structural Proteins</article-title>. <source>Environ. Sci. Technol.</source><year>2012</year>, <volume>46</volume>, <fpage>12697</fpage>&#8211;<lpage>12703</lpage>. <pub-id pub-id-type="doi">10.1021/es303379y</pub-id>.<pub-id pub-id-type="pmid">23102204</pub-id></mixed-citation></ref><ref id="ref80"><mixed-citation publication-type="journal" id="cit80"><name name-style="western"><surname>Vitha</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Carr</surname><given-names>P. W.</given-names></name><article-title>The Chemical Interpretation
+and Practice of Linear
+Solvation Energy Relationships in Chromatography</article-title>. <source>J. Chromatogr. A</source><year>2006</year>, <volume>1126</volume>, <fpage>143</fpage>&#8211;<lpage>194</lpage>. <pub-id pub-id-type="doi">10.1016/j.chroma.2006.06.074</pub-id>.<pub-id pub-id-type="pmid">16889784</pub-id></mixed-citation></ref></ref-list></back></article></pmc-articleset>

@@ -39,24 +39,6 @@ def main():
   )
   DEPLOY = os.getenv("AZURE_OPENAI_DEPLOYMENT")
 
-  dt = datetime.datetime.now()
-  run_id = dt.strftime("%x") + "+" + dt.strftime("%X")
-  run_id = "run_" + run_id.replace("/", "-")
-
-  save_dir = os.path.join("./run_outputs", run_id)
-  os.makedirs(save_dir, exist_ok=True)
-  logfile = os.path.join(save_dir, "log.out")
-
-  logfp = open(logfile, "w")
-  sys.stdout = OutTee(sys.__stdout__, logfp)
-  sys.stderr = OutTee(sys.__stderr__, logfp)
-  sys.stdin = InTee(sys.__stdin__, logfp)
-
-  print("Run will be saved under:", run_id)
-  print()
-
-  # 1) Abstract screening and xml fetching
-
   pubmed_search = input("PubMed search: ")
   retmax = input("Number of PubMed results: ")
   batch_size = input("Size of processing batches: ")
@@ -65,6 +47,35 @@ def main():
   from_date = input("From: ")
   to_date = input("To: ")
   print()
+
+  run_id = "run_" + from_date + "_to_" + to_date
+  run_id = run_id.replace("/", "-")
+
+  save_dir = os.path.join("./run_outputs", run_id)
+
+  i = 1
+  while True:
+    temp_id = run_id
+    if not os.path.exists(save_dir):
+      break
+    else:
+      temp_id += "_" + str(i)
+      save_dir = os.path.join("./run_outputs", temp_id)
+      i += 1
+
+
+  os.makedirs(save_dir, exist_ok=True)
+  logfile = os.path.join(save_dir, "log.out")
+
+  logfp = open(logfile, "w")
+  sys.stdout = OutTee(sys.__stdout__, logfp)
+  sys.stderr = OutTee(sys.__stderr__, logfp)
+  sys.stdin = InTee(sys.__stdin__, logfp)
+
+  print("Run will be saved under:", save_dir)
+  print()
+
+  # 1) Abstract screening and xml fetching
 
   print("Screening abstracts and fetching fulltexts...")
   screener = ScreenAbstracts(
@@ -83,16 +94,20 @@ def main():
 
   print()
   print("Extracting tables...")
+  # temp
+  #save_dir = "./run_outputs/run_2023-04-01_to_2023/"
   extractor = GetTables(save_dir)
   extractor.run()
 
+  #num_papers = "247"
 
   # 3) Get model data from each paper
 
   print()
   print("Extracting model information from each paper...")
   fulltextdir = os.path.join(save_dir, "fulltexts")
-  for i, paper in enumerate(os.listdir(fulltextdir)):
+  sorted_files = sorted(os.listdir(fulltextdir), key=lambda f: int(f[3:-4]))
+  for i, paper in enumerate(sorted_files):
     print(f"Progress: {i}/{num_papers}")
     xmlpath = os.path.join(fulltextdir, paper)
     modeler = FetchModelInformation(xmlpath, client, DEPLOY)
@@ -109,7 +124,7 @@ def main():
   else:
     print("Err: fulltext directory doesn't exist")
 
-print("Done!")
+  print("Done!")
 
 if __name__ == "__main__":
   start = time.perf_counter()
