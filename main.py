@@ -89,17 +89,17 @@ def main():
   )
   num_papers = screener.run()
   print(f"Retrieved {num_papers} papers from PMC")
-
+  
   # 2) Get tables from xml files
 
   print()
   print("Extracting tables...")
   # temp
-  #save_dir = "./run_outputs/run_2023-04-01_to_2023/"
+  #save_dir = "./run_outputs/run_2018_to_2018/"
   extractor = GetTables(save_dir)
   extractor.run()
 
-  #num_papers = "247"
+  #num_papers = "2411"
 
   # 3) Get model data from each paper
 

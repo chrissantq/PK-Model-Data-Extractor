@@ -204,22 +204,28 @@ class ScreenAbstracts:
     return ez.read(search)["IdList"]
 
   def fetch_abstracts(self, pmids):
-    fetch = ez.efetch(
-      db="pubmed",
-      id=",".join(pmids),
-      rettype="abstract",
-      retmode="text"
-    )
-    abstracts = self.safe_read(fetch)
-    fetch.close()
+    for attempt in range(3):
+      try:
+        fetch = ez.efetch(
+          db="pubmed",
+          id=",".join(pmids),
+          rettype="abstract",
+          retmode="text"
+        )
+        abstracts = self.safe_read(fetch)
+        fetch.close()
 
-    abstract_list = abstracts.split("\n\n\n")
-    for i, text in enumerate(abstract_list):
-      abstract = Abstract(text)
-      abstract.pmid = pmids[i]
-      abstract_list[i] = abstract
+        abstract_list = abstracts.split("\n\n\n")
+        for i, text in enumerate(abstract_list):
+          abstract = Abstract(text)
+          abstract.pmid = pmids[i]
+          abstract_list[i] = abstract
 
-    return abstract_list
+        return abstract_list
+      except Exception as e:
+        print(f"[WARN] Error fetching abstracts on attempt {attempt}/3, retrying...")
+        time.sleep(.1 + attempt)
+    print("Entrez fetch failure")
 
   # helper function to save each xml fulltext
   def save_xml(self, pmcid, xml_text, dirpath):
