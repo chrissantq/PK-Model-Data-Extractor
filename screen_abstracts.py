@@ -7,10 +7,10 @@ from urllib.error import HTTPError, URLError
 from http.client import IncompleteRead
 from datetime import datetime
 
-DEFAULT_SEARCH = "PK Model"
-DEFAULT_RETMAX = 25
+DEFAULT_SEARCH = "pharmacokinetics models"
+DEFAULT_RETMAX = 100000 # largest allowed by pubmed
 DEFAULT_THRESHOLD = 0.65 # .55 to .65 is good range depending on if you want more false positives or false negatives
-DEFAULT_BATCH_SIZE = 25
+DEFAULT_BATCH_SIZE = 20
 DEFAULT_FROM_DATE = "1781/01/01" # date of earliest pubmed publication
 DEFAULT_TO_DATE = datetime.today().strftime("%Y/%m/%d") # today's date
 
@@ -28,7 +28,7 @@ class ScreenAbstracts:
 
     if torch.cuda.is_available():
       total_mem = torch.cuda.get_device_properties(0).total_memory
-      if total_mem < 6 * 1024 ** 3: # if total gpu mem < 6 gb, do cpu
+      if total_mem < 2 * 1024 ** 3: # if total gpu mem < 6 gb, do cpu
         self.device = torch.device("cpu")
       else:
         self.device = torch.device("cuda")
@@ -108,7 +108,7 @@ class ScreenAbstracts:
     del self.model
     gc.collect()
     torch.cuda.empty_cache()
-    self.model = AutoModelForSequenceClassification.from_pretrained(self.model_name)
+    self.model = AutoModelForSequenceClassification.from_pretrained(self.model_name).to(self.device)
     self.model.eval()
 
   # wrap fetch.read() to handle errors and retry on fail
@@ -123,9 +123,9 @@ class ScreenAbstracts:
 
 
   # helper function to chunk up longer abstracts
-  def pred_chunks(self, text, tokenizer, model):
+  def pred_chunks(self, text, tokenizer):
 
-    max_len = model.config.max_position_embeddings
+    max_len = self.model.config.max_position_embeddings
     stride = max_len // 2
 
     tokenized = tokenizer(
@@ -140,7 +140,7 @@ class ScreenAbstracts:
     )
 
     with torch.no_grad():
-      logits = model(
+      logits = self.model(
         input_ids=tokenized.input_ids.to(self.device),
         attention_mask=tokenized.attention_mask.to(self.device)
       ).logits
@@ -148,10 +148,10 @@ class ScreenAbstracts:
     return logits.mean(dim=0, keepdim=True)
 
   # function to run prediction of each abstract
-  def predict(self, abstract_list, valid_pmids, threshold, tokenizer, model):
+  def predict(self, abstract_list, valid_pmids, threshold, tokenizer):
     # for each item in list, predict if PK
     for i, abstr in enumerate(abstract_list):
-      final_logits = self.pred_chunks(abstr.text, tokenizer, model).detach().cpu()
+      final_logits = self.pred_chunks(abstr.text, tokenizer).detach().cpu()
       probs = torch.softmax(final_logits, dim=1)
       pred_class = torch.argmax(final_logits, dim=1)
 
@@ -171,23 +171,25 @@ class ScreenAbstracts:
     pmcids = []
     for pmid in valid_pmids:
       try:
-        linker = ez.elink(
-          dbfrom="pubmed",
-          db="pmc",
-          id=pmid
-        )
-        link_res = ez.read(linker)
-        pmcid_num = (link_res[0].get("LinkSetDb") or [{}])[0].get("Link", [{}])[0].get("Id")
-        if pmcid_num:
-          pmcid = f"PMC{pmcid_num}"
-          print(f"Found PMC article (PMCID = {pmcid}) for abstract PMID = {pmid}")
-          pmcids.append(pmcid)
+        for attempt in range(3):
+          linker = ez.elink(
+            dbfrom="pubmed",
+            db="pmc",
+            id=pmid
+          )
+          link_res = ez.read(linker)
+          pmcid_num = (link_res[0].get("LinkSetDb") or [{}])[0].get("Link", [{}])[0].get("Id")
+          if pmcid_num:
+            pmcid = f"PMC{pmcid_num}"
+            print(f"Found PMC article (PMCID = {pmcid}) for abstract PMID = {pmid}")
+            pmcids.append(pmcid)
 
-        time.sleep(.35) # slow down request rate to limit to
+          time.sleep(.1) # slow down request rate to limit to
+          break; # break from inner loop
       except Exception as e:
         print(f"[WARN] error fetching PMC for PMID: {pmid}: {str(e)}")
-        time.sleep(.35)
-        continue
+        print(f"[WARN] retrying, error on {attempt+1}/3 attempts")
+        time.sleep(.35 + attempt)
 
     return pmcids
 
@@ -256,7 +258,7 @@ class ScreenAbstracts:
         self.save_xml(pmcid, xml_text, dirpath)
         del xml_text, pmcid
         gc.collect()
-        time.sleep(.35) # slow down requests
+        time.sleep(.2) # slow down requests
       except HTTPError as e:
         print(f"error fetching {pmcid}: {e.code} {e.reason}")
         time.sleep(.35) # slow down requests
@@ -291,17 +293,30 @@ class ScreenAbstracts:
 
       chunk = pmids[start:start+self.batch_size]
       abstract_chunk = self.fetch_abstracts(chunk)
-      self.predict(abstract_chunk, valid_pmids, self.threshold, self.tokenizer, self.model)
+      self.predict(abstract_chunk, valid_pmids, self.threshold, self.tokenizer)
       del abstract_chunk[:]
       del abstract_chunk
       self.reload_model()
+
 
     # get pmcids
     print()
     pmcids = self.link_to_pmc(valid_pmids)
     print()
 
+    # COMMENT BLOCK IF DOING FULL SCREENING
+    # this block just saves the pmcids to a file so just comment out the return if
+    # you still want those when doing a full screening
+    '''
+    npapers = len(valid_pmids)
+    path = self.save_to + "/pk_pmids.txt"
+    with open(path, "w") as file:
+      file.write("Pubmed PK Papers:\n")
+    for pmcid in pmcids:
+      with open(path, "a") as file:
+        file.write(pmcid + "\n")
+    return npapers
+    '''
+
     # search pmc for papers, save as xml file
     return self.fetch_and_save_xmls(pmcids)
-
-

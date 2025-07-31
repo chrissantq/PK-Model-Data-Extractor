@@ -40,7 +40,7 @@ class FetchModelInformation:
     # remove disallowed special tokens
     freetext = re.sub(r"<\|.*?\|>", "", freetext)
 
-    enc = tiktoken.encoding_for_model(self.deployment)
+    enc = tiktoken.encoding_for_model("gpt-4o")
     MAX_TOK = 100000
 
     freetext_tokens = enc.encode(freetext)
@@ -107,8 +107,8 @@ class FetchModelInformation:
       print(f"Unexpected error with Python engine: {e}")
       return pd.DataFrame(columns=["Data", "Value", "Relevance"])
     else:
-      if df.shape[1] != 3:
-        print(f"[{pmcid}] Warning: parsed DataFrame has {df.shape[1]} columns instead of 3")
+      if df.shape[1] != 4:
+        print(f"[{pmcid}] Warning: parsed DataFrame has {df.shape[1]} columns instead of 4")
         return pd.DataFrame(columns=["Data", "Value", "Relevance"])
       return df
   '''
@@ -189,30 +189,80 @@ class FetchModelInformation:
     dfs = []
     for i in range(len(questions_list)):
 
+      '''
+      # gpt-4o prompt (maybe structure more like the other one but it seemed to work pretty well):
       instructions = """
         Extract ONLY information from the paper freetext that is relevant to one of the four primary questions.
         Return your answer in a pipe-delimited (|) CSV file. Do not include any extra commentary or code
-        fences. Use the following columns only: "Data" | "Value" | "Relevance". Make each piece of data its own row. 
+        fences. Use the following columns only: "Data" | "Value" | "Relevance" | "Question". Make each piece of data its own row. 
         For the "relevance" column do not just restate the question, explain how it is relevant in the context of the paper.
         Get every piece of information regarding each question, be very detailed.
 
         Here is the question:
       """
+      '''
+
+      # meta AI prompt:
+      instructions = """
+        Extract ALL information from the paper freetext that is directly relevant to ONE of the four primary questions.
+
+        Return your output as a pipe-delimited (|) CSV file. Use the following column headers, and no others:
+
+        "Data" | "Value" | "Relevance" | "Question"
+
+        Each distinct finding, statement, number, or clause that answers or supports the question must be returned as its own row.
+
+        - In the "Data" column: briefly describe the type or category of information.
+
+        - In the "Value" column: include the exact numerical value, range, or quoted text from the paper. Do not summarize — quote or precisely paraphrase.
+        - In the "Relevance" column: explain specifically how this value contributes to answering the question. Avoid restating the question. Mention the biological, pharmacokinetic, or clinical rationale if available.
+
+        - In the "Question" column: include the full question this data point addresses.
+
+        You must:
+        - Be comprehensive: include every relevant parameter, study design detail, assumption, and interpretation, even if mentioned indirectly.
+        - Include both qualitative and quantitative information.
+        - Capture relevant information from tables, results, methods, and discussion sections if present in freetext.
+        - Parse compound sentences or paragraphs: extract multiple entries per sentence if applicable.
+        - Prefer specific values or descriptions (e.g., “Cmax = 8.2 ng/mL at 12h” is better than “Cmax was measured”).
+
+        Don't just do 5 or 6 lines for the question, make sure to get every piece of data from the paper
+        regarding the question. Don't just put something with no value, get all datapoints and factors from the text.
+        Every piece of information to perfectly replicate every PK model in the paper MUST be in the table.
+
+        ONLY OUTPUT THE TABLE, NO OTHER TEXT AT ALL.
+
+        The output should be a clean pipe-delimited CSV table. Now proceed to extract for the following question:
+      """
+
+      freetext = ""
+
+      # this part adds the entire freetext to each question which improves the performance but costs a lot more
+      # the meta AI needs this or else it just makes stuff up, would also improve gpt-4o probably but idk how much
+      paper = xp.fetch_tags(self.runpath, ["p"])
+      if paper is None:
+        return
+      xmlnodes = paper.text_node_list
+      freetext_list = []
+      for node in xmlnodes:
+        freetext_list.append(node.text)
+      freetext = "\n".join(freetext_list)
 
       instructions += questions_list[i]
 
       # feed prompt to model
-      text = instructions
+      text = freetext + "\n\n" + instructions
 
       # remove disallowed special tokens
       text = re.sub(r"<\|.*?\|>", "", text)
 
       # ensure under maximum amount of tokens
-      enc = tiktoken.encoding_for_model(os.getenv("AZURE_OPENAI_DEPLOYMENT"))
+      enc = tiktoken.encoding_for_model("gpt-4o")
+
       ntokens = len(enc.encode(text))
       if ntokens > 128000:
         # too many tokens, split into chunks
-        chunks = self.split_chunks(fulltext, instructions)
+        chunks = self.split_chunks(text, instructions)
       else:
         chunks = [text]
 
@@ -235,7 +285,7 @@ class FetchModelInformation:
           err = str(e)
 
         if out is None:
-          df = pd.DataFrame([["OpenAI error", err or "Unknown Error", questions_list[i]]], columns=["Data", "Value", "Relevance"])
+          df = pd.DataFrame([["OpenAI error", err or "Unknown Error", questions_list[i]]], columns=["Data", "Value", "Relevance", "Question"])
         else:
           df = self.clean_output(out, pmcid)
 
@@ -244,7 +294,7 @@ class FetchModelInformation:
       df = pd.concat(dataframes, axis=0)
 
       try:
-        df.columns = ["Data", "Value", "Relevance"] # make sure names are good
+        df.columns = ["Data", "Value", "Relevance", "Question"] # make sure names are good
       except ValueError as e:
         print(f"[WARN] error renaming freetext columns for {pmcid}: {e}")
       dfs.append(df)
@@ -269,7 +319,7 @@ class FetchModelInformation:
   def run(self):
 
     questions_list = [
-      "How was the PK study designed, such as patient sample size, blood/tissue sampling time points, and patient population?",
+      "How was the PK study designed, such as relevant drugs, patient sample size, blood/tissue sampling time points, and patient population?",
       "What was the model, such as 1-compartment, 2-compartment, physiologically based model, or IVIVE?",
       "What are the parameters and their values, and where were they estimated from?",
       "Are there any reported factors in influencing pharmacokinetics?"
