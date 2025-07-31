@@ -28,7 +28,7 @@ class ScreenAbstracts:
 
     if torch.cuda.is_available():
       total_mem = torch.cuda.get_device_properties(0).total_memory
-      if total_mem < 2 * 1024 ** 3: # if total gpu mem < 6 gb, do cpu
+      if total_mem < 4 * 1024 ** 3: # if total gpu mem < 4 gb, do cpu
         self.device = torch.device("cpu")
       else:
         self.device = torch.device("cuda")
@@ -309,9 +309,9 @@ class ScreenAbstracts:
     # you still want those when doing a full screening
     '''
     npapers = len(valid_pmids)
-    path = self.save_to + "/pk_pmids.txt"
+    path = self.save_to + "/pk_pmcids.txt"
     with open(path, "w") as file:
-      file.write("Pubmed PK Papers:\n")
+      file.write("")
     for pmcid in pmcids:
       with open(path, "a") as file:
         file.write(pmcid + "\n")
